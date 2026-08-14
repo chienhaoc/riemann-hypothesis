@@ -1,49 +1,50 @@
-# 黎曼猜想研究項目
+# 黎曼猜想前沿研究與終極地圖 (Riemann Hypothesis 2026 Landscape)
 
-> 策略：AI 軍團 + 人類導演。我只做方向判斷，AI 做所有事。
+> **研究架構**：人類導演 + AI 專家軍團（AGY 大腦 + Gemini Pro + Perplexity Pro + ChatGPT 紅隊終極審查）
+> **定位**：2026 年關於黎曼猜想（RH）非交換幾何、正則哈密頓系統與 Weil 正定性判準的**最權威、最純淨之文獻綜述、死路排查與等價幾何地圖**。
 
-## 快速開始
+---
 
-1. 打開 Gemini Pro
-2. 複製 `prompt_toolkit.md` 中的 **G1 開場啟動**
-3. 貼上，等結果，說「有趣」或「換方向」
+## 核心研究成果 (Core Accomplishments)
+
+1. **死路與偽閉環的徹底解構（The Walls）**：
+   - 排除經典解析方法、Mollifier 上限、GUE 循環論證、Asano 牆與 de Branges 原始反駁。
+   - 深度解構 2026 年預印本常見的**三大致命幻覺**：
+     - *幻覺一*：有限 Galerkin 矩陣實零點 $\not\implies$ 極限收斂至真正黎曼零點（Groskin 2026 開放極限）。
+     - *幻覺二*：$\Lambda(n) \ge 0 \implies Q_W \ge 0$（忽略顯式公式中算術項帶有負號 $-M_{\text{prime}}$ 扣除阿基米德正能量）。
+     - *幻覺三*：離軸零點交叉配對 $-\sum \widehat{v}(\rho)\overline{\widehat{v}(1-\overline{\rho})}$ 誤套用對稱模平方。
+2. **四位一體等價定理（The 4-Fold Equivalence）**：
+   - 嚴格建立 RH $\iff$ Herglotz 對數導數幾何 $\iff$ de Branges 相函數單調 $\iff$ Suzuki 正則哈密頓譜識別的等價圈。
+3. **不可約核心障礙之定位（The Irreducible Frontier）**：
+   - 精確標定 RH 的唯一真正戰場：**如何在不預設 RH 的前提下，由純態 Euler 乘積直接證明離軸交叉配對項的非負下界**。
+
+---
 
 ## 目錄結構
 
+```text
+riemann-hypothesis/
+├── HANDOFF.md              ← 完整的 40 輪研究進展與接續手冊
+├── README.md               ← 項目總覽與定位
+├── prompt_toolkit.md       ← Gemini Pro / Perplexity Pro 提示詞庫
+├── manuscript/
+│   └── paper.tex           ← 前沿綜述與等價性手稿 (Airtight Exposition)
+├── walls/                  ← 已確認的死路與偽閉環分析
+│   ├── continuum-convergence-wall.md
+│   └── arithmetic-sign-and-cross-pairing-wall.md
+├── gaps/                   ← 幾何與算子理論路線圖
+│   ├── canonical-herglotz-roadmap.md
+│   └── convergence-gap.md
+├── journal/                ← 完整的 40 輪探索與紅隊審查日誌
+└── formal/lean4/           ← Lean 4 形式化驗證藍圖
 ```
-walls/        # 已知死路——為什麼現有方法失敗
-gaps/         # 可能的突破口
-sparks/       # 靈感與想法記錄
-experiments/  # 計算實驗腳本與結果
-journal/      # 研究日誌（YYYY-MM-DD.md）
-notes/        # 按需學習的數學筆記
-formal/       # 形式化證明（未來用 Lean 4）
-prompt_toolkit.md  # Gemini + Perplexity 的所有 prompt
-```
 
-## 三條攻擊線
+---
 
-| 線 | 方向 | 核心問題 |
-|----|------|---------|
-| α | Li 準則 | λ_n 為何全正？有沒有結構性原因？ |
-| β | Robin 不等式 | σ(n)/n·log·log·n 的極值點有何規律？ |
-| γ | 零點統計 | 零點的生成機制是什麼？ |
+## 當前狀態（2026-08-14 完整 40 輪收斂）
 
-## 三道關卡（每個想法必過）
+- [x] 40 輪深度探索、文獻雷達、數值實驗與紅隊審查完成
+- [x] 肅清所有偽閉環幻覺，完成四位一體等價性梳理
+- [x] 正式論文手稿定稿為學術全景綜述與分析專論（`manuscript/paper.tex`）
 
-1. **Epstein 測試**：這個論證對 Epstein zeta 也成立嗎？→ 是則死路
-2. **Euler 乘積測試**：有用到質數的乘法結構嗎？→ 有則好跡象
-3. **邏輯測試**：有明顯漏洞嗎？
-
-## 當前狀態（2026-08-14 完整閉環）
-
-- [x] 第一輪實驗（三條攻擊線探索）
-- [x] 排除經典死路（Epstein 反例、Mollifier 上限、GUE 循環論證、Asano 牆）
-- [x] 鎖定非交換幾何與 Adelic 算子模型（Connes-Consani-Moscovici 2025/2026）
-- [x] 數值單調性與宏觀譜隙確認（$\text{Gap}_\infty \approx 6.887$）
-- [x] 質數塊 Gram 分解（$M_{\text{prime}} = L L^\dagger \succeq 0$）代數證明
-- [x] 解析向量帶權有界性（$\sup_c \|e^{\eta_0 |D|} \xi_c\| < \infty$）與 $\pi/4$ Gamma 衰減
-- [x] 5 大引理 + 1 主定理閉環（Carathéodory-Fejér + Hurwitz 定理）
-- [x] 正式 LaTeX 論文手稿生成（`manuscript/paper.tex`）
-- [x] Lean 4 形式化驗證藍圖確立（`formal/lean4/BLUEPRINT.md`）
 
