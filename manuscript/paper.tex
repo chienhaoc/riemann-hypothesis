@@ -6,15 +6,11 @@
 \usepackage{hyperref}
 \usepackage{cite}
 
-% Theorem Environments
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{remark}[theorem]{Remark}
+% Document structure
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{remark}{Remark}[section]
 
-\title{\textbf{A Grand Unified Landscape on the Riemann Hypothesis: Weil Positivity, Canonical Herglotz Systems, and the 5 Universal Formulations}}
+\title{\textbf{An Exploratory Survey on Reformulations, Operator Models, and the Off-Axis Cross-Pairing Barrier for the Riemann Hypothesis}}
 \author{\textbf{Antigravity Research Collaborative} \\ \small In Pair-Programming Partnership with the User}
 \date{August 2026}
 
@@ -23,109 +19,80 @@
 \maketitle
 
 \begin{abstract}
-We present a comprehensive, multi-dimensional mathematical landscape of the Riemann Hypothesis (RH), establishing the strict mathematical equivalence among five major modern frameworks: (1) self-adjointness and real spectrum of the continuous screw-operator limit $D_\infty = \lim_{a\to\infty} A_a$ (Operator Algebra); (2) strict positivity of the logarithmic derivative real part $\operatorname{Re}(\xi'/\xi(s)) > 0$ across the open half-plane $\mathbb{H}_{1/2} = \{\operatorname{Re}(s) > 1/2\}$ (Complex Analysis); (3) positive semi-definiteness of the Weil explicit quadratic functional $Q_W(g) \ge 0$ on the complete admissible space $\mathcal{T}_{\text{Weil}}$ (Harmonic Analysis); (4) the uniform Archimedean barrier $-\operatorname{Re}(\zeta'/\zeta(\sigma+it)) \le \frac{1}{2}\log(|t|/2\pi) + \mathcal{O}(1)$ for all $\sigma > 1/2$ (Analytic Number Theory); and (5) the global Schwarz--Pick hyperbolic contraction metric $\mathcal{S}(\sigma, t) = \frac{(\sigma-1/2)|F'|}{\operatorname{Re}(F)} \le 1$ with saturation $\mathcal{S} \to 1.000000$ at the critical boundary (Geometric Function Theory). We prove the Hyperbolic Non-Continuation Theorem, demonstrating why local contraction in $\operatorname{Re}(s) > 1$ cannot be softly propagated across the critical strip without full arithmetic Euler-product rigidity. Furthermore, we dissect the exact mechanism of the off-axis cross-pairing term $-\sum \widehat{v}(\rho)\overline{\widehat{v}(1-\overline{\rho})}$ and provide high-precision quantitative contrast with the metric tearing and Krein-space degeneration observed in Epstein zeta functions.
+This working paper provides an exploratory survey of several modern equivalent reformulations of the Riemann Hypothesis (RH) across operator theory, harmonic analysis, and complex function theory. We review the Weil quadratic criterion, continuous screw-kernel representations (Suzuki 2026), and half-plane logarithmic derivative behaviors. Through detailed structural analysis, we highlight the central analytical bottleneck common to all these frameworks: establishing the non-negativity of off-axis bilinear pairings $-\sum \widehat{v}(\rho)\overline{\widehat{v}(1-\overline{\rho})}$ without pre-supposing the Riemann Hypothesis. We also document why standard complex-analytic continuation tools from $\operatorname{Re}(s) > 1$ cannot bypass interior pole exclusions, and contrast this structure with the explicit metric breakdown observed in Epstein zeta functions.
 \end{abstract}
 
 \tableofcontents
 
-\section{Introduction}
-The Riemann Hypothesis, formulated in 1859, asserts that all non-trivial zeros of the Riemann zeta function $\zeta(s)$ satisfy $\operatorname{Re}(s) = 1/2$. Over 166 years, numerous equivalent characterizations have emerged across diverse mathematical disciplines, including Weil's quadratic criterion (1952) \cite{Weil1952}, Connes' noncommutative trace formula (1999) \cite{Connes1999}, de Branges' Hilbert space of entire functions \cite{deBranges1968}, Suzuki's continuous screw-kernel representation (2026) \cite{Suzuki2026}, and Connes--Consani--Moscovici's adelic spectral triples (2025) \cite{CCM2025}.
+\section{Introduction and Scope}
+The Riemann Hypothesis (RH), asserting that all non-trivial zeros of $\zeta(s)$ lie on $\operatorname{Re}(s) = 1/2$, possesses numerous equivalent reformulations in modern mathematics. Notable frameworks include:
+\begin{itemize}
+    \item \textbf{Harmonic Analysis}: André Weil's positivity criterion (1952) \cite{Weil1952}.
+    \item \textbf{Noncommutative Geometry}: Alain Connes' adelic trace formula (1999) \cite{Connes1999} and spectral triples (2025) \cite{CCM2025}.
+    \item \textbf{Canonical Hamiltonian Systems}: M. Suzuki's continuous screw-kernel operators (2026) \cite{Suzuki2026}.
+    \item \textbf{Geometric Function Theory}: Half-plane Carath\'eodory / Herglotz logarithmic derivative positivity \cite{deBranges1968}.
+\end{itemize}
 
-The objective of this treatise is to present the **Grand Unified Landscape** of these frameworks, rigorously proving their inter-equivalence, isolating the exact irreducible analytic and arithmetic frontiers, and resolving common preprint misconceptions regarding finite-rank convergence and cross-pairing metrics.
+The purpose of this document is not to claim a proof of RH, but rather to map out these parallel mathematical languages, verify their conceptual connections, and precisely isolate the shared mathematical barrier where all current techniques stall.
 
-\section{The Functional-Analytic and Arithmetic Framework}
-Let $\mathcal{T}_{\text{Weil}}$ be the space of smooth test functions $g(x) \in C_c^\infty(\mathbb{R})$ satisfying the standard decay and pole-neutralization conditions $\widehat{g}(0) = 0, \widehat{g}(\pm i/2) = 0$. The global Weil quadratic functional associated with the explicit formula is:
+\section{The Weil Quadratic Functional}
+Let $\mathcal{T}_{\text{Weil}}$ be the admissible space of smooth test functions $g(x) \in C_c^\infty(\mathbb{R})$ satisfying decay and pole-neutralization conditions $\widehat{g}(0) = 0, \widehat{g}(\pm i/2) = 0$. The Weil quadratic functional is given by:
 \begin{equation}
 Q_W(v) = W(v * \widetilde{v}), \quad \widetilde{v}(x) = \overline{v(-x)},
 \end{equation}
-where the functional $W(f)$ decomposes into Archimedean, pole, and arithmetic components:
+with the functional decomposition:
 \begin{equation}
 W(f) = W_{\text{arch}}(f) + W_{\text{pole}}(f) - \sum_{n=1}^\infty \frac{\Lambda(n)}{\sqrt{n}} \left( f(\log n) + f(-\log n) \right).
 \end{equation}
 
-On positive-type test functions $g_v = v * \widetilde{v}$, discrete Galerkin projections of the arithmetic prime operator yield a positive semi-definite Gram matrix:
-\begin{equation}
-M_{\text{prime}} = \sum_{q \ge 2} \frac{\Lambda(q)}{\sqrt{q}} u_q u_q^\dagger = L L^\dagger \succeq 0,
-\end{equation}
-where $u_q = (q^{i\omega_1/2\pi}, \dots, q^{i\omega_N/2\pi})^T \in \mathbb{C}^N$ and $\Lambda(q) \ge 0$. Crucially, in the explicit formula $W(f)$, the prime term enters with a negative sign ($-M_{\text{prime}} \preceq 0$), representing the energetic subtraction of prime modes from the Archimedean continuum background.
+\begin{remark}[The Arithmetic Sign]
+For any positive-type convolution $g_v = v * \widetilde{v}$, the arithmetic matrix on discrete Galerkin truncations satisfies $M_{\text{prime}} \succeq 0$. However, because this term is subtracted in the explicit formula ($-M_{\text{prime}} \preceq 0$), prime contributions energetically subtract from the positive Archimedean background, meaning $M_{\text{prime}} \succeq 0$ alone does not imply $Q_W \ge 0$.
+\end{remark}
 
-\section{The 5 Universal Formulations of the Riemann Hypothesis}
+\section{Survey of Five Equivalent Perspectives}
+Several modern frameworks describe the same underlying condition in different mathematical vernaculars:
 
-\begin{theorem}[The 5-Branch Equivalence Ring]
-The following five propositions across distinct mathematical disciplines are strictly and mutually equivalent:
 \begin{enumerate}
-    \item \textbf{Operator Algebra (Connes / Suzuki)}: The continuous screw-operator continuum limit $D_\infty = \lim_{a\to\infty} A_a$ is self-adjoint, and its point spectrum coincides with the imaginary parts of all non-trivial zeros: $\operatorname{Spec}_{\text{point}}(D_\infty) = \{\gamma : \xi(1/2 - i\gamma) = 0\}$.
-    \item \textbf{Complex Analysis (Herglotz / de Branges)}: The completed logarithmic derivative has strictly positive real part in the entire open right half-plane:
-    \begin{equation}
-    \operatorname{Re}\left( \frac{\xi'}{\xi}(s) \right) > 0 \quad \forall s \in \mathbb{H}_{1/2} := \{s \in \mathbb{C} : \operatorname{Re}(s) > 1/2\}.
-    \end{equation}
-    \item \textbf{Harmonic Analysis (Weil Positivity Criterion)}: The Weil quadratic functional is positive semi-definite on the complete admissible test algebra:
-    \begin{equation}
-    Q_W(g) \ge 0 \quad \forall g \in \mathcal{T}_{\text{Weil}}.
-    \end{equation}
-    \item \textbf{Analytic Number Theory (Archimedean Potential Barrier)}: The prime cosine series is uniformly bounded by the Archimedean background across the critical strip:
-    \begin{equation}
-    -\operatorname{Re}\left( \frac{\zeta'}{\zeta}(\sigma + it) \right) \le \frac{1}{2}\log \frac{|t|}{2\pi} + \mathcal{O}(1) \quad \forall \sigma > 1/2, \, t \in \mathbb{R}.
-    \end{equation}
-    \item \textbf{Geometric Function Theory (Carathéodory / Schwarz--Pick Contraction)}: The dimensionless hyperbolic metric invariant satisfies:
-    \begin{equation}
-    \mathcal{S}(\sigma, t) := \frac{(\sigma - 1/2)|F'(\sigma+it)|}{\operatorname{Re}(F(\sigma+it))} \le 1 \quad \forall \sigma > 1/2, \, t \in \mathbb{R},
-    \end{equation}
-    where $F(s) = \xi'/\xi(s)$, saturating to $\lim_{\sigma \to 1/2^+} \mathcal{S}(\sigma, t) = 1.000000$.
+    \item \textbf{Operator Theoretic}: The continuum limit operator $D_\infty = \lim_{a\to\infty} A_a$ constructed from the localized screw kernel is self-adjoint with strictly real spectrum \cite{Suzuki2026}.
+    \item \textbf{Complex Analytic}: The logarithmic derivative $\operatorname{Re}(\xi'/\xi(s)) > 0$ strictly in the open half-plane $\mathbb{H}_{1/2} = \{\operatorname{Re}(s) > 1/2\}$.
+    \item \textbf{Harmonic Analytic}: $Q_W(g) \ge 0$ for all admissible test functions $g \in \mathcal{T}_{\text{Weil}}$ \cite{Weil1952}.
+    \item \textbf{Analytic Number Theoretic}: The prime sum $\sum \frac{\Lambda(n)}{n^\sigma}\cos(t\log n)$ is uniformly dominated by the Archimedean background $\frac{1}{2}\log(|t|/2\pi) + \mathcal{O}(1)$ across $\sigma > 1/2$.
+    \item \textbf{Geometric Function Theoretic}: The Schwarz--Pick ratio $\mathcal{S}(\sigma, t) = \frac{(\sigma-1/2)|F'|}{\operatorname{Re}(F)} \le 1$ holds throughout $\mathbb{H}_{1/2}$.
 \end{enumerate}
-\end{theorem}
 
-\section{Half-Plane Herglotz Positivity and $\epsilon$-Regularization}
-On the critical line $s = 1/2 + it$, the function $\Xi(t) = \xi(1/2 + it)$ is real, causing $\frac{\xi'}{\xi}(1/2 + it) \in i\mathbb{R}$ to be purely imaginary. Consequently, the pointwise real part satisfies $\operatorname{Re}(\xi'/\xi(1/2+it)) \equiv 0$ almost everywhere.
+These formulations rephrase RH in different functional settings, but none provide an independent bypass of the arithmetic zero-distribution.
 
-The genuine spectral measure is recovered via the right half-plane boundary distribution limit:
-\begin{equation}
-\mu(t) = \lim_{\epsilon \to 0^+} \frac{1}{\pi} \operatorname{Re}\left( \frac{\xi'}{\xi}\left(\frac{1}{2} + \epsilon + it\right) \right) dt = \sum_{\gamma} m_\gamma \delta(t - \gamma) \ge 0.
-\end{equation}
-Under the Hadamard product expansion:
-\begin{equation}
-\operatorname{Re}\left( \frac{\xi'}{\xi}(\sigma + it) \right) = \sum_{\rho} \frac{\sigma - \beta}{(\sigma - \beta)^2 + (t - \gamma)^2}.
-\end{equation}
-When all zeros satisfy $\beta = 1/2$, every term in the sum is strictly positive for $\sigma > 1/2$, creating an impenetrable infinite potential barrier $E(\sigma, \gamma_n) \to +\infty$ at every zero ordinate $\gamma_n$.
-
-\section{Carathéodory Complex Geometry and the Schwarz--Pick Metric}
-Mapping the right half-plane $\mathbb{H}_{1/2}$ to the unit disk $\mathbb{D}$ via the Cayley transform $\phi(s) = \frac{s - s_0}{s + \overline{s_0} - 1}$, the condition $\operatorname{Re}(F(s)) > 0$ is equivalent to $F(s)$ being a Carathéodory function.
-
-The Poincaré hyperbolic metric on $\mathbb{H}_{1/2}$ enforces the Schwarz--Pick differential inequality:
-\begin{equation}
-|F'(s)| \le \frac{\operatorname{Re}(F(s))}{\operatorname{Re}(s) - 1/2} \iff \mathcal{S}(\sigma, t) = \frac{(\sigma - 1/2)|F'(s)|}{\operatorname{Re}(F(s))} \le 1.
-\end{equation}
-High-precision numerical evaluations confirm that for the Riemann zeta function, $\mathcal{S}(\sigma, t) \le 1$ holds globally on $\sigma > 1/2$, and approaches $1.000000$ with absolute numerical precision as $\sigma \to 1/2^+$.
-
-\section{The Hyperbolic Non-Continuation Barrier}
-
-\begin{theorem}[Hyperbolic Non-Continuation across the Critical Strip]
-Let $\Omega_1 = \{\operatorname{Re}(s) > 1\}$ and $\Omega_{1/2} = \{\operatorname{Re}(s) > 1/2\}$. There exists no general complex-analytic extension principle (including Loewner chains, the Julia--Carathéodory theorem, or the maximum modulus principle) that can propagate the hyperbolic contraction $\mathcal{S}(s) \le 1$ from $\Omega_1$ to $\Omega_{1/2}$ without a priori excluding interior poles.
-\end{theorem}
-\begin{proof}
-While the Dirichlet series $\sum \frac{\Lambda(n)}{n^s}$ converges absolutely on $\Omega_1$, meromorphic continuation to $\Omega_{1/2}$ does not preserve the positive-real-part cone. A generic holomorphic function can be a strict contraction on a subdomain while developing poles and negative real parts upon analytic continuation into a larger domain (as manifested by Epstein zeta functions).
-\end{proof}
-
-\section{Analysis of the Off-Axis Cross-Pairing Obstacle}
-When decomposing the explicit formula over the zero set $Z_\zeta$, the zero-sum quadratic contribution on $v * \widetilde{v}$ is given by:
+\section{The Core Bottleneck: Off-Axis Cross-Pairing}
+Decomposing the explicit formula over the zero set $Z_\zeta$, the quadratic zero contribution is:
 \begin{equation}
 W_{\text{zeros}}(v * \widetilde{v}) = -\sum_{\rho \in Z_\zeta} \widehat{v}(\rho) \overline{\widehat{v}(1 - \overline{\rho})}.
 \end{equation}
-\begin{enumerate}
-    \item \textbf{On-Axis Realization ($\beta = 1/2$)}: Since $1 - \overline{\rho} = \rho$, the pairing collapses to $-|\widehat{v}(\rho)|^2 \le 0$, yielding the standard non-negative modulus-square sum.
-    \item \textbf{Hypothetical Off-Axis Realization ($\beta = 1/2 + \delta, \delta \ne 0$)}: The pairing $\widehat{v}(\rho) \overline{\widehat{v}(1 - \overline{\rho})}$ becomes an off-diagonal cross-pairing with differing exponential weightings $e^{(\pm \delta) x}$. It cannot be written as a modulus square $|\widehat{v}(\rho)|^2$. Proving that $Q_W(v) \ge 0$ unconditionally without assuming $\delta = 0$ is mathematically identical to solving the Riemann Hypothesis itself.
-\end{enumerate}
 
-\section{Counterexample Analysis: Epstein Zeta Metric Breakdown}
-For Epstein zeta functions $Z_E(s)$ associated with binary quadratic forms with class number $h > 1$, off-critical zeros $\rho_E = \beta_E + i\gamma_E$ ($\beta_E > 1/2$) exist.
+\begin{itemize}
+    \item \textbf{Under RH ($\beta = 1/2$)}: Since $1 - \overline{\rho} = \rho$, the pairing collapses to $-|\widehat{v}(\rho)|^2 \le 0$, resulting in a sum of non-negative modulus squares.
+    \item \textbf{Without assuming RH ($\beta = 1/2 + \delta, \delta \ne 0$)}: The cross-pairing $\widehat{v}(\rho) \overline{\widehat{v}(1 - \overline{\rho})}$ involves differing exponential factors $e^{\pm \delta x}$ and cannot be simplified to a modulus square.
+\end{itemize}
+
+Proving that $Q_W(v) \ge 0$ unconditionally without assuming $\delta = 0$ is mathematically identical to solving the Riemann Hypothesis itself.
+
+\section{Analytical Limitations of Geometric Continuation}
+In the absolute convergence half-plane $\operatorname{Re}(s) > 1$, the Dirichlet series $\sum \frac{\Lambda(n)}{n^s}$ provides explicit bounds. However:
+\begin{itemize}
+    \item Schwarz--Pick contraction $\mathcal{S}(s) \le 1$ on a subdomain $\operatorname{Re}(s) > 1$ cannot be analytically continued into $\operatorname{Re}(s) > 1/2$ to rule out interior poles.
+    \item Meromorphic continuation does not preserve positive-real-part cones in the presence of unexcluded zeros.
+\end{itemize}
+
+\section{Epstein Zeta Counterexamples}
+For Epstein zeta functions $Z_E(s)$ associated with binary quadratic forms with class number $h > 1$, off-critical zeros $\rho_E = \beta_E + i\gamma_E$ ($\beta_E > 1/2$) exist. In this setting:
 \begin{enumerate}
-    \item \textbf{Negative Phase Transition}: When $\sigma$ approaches $\beta_E$ from the right, the field $E_E(\sigma, \gamma_E) = \operatorname{Re}(Z_E'/Z_E)$ plunges from positive values through $-\infty$ as $\sigma < \beta_E$, breaching the Archimedean background.
-    \item \textbf{Hyperbolic Metric Tearing}: The derivative $|F_E'|$ grows quadratically as $(\sigma - \beta_E)^{-2}$ while $\operatorname{Re}(F_E)$ grows linearly as $(\sigma - \beta_E)^{-1}$, driving the Schwarz--Pick invariant $\mathcal{S}_E(\sigma, \gamma_E) \to +\infty$ and tearing the hyperbolic metric.
-    \item \textbf{Krein Space Metric}: The associated inner product space degenerates into a Krein space with negative squares $\kappa \ge 1$, confirming that our geometric framework selectively detects non-Euler systems.
+    \item The pseudo-prime coefficients $a_q$ take negative values, breaking scalar Gram decompositions.
+    \item For $\sigma < \beta_E$, the field $\operatorname{Re}(Z_E'/Z_E)$ plunges below zero, entering a negative phase.
+    \item The Schwarz--Pick ratio $\mathcal{S}_E \to +\infty$ as $\sigma \to \beta_E$, demonstrating metric breakdown.
 \end{enumerate}
+This demonstrates that purely geometric frameworks must inherently depend on the multiplicative uniqueness of prime numbers (the Euler product) to prevent metric degeneration.
 
 \section{Conclusion}
-The Riemann Hypothesis stands as a universal, invariant singularity across all five major domains of modern analysis. By establishing the 5 Universal Formulations and dismantling the illusions of soft geometric continuation and finite Galerkin closures, this work provides the definitive, complete conceptual roadmap and foundational framework for future research on the Riemann Hypothesis.
+This survey highlights the structural unity among modern operator, harmonic, and geometric formulations of the Riemann Hypothesis. All paths converge onto the same fundamental obstacle: controlling the sign of off-axis bilinear pairings against the arithmetic explicit formula. Recognizing this shared barrier clarifies the precise limitations of current methods and provides a disciplined foundation for future research.
 
 \begin{thebibliography}{99}
 \bibitem{Weil1952}
@@ -145,12 +112,6 @@ M. Suzuki, \emph{Weil's quadratic form via the screw function}, arXiv:2606.09096
 
 \bibitem{Groskin2026a}
 A. Groskin, \emph{High-Precision Approximation of Riemann Zeros via the Truncated Weil Form}, arXiv:2605.20224 (2026).
-
-\bibitem{Groskin2026b}
-A. Groskin, \emph{A finite Guinand-Weil dictionary and archimedean tail order for the truncated Weil quadratic form}, arXiv:2607.02828 (2026).
-
-\bibitem{Makarov2026}
-N. Makarov, A. Poltoratski, K. Zhang, \emph{Inverse Spectral Problems and Canonical Hamiltonian Systems}, arXiv:2603.13586 (2026).
 \end{thebibliography}
 
 \end{document}
