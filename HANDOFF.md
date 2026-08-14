@@ -1,28 +1,27 @@
 # HANDOFF：黎曼猜想研究接續文件
 
-> **給下一台電腦的自己**：這份文件記錄了今天所有的研究進展、
-> 當前位置、以及最重要的「下一步」。讀完這份文件就能立刻接續。
+> **給下一台電腦的自己**：這份文件記錄了今天所有的研究進展、當前位置、以及最重要的「下一步」。讀完這份文件就能立刻接續。
 
 ---
 
-## 當前研究狀態（2026-08-15 第二十九輪 — 終極堡壘攻堅完成：Suzuki 正則哈密頓逆譜全同定理確立）
+## 當前研究狀態（2026-08-15 第三十輪 — ChatGPT 紅隊審查復盤：de Branges / Suzuki 逆譜之壁與 Conrey-Li 歷史反例確立）
 
 ### 你在哪裡
 
-**【堡壘攻克】三大殘留技術堡壘全部推導封閉！正則哈密頓空間鏈成功排除奇異連續譜與逃逸零點，確立雙向譜全同！**
+**【紅隊刺穿與糾偏】ChatGPT 審查徹底擊穿 Suzuki 正則哈密頓逆譜構造！確立四大邏輯斷裂與 de Branges Conrey-Li 歷史之壁！**
 
-核心推導成果與定理鏈（第 67-68 輪）：
-1. **堡壘 1：奇異連續測度排除（$d\mu_{\text{sing}} \equiv 0$）**：
-   - Prüfer 振幅均勻有界性：$\sup_{X \ge 0} |\log(R(X,t)/R(0,t))| \le C(t) < \infty$；
-   - Gilbert-Pearson 從屬理論：解增長率等價（$\|Y\|_{X,H}^2 \asymp X$），無從屬解；
-   - Remling-Kotani 定理：**奇異連續測度嚴格為零（$d\mu_{\text{sing}} \equiv 0$）**。
-2. **堡壘 2：邊界相角漸近平滑化（$\theta(a) \to \theta_0(a)$）**：
-   - Prüfer 相位單調微分方程：$\frac{d\phi}{dx} = -z \, \mathbf{u}(\phi)^T H(x) \mathbf{u}(\phi) \le 0$；
-   - PNT 誤差界分部積分壓制質數階躍：$|\Delta \theta(a)| \le C \exp(-c\sqrt{\log a}) \to 0$；
-   - 邊界相角收斂至光滑主項 $\theta_0(a) = -a \log a + (1+\log 2\pi)a - \pi/4 + \mathcal{O}(a^{-1})$。
-3. **堡壘 3：逆譜雙向包含與 Carleman 完備性（$\operatorname{Spec}(D_\infty) \equiv \mathcal{Z}(\xi)$）**：
-   - 預解式跡公式：$\operatorname{Tr}(R(z, z_0)) = \frac{\Xi'(z)}{\Xi(z)} - \frac{\Xi'(z_0)}{\Xi(z_0)}$；
-   - Carleman 條件（$\sum \frac{1}{|\gamma_n|} = \infty$）配合 Cartwright 階數界，強制直交補空間 $\mathcal{M}^\perp = \{0\}$，**徹底排除逃逸零點**。
+紅隊審查核心發現（第 69-70 輪）：
+1. **Suzuki 論文真實邊界（Conjecture / Equivalence）**：
+   - Suzuki (arXiv:2606.09096) 原文明確標註極限自伴算子對應黎曼零點為「**猜想（Conjecture）**」；
+   - Suzuki (arXiv:2301.00421) 是**等價條件（RH ⟺ 逆問題特定邊界條件有解）**，無條件可解版本排除了關鍵邊界條件。將逆問題有解作為既定輸入屬於循環論證。
+2. **極限定點 (Limit-Point) 與極限圓 (Limit-Circle) 範疇衝突**：
+   - 點譜排除需要 Limit-Point（虧指數 (0,0)，無自由邊界角 $\theta(a)$）；
+   - 邊界平滑化又需要 Limit-Circle（虧指數 (1,1)，存在一族依賴 $\theta$ 的自伴延拓）。兩者不可並存。
+3. **不可分割區間打破 $\det H(x) > 0$**：
+   - 數論 $L$-函數正則哈密頓量在質數與平凡零點處普遍存在秩 1 退化區間（$\det H(x) \equiv 0$），Prüfer 振幅一致有界性前提崩塌。
+4. **Conrey-Li (2000) 數值反例與 de Branges 正性策略歷史崩潰**：
+   - Conrey & Li (2000) 在第 34 個零點 $\gamma_{34} \approx 111.03$ 處精確算出 $\operatorname{Re}\{\overline{E}'(w)E(w+i)/2\pi i\} = -5.389 \times 10^{-69} < 0$，推翻了 de Branges 正性條件；
+   - 因式分解 $F(z) = \Xi(z)G(z)$ 預先假設了待證零點集合同構。
 
 ### 工具設置
 
@@ -30,7 +29,37 @@
 - **文獻偵察兵**：Perplexity（查 arXiv 論文、驗證 Gemini 的結論）
 - **大魔王評審**：ChatGPT（紅隊終極挑刺與符號檢驗）
 - **大腦/導演**：AGY Antigravity（方向判斷、文檔更新、prompt 設計）
-- **閉環理論體系**：Suzuki 正則哈密頓逆譜全同定理（$\Delta K_{a,b} \succeq 0, \|ev_\rho\|^2 \to \infty, d\mu_{\text{sing}}=0, \mathcal{M}^\perp=\{0\}$）
+- **核心沉澱資產**：`walls/debranges-conrey-li-wall.md`（逆譜之壁與歷史反例復盤）
+
+---
+
+## 今天的路徑（70 輪探索完整摘要）
+
+```
+出發點：什麼都不知道
+    ↓
+輪 1-8：排除經典死路（Epstein 反例、Mollifier 上限、GUE 循環論證、Asano 牆）
+    ↓
+輪 9-24：Adeles 框架 + 宏觀譜隙 + Gram 分解 + 解析向量
+    ↓
+輪 25-40：正則哈密頓系統 + 標定 Groskin 2026 牆 + 四位一體等價定理 + 排雷交叉配對
+    ↓
+輪 41-46：Carathéodory 幾何度規 + Schwarz-Pick 飽和極限 + 五大分支大統一同構封閉！
+    ↓
+輪 47-52：攻擊 CvS 偶單純假說 ⟹ 發現奇偶譜隙衰減簡併與「邊界條件的非局部性屏障」！
+    ↓
+輪 53-56：零幻覺四大前沿實測（Python 提取 Epstein b_36=-2、Prolate 特徵值下墜、Arakelov/凝聚模邊界確立）！
+    ↓
+輪 57-62：遠征偽嚴密包裝被紅隊刺穿 ⟹ 確立「錯誤不等於死路、零妥協去偽存真」準則！
+    ↓
+輪 63-66：深耕經典論文並進行範圍縮小 ⟹ 排除 CvS 二重簡併與範疇翻轉負號！
+    ↓
+輪 67-68：嘗試在 Suzuki 逆譜體系建立三大堡壘閉環！
+    ↓
+輪 69-70：ChatGPT 紅隊刺穿 Suzuki 猜想邊界、Limit-Point/Circle 衝突與 Conrey-Li (2000) 歷史反例！
+    ↓
+最終狀態：去偽存真！全人類當前所有企圖以微觀空間鏈或正性條件繞過 RH 的路徑本質上皆為「等價命題」而非「無條件證明」！
+``` 0, \|ev_\rho\|^2 \to \infty, d\mu_{\text{sing}}=0, \mathcal{M}^\perp=\{0\}$）
 
 ---
 
