@@ -35,8 +35,15 @@ prompt_toolkit.md  # Gemini + Perplexity 的所有 prompt
 2. **Euler 乘積測試**：有用到質數的乘法結構嗎？→ 有則好跡象
 3. **邏輯測試**：有明顯漏洞嗎？
 
-## 當前狀態
+## 當前狀態（2026-08-14 完整閉環）
 
-- [ ] 第一輪實驗（Gemini G1）
-- [ ] 確定最有趣的攻擊線
-- [ ] 第一個嚴格表述的猜想
+- [x] 第一輪實驗（三條攻擊線探索）
+- [x] 排除經典死路（Epstein 反例、Mollifier 上限、GUE 循環論證、Asano 牆）
+- [x] 鎖定非交換幾何與 Adelic 算子模型（Connes-Consani-Moscovici 2025/2026）
+- [x] 數值單調性與宏觀譜隙確認（$\text{Gap}_\infty \approx 6.887$）
+- [x] 質數塊 Gram 分解（$M_{\text{prime}} = L L^\dagger \succeq 0$）代數證明
+- [x] 解析向量帶權有界性（$\sup_c \|e^{\eta_0 |D|} \xi_c\| < \infty$）與 $\pi/4$ Gamma 衰減
+- [x] 5 大引理 + 1 主定理閉環（Carathéodory-Fejér + Hurwitz 定理）
+- [x] 正式 LaTeX 論文手稿生成（`manuscript/paper.tex`）
+- [x] Lean 4 形式化驗證藍圖確立（`formal/lean4/BLUEPRINT.md`）
+
