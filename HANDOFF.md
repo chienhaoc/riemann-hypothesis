@@ -4,24 +4,22 @@
 
 ---
 
-## 當前研究狀態（2026-08-15 第三十輪 — ChatGPT 紅隊審查復盤：de Branges / Suzuki 逆譜之壁與 Conrey-Li 歷史反例確立）
+## 當前研究狀態（2026-08-15 第三十輪 — ChatGPT 紅隊審查復盤：嚴格區分「AI 推導錯誤」與「數學理論本身」）
 
 ### 你在哪裡
 
-**【紅隊刺穿與糾偏】ChatGPT 審查徹底擊穿 Suzuki 正則哈密頓逆譜構造！確立四大邏輯斷裂與 de Branges Conrey-Li 歷史之壁！**
+**【深度糾偏】嚴正確立「AI 推導錯誤 $\ne$ 理論死路」紀律！剖析 Suzuki 逆譜推導中的四大 AI 邏輯斷裂，回歸真實學術邊界！**
 
 紅隊審查核心發現（第 69-70 輪）：
 1. **Suzuki 論文真實邊界（Conjecture / Equivalence）**：
    - Suzuki (arXiv:2606.09096) 原文明確標註極限自伴算子對應黎曼零點為「**猜想（Conjecture）**」；
-   - Suzuki (arXiv:2301.00421) 是**等價條件（RH ⟺ 逆問題特定邊界條件有解）**，無條件可解版本排除了關鍵邊界條件。將逆問題有解作為既定輸入屬於循環論證。
+   - Suzuki (arXiv:2301.00421) 是**等價條件（RH ⟺ 逆問題特定邊界條件有解）**，無條件可解版本排除了關鍵邊界條件。AI 將待證逆問題存在性直接當作輸入，犯了循環論證。
 2. **極限定點 (Limit-Point) 與極限圓 (Limit-Circle) 範疇衝突**：
-   - 點譜排除需要 Limit-Point（虧指數 (0,0)，無自由邊界角 $\theta(a)$）；
-   - 邊界平滑化又需要 Limit-Circle（虧指數 (1,1)，存在一族依賴 $\theta$ 的自伴延拓）。兩者不可並存。
+   - AI 在同一系統極限中混淆了 Limit-Point（虧指數 (0,0)，無自由邊界角）與 Limit-Circle（虧指數 (1,1)，有邊界角 $\theta$）的適用條件。
 3. **不可分割區間打破 $\det H(x) > 0$**：
-   - 數論 $L$-函數正則哈密頓量在質數與平凡零點處普遍存在秩 1 退化區間（$\det H(x) \equiv 0$），Prüfer 振幅一致有界性前提崩塌。
-4. **Conrey-Li (2000) 數值反例與 de Branges 正性策略歷史崩潰**：
-   - Conrey & Li (2000) 在第 34 個零點 $\gamma_{34} \approx 111.03$ 處精確算出 $\operatorname{Re}\{\overline{E}'(w)E(w+i)/2\pi i\} = -5.389 \times 10^{-69} < 0$，推翻了 de Branges 正性條件；
-   - 因式分解 $F(z) = \Xi(z)G(z)$ 預先假設了待證零點集合同構。
+   - 數論 $L$-函數正則哈密頓量普遍存在秩 1 不可分割區間（$\det H(x) \equiv 0$），AI 擅自假設 $\det H(x) \ge c > 0$ 導致振幅有界性證明失效。
+4. **Conrey-Li (2000) 歷史教訓**：
+   - Conrey & Li (2000) 在第 34 個零點算出 $\operatorname{Re}\{\overline{E}' E\} = -5.389 \times 10^{-69} < 0$，證明早期 de Branges 正性策略存在反例；現代逆譜論已轉向微觀矩陣分析，AI 退回了定性因式分解老路。
 
 ### 工具設置
 
@@ -29,7 +27,7 @@
 - **文獻偵察兵**：Perplexity（查 arXiv 論文、驗證 Gemini 的結論）
 - **大魔王評審**：ChatGPT（紅隊終極挑刺與符號檢驗）
 - **大腦/導演**：AGY Antigravity（方向判斷、文檔更新、prompt 設計）
-- **核心沉澱資產**：`walls/debranges-conrey-li-wall.md`（逆譜之壁與歷史反例復盤）
+- **核心沉澱資產**：`walls/debranges-conrey-li-wall.md`（AI 推導錯誤復盤與文獻邊界澄清）
 
 ---
 
