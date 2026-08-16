@@ -5,7 +5,7 @@ This document records the chronological evolution of the human–AI research eff
 
 ---
 
-## 阶段演進時間軸 (Phases of Epistemic Evolution)
+## 階段演進時間軸 (Phases of Epistemic Evolution)
 
 ### Phase 1: Exploratory Operator-Theoretic Construction (Entries 1–250 / Reviews 1–75)
 - **Objective**: Explore whether a multi-center microscopic Dirac Hamiltonian $\mathcal{D} = J\frac{d}{du} + V(u)$ on $L^2([0, \infty))$ can provide a physical/geometric realization of the completed Riemann Xi function $\Xi(z)$.

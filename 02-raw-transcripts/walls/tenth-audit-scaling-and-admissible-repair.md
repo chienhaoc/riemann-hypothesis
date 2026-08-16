@@ -15,8 +15,8 @@
 - **錯誤根因**：在第 110 輪推導中，公式 $N_X(T) = \frac{T}{\pi}\tau(X)$ 自身已經帶有一個前綴因子 $T$（來自 Prüfer 相角 $\phi(X, T) = T \tau(X)$）。當子代理嘗試建立與 Riemann-von Mangoldt 公式 $N(T) \sim \frac{T}{2\pi}\log\frac{T}{2\pi e}$ 的聯繫時，盲目套用了線性尺度 $X(T) \sim T/2\pi$，而沒有進行最基本的**量綱次方自檢**：
   $$N(T) = \frac{T}{\pi} \tau\left(\frac{T}{2\pi}\right) \sim \frac{T}{\pi} \cdot \frac{T}{4\pi}\log T = \frac{T^2}{4\pi^2}\log T \quad (\text{錯誤！比真實公式多了一個 } T)$$
 - **數學真相（對數空間流形尺度）**：
-  在正則哈密頓系統中，空間坐標 $x$ 是**素數對數坐標** $x = \log u$（即 $x_p = \log p$）。
-  在 Riemann-Siegel 鞍點分析與 Weil 顯式公式中，頻率為 $T$ 的幾何波包所能激發的最大素數尺度為 $p_{\max} \sim \frac{T}{2\pi}$。
+  在正則哈密頓系統中，空間坐標 $x$ 是**質數對數坐標** $x = \log u$（即 $x_p = \log p$）。
+  在 Riemann-Siegel 鞍點分析與 Weil 顯式公式中，頻率為 $T$ 的幾何波包所能激發的最大質數尺度為 $p_{\max} \sim \frac{T}{2\pi}$。
   因此，空間截斷的真實對數幾何尺度為：
   $$\mathbf{X(T) = \log\left(\frac{T}{2\pi}\right)}$$
   在正確的對數尺度下：

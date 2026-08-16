@@ -41,7 +41,7 @@ $$\Sigma_3(X) = \sum_{n \le e^X} \frac{\Lambda(n)^3}{n^{3/2}} \approx \sum_{p \l
 ---
 
 ### 2. 質數 3/2 冪次級數的絕對收斂性
-由素數定理與積分判別法：
+由質數定理與積分判別法：
 $$\sum_{p} \frac{\log^3 p}{p^{3/2}} < \int_2^\infty \frac{\log^3 x}{x^{3/2}} \frac{dx}{\log x} = \int_2^\infty \frac{\log^2 x}{x^{3/2}} dx = \left[ -2 \frac{\log^2 x}{\sqrt{x}} - 8 \frac{\log x}{\sqrt{x}} - 16 \frac{1}{\sqrt{x}} \right]_2^\infty = \mathbf{C_3 < \infty}$$
 數值精確積分值：
 $$\sum_{p} \frac{\log^3 p}{p^{3/2}} \approx \frac{\log^3 2}{2^{3/2}} + \frac{\log^3 3}{3^{3/2}} + \frac{\log^3 5}{5^{3/2}} + \dots \approx 0.1176 + 0.2547 + 0.3709 + \dots = \mathbf{1.8415 < \infty}$$

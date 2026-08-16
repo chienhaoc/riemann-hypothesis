@@ -413,7 +413,7 @@
 | **「有限截斷實零點 $\implies$ 極限收斂到 $\Xi$」** | **新！終極收斂之牆（The Continuum Convergence Wall，Groskin 2026）** |
 | **「純量無窮乘積 $\prod (I - z\ell_p JH_p)$ 在臨界線收斂」** | **錯的！$\sum \frac{\log p}{\sqrt{p}} = \infty$ 發散，必須改用有限截斷 Stieltjes 測度流** |
 | **「$|\Theta|=1 \implies S \equiv 1$ 排除奇異譜」** | **Nevanlinna 理論邏輯謬誤！內函數定義下模長皆為 1，排除奇異譜必須回到從屬解理論** |
-| **「隨機系綜平均 $\mathbb{E}[-\frac{t}{2}\ell\sin 2\alpha]=0 \implies$ 排除從屬解」** | **範疇錯配！確定性算術軌道不能用概率期望值代替，必須使用確定性 Van der Corput 指數和** |
+| **「隨機系綜平均 $\mathbb{E}[-\frac{t}{2}\ell\sin 2\alpha]=0 \implies$ 排除從屬解」** | **範疇錯配！確定性算術軌道不能用機率期望值代替，必須使用確定性 Van der Corput 指數和** |
 | **「固定 $\epsilon > 0$ 下 $R_X \to 0$ 直接給實軸邊界控制」** | **需聯動縮放！$\epsilon \to 0^+$ 時必須透過次線性路徑 $\epsilon(X) = X^{-\delta}$（$0 < \delta < 1$）保持超多項式收縮** |
 | **「Suzuki 二次型下有界 $Q_a \ge -C_a \|v'\|^2 \implies Q_a \ge 0$」** | **範疇錯誤！下有界性保證 Friedrichs 延拓存在，但不等於正定性；離軸交叉配對為 RH 等價之牆** |
 | **「對角路徑 $(X, X^{-\delta}) \to (\infty, 0)$ 等同於 Fatou 逐次極限」** | **極限次序交換漏洞！已在 Theorem 95.1 中徹底修正為嚴格逐次極限 $\lim_{\epsilon \to 0^+} \lim_{X \to \infty}$** |
@@ -439,7 +439,7 @@
 | **「將 $\Sigma_X(w_a)$ 與古典 Weil 二次型直接劃等號並賦予 $\mathcal{O}(X^{-1})$ 誤差」** | **概念偷換！在未證明譜收斂之前不能預設兩者相等；已徹底撤回並回歸 $\mathcal{D}_X$ 內生計數公式 $N_X(T) = \frac{X}{\pi}T + \mathcal{O}_X(1)$ 與局域能隙 $\delta_n(X) > 0$ 正定性！** |
 | **「用純正弦級數展開非奇函數 $f(\theta;\epsilon)$」** | **數學硬傷！$f(0;\epsilon)=\arctan(\epsilon)\ne 0$，不能省略直流項與餘弦項；已由複對數生成元法精確導出完整 Fourier 閉式解 $f = \arctan(\epsilon/2) + \sum \frac{r^m}{m}\sin(2m\theta + m\psi)$ 並獲 5 點數值 100% 覆核通過！** |
 | **「直接對 $|\tau|$ 取傅立葉變換代入 $1-R_2(s)$」** | **設定缺陷！RMT 與量子混沌標準關係為 $1-R_2(s) = \int (1-K(\tau)) e^{2\pi is\tau} d\tau$；倒三角窗 $1-|\tau|$ 分部積分精確給出 $\mathrm{sinc}^2(s)$！** |
-| **「5 點數值表中 $s=0.1, 0.3, 0.7$ 填寫偏差」** | **數據硬傷！已全面採用第一性原理重算更正為 $0.967531209\dots, 0.736839729\dots, 0.135337909\dots$，誤差嚴格降至 $< 10^{-16}$（機器精度完全閉合）！** |
+| **「5 點數值表中 $s=0.1, 0.3, 0.7$ 填寫偏差」** | **資料硬傷！已全面採用第一性原理重算更正為 $0.967531209\dots, 0.736839729\dots, 0.135337909\dots$，誤差嚴格降至 $< 10^{-16}$（機器精度完全閉合）！** |
 | **「固定標號孤立能階外推與 $\mathcal{O}(X^{-2})$ 算術錯配」** | **量級錯配！固定 $n$ 下 $\lambda_n(X) \sim \frac{n\pi}{X} \to 0$ 必然稠密化下沉；已升級為 Weyl 圓盤幾何半徑收縮定理與自伴算子族強預解式收斂 $\mathcal{D}_X \xrightarrow{\text{s-res}} \mathcal{D}_\infty$！** |
 | **「跨週期累積能量可能衰減假設」** | **猜想漏洞！已由 Potapov 辛形矩陣不等式導出 Grönwall 微分放大 $E'(u) \ge 2\epsilon E(u)$，證立累積能量隨空間指數暴增 $E(X) \ge \frac{1}{4|z|} e^{2\epsilon X} \ge c(z) X$，徹底排除任何跨週期衰減！** |
 | **「初值尺度單一公式在小 $|z|$ 失效」** | **適用範圍微缺！已定義全域分段初值尺度 $u_0(z) = \min(\frac{1}{2|z|}, \frac{\log 2}{2}) > 0$ 與正係數 $c_0(z) = u_0(z) e^{-2\epsilon u_0(z)} > 0$，使 $E(X) \ge c_0(z) e^{2\epsilon X}$ 在全複上半平面 $\mathbb{C}^+$ 無死角嚴密封閉！** |

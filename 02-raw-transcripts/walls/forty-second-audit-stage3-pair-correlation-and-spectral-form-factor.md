@@ -47,7 +47,7 @@ $$\mathbf{K_X(\tau) = \frac{1}{2\pi X} \sum_{p^k \le e^X} \frac{k^2 \log^4 p}{p^
 ## 參、 漸近連續極限與 Montgomery 形式因子漸近（Theorem 175.2）
 
 ### 1. 質數脈衝的空間平均（Prime Smoothing）
-當空間截斷尺度 $X \to \infty$ 時，由素數定理 $\sum_{p \le e^X} \log p \sim e^X$，質數在對數尺度 $\tau = \frac{\log p}{X}$ 上的分佈密度趨於連續。
+當空間截斷尺度 $X \to \infty$ 時，由質數定理 $\sum_{p \le e^X} \log p \sim e^X$，質數在對數尺度 $\tau = \frac{\log p}{X}$ 上的分佈密度趨於連續。
 對區間 $[0, \tau]$（其中 $0 < \tau < 1$）進行 Stieltjes 累計積分：
 $$\int_0^\tau K_X(u) du = \frac{1}{2\pi X} \sum_{p \le e^{\tau X}} \frac{\log^4 p}{p} \sim \frac{1}{2\pi X} \int_2^{e^{\tau X}} \frac{\log^3 x}{x} dx = \frac{1}{2\pi X} \left[ \frac{(\tau X)^4}{4} \right] \dots$$
 

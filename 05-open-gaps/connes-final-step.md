@@ -1,4 +1,4 @@
-# 核心缺口：Connes 的「最後一步」
+﻿# 核心缺口：Connes 的「最後一步」
 
 ## 精確表述
 
@@ -6,7 +6,7 @@ Connes 框架差的一步：
 
 $$\text{Trace}(R_\Lambda(f * f^\sharp)) \ge 0 \quad \forall f \in \mathcal{S}(\mathbb{A}_\mathbb{Q})$$
 
-**物理意義**：Adeles 空間中不能存在「負概率的鬼態（Ghost states）」。
+**物理意義**：Adeles 空間中不能存在「負機率的鬼態（Ghost states）」。
 
 ## Connes 缺口 vs. Asano 牆
 

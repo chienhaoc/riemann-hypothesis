@@ -39,7 +39,7 @@
 
 ## 貳、 核心沉澱資產清單
 
-在本系列探索中，我們共建立了以下重要資產並全部同步於遠端代碼庫：
+在本系列探索中，我們共建立了以下重要資產並全部同步於遠端程式庫：
 1. **第一戰役自伴性終極封頂文檔**：
    - [`walls/twenty-fifth-audit-stage1-grand-finale-seal.md`](file:///D:/git/riemann-hypothesis/walls/twenty-fifth-audit-stage1-grand-finale-seal.md)（本質自伴性證明閉合）
    - [`walls/twenty-sixth-audit-stage1-official-seal-and-stage2-launch.md`](file:///D:/git/riemann-hypothesis/walls/twenty-sixth-audit-stage1-official-seal-and-stage2-launch.md)（第一戰役官方封頂總結）

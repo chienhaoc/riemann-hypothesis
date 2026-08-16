@@ -78,7 +78,7 @@ $$\frac{1}{T} \int_0^T \sin(2 t k_1 \log p_1) \sin(2 t k_2 \log p_2) dt = \mathc
 代入方差公式：
 $$\mathbf{\mathrm{Var}_T(S_X) = \frac{1}{8\pi^2} \sum_{p^k \le e^X} \frac{\log^2 p}{p^k} + \mathcal{O}\left( \frac{e^X}{T} \right) + \mathcal{O}(1)}$$
 
-利用質數分佈的 Mertens 定理 $\sum_{p \le e^X} \frac{\log^2 p}{p} = \frac{1}{2}X^2 + \mathcal{O}(X)$（素數一階和 $\sum \frac{\log p}{p} = X$）：
+利用質數分佈的 Mertens 定理 $\sum_{p \le e^X} \frac{\log^2 p}{p} = \frac{1}{2}X^2 + \mathcal{O}(X)$（質數一階和 $\sum \frac{\log p}{p} = X$）：
 在算術 Prime Sum 中：
 $$\mathbf{\sum_{p \le e^X} \frac{\log^2 p}{p} \sim \int_2^{e^X} \frac{\log^2 x}{x \log x} dx = \int_2^{e^X} \frac{\log x}{x} dx = \frac{1}{2} X^2}$$
 當取動態 Selberg 局部平滑窗口 $X = \sqrt{\log\log T}$ 時：

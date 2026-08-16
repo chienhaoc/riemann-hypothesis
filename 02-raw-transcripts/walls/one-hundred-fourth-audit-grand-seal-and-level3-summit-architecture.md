@@ -99,11 +99,11 @@ $$\mathbf{\mathrm{Spec}(\mathcal{D}_\infty) \equiv \{\gamma_n\}_{n=1}^\infty \if
 ---
 
 ### 【定理 299.4（Selberg-Soundararajan-Harper 統計正向耗散定理）】
-在隨機矩陣系綜與統計概率模型下：
+在隨機矩陣系綜與統計機率模型下：
 $$\mathbb{E}[|S(X, t)|^2] = \frac{1}{2}X + \mathcal{O}(1)$$
 對於幾乎所有的 $t \in \mathbb{R}$（Lebesgue 幾乎處處）：
 $$|S(X, t)| \le \mathcal{O}(\sqrt{X\log\log X}) \ll \mathcal{O}_t(X)$$
-統計上正向相消以概率 1 成立，微觀逐點確定性界為終極開放前沿。
+統計上正向相消以機率 1 成立，微觀逐點確定性界為終極開放前沿。
 
 ---
 

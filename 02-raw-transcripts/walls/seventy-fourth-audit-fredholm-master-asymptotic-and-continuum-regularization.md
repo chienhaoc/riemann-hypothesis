@@ -57,7 +57,7 @@ $$\mathbf{\mathrm{Re}\mathcal{C}_2(X, t) = \mathcal{O}_t(X) \quad (X \to \infty)
 1. **對角項已精確排除**：
    二次漂移 $\frac{1}{2}X^2$ 僅產生於對角項 $\sum_{p \le e^X} \frac{\log^2 p}{p} \sim \frac{1}{2}X^2$。在 $\mathcal{C}_2(X, z)$ 中，對角元 $p = q$ 因矩陣元跡為零被嚴格排除；
 2. **非對角雙重和的積分分解**：
-   引入對稱雙重素數計數測度 $d\pi(u) = \sum \delta(u - \log p) du$：
+   引入對稱雙重質數計數測度 $d\pi(u) = \sum \delta(u - \log p) du$：
    $$\sum_{p \ne q \le e^X} \frac{\log p \log q}{\sqrt{pq}} \cos(2t(u - v)) = \int_0^X \int_0^X e^{(u+v)/2} \cos(2t(u-v)) d(\psi(e^u)-e^u) d(\psi(e^v)-e^v) + \dots$$
    由 Montgomery-Vaughan 質數對雙線性形式估計，非對角頻率振盪使得雙重和被完全壓制在 $\mathcal{O}_t(X)$ 次線性量級！
 **定理 239.1 證畢！**
