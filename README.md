@@ -59,9 +59,9 @@ riemann-hypothesis/
 ├── 05-open-gaps/                 ← Transparent Documentation of Open Gaps & Rigor-Audited Dead Ends
 │   ├── dead-ends-rigor-assessment.csv            (Tier A: 56%, Tier B: 38%, Tier C: 6%)
 │   ├── dead-ends-rigor-assessment-methodology.md (Methodology & Qualitative Analysis)
+│   ├── canonical-herglotz-roadmap.md (Canonical Herglotz spectral measure roadmap)
 │   ├── convergence-gap.md        (The de Branges continuum transference divergence)
-│   ├── connes-final-step.md      (The non-commutative adelic positivity gap)
-│   └── groskin-wall.md           (The sub-exponential vs. exponential analytical barrier)
+│   └── connes-final-step.md      (The non-commutative adelic positivity gap)
 │
 └── 06-literature-review/         ← Literature Surveys & Background Reference Documents
     └── connes-consani-2020-2024.md (Connes-Consani trace formula survey)
