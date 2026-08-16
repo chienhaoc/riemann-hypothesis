@@ -31,21 +31,30 @@ riemann-hypothesis/
 │   ├── paper-long-horizon-llm-reasoning-rh.md    (Full Markdown text of Paper v6)
 │   ├── paper-long-horizon-llm-reasoning-rh.html  (Typeset HTML Master with MathJax)
 │   ├── paper-long-horizon-llm-reasoning-rh.pdf   (Publication-grade PDF format)
+│   ├── prompt_toolkit.md                         (Methodological prompt & review templates)
 │   ├── dead-ends-rigor-assessment.csv            (50-entry rubric-graded dead-end audit dataset)
 │   └── dead-ends-rigor-assessment-methodology.md (Methodology & 3 Tier-C case studies)
 │
 ├── 02-raw-transcripts/           ← Complete, Unfiltered Primary Empirical Source Data
-│   └── 2026-08-14.md             (Raw 388-entry chronological research journal & transcripts)
+│   ├── 2026-08-14.md             (Raw 388-entry chronological research journal & transcripts)
+│   ├── HANDOFF.md                (Complete longitudinal research state & full dead-end list)
+│   ├── paper.tex                 (Original LaTeX manuscript audited by ChatGPT)
+│   └── walls/                    (Complete archive of 145 round-by-round adversarial reviews)
 │
-├── 03-verification/              ← Independent Symbolic Verification Suite (Python / SymPy)
+├── 03-verification/              ← Independent Symbolic Verification Suite (Python / SymPy / Lean 4)
 │   ├── verify_failure_modes.py          (Comprehensive SymPy verification suite for Modes 1, 3, 8, 9)
 │   ├── verify_dispersion_identity.py    (Exact Riemann-Stieltjes mean-square integral check)
 │   ├── verify_killing_lorentz_metric.py (sl(2,R) Killing metric balance check)
+│   ├── test_epstein_log.py              (Epstein zeta numerical test suite)
+│   ├── test_riemann_log.py              (Riemann zeta numerical test suite)
+│   ├── verify_prolate_positivity.py     (Prolate wave operator positivity check)
+│   ├── formal-lean4/                    (Lean 4 formal verification blueprint)
 │   └── count_rhetorical_keywords.py     (Reproducible script for keyword frequency density)
 │
-├── 04-mathematical-notes/        ← Expository Notes on Verified Toy Models & 15-Paper Archive
+├── 04-mathematical-notes/        ← Expository Notes on Verified Toy Models & Monograph Archive
 │   ├── expository-notes-on-dirac-primes-toy-model.pdf  (Expository Note on 3 algebraic gems)
-│   └── riemann-hypothesis-collected-papers.pdf         (Complete 15-paper technical monograph)
+│   ├── riemann-hypothesis-collected-papers.pdf         (Complete 15-paper technical monograph)
+│   └── monograph/                                      (Comprehensive research archive)
 │
 ├── 05-open-gaps/                 ← Transparent Documentation of Open Gaps & Rigor-Audited Dead Ends
 │   ├── dead-ends-rigor-assessment.csv            (Tier A: 56%, Tier B: 38%, Tier C: 6%)
@@ -55,6 +64,7 @@ riemann-hypothesis/
 │   └── groskin-wall.md           (The sub-exponential vs. exponential analytical barrier)
 │
 └── 06-literature-review/         ← Literature Surveys & Background Reference Documents
+    └── connes-consani-2020-2024.md (Connes-Consani trace formula survey)
 ```
 
 ---
@@ -72,7 +82,7 @@ While mainstream LLM benchmarks (GSM8K, MATH, OlympiadBench) test static, single
    - **Mode 6**: Heavy-Machinery Invocation for Elementary Facts (Baker's theorem on unique prime factorization)
    - **Mode 7**: Narrative Progress Inflation & Negative Overreach:
      - *7a. Positive Overreach*: The flagship **"100% Grand Seal"** claim in Entries 251–258.
-     - *7b. Negative Overreach*: A 50-entry dead-end rigor audit showing that 6% of retractions justify abandonment with a *second, equally unproven claim* (e.g. "provably equivalent in difficulty to RH").
+     - *7b. Negative Overreach*: A 50-entry dead-end rigor audit showing that 6% of retractions justify abandonment with a *second, equally unproven claim* (e.g., asserting "provably equivalent in difficulty to RH").
    - **Mode 8**: Unchecked Perturbation Expansion Validity Domains ($\sqrt{1+y}$ on $y \sim 1/4$)
    - **Mode 9**: Notation-Masked Unproven Assumptions (Gauge masking of divergences)
    - **Mode 10**: Adversarially Induced True Self-Correction (7+ independently verified multi-turn chains)
@@ -81,6 +91,10 @@ While mainstream LLM benchmarks (GSM8K, MATH, OlympiadBench) test static, single
 2. **The Prompt Specificity Principle**:
    $$\text{Vague/Rhetorical Prompt} \xrightarrow{\text{induces}} \text{Narrative Escalation & Bluffing}$$
    $$\text{Quantitative CAS Counter-Proof} \xrightarrow{\text{forces}} \text{Rigorous Self-Correction & Genuine Proof}$$
+
+3. **Dead-End Rigor Grading & Methodology**:
+   For detailed definitions, rubric criteria, and qualitative case studies of how negative-direction overreach manifests in retraction claims, see:
+   👉 **[`05-open-gaps/dead-ends-rigor-assessment-methodology.md`](05-open-gaps/dead-ends-rigor-assessment-methodology.md)** (Dataset: [`05-open-gaps/dead-ends-rigor-assessment.csv`](05-open-gaps/dead-ends-rigor-assessment.csv)).
 
 ---
 
@@ -99,7 +113,9 @@ pip install sympy
 # Run the complete failure-mode symbolic verification suite
 python 03-verification/verify_failure_modes.py
 
-# Run keyword frequency density analysis
+# Run individual verification scripts
+python 03-verification/verify_dispersion_identity.py
+python 03-verification/verify_killing_lorentz_metric.py
 python 03-verification/count_rhetorical_keywords.py
 ```
 
