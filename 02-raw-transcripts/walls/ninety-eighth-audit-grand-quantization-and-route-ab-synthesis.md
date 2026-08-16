@@ -78,7 +78,7 @@ $$\frac{\partial\phi}{\partial X}(X, \lambda_k(X)) + \frac{\partial\phi}{\partia
 ---
 
 ### 【定理 287.2（譜計數函數與量子-古典漲落對偶定理）】
-定義算子階梯計數函數 $N_X(T) = \#\{k : 0 < \lambda_k(X) \le T\} = \lfloor \frac{\phi(X, T) - \beta'}{\pi} \rfloor$。
+定義算子階梯計數函數 $N_X(T) = \\#\{k : 0 < \lambda_k(X) \le T\} = \lfloor \frac{\phi(X, T) - \beta'}{\pi} \rfloor$。
 展開微觀相角式：
 $$\phi(X, T) = \frac{T}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \frac{\pi}{8} + \frac{1}{2}\mathrm{Im}S(X, T) + \mathcal{O}_T(1)$$
 因此：

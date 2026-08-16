@@ -1,4 +1,4 @@
-# 算術負號與離軸交叉配對之牆 (The Arithmetic Sign and Cross-Pairing Wall)
+﻿# 算術負號與離軸交叉配對之牆 (The Arithmetic Sign and Cross-Pairing Wall)
 
 > 建立時間：2026-08-14 第十七輪大魔王評審核驗
 > 核心分析對象：Weil Explicit Quadratic Form, Cross-Pairing $\widehat{v}(\rho)\overline{\widehat{v}(1-\overline{\rho})}$, Arithmetic Minus Sign

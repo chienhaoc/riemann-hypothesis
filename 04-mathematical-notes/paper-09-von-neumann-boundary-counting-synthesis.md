@@ -1,4 +1,4 @@
-# Paper 9: Von Neumann Self-Adjoint Boundary Conditions and First-Principles Synthesis of the Riemann-von Mangoldt Counting Constant
+﻿# Paper 9: Von Neumann Self-Adjoint Boundary Conditions and First-Principles Synthesis of the Riemann-von Mangoldt Counting Constant
 # 論文九：von Neumann 自伴邊界條件與 Riemann-von Mangoldt 譜計數常數項之第一性原理合成
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  

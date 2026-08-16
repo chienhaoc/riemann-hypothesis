@@ -1,4 +1,4 @@
-# Paper 7: Dual Monotonicity of Prüfer Phase and the No-Level-Crossing Theorem for Symplectic Hamiltonians
+﻿# Paper 7: Dual Monotonicity of Prüfer Phase and the No-Level-Crossing Theorem for Symplectic Hamiltonians
 # 論文七：Prüfer 相角雙重嚴格單調性與辛哈密頓系統的特徵值無碰撞定理
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  

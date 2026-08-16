@@ -1,4 +1,4 @@
-# Paper 4: Multi-Center Scattering Monodromy and the Exact Newton-Jost Determinant Identity
+﻿# Paper 4: Multi-Center Scattering Monodromy and the Exact Newton-Jost Determinant Identity
 # 論文四：多中心散射單值矩陣與 Newton-Jost 譜行列式恆等式
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  

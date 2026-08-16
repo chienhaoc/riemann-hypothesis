@@ -22,7 +22,7 @@ graph TD
     A["Weil 二次型 Q_W^a"] --> B["自伴算子 A_a = Friedrichs(D* G_a D)"]
     B --> C["Deficiency (1,1) Hilbert 空間 H(T_a)"]
     C --> D["Hermite-Biehler 函數 E_a(z)"]
-    D --> E["內函數 (Inner Function) Θ_a(z) = E_a#(z) / E_a(z)"]
+    D --> E["內函數 (Inner Function) Θ_a(z) = E_a^*(z) / E_a(z)"]
     E --> F["Herglotz 函數 m_a(z) = i(1+Θ_a)/(1-Θ_a)"]
     F --> G["正則哈密頓量 H_a(x) (tr H_a = 1)"]
     G --> H["弱星緊緻性 H_a ⇀* H_∞ ⟹ m_a ⇀ m_∞"]
@@ -34,9 +34,9 @@ graph TD
 ## 3. 各步驟的嚴格數學性質
 
 ### (1) Hermite-Biehler 幾何 (Lemma A - Proven)
-微分算子 $\mathscr{D}_a = i\frac{d}{dx}$ 在 $\mathcal{H}(T_a)$ 上的 deficiency indices 為 $(1, 1)$。
-其自伴延拓族 $\overline{\mathscr{D}}_{a,\theta}$ 的特徵整函數 $W(a, \theta; z)$ 構成 de Branges 截面：
-$$W(a, \theta; z) = e^{i\theta/2} E_a(z) + e^{-i\theta/2} E_a^\#(z)$$
+微分算子 $\mathcal{D}_a = i\frac{d}{dx}$ 在 $\mathcal{H}(T_a)$ 上的 deficiency indices 為 $(1, 1)$。
+其自伴延拓族 $\overline{\mathcal{D}}_{a,\theta}$ 的特徵整函數 $W(a, \theta; z)$ 構成 de Branges 截面：
+$$W(a, \theta; z) = e^{i\theta/2} E_a(z) + e^{-i\theta/2} E_a^*(z)$$
 **無條件結論**：對任意有限 $a < \infty$，所有零點嚴格為純實數。
 
 ### (2) Schwarz-Pick 雙曲正規族 (Lemma B - Proven)
