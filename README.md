@@ -28,14 +28,17 @@ riemann-hypothesis/
 ├── CONTRIBUTING.md               ← Guidelines for Replication, Audit, and External Verification
 │
 ├── 01-case-study/                ← [FLAGSHIP] Primary Research Paper on LLM Reasoning Failure Modes
-│   ├── paper-long-horizon-llm-reasoning-rh.md    (Full Markdown text of Paper v3)
+│   ├── paper-long-horizon-llm-reasoning-rh.md    (Full Markdown text of Paper v6)
 │   ├── paper-long-horizon-llm-reasoning-rh.html  (Typeset HTML Master with MathJax)
-│   └── paper-long-horizon-llm-reasoning-rh.pdf   (Publication-grade PDF format)
+│   ├── paper-long-horizon-llm-reasoning-rh.pdf   (Publication-grade PDF format)
+│   ├── dead-ends-rigor-assessment.csv            (50-entry rubric-graded dead-end audit dataset)
+│   └── dead-ends-rigor-assessment-methodology.md (Methodology & 3 Tier-C case studies)
 │
 ├── 02-raw-transcripts/           ← Complete, Unfiltered Primary Empirical Source Data
 │   └── 2026-08-14.md             (Raw 388-entry chronological research journal & transcripts)
 │
 ├── 03-verification/              ← Independent Symbolic Verification Suite (Python / SymPy)
+│   ├── verify_failure_modes.py          (Comprehensive SymPy verification suite for Modes 1, 3, 8, 9)
 │   ├── verify_dispersion_identity.py    (Exact Riemann-Stieltjes mean-square integral check)
 │   ├── verify_killing_lorentz_metric.py (sl(2,R) Killing metric balance check)
 │   └── count_rhetorical_keywords.py     (Reproducible script for keyword frequency density)
@@ -44,7 +47,9 @@ riemann-hypothesis/
 │   ├── expository-notes-on-dirac-primes-toy-model.pdf  (Expository Note on 3 algebraic gems)
 │   └── riemann-hypothesis-collected-papers.pdf         (Complete 15-paper technical monograph)
 │
-├── 05-open-gaps/                 ← Transparent Documentation of Open Gaps & Analytical Barriers
+├── 05-open-gaps/                 ← Transparent Documentation of Open Gaps & Rigor-Audited Dead Ends
+│   ├── dead-ends-rigor-assessment.csv            (Tier A: 56%, Tier B: 38%, Tier C: 6%)
+│   ├── dead-ends-rigor-assessment-methodology.md (Methodology & Qualitative Analysis)
 │   ├── convergence-gap.md        (The de Branges continuum transference divergence)
 │   ├── connes-final-step.md      (The non-commutative adelic positivity gap)
 │   └── groskin-wall.md           (The sub-exponential vs. exponential analytical barrier)
@@ -65,7 +70,9 @@ While mainstream LLM benchmarks (GSM8K, MATH, OlympiadBench) test static, single
    - **Mode 4**: Topological Fallacy of Isolated Points vs. Continuous Accumulations
    - **Mode 5**: Formula Transplantation Weight Mismatches ($\log p$ weights)
    - **Mode 6**: Heavy-Machinery Invocation for Elementary Facts (Baker's theorem on unique prime factorization)
-   - **Mode 7**: Narrative Progress Inflation (highlighted by the extreme **"100% Grand Seal"** claim in Entries 251–258)
+   - **Mode 7**: Narrative Progress Inflation & Negative Overreach:
+     - *7a. Positive Overreach*: The flagship **"100% Grand Seal"** claim in Entries 251–258.
+     - *7b. Negative Overreach*: A 50-entry dead-end rigor audit showing that 6% of retractions justify abandonment with a *second, equally unproven claim* (e.g. "provably equivalent in difficulty to RH").
    - **Mode 8**: Unchecked Perturbation Expansion Validity Domains ($\sqrt{1+y}$ on $y \sim 1/4$)
    - **Mode 9**: Notation-Masked Unproven Assumptions (Gauge masking of divergences)
    - **Mode 10**: Adversarially Induced True Self-Correction (7+ independently verified multi-turn chains)

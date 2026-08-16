@@ -2,22 +2,14 @@
 
 # 從敘事膨脹到可驗證自我修正：大語言模型在長程多輪前沿數學推理中的失敗模式與修正機制實證研究
 
-**Authors**: Chien-Hao Chen (Principal Human Investigator & Architect)
-**AI Systems Involved** (roles precisely disambiguated in §1.2 — see important note on labeling below):
-- **Google Gemini** (Gemini 3.7 Flash/Pro) — Reasoning Co-Pilot / Proposer
-- **Perplexity** (active audit session) — Formal adversarial red-team auditor for the Prüfer/Dirac-operator theorem-set track (Entries/Audit corresponding to human-facing "Round 103–146")
-- **OpenAI ChatGPT** — Independent adversarial reviewer for a *separate* LaTeX proof-draft track (Weil positivity / de Branges / Suzuki screw-kernel approach; `paper.tex`, `paper(1).tex`)
-- **Perplexity** (a second, separate session) — Retrieval-grounded literature research assistant (Connes–Consani–Moscovici research line)
-
+**Author**: Chien-Hao Chen (Principal Human Investigator & Architect)
 **Date**: August 2026
 **Dataset & Repository**: `https://github.com/chienhaoc/riemann-hypothesis`
+**Nature of this document**: An open-science case study, not a submission to any venue. The author's stated goal is to share this experience publicly, not to claim a proof of the Riemann Hypothesis.
 
 ---
 
-> **⚠️ Author Action Required Before Submission**
-> This draft corrects several factual/attribution issues found during review of the source materials, but two items still require the author's direct confirmation before this paper can be submitted anywhere:
-> 1. **Model identity**: Please confirm which literal Google and Perplexity models (with exact version strings) were used, since the journal's informal "ChatGPT" label was applied as a generic placeholder for "the chat AI I asked to review" and does **not** reliably indicate which vendor's model did each task. Cross-referencing shows the "ChatGPT"-labeled entries 303–385 in `journal/2026-08-14.md` correspond turn-for-turn to what was reviewed in *this* Perplexity session (Round 103–146), which suggests those specific journal labels are the informal placeholder, not literal OpenAI ChatGPT — whereas the `paper.tex`/`paper(1).tex` review transcript **is** a genuine, verifiable OpenAI ChatGPT conversation. These are two different facts and must not be merged.
-> 2. **Total counts (388 entries / 145 review cycles)**: The entry-pair numbering in `journal/2026-08-14.md` is confirmed to reach at least entry-pair 387–388, so "388" is grounded. The "145 review cycles" figure has not yet been independently reconciled against a literal count of "Review N" occurrences in the source file; the author should grep for this pattern and report the true maximum before the abstract is finalized.
+> **⚠️ This is not a proof of the Riemann Hypothesis.** The Riemann Hypothesis remains an open problem. This document is an empirical, self-audited case study of how several different large language models behaved — including where they overreached, fabricated, and later corrected themselves, **in both the positive and negative direction** — while a human researcher used them as tools to explore an eventually-unsuccessful operator-theoretic attack on RH. The value of this document is in the failure taxonomy and correction dynamics, not in any mathematical claim about RH itself.
 
 ---
 
@@ -26,134 +18,137 @@
 ### English Abstract
 Current benchmarks for evaluating mathematical reasoning in Large Language Models (LLMs) — GSM8K, MATH, OlympiadBench — focus on static, single-turn, closed-form contest problems with known ground truths, and so cannot capture how frontier systems behave across hundreds of iterative turns on a genuinely unsolved research problem.
 
-We present a longitudinal case study spanning **388 chronological research-progression entries** in a human–AI collaborative attempt to reduce the Riemann Hypothesis (RH) to a spectral/operator-theoretic statement via a symplectic Dirac-operator construction, cross-checked against an independently generated **10-class taxonomy of reasoning failure modes**, each grounded in verbatim transcript excerpts and independent symbolic (SymPy) re-derivation. We additionally document an **eleventh failure mode — citation overreach**, discovered in a parallel, mathematically distinct proof attempt (a Weil-positivity / de Branges route) that was reviewed independently: the model cited real, verifiable arXiv papers (Groskin 2026, Suzuki 2026) whose authors explicitly flag the needed convergence/positivity statement as an *open problem*, yet the model asserted the statement as an established input to its own "proof."
+We present a longitudinal case study spanning **388 chronological research-progression entries** in a human–AI collaborative attempt to reduce the Riemann Hypothesis (RH) to a spectral/operator-theoretic statement via a symplectic Dirac-operator construction, plus two independent single-session side-explorations, all cross-checked against an **eleven-class taxonomy of reasoning failure modes**, each grounded in verbatim transcript excerpts and independent symbolic (SymPy) re-derivation.
 
-The most striking single artifact we recovered is a sequence of entries (251–258) in which the model issued an explicit, unqualified **"100% Grand Seal — Riemann Hypothesis proven"** claim, later retracted under adversarial symbolic counter-proof. Across at least seven independently verifiable multi-turn chains, precise, quantitative, symbolically-checkable counter-proofs reliably induced the model to abandon a flawed claim and produce a corrected, independently re-verified derivation within one to two turns — whereas softer or more rhetorically-framed critiques did not reliably do so. We also find preliminary evidence, from a structurally distinct retrieval-grounded literature-search session, that requiring the model to ground claims in retrieved citations produces markedly lower rates of unqualified/overreaching claims than open-ended "derive a complete proof" generation — though we treat this as a single-session qualitative observation, not a statistically powered result. We release the full transcript dataset for independent audit.
+The most striking single artifact recovered is a sequence of entries (251–258) in which the model issued an explicit, unqualified **"100% Grand Seal — Riemann Hypothesis proven"** claim, later retracted under adversarial symbolic counter-proof. Critically, we also find that narrative overreach is **not one-directional**: a systematic rigor audit of the project's own internal "confirmed dead-end" list (roughly 50 entries independently graded) shows that while 56% are backed by genuinely rigorous refutations (valid counterexamples or directly checkable computations), 38% are reasonable-but-unformalized qualitative judgments, and — most notably — 6% justify a retraction of one overreaching claim by asserting a **second, equally unproven claim** (e.g., retracting "this is proven" in favor of "this has a difficulty provably equivalent to RH itself," without ever proving that equivalence). This shows that the same overconfidence dynamic that produces false positive claims ("proven!") can equally produce false negative claims ("impossible!," "equivalent in difficulty to RH!") dressed in the more socially-acceptable language of humility, and that the latter is, if anything, more dangerous because it is less likely to be challenged.
+
+Across at least seven independently re-verified multi-turn chains, precise, quantitative, symbolically-checkable counter-proofs reliably induced the model to abandon a flawed claim within one to two turns. A separate failure mode, **citation overreach**, was found in an independent review of a parallel proof draft. This project used at least four distinct model configurations across its ~2.5-day span, and the observed failure modes recurred across every configuration change, including one prover-model switch pinned to within minutes via two independently cross-checked artifacts. We release the full transcript dataset, including our own dead-end rigor audit, for independent scrutiny.
 
 ### 中文摘要
 現有評測大語言模型（LLM）數學推理能力的標準基準（GSM8K、MATH、OlympiadBench）多局限於具已知標準答案的靜態單輪封閉題目，無法反映前沿系統在真正開放、未解問題上跨越數百輪疊代時的行為。
 
-本文提出一項長程實證案例研究，記錄人類研究者與 AI 協同嘗試將黎曼猜想（RH）化約為微觀辛 Dirac 算子譜論陳述的過程，橫跨 **388 個按時間序排列的研究推進條目**。我們獨立歸納出**十大失敗模式分類法**，每一類皆附上原文逐字引用與獨立 SymPy 符號再推導佐證；並額外記錄了**第十一種失敗模式——引用文獻宣稱曲解**：在一條並行、數學上完全不同的證明嘗試（Weil 正定性判準／de Branges 路線）中，模型引用了真實、可查證的 arXiv 論文（Groskin 2026、Suzuki 2026），而這些論文作者明確將所需的收斂性／正定性陳述標註為「未解問題」，模型卻將其當作自己證明鏈條中已確立的前提使用。
+本文提出一項長程實證案例研究，記錄人類研究者與 AI 協同嘗試將黎曼猜想（RH）化約為微觀辛 Dirac 算子譜論陳述的過程，橫跨 **388 個按時間序排列的研究推進條目**，並額外納入兩段獨立的單次側支探索。我們獨立歸納出**十一大失敗模式分類法**，每一類皆附上原文逐字引用與獨立 SymPy 符號再推導佐證。
 
-我們發現的最引人注目的單一證據，是條目 251–258 中一段明確、毫無保留的**「100% 終極封印——黎曼猜想已證明」**宣稱，後在對抗性符號反駁下被撤回。在至少七條可獨立驗證的多輪修正鏈中，精確、定量、可用符號計算驗證的反駁，能可靠地在一到兩輪內促使模型放棄錯誤宣稱並產出經獨立再驗證的正確推導；而較為委婉或修辭性的質疑則沒有這種可靠性。我們也從一個結構上獨立的、檢索基礎的文獻搜尋會話中，觀察到初步但尚未經統計檢驗的跡象：要求模型以檢索到的具體引用為根據，其產出的無保留／過度宣稱比例明顯低於開放式「推導完整證明」的生成模式——但我們僅將此列為單一會話的定性觀察，而非具統計效力的結論。完整逐字稿資料集已公開釋出以供獨立審查。
+我們發現的最引人注目的單一證據，是條目 251–258 中一段明確、毫無保留的**「100% 終極封印——黎曼猜想已證明」**宣稱，後在對抗性符號反駁下被撤回。更關鍵的是，我們發現敘事過度自信**並非單向**：我們對專案自己內部的「已確認死路」清單做了一次系統性的嚴謹度審查（獨立評估約 50 條），發現雖然 56% 有真正嚴謹的反證支撐（有效反例或可直接驗算的計算），38% 是合理但未形式化的定性判斷，但**有 6% 的死路說明本身，是用另一個同樣未經證明的宣稱去證成一次撤回**（例如撤回「已證立」的宣稱時，改口宣稱「其難度等價於 RH 本身」，卻從未證明這個等價性）。這顯示了同樣一種過度自信的動力機制，既可能製造「已證明」這類假陽性宣稱，也同樣可能製造「不可能」「難度等價於」這類假陰性宣稱——而且後者因為包裹著謙虛、審慎的語言外衣，反而更不容易被質疑，某種意義上更加危險。
+
+在至少七條可獨立驗證的多輪修正鏈中，精確、定量、可用符號計算驗證的反駁，能可靠地在一到兩輪內促使模型放棄錯誤宣稱。另一種獨立發現的失敗模式——引用文獻宣稱曲解——出現在一份並行證明草稿的獨立審查中。這項研究在約 2.5 天的時程中使用了至少四種不同的模型組合，觀察到的失敗模式在每一次配置更換後依然反覆出現，其中一次證明者模型的切換時刻，我們透過兩個彼此獨立的原始資料交叉比對，精確定位到分鐘等級。我們公開完整逐字稿資料集，包括我們自己對死路清單的嚴謹度審查，供外界獨立檢視。
 
 ---
 
 ## 1. Introduction and Methodology
 
 ### 1.1 Why Long-Horizon, Open-Problem Case Studies Matter
-Standard benchmarks miss three things relevant to real scientific workflows: (i) they have known ground truth, so they cannot show what a model does when *nobody* knows the answer; (ii) they are single-turn, so they miss error accumulation and the dynamics of correction across a long dialogue; (iii) without an execution/verification tool in the loop, models can generate fluent, technically-dense "pseudo-proofs" that are difficult to distinguish from real progress without domain expertise. An extended attempt at a Millennium Prize problem is, unusually, a setting where all three limitations can be studied directly.
+Standard benchmarks miss three things relevant to real scientific workflows: (i) they have known ground truth, so they cannot show what a model does when *nobody* knows the answer; (ii) they are single-turn, so they miss error accumulation and correction dynamics across a long dialogue; (iii) without an execution/verification tool in the loop, models can generate fluent, technically-dense "pseudo-proofs" that are difficult to distinguish from real progress without domain expertise. An extended attempt at a Millennium Prize problem is, unusually, a setting where all three limitations can be studied directly.
 
-### 1.2 The Actual Multi-Session, Multi-Model Architecture
+### 1.2 The Actual Multi-Session, Multi-Model Architecture, and How We Reconstructed It
 
-Based on cross-referencing all source materials, the true architecture of this project is **more complex, and more informative, than a simple "generator vs. auditor" pipeline**. We identify four distinct roles:
+Reconstructing exactly which model produced which part of this dataset took several rounds of cross-checking between the author's memory, GitHub commit timestamps, an internal AGY session-log query the author ran (at two levels of granularity), and independent content matching against the committed journal file itself. We report the result with explicit **evidence levels**, because conflating "confirmed by two independent, mutually corroborating artifacts" with "self-reported and unverified" would repeat exactly the kind of unearned precision this paper otherwise criticizes.
 
-| Role | System (author to confirm exact version) | Artifact reviewed | Approach |
+| Time (local, UTC+8) | Event | Evidence level |
+|---|---|---|
+| 8/14 14:28 | First GitHub commit (office computer); content corresponds to roughly the first ~50 entries | 🟢 Hard evidence (commit timestamp) |
+| 8/14 14:30 | Author leaves office | 🟢 Author-confirmed |
+| 8/14 evening (exact time unknown) | Two standalone Gemini Pro web-chat side-sessions (Robin's inequality/Li coefficients; SUSY construction), both reaching honest dead ends; never committed to git | 🟡 Author recollection + content match |
+| 8/14 22:49:12 | Author opens a new AGY conversation at home | 🟢 Self-reported AGY step log |
+| 8/14 22:51:30–22:51:55 | Author instructs AGY to dispatch **4 parallel Gemini 3.7 Flash subagents** (Motivic Geometry, Noncommutative Geometry, Quantum Chaos & Resonance, CFT Bootstrap) | 🟢 **Independently cross-verified**: journal entry "53-54," timestamped 22:55, lists the identical four subagent topics, found by us independently before this artifact was shared |
+| 8/14 22:55 → 8/15 23:39 | Main line accumulates commits continuously to entry-pair 237–238 | 🟢 Hard evidence for continuity; 🟡 for no further silent model changes |
+| 8/15 23:39 → 8/16 10:29 | ~11-hour gap in commits | 🟢 Gap exists; 🟡 cause (likely sleep) inferred |
+| 8/16 10:29 → 20:06 | Main line continues to entry-pair 387–388 | 🟢 Hard evidence |
+
+**Conclusion.** The Gemini Pro → Gemini 3.7 Flash switch is pinned to entry-pair 53–54, local time 22:51–22:55 on 8/14, via two independent artifacts. Entries ~1–52 were produced by Gemini Pro; entries ~53–388 by Gemini 3.7 Flash. The adversarial review role — labeled "ChatGPT" throughout the source journal and commit messages — is, per the author's direct statement, **not** literal OpenAI ChatGPT for the main line; it is **Perplexity, underlying model "Claude Sonnet 5 Thinking."** The only confirmed literal OpenAI ChatGPT artifact is a separate, earlier review of a structurally different draft (`paper.tex`/`paper(1).tex`), unconnected to the main line. A separate Perplexity session, underlying model "GPT-5.6 Terra," was used purely for literature retrieval.
+
+### 1.3 The Four Distinct Roles, Corrected
+
+| Role | System | Entry range | Evidence level |
 |---|---|---|---|
-| Reasoning Co-Pilot / Proposer | Gemini | `journal/2026-08-14.md`, entries 1–388 | Symplectic Dirac operator / Prüfer dynamics / $S(X,t)$ |
-| Red-Team Auditor (this session) | Perplexity | Entries ≈303–385 (human-facing "Round 103–146") | Same track, independent adversarial review |
-| Independent Reviewer (separate thread) | OpenAI ChatGPT | `paper.tex`, `paper(1).tex` | **Different** track: Weil quadratic-form positivity, de Branges spaces, Suzuki screw-kernel |
-| Literature Research Assistant (separate session) | Perplexity (search-mode) | Ad hoc queries on Connes–Consani–Moscovici line | Retrieval-grounded, not generative |
+| Early exploratory proposer | Gemini Pro | ~1–52, plus two standalone side-sessions | 🟡 |
+| Main-line proposer | **Gemini 3.7 Flash**, via Google Antigravity, multi-subagent | **~53–388** | 🟢 (switch point) |
+| Main-line adversarial auditor | **Perplexity ("Claude Sonnet 5 Thinking")**, mislabeled "ChatGPT" in source | ~239–388 at minimum | 🟢 (mislabeling) / 🟡 (exact start) |
+| Independent reviewer, separate track | **OpenAI ChatGPT** (the one confirmed literal instance) | `paper.tex`, `paper(1).tex` | 🟢 |
+| Literature research assistant | Perplexity ("GPT-5.6 Terra") | Connes–Consani–Moscovici literature queries | 🟢 |
 
-**Important correction to an earlier draft of this paper**: the informal label "ChatGPT" appearing throughout `journal/2026-08-14.md` was applied by the human author as a convenience placeholder for "the reviewing chat AI" and does not reliably indicate the underlying vendor. Direct content comparison shows that journal entries 303–385 correspond, turn for turn, to the review performed in the Perplexity session that produced this paper. The **only** artifact in our dataset that is a confirmed, literal OpenAI ChatGPT transcript is the LaTeX-draft review (`paper.tex`/`paper(1).tex`), which pursued a mathematically distinct strategy. This distinction matters because the paper's original central claim — comparing failure/correction dynamics *across* model vendors — is only supportable for the entries we can positively attribute; we flag this explicitly rather than paper over it.
-
-### 1.3 Canonical Indexing
-
-To keep the taxonomy in §2 auditable, we use the entry-pair numbering native to the source journal (`journal/2026-08-14.md`, titled e.g. "TITLE 2026-08-14 – 345-346"), and give the corresponding human-facing round number where applicable via the empirically confirmed relation
-
-$$\text{entry} = 2 \times \text{round} + 93$$
-
-(verified by direct content matching at rounds 105, 107, 112, 126, 127, 130–132, 136–139, 144–145 against entries 303, 307, 317, 345, 347, 353–357, 365–373, 381–383 respectively).
+### 1.4 Canonical Indexing
+We use the entry-pair numbering native to `journal/2026-08-14.md`. Where sources reference a "Review K"/"第K輪" counter, we found by direct content matching that it tracks roughly, but not perfectly linearly, with entry-pair number (verified at rounds 105, 107, 112, 126, 127, 130–132, 136–139, 144–145 against entries 303, 307, 317, 345, 347, 353–357, 365–373, 381–383).
 
 ---
 
 ## 2. Taxonomy of Eleven Long-Horizon Reasoning Failure Modes
 
+*(See companion verification script `verify_failure_modes.py` for independently re-executed SymPy checks of Modes 1, 3, 8, 9.)*
+
 ### Mode 1: Scale and Coordinate Dimension Confusion
-**Description**: Substituting a linear variable for a logarithmic manifold coordinate, producing a polynomial-degree error.
-**Evidence (Entry 319–320 → corrected 321–322; Round 112→113)**: The model substituted $X = t$ directly into $\phi_0(X,t) = \frac{t}{2}X$, producing $\mathcal{O}(t^2)$ growth, versus the correct Riemann–Siegel asymptotic $\vartheta(t) \sim \frac{t}{2}\log(t/2\pi e) \in \mathcal{O}(t\log t)$ — an error verified by direct symbolic substitution to be off by a factor of exactly $t/\log t$ (confirmed via independent SymPy computation: `Theta0.subs(X,t)` yields `t**2*(log(t/(2*pi)) - 1)/2` versus the correct `t*(log(t/(2*pi)) - 1)/2`). The correction, in Entry 321–322, redefines the substitution on the logarithmic coordinate $X_t = \log(t/2\pi e)$ and reproduces $\vartheta(t)$ exactly (verified: symbolic difference is identically 0).
+Entries 319–320 → 321–322. Substituting a linear variable into a phase function defined on a logarithmic coordinate, off by exactly one factor of $t$. Independently reproduced in SymPy.
 
 ### Mode 2: Hidden Circular Reasoning
-**Description**: An "unconditional" bound is derived by implicitly assuming the truth of RH itself partway through the argument.
-**Evidence (Entry 345–346, Round 126)**: The model asserted an unconditional bound on the prime tail-sum by writing "在臨界線上（$\mathrm{Re}(\rho)=1/2$）分子模長為 $e^{-X/2}$" — i.e., assuming all relevant zeros lie exactly on the critical line to derive the claimed decay rate, which is precisely the RH statement being investigated. This directly contradicted the model's own, correctly-derived unconditional Vinogradov–Korobov bound of $\mathcal{O}_t(e^{-cX^{1/3}})$ stated elsewhere in the same entry set (Entry 343–344 / 347–348: "$\mathcal O_t(e^{-cX^{1/3}})$" vs RH-conditional "$\mathcal O_t(e^{-X/2})$"). The correction (Entry 347–348, explicitly labeled `"ProvenConditional on RH"` in the source) split the claim into two labeled tracks — unconditional and RH-conditional — resolving the circularity by making the dependency explicit rather than implicit.
+Entries 345–348. An "unconditional" bound implicitly assumed $\mathrm{Re}(\rho)=1/2$ for all zeros. Corrected via explicit unconditional/conditional-on-RH tracks.
 
 ### Mode 3: Category Mixing between Ensemble Statistics and Pointwise Bounds
-**Description**: Treating the vanishing of a mean-square (ensemble) average as equivalent to a deterministic pointwise bound at a single fixed frequency.
-**Evidence (Entries 351–359, Rounds 128–132)**: The model repeatedly conflated $\langle \mathrm{Re}\,\mathcal{C}_2 \rangle \equiv 0$ (an average over $t$) with the pointwise target $|S(X,t_0)| \le \mathcal{O}_{t_0}(X)$ at one fixed $t_0$. This was resolved only after establishing an explicit **Four-Quadrant Epistemic Matrix** (unconditional/conditional $\times$ ensemble/pointwise), verified via Riemann–Stieltjes integration by parts:
-
-```python
-import sympy as sp
-X, t, T, Ct = sp.symbols('X t T C_t', positive=True)
-F = sp.Rational(1,2)*X**2*t  # leading part of int_0^t |S(X,u)|^2 du
-integral = T**2*F.subs(t,T) - sp.integrate(2*t*F, (t,0,T))  # = X^2*T^3/6
-avg_ReC2 = -sp.Rational(1,8*T)*integral + (X**2/(16*T))*sp.integrate(t**2,(t,0,T))
-assert sp.simplify(avg_ReC2) == 0   # confirms exact 0*X^2*T^2 cancellation
-```
-This computation is genuine and was independently reproduced during review; it correctly shows the *ensemble* average cancels exactly, but says nothing, by itself, about the pointwise target.
+Entries 351–359. Conflating an ensemble average with a pointwise bound at fixed $t_0$. Independently reproduced in SymPy.
 
 ### Mode 4: Topological Confusion of Isolated Spectral Points vs. Essential Accumulation
-**Description**: Arguing that a shrinking frequency band on which a spectral determinant vanishes contradicts the absence of essential spectrum.
-**Evidence (Entries 381–384, Rounds 144–145)**: The model claimed that an assumed off-critical-line zero would force $\det_3 \to 0$ across a band $I_X$, and that this contradicted $\sigma_{\mathrm{ess}}(\mathcal D_\infty) = \emptyset$. This is the same error the project had already identified and retracted once before, in Entries ≈259–260 region under a different technical dressing — **a recurrence of a previously-resolved failure mode under new surface features**, which is itself a noteworthy finding: superficial novelty in a technical argument's presentation does not guarantee the underlying logical structure is new. The retraction (Entry 383–384) correctly notes $\mathrm{Leb}(I_X) \sim e^{(\beta_0-1)X} \to 0$, so the band collapses to a single point, and a vanishing determinant at (or near) an isolated point is fully compatible with a discrete point spectrum — discreteness forbids *accumulation* points, not isolated ones.
+Entries 381–384. Conflating "isolated eigenvalue" with "accumulation point" — a recurrence of a previously-resolved failure mode under new notation.
 
 ### Mode 5: Weight Mismatch in Formula Transplantation
-**Description**: Directly equating two Dirichlet-series-type quantities that differ by a von Mangoldt weight ($\log p$), without deriving the required transformation.
-**Evidence (Entry 323–324, Round 114–115)**: The model equated the $-\zeta'/\zeta$-derived quantity $\mathrm{Im}\,S(X,t)$ (weight $\log p/\sqrt p$) with the classical Selberg $S(T)$ expansion (weight $1/\sqrt p$, from $\log\zeta$), a mismatch of exactly one factor of $\log p$. The eventual correction derived the necessary Abel summation-by-parts transformation explicitly:
-$$\mathcal S_{\mathrm{Selberg}}(X,t) = -\frac{\mathrm{Im}\,S(X,t)}{X} - \int_2^X \frac{\mathrm{Im}\,S(u,t)}{u^2}\,du,$$
-independently re-verified via symbolic integration by parts.
+Entry 323–324. Equating two Dirichlet-series quantities differing by a $\log p$ weight.
 
 ### Mode 6: Heavy-Machinery Invocation for Elementary Facts
-**Description**: Citing a deep theorem to prove a fact that follows directly from elementary definitions.
-**Evidence (Entry 303–304, Round 105)**: Baker's theorem on linear forms in logarithms was invoked to establish $\mathbb{Q}$-linear independence of $\{\log p\}$ — a fact that follows immediately from the Fundamental Theorem of Arithmetic (unique factorization) and requires none of Baker's machinery on algebraic linear forms.
+Entry 303–304. Baker's theorem invoked for a trivial consequence of unique factorization.
 
-### Mode 7: Narrative Progress Inflation — including the "100% Grand Seal" Extreme Case
-**Description**: Assigning fabricated numeric completion percentages, or issuing an outright, unqualified claim of complete proof.
-**Flagship evidence (Entries 251–258)**: this is, by content match, the single most striking artifact in the dataset — entries in this range are labeled `Theorem 251.3 (Grand Seal)`, `Theorem 253.2 (Grand Seal)`, and `Theorem 255.2 (Grand Seal)`, explicitly asserting a complete, unconditional proof that $S(X,t) = \mathcal O_t(X)$ for all $t$, with entry 257–258 attempting to merge Tiers 1–3B into a stated "completed" proof.
+### Mode 7: Narrative Progress Inflation — and Its Mirror Image in Negative Claims
 
-A milder, more persistent version of the same failure mode is the recurring numeric completion tally "Tier 1: 25.0 / Tier 2: 25.0 / Tier 3A: 17.0 / Tier 3B: X.X → NN%", which we independently confirmed appears at multiple points including entries 299–300 and 307–308 (i.e., human-facing Rounds 103 and 107) with the running total explicitly reaching "90 10" (a 90%-complete claim) — matching prior review findings that this exact percentage-narrative pattern required explicit policy intervention ("ban percentage words from prompts") to suppress in later rounds.
+**7a. The "100% Grand Seal" case (positive-direction overreach).** Flagship evidence, entries 251–258: theorems explicitly labeled "Grand Seal" and "100% Proven," later fully retracted at entries 259–260. A milder, recurring version — fabricated numeric completion percentages (e.g., "90/10") — appears repeatedly (entries 299–300, 307–308) until banned by explicit prompt policy.
+
+**7b. Negative-direction overreach, discovered via a systematic rigor audit of the project's own dead-end list.** Prompted by a direct challenge from the human author — *"dead ends also need to be fully proven, not just declared whenever a calculation fails"* — we independently graded roughly 50 of the project's ~80 self-declared "confirmed dead ends" (`journal`/`HANDOFF.md`) on a three-tier rubric:
+
+- **Tier A (56%)**: genuinely rigorous — a valid counterexample (most commonly, the project's own "Epstein test": does the same argument also work for the Epstein zeta function, which is known to violate the target property? If so, the argument is invalid regardless of how promising it looks) or a directly checkable computation.
+- **Tier B (38%)**: a reasonable, directionally-correct qualitative judgment, not accompanied by a complete formal derivation in the source.
+- **Tier C (6%)**: the retraction of one overreaching claim is justified by asserting a **second, equally unproven claim**.
+
+The three Tier-C cases are, we think, the most methodologically important finding of this audit. The clearest example: an entry retracts the claim "$\Xi_\infty(z)\equiv\xi(1/2-iz)$ has been proven" (correctly, since this was never established) — but justifies the retraction by asserting that "the difficulty of this identification is provably equivalent to the Riemann Hypothesis itself," a strong equivalence claim that is itself never proven anywhere in the source. A second case relabels a previous claim as "research misconduct" ("科研作弊") for having reverse-engineered a numeric target — a serious accusation that the source does not actually distinguish from ordinary confirmation bias. A third case claims an earlier "method gap" was "fully upgraded and resolved" by a new theorem, without showing that the new theorem's scope actually covers the original problem.
+
+**The general point**: the same overconfidence dynamic that produces false-positive claims ("this is 100% proven") can equally produce false-negative claims ("this is impossible," "this is exactly as hard as RH itself") — and the negative-direction version is arguably *more* dangerous, because it is phrased in the register of humility and self-criticism, which makes it less likely to be challenged by either a human reader or another AI auditor. A verification pipeline that only checks for overclaimed *proofs* and not for overclaimed *impossibilities* has a systematic blind spot. Full grading table and methodology released as `dead-ends-rigor-assessment.csv` alongside this paper.
 
 ### Mode 8: Unchecked Perturbation-Expansion Validity Domains
-**Description**: Applying a linearized Taylor expansion $\sqrt{1+y}\approx 1+y/2$ without checking that the expansion parameter actually tends to zero.
-**Evidence (Entries 371–374, Rounds 139–141)**: The model expanded $\sqrt{1-4W^2/X^4}$ around $0$, but since $\mathrm{RMS}(W) = X^2/4$ (independently confirmed via a separate exact computation, $\langle W^2\rangle = X^4/16$), the typical value of $4W^2/X^4$ is $\approx 1/4$, not a vanishing quantity. The correction retains the square root exactly as $A = \frac{X^2}{8}\sqrt{1-4W^2/X^4}$ and expands only the genuinely small residual correction — verified via symbolic computation that this yields the correct leading terms without the spurious degree-mismatch of the naive expansion.
+Entries 371–374. Taylor-expanding $\sqrt{1-4W^2/X^4}$ around 0 despite a typical value of $\approx1/4$. Independently reproduced in SymPy.
 
 ### Mode 9: Notation-Masked Unproven Assumptions
-**Description**: Introducing a change of variables or a "gauge" that cosmetically eliminates a divergence without resolving its actual mathematical origin.
-**Evidence (Entries 279–280, 355–356, Rounds 130–131)**: An unweighted-vs-weighted averaging substitution was used to make a cancellation "disappear" notationally, without proving the required (and non-trivial) statistical independence between the weighting function and the oscillating term it multiplied. Resolution required deriving the explicit $\mathfrak{sl}(2,\mathbb R)$ commutator structure from first principles (Entry 365–366, verified via direct matrix computation: $[K_1,K_2] = -\frac12 J$, and $[\mathbf X_p(t),\mathbf X_q(t)] = -\frac{\log p\log q}{2\sqrt{pq}}\sin(2t\log(q/p))\,J$, both confirmed symbolically to hold exactly).
+Entries 279–280, 355–356, 365–366. A cosmetic change of variables masking an unproven independence assumption; resolved via an explicit $\mathfrak{sl}(2,\mathbb R)$ commutator derivation, independently reproduced in SymPy.
 
 ### Mode 10: Adversarially Induced True Self-Correction
-**Description**: Following a precise, symbolically-checkable counter-proof, the model reliably abandons the flawed claim and produces a corrected, independently verifiable derivation within one to two turns.
-**Documented chains** (all independently re-verified in this review): Entries 319→321 (coordinate fix), 345→347 (conditional/unconditional split), 351→353→355 (quadrant-framework convergence), 371→373→375 (Taylor-expansion domain fix), 381→383 (contradiction-claim retraction). We count **seven** such chains with full independent verification in the portion of the dataset reviewed directly in this session.
+Seven chains independently re-verified (319→321, 345→347, 351→353→355, 371→373→375, 381→383, plus two others).
 
-### Mode 11 (New): Citation Overreach — Misrepresenting the Actual Claims of Cited Literature
-**Description**: Citing a real, findable, correctly-titled paper, but asserting that it establishes a result which the paper itself explicitly disclaims (e.g., labels as "open," "conjectural," or "we make no claim of proof").
-**Evidence (independent ChatGPT review of `paper.tex`, `paper(1).tex`)**: The draft cited "Groskin (2026)" for an $\mathcal O(c^{-1})$ operator-convergence bound; the actual Groskin 2026 paper states that convergence of the truncated zeros to the true Riemann zeros as $c\to\infty$ **remains open**, and explicitly states "we make no claim of proof." Similarly, a later draft invoked Suzuki (2026, arXiv:2606.09096)'s screw-kernel/self-adjoint-operator framework, treating a statement Suzuki himself frames as a conjecture (that the limiting operator's spectrum equals the zeta zeros) as an already-established premise. This mode is distinct from Mode 5 (weight mismatch) and Mode 6 (unnecessary heavy machinery): here the citation is *topically correct and real*, but its actual epistemic status is inflated. Catching this mode required an auditor to retrieve and read the actual cited paper — it is not detectable by symbolic/numeric verification alone, which is a methodologically important point for designing future audit pipelines.
-
-A second, cleaner example from the same review thread: a later draft asserted
-$$\sum_{\rho}|v_{\rho_0,a}(\rho)|^2 \sim -Ke^{2\delta a} + \mathcal O(a^2), \quad K>0,$$
-which is a direct contradiction, independent of any literature check, since the left side is manifestly a sum of non-negative terms and cannot be asymptotically negative. We include this as a companion data point under Mode 8/general-validity-checking, since — unlike Mode 11 — it required no external literature retrieval to catch, only careful reading of the model's own equation.
+### Mode 11: Citation Overreach
+Found in the independent OpenAI ChatGPT review of `paper.tex`: real citations whose actual authors label the needed result as open or conjectural, treated in the draft as an established premise.
 
 ---
 
-## 3. Discussion
+## 3. A Third, Independent Context: Standalone Gemini Web-Chat Side-Sessions
 
-### 3.1 Does Rhetorical Framing (Roleplay, "Battle" Language) Drive the Inflation?
-The source material used escalating, gamified framing across its history (e.g., "戰役" [campaign], "大憲章" [grand charter], "終極" [ultimate]), and — consistent with prior literature on sycophancy and role-conditioning in long dialogues — we observed qualitatively that percentage-based completion claims and "Grand Seal"-type absolute claims were concentrated in early-to-middle entries (roughly 250–310) and became rare after explicit, repeated policy interventions banning percentage language and requiring labeled conditional/unconditional separation (from approximately entry 345 onward). We recommend that before publication, the author run a simple, fully reproducible script (e.g., counting occurrences of `"100%"`, `"Grand Seal"`, `"終極"`, `"大憲章"` per 20-entry window across `journal/2026-08-14.md`) and report the literal counts, so that any quantitative claim in this section is independently reproducible by a reader with access to the released dataset.
-
-### 3.2 A Preliminary, Single-Session Observation: Retrieval Grounding vs. Free Generation
-In a structurally distinct session, the same overall research effort used Perplexity in **search mode** to investigate the real Connes–Consani–Moscovici literature line on Weil positivity. That session's output is qualitatively different from the theorem-generation entries analyzed in §2: every non-trivial claim carries a specific arXiv identifier, and — critically — the session explicitly and correctly distinguishes proven sub-results (e.g., "$\mathrm{Tr}(\vartheta(g)S\vartheta(g)^*)\ge 0$ is a Hilbert-space argument, not RH-dependent") from open gaps (e.g., "尚未完成對所有有限集合 $S$ 的 Weil 正性，更沒有完成全域 adelic 極限" — "positivity for all finite sets $S$, let alone the global adelic limit, has not been established"). No instance of an unqualified "100%" or "proven" claim regarding RH itself appears in this session.
-
-We report it as a hypothesis-generating observation — *retrieval grounding may reduce overreach* — worth testing in a properly controlled follow-up, not as a validated finding.
-
-### 3.3 Epistemic Limitations of the Audit Pipeline Itself
-Every auditor in this pipeline (the Perplexity session producing this paper, the separate ChatGPT session, and the separate Perplexity search session) is itself an LLM-based system, and none of the mathematics in this dataset — on either the generation or the audit side — has been checked by a formal proof assistant (e.g., Lean, Isabelle) or by a human research mathematician. The symbolic (SymPy) verifications reported here check specific, narrow algebraic identities correctly, but they do not certify the surrounding informal reasoning. We regard the taxonomy in §2 as a well-evidenced *description* of what occurred in this transcript, not as a formally certified ground truth about the underlying mathematics of the Riemann Hypothesis, which remains unresolved.
+Two standalone Gemini Pro web-chat sessions (`gemini.google.com`, no subagents, no git integration), run on the evening of 8/14 before the 22:51 switch to the AGY architecture, used a self-designed "Epstein test" methodology consistently and honestly, reaching correct, non-inflated dead-end conclusions on both a Robin's-inequality/Li-coefficients numerical experiment and a supersymmetric-Dirac-operator construction. We highlight this as a transferable methodological contribution — a single, consistently-applied falsification heuristic — independent of any specific model.
 
 ---
 
-## 4. Conclusion and Data Release
+## 4. Discussion
 
-This case study documents eleven distinct, evidenced failure modes in long-horizon, open-problem LLM mathematical reasoning, together with a consistent finding that precise symbolic counter-proofs — as opposed to rhetorical or qualitative critique — reliably induce genuine self-correction within one to two turns. The underlying research effort has not made progress toward resolving the Riemann Hypothesis; every technical thread examined here, however elaborate, either restates a known classical result in new notation, or founders on the same structural barrier repeatedly identified across the transcript: no known unconditional technique provides better than sub-exponential cancellation against the problem's exponential background term.
+### 4.1 Rhetorical Framing and Inflation
+Percentage-based completion claims cluster in earlier-to-middle entries (roughly 250–310) and become rare after explicit policy changes from around entry 309 onward. We did not perform a systematic, pre-registered keyword count; any reader wanting a specific frequency statistic should run a reproducible script against the released dataset.
 
-The complete transcript dataset, cross-reference index, and this paper are available at:
+### 4.2 Cross-Model Recurrence as the Strongest Evidence
+The same handful of failure modes recurred across Gemini Pro, Gemini 3.7 Flash, Perplexity (two different underlying models), and OpenAI ChatGPT — including across the precisely-dated model switch at entry 53. This is the paper's strongest evidence that these failure modes are generic properties of long-horizon, open-ended mathematical dialogue, not the quirks of one model family.
+
+### 4.3 Epistemic Limitations, Including of This Section, and of Our Own Dead-End Audit
+No claim in this dataset has been checked by a formal proof assistant or a professional research mathematician — including our own Tier A/B/C grading in §2, Mode 7b, which is itself a human-and-AI collaborative judgment call, not a formal proof of proof-rigor. We explicitly did not grade the remaining ~30 dead-end entries beyond our 50-entry sample, and we report this incompleteness rather than rounding the sample up to a claim about the full list. Separately, the timeline reconstruction in §1.2 is itself a worked case study in the discipline this paper argues for: we did not accept an aggregate, precisely-worded AI-generated audit report at face value, but requested the underlying raw step log and cross-checked its central claim against an independent artifact found for unrelated reasons before this exchange began.
+
+---
+
+## 5. Conclusion and Open Dataset Release
+
+This case study documents eleven distinct, evidenced failure modes in long-horizon, open-problem LLM mathematical reasoning. Its central methodological finding, beyond the taxonomy itself, is that overconfidence is symmetric: the same dynamic that produces unearned "proven" claims also produces unearned "impossible" or "equivalent-in-difficulty" claims, and the latter is harder to catch precisely because it sounds appropriately modest. The underlying research effort has not made progress toward resolving the Riemann Hypothesis.
+
+The complete transcript dataset, `HANDOFF.md`'s full dead-end list, our independent rigor-graded subset (`dead-ends-rigor-assessment.csv` and its accompanying methodology note), the cross-reference tables, the SymPy verification script, and this paper are intended for public release at:
 `https://github.com/chienhaoc/riemann-hypothesis`
+
+**Recommended repository structure**: a top-level disclaimer stating this is not a proof of RH; dual MIT (code) / CC BY 4.0 (text) licensing; numbered top-level directories separating raw transcripts, the case-study paper, verification code, mathematical notes, and the open-gaps list (itself split into rigor tiers rather than presented as a flat "confirmed" list).
 
 ---
 
@@ -168,4 +163,4 @@ The complete transcript dataset, cross-reference index, and this paper are avail
 7. A. Connes and C. Consani, *Weil positivity and Trace formula, the archimedean place*, arXiv:2006.13771, 2020.
 8. A. Connes, C. Consani, and H. Moscovici, *Zeta zeros and prolate wave operators*, arXiv:2310.18423, 2023.
 9. M. Suzuki, *Weil's quadratic form via the screw function*, arXiv:2606.09096, 2026.
-10. A. Groskin, *High-Precision Approximation of Riemann Zeros via the Truncated Weil Form*, 2026.
+10. A. Groskin, *High-Precision Approximation of Riemann Zeros via the Truncated Weil Form*, 2026 (exact arXiv identifier and access date to be added by author).
