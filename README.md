@@ -89,9 +89,10 @@ cd riemann-hypothesis
 # Install requirements
 pip install sympy
 
-# Run verification scripts
-python 03-verification/verify_dispersion_identity.py
-python 03-verification/verify_killing_lorentz_metric.py
+# Run the complete failure-mode symbolic verification suite
+python 03-verification/verify_failure_modes.py
+
+# Run keyword frequency density analysis
 python 03-verification/count_rhetorical_keywords.py
 ```
 
