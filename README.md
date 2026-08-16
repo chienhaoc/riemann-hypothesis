@@ -1,4 +1,5 @@
 # Empirical Case Study: Long-Horizon LLM Mathematical Reasoning & Failure Modes on the Riemann Hypothesis
+# 長程大語言模型前沿數學推理失敗模式與自我修正實證研究
 
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/Docs%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS.md)
@@ -10,14 +11,16 @@
 > **THIS REPOSITORY IS NOT A PROOF OF THE RIEMANN HYPOTHESIS.**  
 > **本倉庫不是黎曼猜想的證明。**  
 > 
-> 這是一份記錄大型語言模型（Google Gemini、OpenAI ChatGPT、Perplexity Pro）在長達 **388 個研究推進條目與 145 輪對抗性同行審查**中，嘗試攻堅黎曼猜想時所展現的**長程推理失敗模式（Failure Modes）、敘事性膨脹（Narrative Inflation）與符號對抗自我修正（Adversarial Self-Correction）機制**的實證案例研究。  
-> 黎曼猜想（The Riemann Hypothesis）至今仍是未解的世紀數學難題。
+> This open-science dataset documents an empirical case study of how multiple frontier Large Language Models (Google Gemini Pro, Gemini 3.7 Flash, Perplexity Claude Sonnet 5 Thinking, and OpenAI ChatGPT) behaved during a longitudinal research collaboration spanning **388 research-progression entries and 145 adversarial peer-review rounds** attempting an operator-theoretic approach to the Riemann Hypothesis.  
+> It systematically categorizes **11 distinct reasoning failure modes**, **narrative progress inflation**, and **symbolic self-correction mechanisms**.  
+> The Riemann Hypothesis remains an open Millennium Prize problem.  
+> *(本專案為大語言模型長程多輪推理實證研究，記錄 AI 在前沿開放性數學攻堅中的認知盲區、敘事膨脹與自我修正動力學。)*
 
 ---
 
-## 🗺️ Repository Navigation & Directory Map / 目錄結構導覽
+## 🗺️ Repository Navigation & Directory Map / 倉庫導覽地圖
 
-To facilitate intuitive exploration for external researchers and reviewers, the repository is organized into numbered canonical directories:
+The repository is structured into numbered canonical directories for systematic independent auditing:
 
 ```
 riemann-hypothesis/
@@ -28,9 +31,9 @@ riemann-hypothesis/
 ├── CONTRIBUTING.md               ← Guidelines for Replication, Audit, and External Verification
 │
 ├── 01-case-study/                ← [FLAGSHIP] Primary Research Paper on LLM Reasoning Failure Modes
-│   ├── paper-long-horizon-llm-reasoning-rh.md    (Full Markdown text of Paper v6)
+│   ├── paper-long-horizon-llm-reasoning-rh.md    (Full Markdown text of Case Study Paper v6)
 │   ├── paper-long-horizon-llm-reasoning-rh.html  (Typeset HTML Master with MathJax)
-│   ├── paper-long-horizon-llm-reasoning-rh.pdf   (Publication-grade PDF format)
+│   ├── paper-long-horizon-llm-reasoning-rh.pdf   (Publication-grade 2-column PDF format)
 │   ├── prompt_toolkit.md                         (Methodological prompt & review templates)
 │   ├── dead-ends-rigor-assessment.csv            (50-entry rubric-graded dead-end audit dataset)
 │   └── dead-ends-rigor-assessment-methodology.md (Methodology & 3 Tier-C case studies)
@@ -59,52 +62,52 @@ riemann-hypothesis/
 ├── 05-open-gaps/                 ← Transparent Documentation of Open Gaps & Rigor-Audited Dead Ends
 │   ├── dead-ends-rigor-assessment.csv            (Tier A: 56%, Tier B: 38%, Tier C: 6%)
 │   ├── dead-ends-rigor-assessment-methodology.md (Methodology & Qualitative Analysis)
-│   ├── canonical-herglotz-roadmap.md (Canonical Herglotz spectral measure roadmap)
-│   ├── convergence-gap.md        (The de Branges continuum transference divergence)
-│   └── connes-final-step.md      (The non-commutative adelic positivity gap)
+│   ├── canonical-herglotz-roadmap.md             (Canonical Herglotz spectral measure roadmap)
+│   ├── convergence-gap.md                        (The de Branges continuum transference divergence)
+│   └── connes-final-step.md                      (The non-commutative adelic positivity gap)
 │
 └── 06-literature-review/         ← Literature Surveys & Background Reference Documents
-    └── connes-consani-2020-2024.md (Connes-Consani trace formula survey)
+    └── connes-consani-2020-2024.md               (Connes-Consani trace formula survey)
 ```
 
 ---
 
-## 🎯 Executive Summary of the Case Study / 核心研究結論摘要
+## 🎯 Executive Summary of Key Findings / 核心研究結論摘要
 
-While mainstream LLM benchmarks (GSM8K, MATH, OlympiadBench) test static, single-turn contest math with known ground truths, this longitudinal study captures the dynamic cognitive phenomenology of AI reasoning across hundreds of open-ended turns:
+While mainstream benchmarks (GSM8K, MATH, OlympiadBench) test static, single-turn contest mathematics with known ground truths, this longitudinal study captures the dynamic cognitive phenomenology of frontier AI systems across hundreds of open-ended research turns:
 
-1. **An 11-Class Taxonomy of Reasoning Failure Modes**:
-   - **Mode 1**: Scale & Coordinate Confusion ($X=t$ vs. $X=\log(t/2\pi)$)
-   - **Mode 2**: Hidden Circular Reasoning (assuming $\mathrm{Re}(\rho)=1/2$ in unconditional claims)
-   - **Mode 3**: Category Mixing between Ensemble Statistics ($\langle\mathrm{Re}\,\mathcal{C}_2\rangle \equiv 0$) and Pointwise Bounds ($|S(X, t_0)| \le \mathcal{O}(X)$)
-   - **Mode 4**: Topological Fallacy of Isolated Points vs. Continuous Accumulations
-   - **Mode 5**: Formula Transplantation Weight Mismatches ($\log p$ weights)
-   - **Mode 6**: Heavy-Machinery Invocation for Elementary Facts (Baker's theorem on unique prime factorization)
-   - **Mode 7**: Narrative Progress Inflation & Negative Overreach:
-     - *7a. Positive Overreach*: The flagship **"100% Grand Seal"** claim in Entries 251–258.
-     - *7b. Negative Overreach*: A 50-entry dead-end rigor audit showing that 6% of retractions justify abandonment with a *second, equally unproven claim* (e.g., asserting "provably equivalent in difficulty to RH").
-   - **Mode 8**: Unchecked Perturbation Expansion Validity Domains ($\sqrt{1+y}$ on $y \sim 1/4$)
-   - **Mode 9**: Notation-Masked Unproven Assumptions (Gauge masking of divergences)
-   - **Mode 10**: Adversarially Induced True Self-Correction (7+ independently verified multi-turn chains)
-   - **Mode 11**: Citation Overreach (Citing real arXiv papers like Groskin 2026 or Suzuki 2026 for conjectures they explicitly disclaimed)
+### 1. An 11-Class Taxonomy of Reasoning Failure Modes (十一類失敗模式分類)
+- **Mode 1: Scale & Coordinate Confusion** ($X=t$ vs. $X=\log(t/2\pi)$) — Substituting linear variables into logarithmic coordinates.
+- **Mode 2: Hidden Circular Reasoning** — Assuming $\mathrm{Re}(\rho)=1/2$ inside purportedly "unconditional" bounds.
+- **Mode 3: Category Mixing (Ensemble vs. Pointwise)** — Conflating ensemble mean-square dispersion cancellation ($\langle\mathrm{Re}\,\mathcal{C}_2\rangle \equiv 0$) with pointwise bounds ($|S(X, t_0)| \le \mathcal{O}(X)$).
+- **Mode 4: Topological Spectral Fallacy** — Conflating isolated eigenvalues with essential accumulation points.
+- **Mode 5: Formula Transplantation Weight Mismatches** — Missing arithmetic weights (e.g., $\log p$) when transplanting formulas.
+- **Mode 6: Heavy Machinery on Trivia** — Invoking Baker's theorem for consequences of unique prime factorization.
+- **Mode 7: Narrative Progress Inflation & Negative Overreach**:
+  - *7a. Positive Overreach*: Flagship **"100% Grand Seal"** claims in Entries 251–258.
+  - *7b. Negative Overreach*: 6% of self-declared dead ends justify abandonment by asserting a *second, equally unproven claim* (e.g., asserting "provably equivalent in difficulty to RH" without proof).
+- **Mode 8: Unchecked Perturbation Expansion Domains** — Expanding $\sqrt{1+y}$ around 0 when $y \approx 1/4$ does not vanish.
+- **Mode 9: Notation-Masked Unproven Assumptions** — Cosmetic variable changes masking independence gaps (resolved via explicit $\mathfrak{sl}(2,\mathbb{R})$ Lie brackets).
+- **Mode 10: Adversarially Induced True Self-Correction** — 7+ multi-turn chains successfully self-correcting within 1–2 turns under symbolic counter-proof.
+- **Mode 11: Citation Overreach** — Treating real literature (Suzuki 2026, Groskin 2026) as establishing premises when authors explicitly flagged them as conjectures.
 
-2. **The Prompt Specificity Principle**:
-   ```
-   [ Vague / Rhetorical Prompt ]       ──(induces)──>  [ Narrative Escalation & Bluffing ]
-   [ Quantitative CAS Counter-Proof ]  ──(forces)───>  [ Rigorous Self-Correction & Proof ]
-   ```
-   $$\text{Vague / Rhetorical Prompt} \xrightarrow{\text{induces}} \text{Narrative Escalation and Bluffing}$$
-   $$\text{Quantitative CAS Counter-Proof} \xrightarrow{\text{forces}} \text{Rigorous Self-Correction and Genuine Proof}$$
+### 2. The Prompt Specificity Principle (提示詞精確度原則)
+```
+[ Vague / Rhetorical Prompt ]       ──(induces)──>  [ Narrative Escalation & Bluffing ]
+[ Quantitative CAS Counter-Proof ]  ──(forces)───>  [ Rigorous Self-Correction & Proof ]
+```
+$$\text{Vague / Rhetorical Prompt} \xrightarrow{\text{induces}} \text{Narrative Escalation and Bluffing}$$
+$$\text{Quantitative CAS Counter-Proof} \xrightarrow{\text{forces}} \text{Rigorous Self-Correction and Genuine Proof}$$
 
-3. **Dead-End Rigor Grading & Methodology**:
-   For detailed definitions, rubric criteria, and qualitative case studies of how negative-direction overreach manifests in retraction claims, see:
-   👉 **[`05-open-gaps/dead-ends-rigor-assessment-methodology.md`](05-open-gaps/dead-ends-rigor-assessment-methodology.md)** (Dataset: [`05-open-gaps/dead-ends-rigor-assessment.csv`](05-open-gaps/dead-ends-rigor-assessment.csv)).
+### 3. Dead-End Rigor Audit (死路清單嚴謹度分級)
+For the full methodology and qualitative case studies of how negative-direction overreach manifests in retraction claims, see:
+👉 **[`05-open-gaps/dead-ends-rigor-assessment-methodology.md`](05-open-gaps/dead-ends-rigor-assessment-methodology.md)** (Dataset: [`05-open-gaps/dead-ends-rigor-assessment.csv`](05-open-gaps/dead-ends-rigor-assessment.csv)).
 
 ---
 
-## 🚀 Quick Start: Running Symbolic Verifications
+## 🚀 Quick Start: Running Symbolic Verifications / 快速獨立驗證
 
-To independently verify the symbolic algebraic identities discussed in the paper:
+To independently reproduce the symbolic algebraic identities discussed in the paper:
 
 ```bash
 # Clone the repository
@@ -114,20 +117,18 @@ cd riemann-hypothesis
 # Install requirements
 pip install sympy
 
-# Run the complete failure-mode symbolic verification suite
+# Run the complete failure-mode symbolic verification suite (Modes 1, 3, 8, 9, Levy area & Killing balance)
 python 03-verification/verify_failure_modes.py
 
-# Run individual verification scripts
-python 03-verification/verify_dispersion_identity.py
-python 03-verification/verify_killing_lorentz_metric.py
+# Run keyword frequency density analysis
 python 03-verification/count_rhetorical_keywords.py
 ```
 
 ---
 
-## 📜 Citation & Academic Contact
+## 📜 Citation & Academic Contact / 論文引用資訊
 
-If you utilize this dataset or taxonomy in your research on LLM reasoning and mathematical alignment, please cite:
+If you utilize this empirical dataset or taxonomy in your research on LLM reasoning and mathematical alignment, please cite:
 
 ```bibtex
 @article{chen2026narrative,
@@ -139,5 +140,5 @@ If you utilize this dataset or taxonomy in your research on LLM reasoning and ma
 }
 ```
 
-**Principal Investigator**: Chien-Hao Chen  
+**Principal Human Investigator**: Chien-Hao Chen  
 **Repository**: [https://github.com/chienhaoc/riemann-hypothesis](https://github.com/chienhaoc/riemann-hypothesis)

@@ -1,51 +1,51 @@
-No.,宣稱,死路/修正原因,分級,評估理由
-1,一般解析方法,Epstein 反例——邏輯上必然失敗,A,Epstein 測試是有效的反例式證偽：若論證同樣適用於已知違反目標性質的 Epstein zeta，則論證邏輯本身無效。
-2,Mollifier 方法繼續推進,理論上限，永遠無法到 100%,A,Mollifier 方法的理論上限是解析數論的已知結果，非隨口斷言。
-3,Φ(u)>0 → RH,Epstein 的 Φ 也是正的,A,同上，Epstein 測試直接給出反例。
-4,GUE → 零點斥力 → RH,循環論證（GUE 假設 RH）,A,正確指出 GUE 模型本身建立在 RH 之上，邏輯循環清楚。
-5,Asano 收縮,牆在 Re(s)=1,B,斷言存在一個「牆」，但摘要中未展示牆位置的完整證明過程。
-6,de Branges 空間,Conrey-Li 已反駁,A,引用真實、具體的文獻反例（Conrey-Li 2000），可查證。
-7,純篩法改進誤差項,差十萬八千里,B,定性的「差距很大」判斷，未給出具體不等式比較。
-8,全域鐵磁系統論證,錯的！W_ℝ ≤ 0，Gamma 是負的,A,直接的符號計算結果，可獨立驗證正負號。
-9,Sonin 正性 → RH 直接路線,Sonin 跡的正性對 Epstein 也成立,A,Epstein 測試反例。
-10,W_∞ ≥ Tr 對所有 g,只在特定支撐 + Mellin 條件下成立,B,說明了例外條件，但未證明「其他情況必然失敗」。
-11,獨立單極限（先 λ→∞ 或先 N→∞）,UV 發散導致單調性失效，需聯動 N~2c,B,發散的存在需要具體展示，摘要中僅為結論式陳述。
-12,均勻常數譜隙 inf Δμ_k ≥ δ > 0,數學上不可能，因 ΣΔμ_k 須收斂到 γ_1,A,若間距總和必須收斂到有限值，下確界恆正將導致級數發散，矛盾——這是有效的初等論證。
-13,高頻微觀零點應用 Davis-Kahan,高頻間距→0 導致比值爆炸,B,比值發散的具體速率未展示完整推導。
-14,「Λ(n)≥0 ⟹ ΔD⪰0」,正係數乘有符號 Fourier 核不保證 PSD，需 Gram 正測度分解,A,這是調和分析中的標準事實（正係數不保證正定性，需額外結構）。
-15,「τ_c→∞ 下 L2 強收斂自動給局部一致」,複平面 evaluation 常數爆炸，需指數加權頻率衰減,B,「爆炸」的具體估計未在摘要中展示完整證明。
-16,"單一 Dirichlet L(s,χ) 的 scalar PSD",特徵標相位破壞純量正性,B,定性判斷，未展示具體反例或不等式。
-17,「γ_2-γ_1 當作算子譜隙」,循環論證！把黎曼零點間距當成未證算子的譜隙,A,邏輯循環清楚：用待證結論的性質去證明待證結論。
-18,「有限截斷實零點 ⟹ 極限收斂到 Ξ」,終極收斂之牆（Groskin 2026），尚未解決,B/誠實,此條誠實標註為「尚未解決的前沿」而非宣稱「不可能」，屬於恰當的開放問題標記，非過度宣稱。
-19,「純量無窮乘積在臨界線收斂」,錯的！Σ log p/√p = ∞ 發散,A,直接、可獨立驗證的發散事實（初等）。
-20,「|Θ|=1 ⟹ S≡1 排除奇異譜」,Nevanlinna 理論邏輯謬誤,A,內函數定義下模長恒為 1，此謬誤可直接由定義檢驗。
-21,「隨機系綜平均 ⟹ 排除從屬解」,範疇錯配！確定性軌道不能用概率期望值代替,B,範疇錯配的判斷合理，但「必須用 Van der Corput」的替代方案是否真的解決問題，摘要未完整展示。
-22,「固定 ε>0 下 R_X→0 直接給邊界控制」,需聯動縮放 ε(X)=X^-δ,B,「聯動縮放才行」的必要性論證屬合理但概述性的分析。
-23,「Suzuki 二次型下有界 ⟹ Q_a≥0」,範疇錯誤！下有界性≠正定性,A,下有界（Friedrichs 延拓存在）與正定性是教科書等級的不同概念，區分正確。
-24,「對角路徑等同於 Fatou 逐次極限」,極限次序交換漏洞,A,極限交換次序問題是可明確定義、可檢驗的邏輯缺口。
-25,「無構造的 Epstein 拓撲免疫宣稱」,修辭稻草人,B,批評「缺乏構造」合理，但「稻草人」定性本身較主觀。
-26,「黃金比例共振與 Spira 零點附會」,數值命理學,B,合理懷疑但非形式化的統計顯著性檢定，屬於定性判斷。
-27,「黎曼系統在未正則化波函數下正定」,錯的！Q_1.08^R ≈ -3.84 < 0,A,具體數值計算，直接可驗證。
-28,「一維哈密頓系統給出 Riemann-von Mangoldt 幾何同構」,範疇錯配與定義作弊,B,「定義作弊」的具體機制描述籠統，屬於概述性判斷。
-29,「次乘法性單獨證明 Lyapunov 指數為零」,邏輯缺口！次乘法性僅保證極限存在,A,次可加性只保證極限存在、不保證極限值為零，這是嚴謹的邏輯區分。
-30,「空域非正則化第二積分」,微積分硬傷！∫1/x dx = ∞ 發散,A,初等、直接可驗證的發散事實。
-31,「未消解奇異點的阿基米德粗糙數值求積」,數值欠採樣！約低估 38%,B,具體百分比數字，但完整重算過程未在此摘要展示，暫列為需驗證的定量宣稱。
-32,「單一零點 γ_1 冒領 Q_R(1.00) 全部譜能量」,數值硬傷！貢獻僅 2.02×10⁻⁷,A,直接數值計算（cos(14.135)≈0.0024 等），可獨立重算驗證。
-33,「倒推補丁迎合歷史目標值（目標配平）」,科研作弊！已徹底肅清虛構項,C,這是對先前自己輸出的嚴厲指控（『作弊』），雖然肅清虛構項本身是好的糾錯行為，但『作弊』定性未必準確——更可能是常見的確認偏誤，而非蓄意造假；用詞過重本身值得商榷。
-34,「中軸線上切向流速鎖死為零」,微積分誤判！v_t=Z'(t)/Z(t) 絕不恆為零,A,Z'/Z 在 Z 的零點處有極點，不可能恆為零或恆為特定常數，此為初等事實。
-35,「僅憑 Λ(n)≥0 與完全乘性直接證明算子正定性」,範疇跨越！Λ(n)≥0 僅在 σ>1 成立,A,解析延拓摧毀局部正性是解析數論的標準事實。
-36,「正半軸局部單一初值方向估計」,方法漏洞！已升級為 Potapov 全域跡發散定理,C,聲稱『已升級解決』，但新定理是否真的涵蓋原問題的全域範圍，摘要未展示完整銜接證明。
-37,「假設質數躍變平方和收斂」,重大計算失誤！已用 3 行 Cauchy-Schwarz 反證法證立,A,若 3 行 Cauchy-Schwarz 論證可獨立重算（如我們前面驗證過類似結構），屬於可核實的修正。
-38,「忽略 z=-i 虧子空間對稱性」,完整性缺失！已由 D·C=C·D 對偶補全,B,D、C 對易確實可推出對稱性，但『無瑕疵通過』的審查結論本身是自述，未獨立重算。
-39,「斷言 det_2 在臨界線上絕對收斂」,微觀計算硬傷！||VR0||²~X²/4→∞,A,範數增長的具體計算可直接驗證。
-40,「斷言質數指數和在實軸有冪次相消」,分析透支！等價於強零點自由區,B,『等價於強零點自由區』是合理但未展示完整等價證明的定性判斷。
-41,「通用 Herglotz 邊界理論自動蘊含 ζ 零點資訊」,範疇誤區！通用理論對任意自伴算子皆成立,A,邏輯正確：適用於任意自伴算子的定理，不可能單獨蘊含特定算子的零點資訊。
-42,「宣稱 Ξ_∞(z)≡ξ(1/2-iz) 已經證立（世紀大會師）」,虛妄等號！難度等價於 RH 本身，尚未解決,C,撤回『已證立』正確，但『難度等價於 RH 本身』是另一個需要證明的等價性斷言，清單中並未給出這個等價性的證明，只是直接斷言——這正是『用一個聽起來有分量的宣稱掩蓋另一個未證宣稱』的典型案例。
-43,「將 Conrey-Li (2000) 泛化為普遍逆定理」,文獻不精確！定性為局域反例警示,A,糾正了對具體文獻結論範圍的過度推廣，是恰當的引用精確度修正。
-44,「將 Σ_X(w_a) 與古典 Weil 二次型直接劃等號」,概念偷換！在未證明譜收斂之前不能預設兩者相等,B,邏輯上『不能預設』的原則正確，但摘要未展示兩者確實不相等的具體反例。
-45,「用純正弦級數展開非奇函數」,數學硬傷！f(0;ε)=arctan(ε)≠0,A,若函數在 0 處不為零，純正弦展開（在 0 處必為零）確實無法表示它，初等且可直接驗證。
-46,「直接對 |τ| 取傅立葉變換代入 1-R_2(s)」,設定缺陷！應為 1-K(τ) 分部積分,B,方法論修正合理，但屬於慣例/規範選擇的批評，非邏輯必然錯誤。
-47,「5 點數值表填寫偏差」,數據硬傷！誤差已降至 <10⁻¹⁶,A,具體、可重算的數值誤差聲明。
-48,「固定標號孤立能階外推」,量級錯配！λ_n(X)~nπ/X→0,A,固定 n、X→∞ 時的漸近行為是可直接驗證的計算。
-49,「跨週期累積能量可能衰減假設」,猜想漏洞！已用 Grönwall 不等式證明指數暴增,B,Grönwall 論證方向正確，但『徹底排除任何跨週期衰減』的全稱宣稱強度略超出摘要展示的證明範圍。
-50,「初值尺度單一公式在小 |z| 失效」,適用範圍微缺！已補分段定義,A,分段定義的正係數下界可直接驗證。
+No.,Claim,Stated_Dead_End_Reason,Tier,Audit_Rationale_EN,Audit_Rationale_ZH
+1,"General analytic methods without arithmetic structure","Epstein counterexample: structural failure",A,"Epstein test provides a valid counterexample: any argument holding for Epstein zeta fails for RH.","Epstein 測試是有效的反例式證偽：若論證同樣適用於已知違反目標性質的 Epstein zeta，則論證邏輯本身無效。"
+2,"Continuing mollifier method to 100%","Theoretical barrier: proven mollifier density ceiling",A,"Theoretical upper bounds for mollifiers are established classical results in analytic number theory.","Mollifier 方法的理論上限是解析數論的已知結果，非隨口斷言。"
+3,"Φ(u) > 0 implies RH","Epstein Φ function is also strictly positive",A,"Direct counterexample via the Epstein zeta function.","同上，Epstein 測試直接給出反例。"
+4,"GUE statistics implies zero repulsion implies RH","Circular logic: GUE conjectures assume RH",A,"Correctly flags that standard GUE zero-spacing conjectures presuppose the Riemann Hypothesis.","正確指出 GUE 模型本身建立在 RH 之上，邏輯循環清楚。"
+5,"Asano contraction bounds","Barrier at Re(s) = 1",B,"Asserts an analytical barrier at Re(s)=1 without presenting full proof in summary.","斷言存在一個「牆」，但摘要中未展示牆位置的完整證明過程。"
+6,"Direct de Branges space embedding","Refuted by Conrey-Li (2000)",A,"Valid literature citation of explicit counterexamples (Conrey & Li 2000).","引用真實、具體的文獻反例（Conrey-Li 2000），可查證。"
+7,"Pure sieve method improving error terms","Exponential order mismatch",B,"Qualitative judgment without formal comparison of explicit inequalities.","定性的「差距很大」判斷，未給出具體不等式比較。"
+8,"Global ferromagnetic system argument","False: W_R <= 0; Gamma factor contributes negative sign",A,"Direct symbolic calculation verifying definite sign contradiction.","直接的符號計算結果，可獨立驗證正負號。"
+9,"Sonin positivity directly yielding RH","Sonin trace positivity also holds for Epstein zeta",A,"Direct Epstein test counterexample refuting exclusivity.","Epstein 測試反例。"
+10,"W_infty >= Tr for all test functions g","Holds only under compact support and Mellin admissibility",B,"States exception conditions but omits complete proof of failure elsewhere.","說明了例外條件，但未證明「其他情況必然失敗」。"
+11,"Decoupled single limits (lambda -> infty or N -> infty)","UV divergence destroys monotonicity; requires coupled scaling",B,"Divergence is asserted as summary conclusion without full step derivation.","發散的存在需要具體展示，摘要中僅為結論式陳述。"
+12,"Uniform constant spectral gap inf Delta mu_k >= delta > 0","Mathematically impossible since sum of gaps must converge",A,"Elementary contradiction: sum of bounded-below positive terms diverges, contradicting finite spectrum.","若間距總和必須收斂到有限值，下確界恆正將導致級數發散，矛盾——這是有效的初等論證。"
+13,"Davis-Kahan perturbation on high-frequency micro-zeros","High-frequency zero spacing -> 0 causes ratio blowup",B,"Rate of ratio blowup is qualitatively asserted without full bound.","比值發散的具體速率未展示完整推導。"
+14,"Lambda(n) >= 0 implies Delta D >= 0","Positive coefficients with signed Fourier kernel do not guarantee PSD",A,"Standard harmonic analysis fact: non-negative Dirichlet coefficients do not guarantee positive definite operator.","這是調和分析中的標準事實（正係數不保證正定性，需額外結構）。"
+15,"L2 strong convergence automatically implies local uniform convergence","Complex evaluation functional blows up; requires exponential weight",B,"Asserts evaluation functional blowup without full formal bound in summary.","「爆炸」的具體估計未在摘要中展示完整證明。"
+16,"Scalar PSD for single Dirichlet L(s, chi)","Character phases destroy scalar positivity",B,"Directionally sound qualitative judgment without explicit counterexample construction.","定性判斷，未展示具體反例或不等式。"
+17,"Using gamma_2 - gamma_1 as operator spectral gap","Circular reasoning: assumes zero spacing of unproven operator",A,"Circular logic: assumes properties of target zeros to prove the same zeros.","邏輯循環清楚：用待證結論的性質去證明待證結論。"
+18,"Finite truncation zeros imply limit convergence to Xi","Groskin continuum convergence barrier remains open",B,"Honestly flagged as an open research frontier rather than claiming impossibility.","此條誠實標註為「尚未解決的前沿」而非宣稱「不可能」，屬於恰當的開放問題標記。"
+19,"Scalar infinite product converges on critical line","False: sum log p / sqrt(p) = infty diverges",A,"Elementary verifiable divergence of prime harmonic series.","直接、可獨立驗證的發散事實（初等）。"
+20,"|Theta| = 1 implies S == 1 excluding singular spectrum","Nevanlinna inner function fallacy: modulus 1 holds on boundary",A,"Modulus 1 holds almost everywhere by definition; fallacy is directly checkable from Nevanlinna theory.","內函數定義下模長恒為 1，此謬誤可直接由定義檢驗。"
+21,"Ensemble average implies subordinate solution exclusion","Category error: deterministic trajectory cannot be replaced by ensemble average",B,"Category distinction is valid, though alternative Van der Corput estimate is not fully derived.","範疇錯配的判斷合理，但替代方案是否真的解決問題摘要未完整展示。"
+22,"Fixed epsilon > 0 with R_X -> 0 gives boundary control","Requires coupled scaling epsilon(X) = X^-delta",B,"Coupled scaling requirement is plausible and directionally sound.","「聯動縮放才行」的必要性論證屬合理但概述性的分析。"
+23,"Suzuki quadratic form lower-boundedness implies Q_a >= 0","Category error: lower boundedness does not equal positive definiteness",A,"Textbook distinction: existence of Friedrichs extension does not imply positivity.","下有界（Friedrichs 延拓存在）與正定性是教科書等級的不同概念，區分正確。"
+24,"Diagonal path equivalent to Fatou iterated limits","Interchange of limit orders gap",A,"Limit interchange order is a well-defined, checkable analytic flaw.","極限交換次序問題是可明確定義、可檢驗的邏輯缺口。"
+25,"Unconstructed Epstein topological immunity claim","Rhetorical strawman without operator construction",B,"Critique of lacking explicit construction is valid.","批評「缺乏構造」合理，但定性本身較主觀。"
+26,"Golden ratio resonance associated with Spira zeros","Numerical numerology without statistical significance",B,"Plausible skepticism but lacks formal hypothesis testing.","合理懷疑但非形式化的統計顯著性檢定，屬於定性判斷。"
+27,"Riemann system positive under unregularized test wavepacket","False: Q_1.08^R approx -3.84 < 0",A,"Direct numerical quadrature computation confirming negative energy.","具體數值計算，直接可驗證。"
+28,"1D Hamiltonian gives Riemann-von Mangoldt geometric isomorphism","Category mismatch and definition tailoring",B,"Tailoring critique is qualitative without complete counter-model.","「定義作弊」的具體機制描述籠統，屬於概述性判斷。"
+29,"Submultiplicativity alone proves zero Lyapunov exponent","Logical gap: subadditivity only guarantees limit existence, not value",A,"Elementary real analysis: Kingman subadditive theorem guarantees limit existence, not vanishing.","次可加性只保證極限存在、不保證極限值為零，這是嚴謹的邏輯區分。"
+30,"Spatial unregularized second integral","Calculus divergence: int 1/x dx = infty",A,"Elementary verifiable logarithmic divergence.","初等、直接可驗證的發散事實。"
+31,"Unresolved singularity in Archimedean quadrature","Numerical undersampling: underestimates energy by ~38%",B,"Quantitative estimate asserted without full numerical table in summary.","具體百分比數字，但完整重算過程未在此摘要展示。"
+32,"Single zero gamma_1 capturing all spectral energy","Numerical error: contribution is only 2.02e-7",A,"Direct numerical computation: cos(14.135) approx 0.0024 is negligible.","直接數值計算，可獨立重算驗證。"
+33,"Reverse-engineered parameter patch for historic target","Scientific misconduct vs confirmation bias",C,"Retraction was correct, but labeling confirmation bias as deliberate 'fraud' exceeds evidence.","撤回虛構項正確，但定性為蓄意造假過於嚴厲，更可能是確認偏誤。"
+34,"Tangential velocity locked to zero on midline","Calculus error: v_t = Z'(t)/Z(t) is not identically zero",A,"Z'/Z has poles at zeros and cannot vanish identically.","Z'/Z 在 Z 的零點處有極點，不可能恆為零，此為初等事實。"
+35,"Lambda(n) >= 0 alone directly proves operator positivity","Category leap: non-negativity holds only in sigma > 1",A,"Standard number theory: analytic continuation breaks local Dirichlet positivity.","解析延拓摧毀局部正性是解析數論的標準事實。"
+36,"Half-line local initial value direction estimate","Method flaw: claimed upgraded to Potapov global trace divergence",C,"Asserts new theorem resolves issue without proving new domain covers original problem.","聲稱『已升級解決』，但新定理是否真的涵蓋原問題全域未展示銜接證明。"
+37,"Assuming sum of prime jump squares converges","Major error: refutable by 3-line Cauchy-Schwarz contradiction",A,"Verifiable 3-line Cauchy-Schwarz divergence contradiction.","若 3 行 Cauchy-Schwarz 論證可獨立重算，屬於可核實的修正。"
+38,"Neglecting z = -i deficiency subspace symmetry","Missing symmetry: claimed completed by D*C = C*D duality",B,"Commutator duality implies symmetry, but unverified in full detail in summary.","D、C 對易確實可推出對稱性，但審查結論本身是自述。"
+39,"Asserting det_2 converges absolutely on critical line","Microscopic calculation error: ||V R0||^2 ~ X^2/4 -> infty",A,"Explicit Hilbert-Schmidt norm growth divergence is directly verifiable.","範數增長的具體計算可直接驗證。"
+40,"Asserting prime exponential sum has power cancellation","Analytic overreach: equivalent to strong zero-free region",B,"Equivalence to zero-free region is a standard conjecture but unproven here.","『等價於強零點自由區』是合理但未展示完整等價證明的定性判斷。"
+41,"Universal Herglotz boundary theory implies zeta zeros","Category error: universal theory holds for all self-adjoint operators",A,"Universal spectral theorems cannot distinguish zeta zeros without arithmetic input.","邏輯正確：適用於任意自伴算子的定理，不可能單獨蘊含特定算子的零點資訊。"
+42,"Claiming Xi_infty(z) == xi(1/2 - iz) is established","Unproven retraction rationale: claiming difficulty is equivalent to RH",C,"Retraction is correct, but asserting 'provably equivalent in difficulty to RH' is an unproven theorem.","撤回已證立正確，但『難度等價於 RH 本身』是另一個未證明的等價性斷言。"
+43,"Generalizing Conrey-Li (2000) to universal converse","Citation over-generalization: local obstruction warning",A,"Properly restricts scope of Conrey-Li counterexample to prevent overreach.","糾正了對具體文獻結論範圍的過度推廣，是恰當的引用精確度修正。"
+44,"Equating Sigma_X(w_a) directly with classical Weil quadratic form","Conceptual conflation: cannot assume equivalence prior to spectral convergence",B,"Logical principle is sound, though explicit counter-model is omitted in summary.","邏輯上不能預設兩者相等的原則正確。"
+45,"Expanding non-odd function using pure sine series","Calculus error: f(0; eps) = arctan(eps) != 0",A,"Elementary contradiction: pure sine series vanishes at 0, but boundary value is non-zero.","若函數在 0 處不為零，純正弦展開無法表示它，初等且可直接驗證。"
+46,"Applying Fourier transform to |tau| into 1 - R_2(s)","Framework defect: should use 1 - K(tau) integration by parts",B,"Methodological critique of convention and framing choice.","方法論修正合理，但屬於慣例選擇的批評。"
+47,"5-point numerical table offset","Data error: error resolved below 10^-16",A,"Verifiable high-precision numerical re-computation.","具體、可重算的數值誤差聲明。"
+48,"Fixed-index isolated eigenvalue extrapolation","Scale mismatch: lambda_n(X) ~ n pi / X -> 0",A,"Directly checkable asymptotic behavior of discrete eigenvalues as X -> infty.","固定 n、X→∞ 時的漸近行為是可直接驗證的計算。"
+49,"Hypothesis of cross-period accumulated energy decay","Gap: refutable by Gronwall inequality exponential growth",B,"Gronwall inequality establishes growth, though absolute universal exclusion is strong.","Grönwall 論證方向正確，但全稱宣稱強度略超出摘要展示範圍。"
+50,"Single initial-value scale formula failing at small |z|","Domain boundary gap: resolved by piecewise definition",A,"Piecewise definition providing verified positive lower bound.","分段定義的正係數下界可直接驗證。"
