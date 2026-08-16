@@ -74,9 +74,9 @@ riemann-hypothesis/
 While mainstream LLM benchmarks (GSM8K, MATH, OlympiadBench) test static, single-turn contest math with known ground truths, this longitudinal study captures the dynamic cognitive phenomenology of AI reasoning across hundreds of open-ended turns:
 
 1. **An 11-Class Taxonomy of Reasoning Failure Modes**:
-   - **Mode 1**: Scale & Coordinate Confusion ($X=t$ vs $X=\log(t/2\pi)$)
-   - **Mode 2**: Hidden Circular Reasoning (assuming $\operatorname{Re}(\rho)=1/2$ in unconditional claims)
-   - **Mode 3**: Category Mixing between Ensemble Statistics ($\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0$) and Pointwise Bounds ($|S(X, t_0)| \le \mathcal{O}(X)$)
+   - **Mode 1**: Scale & Coordinate Confusion ($X=t$ vs. $X=\log(t/2\pi)$)
+   - **Mode 2**: Hidden Circular Reasoning (assuming $\mathrm{Re}(\rho)=1/2$ in unconditional claims)
+   - **Mode 3**: Category Mixing between Ensemble Statistics ($\langle\mathrm{Re}\,\mathcal{C}_2\rangle \equiv 0$) and Pointwise Bounds ($|S(X, t_0)| \le \mathcal{O}(X)$)
    - **Mode 4**: Topological Fallacy of Isolated Points vs. Continuous Accumulations
    - **Mode 5**: Formula Transplantation Weight Mismatches ($\log p$ weights)
    - **Mode 6**: Heavy-Machinery Invocation for Elementary Facts (Baker's theorem on unique prime factorization)
@@ -89,8 +89,12 @@ While mainstream LLM benchmarks (GSM8K, MATH, OlympiadBench) test static, single
    - **Mode 11**: Citation Overreach (Citing real arXiv papers like Groskin 2026 or Suzuki 2026 for conjectures they explicitly disclaimed)
 
 2. **The Prompt Specificity Principle**:
-   $$\text{Vague/Rhetorical Prompt} \xrightarrow{\text{induces}} \text{Narrative Escalation & Bluffing}$$
-   $$\text{Quantitative CAS Counter-Proof} \xrightarrow{\text{forces}} \text{Rigorous Self-Correction & Genuine Proof}$$
+   ```
+   [ Vague / Rhetorical Prompt ]       ──(induces)──>  [ Narrative Escalation & Bluffing ]
+   [ Quantitative CAS Counter-Proof ]  ──(forces)───>  [ Rigorous Self-Correction & Proof ]
+   ```
+   $$\text{Vague / Rhetorical Prompt} \xrightarrow{\text{induces}} \text{Narrative Escalation and Bluffing}$$
+   $$\text{Quantitative CAS Counter-Proof} \xrightarrow{\text{forces}} \text{Rigorous Self-Correction and Genuine Proof}$$
 
 3. **Dead-End Rigor Grading & Methodology**:
    For detailed definitions, rubric criteria, and qualitative case studies of how negative-direction overreach manifests in retraction claims, see:
