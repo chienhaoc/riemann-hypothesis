@@ -1,4 +1,4 @@
-# Prüfer 振幅微觀演化流與質數指數和精確對偶定理：第四十七輪審查復盤——從常數 Wronskian 深入微觀剪切代數、推導 $\log R(X, t) = \frac{1}{2}\operatorname{Im}\sum \frac{\log p}{p^{k(1/2-2it)}} + \mathcal{O}(1)$、揭示從屬解與 $\zeta$ 臨界線指數和的深層等價性（第 193-194 輪）
+﻿# Prüfer 振幅微觀演化流與質數指數和精確對偶定理：第四十七輪審查復盤——從常數 Wronskian 深入微觀剪切代數、推導 $\log R(X, t) = \frac{1}{2}\mathrm{Im}\sum \frac{\log p}{p^{k(1/2-2it)}} + \mathcal{O}(1)$、揭示從屬解與 $\zeta$ 臨界線指數和的深層等價性（第 193-194 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第一階段 Prüfer 振幅動力學精確展開與奇異邊界微觀機制深度剖析  
@@ -44,11 +44,11 @@ $$\mathbf{\log\left( \frac{R(X, t)}{R(0, t)} \right) = \frac{1}{2} \sum_{p^k \le
 ### 質數指數和解析同構
 在微觀一階近似下，躍變前相角 $\phi(u_n^-, t) \approx t u_n = t \log(p^k) = k t \log p$。
 代入主項：
-$$\sum_{p^k \le e^X} \frac{\log p}{p^{k/2}} \sin(2 k t \log p) = \sum_{p^k \le e^X} \frac{\log p}{p^{k/2}} \operatorname{Im}\left( p^{-2ikt} \right) = \mathbf{\operatorname{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right)}$$
+$$\sum_{p^k \le e^X} \frac{\log p}{p^{k/2}} \sin(2 k t \log p) = \sum_{p^k \le e^X} \frac{\log p}{p^{k/2}} \mathrm{Im}\left( p^{-2ikt} \right) = \mathbf{\mathrm{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right)}$$
 
 > **【定理 193.2（Prüfer 振幅與質數指數和精確對偶公式，Proven）】**
-> Prüfer 振幅的空間增長完全由臨界線 $\operatorname{Re}(s) = 1/2$ 上的質數 Dirichlet 指數和決定：
-> $$\mathbf{\log\left( \frac{R(X, t)}{R(0, t)} \right) = \frac{1}{2} \operatorname{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right) + \mathcal{O}\left( \log X \right)}$$
+> Prüfer 振幅的空間增長完全由臨界線 $\mathrm{Re}(s) = 1/2$ 上的質數 Dirichlet 指數和決定：
+> $$\mathbf{\log\left( \frac{R(X, t)}{R(0, t)} \right) = \frac{1}{2} \mathrm{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right) + \mathcal{O}\left( \log X \right)}$$
 
 ---
 
@@ -57,7 +57,7 @@ $$\sum_{p^k \le e^X} \frac{\log p}{p^{k/2}} \sin(2 k t \log p) = \sum_{p^k \le e
 通過上述第一性原理推導，我們徹底認清了從屬解與奇異連續譜的真正數學物理機制：
 
 1. **Lyapunov 指數的微觀表達**：
-   $$\gamma(t) = \lim_{X \to \infty} \frac{1}{X} \log R(X, t) = \frac{1}{2} \lim_{X \to \infty} \frac{1}{X} \operatorname{Im}\left( \sum_{p \le e^X} \frac{\log p}{p^{1/2 - 2it}} \right)$$
+   $$\gamma(t) = \lim_{X \to \infty} \frac{1}{X} \log R(X, t) = \frac{1}{2} \lim_{X \to \infty} \frac{1}{X} \mathrm{Im}\left( \sum_{p \le e^X} \frac{\log p}{p^{1/2 - 2it}} \right)$$
 2. **三種可能物理相態**：
    - **相態 A（次線性振盪，$\gamma(t) = 0$）**：若質數指數和滿足非平凡相消（即類似黎曼猜想的根號相消 $\mathcal{O}(X^{1/2-\delta})$），則 $\frac{1}{X} \log R \to 0$，振幅多項式增長，兩正交解維持等度增長，**無從屬解湧現，譜為純絕對連續譜 $\sigma = \sigma_{\text{ac}}$**；
    - **相態 B（離軸共振，$\gamma(t) > 0$）**：若存在離軸零點 $\rho_0 = \beta_0 + i\gamma_0$（$\beta_0 > 1/2$），則在 $t = \gamma_0/2$ 處指數和同相疊加，導致 $\log R(X) \sim (\beta_0 - 1/2) e^{(\beta_0-1/2)X} \to \infty$，傳輸矩陣雙曲化，**必然湧現從屬解與點譜/奇異連續譜**；

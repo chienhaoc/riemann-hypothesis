@@ -1,4 +1,4 @@
-# 深度復盤：第十一輪審查剖析——徹底根絕「坐標偷換概念」頑疾，還原相空間體積與散射相移真實物理機制
+﻿# 深度復盤：第十一輪審查剖析——徹底根絕「坐標偷換概念」頑疾，還原相空間體積與散射相移真實物理機制
 
 **日期**：2026-08-15  
 **性質**：紅隊審查深度復盤與根本性數學誠信整改報告  
@@ -35,11 +35,11 @@ $$\frac{dY}{dx} = T J H(x) Y$$
 在 Berry-Keating、Connes 與解析數論中，$N(T) \sim \frac{T}{2\pi}\log\frac{T}{2\pi e}$ 的真實來源是：
 1. **二維相空間 Weyl 定律**（Planck 常數 $h = 2\pi$）：
    雙曲相空間 $H(x, p) = xp$ 的相空間體積為：
-   $$\operatorname{Vol}(\{(x, p) : 0 \le x \le X, 0 \le p \le P, xp \le T\}) = T \log\left(\frac{T}{2\pi e}\right) + \mathcal{O}(T)$$
+   $$\mathrm{Vol}(\{(x, p) : 0 \le x \le X, 0 \le p \le P, xp \le T\}) = T \log\left(\frac{T}{2\pi e}\right) + \mathcal{O}(T)$$
    除以量子胞體積 $2\pi$，直接給出態數 $N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e}$（此處能量 $T$ 本身就是相空間雙曲面積，而非一維坐標乘頻率！）；
 2. **完備 $\xi(s)$ 的邊界散射相移**：
    $$N(T) = \frac{1}{\pi} \vartheta(T) + 1 + S(T)$$
-   其中 $\vartheta(T) = \operatorname{Im}\log \Gamma_{\mathbb{R}}(1/2 + iT) = \frac{T}{2}\log\left(\frac{T}{2\pi e}\right) - \frac{\pi}{8} + \mathcal{O}(T^{-1})$ 是 Gamma 因子在複頻域臨界線上的**全域相移**，而不是空間局部傳輸矩陣的長度累積！
+   其中 $\vartheta(T) = \mathrm{Im}\log \Gamma_{\mathbb{R}}(1/2 + iT) = \frac{T}{2}\log\left(\frac{T}{2\pi e}\right) - \frac{\pi}{8} + \mathcal{O}(T^{-1})$ 是 Gamma 因子在複頻域臨界線上的**全域相移**，而不是空間局部傳輸矩陣的長度累積！
 
 ---
 

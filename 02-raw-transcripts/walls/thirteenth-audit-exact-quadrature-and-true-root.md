@@ -1,4 +1,4 @@
-# 深度復盤：第十三輪審查剖析——徹底根治奇異點積分數值欠採樣、精確求得 Epstein 真實相變點 $a_E^* \approx 0.934$ 與 Riemann 真實二次型演化
+﻿# 深度復盤：第十三輪審查剖析——徹底根治奇異點積分數值欠採樣、精確求得 Epstein 真實相變點 $a_E^* \approx 0.934$ 與 Riemann 真實二次型演化
 
 **日期**：2026-08-15  
 **性質**：紅隊審查深度復盤與數值積分高精度求求根報告  
@@ -25,7 +25,7 @@
 
 在消除了奇異點欠採樣後，以 25 位高精度數值求積重算客觀真實能量：
 
-$$\mathcal{W}_{\text{arch}}^E(w_a) = \frac{a}{2\pi} \left(\frac{32\pi^3}{a^2+\pi^2}\right)^2 \int_0^\infty \frac{(a^2+u^2)^2 \cos^2(u/2)}{(\pi^2-u^2)^2(9\pi^2-u^2)^2} \left[ \log\left(\frac{5}{\pi^2}\right) + 2\operatorname{Re}\psi\left(\frac{1}{2} + i \frac{u}{2a}\right) \right] du$$
+$$\mathcal{W}_{\text{arch}}^E(w_a) = \frac{a}{2\pi} \left(\frac{32\pi^3}{a^2+\pi^2}\right)^2 \int_0^\infty \frac{(a^2+u^2)^2 \cos^2(u/2)}{(\pi^2-u^2)^2(9\pi^2-u^2)^2} \left[ \log\left(\frac{5}{\pi^2}\right) + 2\mathrm{Re}\psi\left(\frac{1}{2} + i \frac{u}{2a}\right) \right] du$$
 
 | 尺度 $a$ | 物理長度 $2a$ | 客觀真實 $\mathcal{W}_{\text{arch}}^E$ | 算術項總和 $\mathcal{W}_{\text{arith}}^E$ | **真實總二次型 $\mathcal{W}_E(w_a)$** | 譜狀態判定 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -53,7 +53,7 @@ $$\log 6 \,(1.7918) < \mathbf{2a_E^* \,(1.868)} < \log 9 \,(2.1972)$$
 
 在同一套高精度積分方法下，計算 Riemann 系統在容許波包 $w_a$ 上的真實二次型（廢除任何虛構的 $< 10^{-5}$ 宣稱，如實報告高精度積分值）：
 
-$$\mathcal{W}_{\text{arch}}^R(w_a) = \frac{a}{2\pi}\left(\frac{32\pi^3}{a^2+\pi^2}\right)^2 \int_0^\infty \frac{(a^2+u^2)^2 \cos^2(u/2)}{(\pi^2-u^2)^2(9\pi^2-u^2)^2} \left[ -\log\pi + \operatorname{Re}\psi\left(\frac{1}{4} + i\frac{u}{4a}\right) \right] du$$
+$$\mathcal{W}_{\text{arch}}^R(w_a) = \frac{a}{2\pi}\left(\frac{32\pi^3}{a^2+\pi^2}\right)^2 \int_0^\infty \frac{(a^2+u^2)^2 \cos^2(u/2)}{(\pi^2-u^2)^2(9\pi^2-u^2)^2} \left[ -\log\pi + \mathrm{Re}\psi\left(\frac{1}{4} + i\frac{u}{4a}\right) \right] du$$
 
 | 尺度 $a$ | 物理長度 $2a$ | 客觀真實 $\mathcal{W}_{\text{arch}}^R$ | 算術項總和 $\mathcal{W}_{\text{arith}}^R$ | **真實總二次型 $\mathcal{W}_R(w_a)$** | 譜狀態判定 |
 |:---:|:---:|:---:|:---:|:---:|:---:|

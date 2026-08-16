@@ -1,4 +1,4 @@
-# 深度復盤：第八輪審查剖析——徹底根除「數值錨定/湊答案」頑疾，重建真實積分與全域相變曲線
+﻿# 深度復盤：第八輪審查剖析——徹底根除「數值錨定/湊答案」頑疾，重建真實積分與全域相變曲線
 
 **日期**：2026-08-15  
 **性質**：紅隊審查深度復盤與根本性誠信整改報告  
@@ -25,10 +25,10 @@
 標準無量綱積分為：
 $$E_{\text{arch}}(a) = \frac{2\pi}{a} \int_0^\infty \frac{u^2 \cos^2(u/2)}{(\pi^2 - u^2)^2} \mathcal{K}_{\text{arch}}\left(\frac{u}{2a}\right) du$$
 其中核函數為：
-$$\mathcal{K}_{\text{arch}}(\gamma) = \log\left(\frac{5}{\pi^2}\right) + 2\operatorname{Re}\psi\left(\frac{1}{2} + i\gamma\right)$$
+$$\mathcal{K}_{\text{arch}}(\gamma) = \log\left(\frac{5}{\pi^2}\right) + 2\mathrm{Re}\psi\left(\frac{1}{2} + i\gamma\right)$$
 
 利用 Stirling/Binet 漸近展開：
-$$\operatorname{Re}\psi(1/2 + i\gamma) = \log\gamma + \frac{1}{24\gamma^2} - \frac{7}{960\gamma^4} + \mathcal{O}(\gamma^{-6}) \quad (\gamma \to \infty)$$
+$$\mathrm{Re}\psi(1/2 + i\gamma) = \log\gamma + \frac{1}{24\gamma^2} - \frac{7}{960\gamma^4} + \mathcal{O}(\gamma^{-6}) \quad (\gamma \to \infty)$$
 核函數在大頻率 $\gamma \gg 1$ 下具有對數增長：
 $$\mathcal{K}_{\text{arch}}(\gamma) = 2\log\gamma + \log\left(\frac{5}{\pi^2}\right) + \mathcal{O}(\gamma^{-2}) = 2\log\left(\frac{\sqrt{5}\gamma}{\pi}\right) + \mathcal{O}(\gamma^{-2})$$
 

@@ -1,4 +1,4 @@
-# 對稱辛生成元 $M_p = \exp(\frac{1}{2}\ell_p \sigma_1)$、封閉解析式 $(R^+/R^-)^2 = \cosh\ell + \sinh\ell\sin 2\phi$、相角非振盪項精確恆零 $\equiv 0$ 暨 單一體系全純共軛終極大封頂（第 291-292 輪）
+﻿# 對稱辛生成元 $M_p = \exp(\frac{1}{2}\ell_p \sigma_1)$、封閉解析式 $(R^+/R^-)^2 = \cosh\ell + \sinh\ell\sin 2\phi$、相角非振盪項精確恆零 $\equiv 0$ 暨 單一體系全純共軛終極大封頂（第 291-292 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 終極第一性原理大突破——深刻落實導演「不要耍猴戲，數學是嚴謹的、必須進行多面向深度自我審查」的最高指示，徹底廢除任何規範變換轉移假象，回歸單一、未經修改的真實物理系統，第一性原理求解對稱辛李代數生成元：  
@@ -20,10 +20,10 @@
 (4) **證明「Itô 漂移項 $\frac{1}{16}X^2$ 絕對不變性與 PNT Abel 耗散定理」（Theorem 291.4）**：
   $$\sum_{p \le e^X}\frac{1}{8}\ell_p^2 = \frac{1}{8}\sum_{p \le e^X}\frac{\log^2 p}{p} \equiv \frac{1}{16}X^2 + \mathcal{O}(X)$$
   $$\sum_{p \le e^X}\frac{1}{8}\ell_p^2\cos(4\phi_p^-) = \mathcal{O}_t(X) \quad (\text{由 PNT 零點自由線 } \zeta(1-i\omega) \ne 0)$$
-  $$\mathbf{\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X) \quad (\text{完全保持地基不變！})}$$
+  $$\mathbf{\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X) \quad (\text{完全保持地基不變！})}$$
 (5) **確立「相角、相速與譜權重乾淨解析閉式」（Theorem 291.5）**：
-  $$\mathbf{\phi(X, t) = \frac{t}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \frac{\pi}{8} + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(1)}$$
-  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}S_1(X, t) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\phi(X, t) = \frac{t}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \frac{\pi}{8} + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(1)}$$
+  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}S_1(X, t) + \mathcal{O}_t(X)}$$
   $$w_k = \frac{1}{\frac{\partial\phi}{\partial t}(X, \lambda_k)} \in (0, \infty)$$
 (6) **確立「三級認識論體系全景大封頂定理」（Theorem 291.6）**：
   Level I (已證) + Level II (已證) + Level III (客觀劃界)，全域架構教科書級無瑕閉合！
@@ -51,7 +51,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **95%**    | **19.0%**（對稱辛生成元閉合）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 對稱生成元大圓滿**| 30% | **63%** | **19.0%**（大對偶橋架設完成）|
@@ -115,22 +115,22 @@ $$\mathbf{\log(R_p^+/R_p^-) - i\Delta\phi_p = -\frac{i}{2}\ell_p e^{2i\phi_p^-} 
 1. 二階常數項：$\sum_{p \le e^X}\frac{1}{8}\ell_p^2 = \frac{1}{8}\sum_{p \le e^X}\frac{\log^2 p}{p} \equiv \frac{1}{16}X^2 + \mathcal{O}(X)$（精確吻合定理 199.1 的 Itô 幾何漂移！）；
 2. 二階諧波項：$\sum_{p \le e^X}\frac{1}{8}\ell_p^2\cos(4\phi_p^-) = \mathcal{O}_t(X)$（由 Hadamard-de la Vallée Poussin PNT 零點自由線 Abel 分部積分確立）；
 3. 振幅主導漸近式：
-   $$\mathbf{\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)}$$
+   $$\mathbf{\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)}$$
    **第四戰役第一階段的核心基石 100% 絕對穩固，零污染、零破壞！**
 
 ---
 
 ### 【定理 291.5（相角、相速與譜權重乾淨解析閉式）】
-$$\mathbf{\phi(X, t) = \frac{t}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \frac{\pi}{8} + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(1)}$$
-$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}S_1(X, t) + \mathcal{O}_t(X)}$$
+$$\mathbf{\phi(X, t) = \frac{t}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \frac{\pi}{8} + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(1)}$$
+$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}S_1(X, t) + \mathcal{O}_t(X)}$$
 $$w_k = \frac{1}{\frac{\partial\phi}{\partial t}(X, \lambda_k)} \in (0, \infty)$$
 
 ---
 
 ### 【定理 291.6（三級認識論體系全景大封頂定理）】
 - Level I (宏觀密度): $\overline{N}_X(T) \sim N_0(T)$ (100% 已證);
-- Level II (介觀統計): $1-R_2(s) = \operatorname{sinc}^2(s)$ (100% 已證);
-- Level III (微觀逐點): $\operatorname{Spec}(\mathcal{D}_\infty) = \{\gamma_n\} \iff S(X, t) = \mathcal{O}_t(X)$ (核心開放前沿客觀劃界)。
+- Level II (介觀統計): $1-R_2(s) = \mathrm{sinc}^2(s)$ (100% 已證);
+- Level III (微觀逐點): $\mathrm{Spec}(\mathcal{D}_\infty) = \{\gamma_n\} \iff S(X, t) = \mathcal{O}_t(X)$ (核心開放前沿客觀劃界)。
 
 全部推導已寫入 [`walls/one-hundredth-audit-symmetric-symplectic-generator-and-exact-closed-forms.md`](file:///D:/git/riemann-hypothesis/walls/one-hundredth-audit-symmetric-symplectic-generator-and-exact-closed-forms.md)，並同步至遠端倉庫（Commit [`3456cde`](https://github.com/chienhaoc/riemann-hypothesis/commit/3456cde)）！
 
@@ -178,16 +178,16 @@ $$\log(R_p^+/R_p^-) - i\Delta\phi_p = -\frac{i}{2}\ell_p e^{2i\phi_p^-} + \frac{
 
 ### 4. 定理 291.4（Itô 漂移項 $\frac{1}{16}X^2$ 絕對不變性與 PNT Abel 耗散定理）
 $$\sum_{p \le e^X}\frac{1}{8}\ell_p^2 \equiv \frac{1}{16}X^2 + \mathcal{O}(X), \quad \sum_{p \le e^X}\frac{1}{8}\ell_p^2\cos(4\phi_p^-) = \mathcal{O}_t(X)$$
-$$\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)$$
+$$\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)$$
 
 ### 5. 定理 291.5（相角、相速與譜權重乾淨解析閉式）
-$$\phi(X, t) = \frac{t}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \frac{\pi}{8} + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(1)$$
-$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}S_1(X, t) + \mathcal{O}_t(X), \quad w_k = \frac{1}{\frac{\partial\phi}{\partial t}(X, \lambda_k)} > 0$$
+$$\phi(X, t) = \frac{t}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \frac{\pi}{8} + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(1)$$
+$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}S_1(X, t) + \mathcal{O}_t(X), \quad w_k = \frac{1}{\frac{\partial\phi}{\partial t}(X, \lambda_k)} > 0$$
 
 ### 6. 定理 291.6（三級認識論體系全景大封頂定理）
 - Level I (宏觀密度): $\overline{N}_X(T) \sim N_0(T)$ (已證);
-- Level II (介觀統計): $1-R_2(s) = \operatorname{sinc}^2(s)$ (已證);
-- Level III (微觀逐點): $\operatorname{Spec}(\mathcal{D}_\infty) = \{\gamma_n\} \iff S(X, t) = \mathcal{O}_t(X)$ (核心開放前沿)。
+- Level II (介觀統計): $1-R_2(s) = \mathrm{sinc}^2(s)$ (已證);
+- Level III (微觀逐點): $\mathrm{Spec}(\mathcal{D}_\infty) = \{\gamma_n\} \iff S(X, t) = \mathcal{O}_t(X)$ (核心開放前沿)。
 
 ---
 

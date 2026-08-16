@@ -1,4 +1,4 @@
-# 第一戰役啟動：幾何自伴算子 $\mathcal{H}$ 的顯式構造與 von Neumann 虧指數 $(0, 0)$ 定理證明（第 131-132 輪）
+﻿# 第一戰役啟動：幾何自伴算子 $\mathcal{H}$ 的顯式構造與 von Neumann 虧指數 $(0, 0)$ 定理證明（第 131-132 輪）
 
 **日期**：2026-08-15  
 **性質**：黎曼猜想攻堅第一階段核心突破報告  
@@ -42,21 +42,21 @@ $$V(u) = \sum_{p} \sum_{k=1}^\infty \ell(p^k) \mathbf{v}_p \mathbf{v}_p^T \delta
 定義全域哈密頓微分算子 $\mathcal{D}$ 為：
 $$\mathbf{\mathcal{D}\Psi(u) = J \frac{d\Psi}{du}(u) + V(u)\Psi(u)}$$
 其自然初始定義域為緊支撐光滑旋量空間，且在質數跳躍點滿足連續性邊界條件：
-$$\operatorname{Dom}(\mathcal{D}) = \left\{ \Psi \in \mathcal{H} \cap H_{\text{loc}}^1\left(\mathbb{R} \setminus \{\log n\}\right) : \Psi(u_n^+) = \left(I - J \ell(n)\mathbf{v}_p\mathbf{v}_p^T\right)\Psi(u_n^-), \; \operatorname{supp}(\Psi) \text{ compact} \right\}$$
+$$\mathrm{Dom}(\mathcal{D}) = \left\{ \Psi \in \mathcal{H} \cap H_{\text{loc}}^1\left(\mathbb{R} \setminus \{\log n\}\right) : \Psi(u_n^+) = \left(I - J \ell(n)\mathbf{v}_p\mathbf{v}_p^T\right)\Psi(u_n^-), \; \mathrm{supp}(\Psi) \text{ compact} \right\}$$
 
 ---
 
 ## 參、 核心突破：von Neumann 虧指數 $(0, 0)$ 定理（Theorem 131.1）
 
 > **【定理 131.1（本質自伴性定理，Proven）】**
-> 算子 $\mathcal{D}$ 在稠密定義域 $\operatorname{Dom}(\mathcal{D}) \subset \mathcal{H}$ 上是對稱算子，且其 von Neumann 虧指數（Deficiency Indices）嚴格為：
+> 算子 $\mathcal{D}$ 在稠密定義域 $\mathrm{Dom}(\mathcal{D}) \subset \mathcal{H}$ 上是對稱算子，且其 von Neumann 虧指數（Deficiency Indices）嚴格為：
 > $$\mathbf{(d_+, d_-) = (0, 0)}$$
-> 因此，$\mathcal{D}$ 在 $\mathcal{H}$ 上是**本質自伴算子（Essentially Self-Adjoint）**，其閉包 $\overline{\mathcal{D}} = \mathcal{D}^*$ 具有唯一的自伴延拓，特徵值譜 $\operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$ 純實！
+> 因此，$\mathcal{D}$ 在 $\mathcal{H}$ 上是**本質自伴算子（Essentially Self-Adjoint）**，其閉包 $\overline{\mathcal{D}} = \mathcal{D}^*$ 具有唯一的自伴延拓，特徵值譜 $\mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$ 純實！
 
 ### 【嚴格推導與證明】
 
 #### 第一步：對稱性驗證（Symmetry）
-對任意 $\Phi, \Psi \in \operatorname{Dom}(\mathcal{D})$，分部積分計算內積差：
+對任意 $\Phi, \Psi \in \mathrm{Dom}(\mathcal{D})$，分部積分計算內積差：
 $$\langle \Phi, \mathcal{D}\Psi \rangle - \langle \mathcal{D}\Phi, \Psi \rangle = \int_{-\infty}^\infty \left[ \Phi^* \left( J \Psi' + V\Psi \right) - \left( J \Phi' + V\Phi \right)^* \Psi \right] du$$
 由於 $V(u) = V(u)^T$ 是實對稱矩陣，質數勢能項精確對消：$\Phi^* V \Psi - (V\Phi)^* \Psi = 0$。
 剩下的微分項為：

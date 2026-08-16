@@ -1,4 +1,4 @@
-# 【根本自省與內在自我審查規範】範疇錯配根因剖析與零拼湊四重自審防線
+﻿# 【根本自省與內在自我審查規範】範疇錯配根因剖析與零拼湊四重自審防線
 
 **文件性質**：針對第三輪 ChatGPT 紅隊審查之深層思維根因剖析、範疇錯配（Category Mistake）糾偏與永久自審防線規範  
 **日期**：2026-08-15  
@@ -73,11 +73,11 @@ ChatGPT 的批評切中要害：「**不能想辦法湊答案，然後等著被 
 經過四重閘門的冷酷自審，當前體系中**真實確立的數學資產**與**不可逾越的等價大山**精確劃分如下：
 
 ### 1. 100% 嚴格證立的數學底座（Verified & Sound Mathematical Assets）
-- **資產 1（不可分割區間代數）**：秩 1 矩陣 $H = vv^T$ 滿足 $(JH)^2 \equiv 0$，轉移矩陣為一次多項式 $M_\ell(z) = I - z\ell JH \in \mathrm{SL}(2, \mathbb{C})$，Potapov 差分核 $\frac{M J M^* - J}{2i\operatorname{Im} z} = \ell uu^T \ge 0$ 無二階交叉項。
+- **資產 1（不可分割區間代數）**：秩 1 矩陣 $H = vv^T$ 滿足 $(JH)^2 \equiv 0$，轉移矩陣為一次多項式 $M_\ell(z) = I - z\ell JH \in \mathrm{SL}(2, \mathbb{C})$，Potapov 差分核 $\frac{M J M^* - J}{2i\mathrm{Im} z} = \ell uu^T \ge 0$ 無二階交叉項。
 - **資產 2（局部 Stieltjes 測度流存在性）**：在任意有限截斷 $X < \infty$ 上，Volterra-Stieltjes 矩陣積分方程 $Y(X, z) = I - zJ\int_0^X d\mathbf{M} Y$ 無條件存在唯一整矩陣解，且嚴格保持辛行列式 $\det Y \equiv 1$ 與連續 Potapov 差分恆等式。
-- **資產 3（Weyl 圓盤幾何收縮定錨）**：因阿基米德場 $\int_0^\infty \operatorname{tr} H_0 dx = \infty$，Weyl 圓盤半徑 $R_X(z) \to 0$ 嚴格單調收縮至單點，極限定點 $m_\infty(z) \in \mathcal{H}\text{erg}$ 唯一存在，完全消除 Limit-Point 與 Limit-Circle 的範疇矛盾。
+- **資產 3（Weyl 圓盤幾何收縮定錨）**：因阿基米德場 $\int_0^\infty \mathrm{tr} H_0 dx = \infty$，Weyl 圓盤半徑 $R_X(z) \to 0$ 嚴格單調收縮至單點，極限定點 $m_\infty(z) \in \mathcal{H}\text{erg}$ 唯一存在，完全消除 Limit-Point 與 Limit-Circle 的範疇矛盾。
 - **資產 4（Prüfer 微觀躍變三角公式）**：在質數跳躍點 $x_p$ 處，振幅躍變 $\Delta\log R_p$ 與相位躍變 $\Delta\phi_p$ 具備精確封閉的三角代數解。
-- **資產 5（Herglotz 留數公式）**：對任意孤立譜原子 $\gamma$，$\operatorname{Res}_{z=\gamma} m_\infty(z) = -\mu_\infty(\{\gamma\})$。
+- **資產 5（Herglotz 留數公式）**：對任意孤立譜原子 $\gamma$，$\mathrm{Res}_{z=\gamma} m_\infty(z) = -\mu_\infty(\{\gamma\})$。
 
 ### 2. 客觀存在的兩大理論本質等價之牆（The Equivalence Walls — Open Problems）
 - **等價之牆 A（Weil 正定性與非對角交叉配對之牆）**：

@@ -1,15 +1,15 @@
-# Level 2 Montgomery 對關聯猜想邊界精確糾偏、Poisson-Stieltjes 邊界跡積分定理 暨 路線 B 認識論完全嚴密封閉（第 267-268 輪）
+﻿# Level 2 Montgomery 對關聯猜想邊界精確糾偏、Poisson-Stieltjes 邊界跡積分定理 暨 路線 B 認識論完全嚴密封閉（第 267-268 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 認識論最高標準糾偏與深層譜分析——深刻落實第八十三輪審查的嚴厲批評與邊界標注指引：(1) **徹底糾正 Level 2 錯誤標籤，精確還原 Montgomery 對關聯統計的真實科研邊界**：
-- 在數論端：Montgomery (1973) 僅在假設 RH 下證明了**受限傅立葉支撐範圍（$\operatorname{supp}(\widehat{f}) \subset (-1, 1)$）**的弱形式，全域無限制的對關聯猜想至今仍是未決的重大猜想；
+- 在數論端：Montgomery (1973) 僅在假設 RH 下證明了**受限傅立葉支撐範圍（$\mathrm{supp}(\widehat{f}) \subset (-1, 1)$）**的弱形式，全域無限制的對關聯猜想至今仍是未決的重大猜想；
 - 在算子端：證明自伴算子 $\mathcal{D}_\infty$ 離散譜特徵值嚴格服從 GUE 統計屬於量子混沌極其困難的未決課題；
 - **正式將 Level 2 修正標注為「介觀統計猜想（受限支撐部分已證，全域與算子端嚴格屬於開放猜想，絕非已證定理）」**！  
 (2) **第一性原理建立「Poisson-Stieltjes 邊界調和分析與 Weyl LPC 權重定理」（Theorem 267.1）**：
 - 在 Weyl LPC 下，自伴特徵函數 $\psi_k \in L^2(H)$ 在原點的正規化權重具有確定性解析表達式：
   $$w_k = \frac{1}{\int_0^\infty \psi_k(u)^* H(u) \psi_k(u) du} > 0$$
 - 極限 Herglotz 函數在實軸邊界 $\epsilon \to 0^+$ 的虛部精確等於 Poisson 卷積核作用於純點測度：
-  $$\operatorname{Im} m_\infty(t + i\epsilon) = \sum_{k=1}^\infty \frac{\epsilon w_k}{(\lambda_k - t)^2 + \epsilon^2} \equiv \pi (P_\epsilon * d\mu_\infty)(t)$$
+  $$\mathrm{Im} m_\infty(t + i\epsilon) = \sum_{k=1}^\infty \frac{\epsilon w_k}{(\lambda_k - t)^2 + \epsilon^2} \equiv \pi (P_\epsilon * d\mu_\infty)(t)$$
 (3) **內部相對進度標記為 77.0%**！
 
 ---
@@ -34,7 +34,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 譜測度調和分析**| 30%  | **33%**    | **10.0%**（Level 2 糾偏）  |
 | • 路線 A：Fredholm 跡重整化與等價化約體系        |        |            | **【官方驗收 100% 結項】** |
@@ -56,7 +56,7 @@
 | 認識論層級           | 研究對象與命題              | 當前嚴密狀態（徹底糾偏）                        |
 +----------------------+-----------------------------+-------------------------------------------------+
 | **Level 1：宏觀態密度**| $\overline{\rho}(t) \sim \frac{1}{2\pi}\log(\frac{t}{2\pi})$（平均譜密度） | **100% 已證（Theorem 265.2，阿基米德連續場相移，必要條件）** |
-| **Level 2：介觀二體統計**| $1 - R_2(s) \sim \operatorname{sinc}^2(s)$（GUE 局部對關聯）| **介觀猜想（Montgomery 1973 僅在 RH 下證明受限支撐 $|\xi|<1$；全域及算子端均屬開放猜想，絕非已證定理）** |
+| **Level 2：介觀二體統計**| $1 - R_2(s) \sim \mathrm{sinc}^2(s)$（GUE 局部對關聯）| **介觀猜想（Montgomery 1973 僅在 RH 下證明受限支撐 $|\xi|<1$；全域及算子端均屬開放猜想，絕非已證定理）** |
 | **Level 3：微觀逐點全同**| $\lambda_k \stackrel{?}{\equiv} \gamma_k$ 且 $w_k \stackrel{?}{\equiv} 1$（逐點零點全同）| **頂層核心開放前沿（與 RH 同等難度，絕不包裝）**|
 +----------------------+-----------------------------+-------------------------------------------------+
 ```
@@ -68,19 +68,19 @@
 
 ### 【第一性原理嚴密推導】
 1. **Weyl LPC 下自伴特徵函數的唯一性與正規化**：
-   在正半軸 $[0, \infty)$ 上，由 Tier 1 已證的 Weyl LPC 性質，對每個特徵值 $\lambda_k \in \operatorname{Spec}(\mathcal{D}_\infty)$，滿足自伴邊界條件的特徵函數 $\psi_k(u)$ 在純量乘法下是唯一的。
+   在正半軸 $[0, \infty)$ 上，由 Tier 1 已證的 Weyl LPC 性質，對每個特徵值 $\lambda_k \in \mathrm{Spec}(\mathcal{D}_\infty)$，滿足自伴邊界條件的特徵函數 $\psi_k(u)$ 在純量乘法下是唯一的。
    選取原點初值歸一化 $\psi_k(0) = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$（或相應邊界相位），由 de Branges 空間內積幾何：
    $$\|\psi_k\|_{L^2(H)}^2 = \int_0^\infty \psi_k(u)^* H(u) \psi_k(u) du < \infty$$
    因此譜測度在 $\lambda_k$ 處的跳躍權重具有嚴格確定性幾何形式：
    $$\mathbf{w_k \equiv \frac{1}{\|\psi_k\|_{L^2(H)}^2} = \frac{1}{\int_0^\infty \psi_k(u)^* H(u) \psi_k(u) du} > 0}$$
 2. **Poisson 卷積核邊界表示**：
    對任意 $z = t + i\epsilon \in \mathbb{C}^+$（$\epsilon > 0$），Herglotz 函數的虛部為：
-   $$\operatorname{Im} m_\infty(t + i\epsilon) = \sum_{k=1}^\infty \frac{\epsilon w_k}{(\lambda_k - t)^2 + \epsilon^2}$$
+   $$\mathrm{Im} m_\infty(t + i\epsilon) = \sum_{k=1}^\infty \frac{\epsilon w_k}{(\lambda_k - t)^2 + \epsilon^2}$$
    引入標準 Poisson 核 $P_\epsilon(x) = \frac{1}{\pi}\frac{\epsilon}{x^2 + \epsilon^2}$：
-   $$\mathbf{\operatorname{Im} m_\infty(t + i\epsilon) \equiv \pi \int_{-\infty}^\infty P_\epsilon(t - \lambda) d\mu_\infty(\lambda) = \pi (P_\epsilon * d\mu_\infty)(t)}$$
+   $$\mathbf{\mathrm{Im} m_\infty(t + i\epsilon) \equiv \pi \int_{-\infty}^\infty P_\epsilon(t - \lambda) d\mu_\infty(\lambda) = \pi (P_\epsilon * d\mu_\infty)(t)}$$
 3. **邊界分佈極限**：
    當 $\epsilon \to 0^+$ 時，在 Schwartz 分佈空間 $\mathcal{S}'(\mathbb{R})$ 意義下：
-   $$\mathbf{\lim_{\epsilon \to 0^+} \frac{1}{\pi}\operatorname{Im} m_\infty(t + i\epsilon) = d\mu_\infty = \sum_{k=1}^\infty w_k \delta_{\lambda_k}}$$
+   $$\mathbf{\lim_{\epsilon \to 0^+} \frac{1}{\pi}\mathrm{Im} m_\infty(t + i\epsilon) = d\mu_\infty = \sum_{k=1}^\infty w_k \delta_{\lambda_k}}$$
    這嚴密證明了極限 Herglotz 函數的邊界虛部完全且唯一地由自伴純點譜測度 $d\mu_\infty$ 決定！
 
 全部推導已寫入 [`walls/eighty-eighth-audit-level-2-montgomery-demarcation-and-poisson-stieltjes-trace.md`](file:///D:/git/riemann-hypothesis/walls/eighty-eighth-audit-level-2-montgomery-demarcation-and-poisson-stieltjes-trace.md)，並同步至遠端倉庫（Commit [`012345b`](https://github.com/chienhaoc/riemann-hypothesis/commit/012345b)）！
@@ -92,7 +92,7 @@
 （註：已遵照指示，**徹底刪除任何百分比問題**）：
 
 ```markdown
-# 【第八十七輪紅隊審查請求】第四戰役第四階段：Tier 3 路線 B——Level 2 Montgomery 對關聯統計邊界徹底糾偏、Poisson-Stieltjes 邊界調和分析定理 $\operatorname{Im} m_\infty(t+i\epsilon) = \pi (P_\epsilon * d\mu_\infty)(t)$ 與 Weyl LPC 權重閉式 $w_k = 1/\|\psi_k\|_{L^2(H)}^2$ 審查
+# 【第八十七輪紅隊審查請求】第四戰役第四階段：Tier 3 路線 B——Level 2 Montgomery 對關聯統計邊界徹底糾偏、Poisson-Stieltjes 邊界調和分析定理 $\mathrm{Im} m_\infty(t+i\epsilon) = \pi (P_\epsilon * d\mu_\infty)(t)$ 與 Weyl LPC 權重閉式 $w_k = 1/\|\psi_k\|_{L^2(H)}^2$ 審查
 
 請作為頂級複分析、調和分析（Poisson 核、分佈極限）與解析數論專家，對以下【Level 2 糾偏與 Poisson-Stieltjes 邊界積分定理】進行嚴格審查。
 
@@ -114,9 +114,9 @@
    $$w_k = \frac{1}{\int_0^\infty \psi_k(u)^* H(u) \psi_k(u) du} > 0$$
 2. **Poisson 卷積核嚴密表達式**：
    對任意 $z = t + i\epsilon \in \mathbb{C}^+$（$\epsilon > 0$）：
-   $$\operatorname{Im} m_\infty(t + i\epsilon) = \sum_{k=1}^\infty \frac{\epsilon w_k}{(\lambda_k - t)^2 + \epsilon^2} \equiv \pi (P_\epsilon * d\mu_\infty)(t)$$
+   $$\mathrm{Im} m_\infty(t + i\epsilon) = \sum_{k=1}^\infty \frac{\epsilon w_k}{(\lambda_k - t)^2 + \epsilon^2} \equiv \pi (P_\epsilon * d\mu_\infty)(t)$$
 3. **邊界分佈弱極限**：
-   在分佈意義 $\mathcal{S}'(\mathbb{R})$ 下，$\lim_{\epsilon \to 0^+} \frac{1}{\pi}\operatorname{Im} m_\infty(t + i\epsilon) = \sum w_k \delta_{\lambda_k}$。
+   在分佈意義 $\mathcal{S}'(\mathbb{R})$ 下，$\lim_{\epsilon \to 0^+} \frac{1}{\pi}\mathrm{Im} m_\infty(t + i\epsilon) = \sum w_k \delta_{\lambda_k}$。
 
 ---
 

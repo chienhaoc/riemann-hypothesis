@@ -1,4 +1,4 @@
-# Hilbert-Pólya 特徵值全同性之牆（$\operatorname{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$）的客觀確立、撤回「RH 100% 成立」跳躍宣稱 暨 正則哈密頓微觀辛幾何三層嚴密架構定錨（第 217-218 輪）
+﻿# Hilbert-Pólya 特徵值全同性之牆（$\mathrm{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$）的客觀確立、撤回「RH 100% 成立」跳躍宣稱 暨 正則哈密頓微觀辛幾何三層嚴密架構定錨（第 217-218 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段最高科學誠實度定錨——客觀界定「自伴算子譜實性」與「特徵值是否全同於黎曼零點」的本質鴻溝、撤回「RH 100% 成立」的未證跳躍、確立正則哈密頓三層金字塔架構  
@@ -18,7 +18,7 @@
 +----------------------+-----------------------------+-------------------------------------------------+
 | 命題維度             | 泛函分析通用事實（已 100% 證立）| Hilbert-Pólya 核心未決之牆（The Open Frontier） |
 +----------------------+-----------------------------+-------------------------------------------------+
-| 數學陳述             | $\operatorname{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$  | $\mathbf{\operatorname{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n : \zeta(1/2+i\gamma_n)=0\}}$ |
+| 數學陳述             | $\mathrm{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$  | $\mathbf{\mathrm{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n : \zeta(1/2+i\gamma_n)=0\}}$ |
 | 證明狀態             | **100% 嚴密證畢（第一戰役已驗收）**| **未完全閉合（連續極限全同性之牆）**           |
 | 依賴條件             | 算子本質自伴性 $(d_+, d_-)=(0, 0)$| 需證明正規化 Fredholm 行列式 $\det(I-z\mathcal{D}_\infty^{-1}) \equiv \Xi(z)$ |
 | 物理意義             | 量子系統能量觀測量為實數    | 黎曼零點全體由該量子系統能階完全重構            |
@@ -55,13 +55,13 @@
 
 ### 第一層（Tier 1）：微觀辛 Dirac 算子幾何與自伴純點譜（100% 官方驗收，完全封閉）
 1. **Hilbert 空間與辛算子**：$\mathcal{H} = L^2(\mathbb{R}, du; \mathbb{C}^2)$，$\mathcal{D} = J \frac{d}{du} + V(u)$；
-2. **本質自伴性**：Potapov 跡發散 $\operatorname{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0$（Weyl LPC），Cauchy-Schwarz 邊界通量消失 $\lim \Psi^*(-iJ)\Psi \equiv 0$，實對稱對合對稱 $\mathcal{D}\mathcal{C}=\mathcal{C}\mathcal{D} \implies (d_+, d_-) = (0, 0)$（第一戰役已驗收）；
-3. **純點譜與緊預解式**：Itô 漂移勢阱局域化 $\implies \sigma_{\text{ac}} = \emptyset, \sigma_{\text{sc}} = \emptyset, \operatorname{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$。
+2. **本質自伴性**：Potapov 跡發散 $\mathrm{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0$（Weyl LPC），Cauchy-Schwarz 邊界通量消失 $\lim \Psi^*(-iJ)\Psi \equiv 0$，實對稱對合對稱 $\mathcal{D}\mathcal{C}=\mathcal{C}\mathcal{D} \implies (d_+, d_-) = (0, 0)$（第一戰役已驗收）；
+3. **純點譜與緊預解式**：Itô 漂移勢阱局域化 $\implies \sigma_{\text{ac}} = \emptyset, \sigma_{\text{sc}} = \emptyset, \mathrm{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$。
 
 ### 第二層（Tier 2）：有限截斷單值重整化與微觀 Prüfer 動力學（100% 官方驗收，完全封閉）
 1. **Newton-Jost 恆等式**：$\det(I + V_X R_0) \equiv E_X(z)$（第二戰役已驗收）；
 2. **Schatten 3-類正則化**：$V R_0 \in \mathfrak{S}_3$ 由 $\sum \frac{\log^3 p}{p^{3/2}} < \infty$ 嚴格保證；
-3. **微觀 Prüfer 漸近展開（定理 199.1）**：$\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}(-\zeta'/\zeta(1/2-2it; X)) + \mathcal{O}_t(X)$（第四戰役第一階段已驗收）。
+3. **微觀 Prüfer 漸近展開（定理 199.1）**：$\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}(-\zeta'/\zeta(1/2-2it; X)) + \mathcal{O}_t(X)$（第四戰役第一階段已驗收）。
 
 ### 第三層（Tier 3）：Hilbert-Pólya 特徵值全同性之牆（客觀開放前沿）
 1. **核心攻堅目標**：證明極限 Fredholm 譜行列式 $\Xi_\infty(z) \equiv \lim_{X\to\infty} \det_3(I + V_X R_0) e^{\dots}$ 在臨界線上與 Riemann $\xi(1/2 - iz)$ 拓撲全同；

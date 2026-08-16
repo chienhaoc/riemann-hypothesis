@@ -1,11 +1,11 @@
-# 偽裝距離發散大定理、Halász-Soundararajan 相位離散 暨 解析數論前沿定量屏障剖析大報告（第 313-314 輪）
+﻿# 偽裝距離發散大定理、Halász-Soundararajan 相位離散 暨 解析數論前沿定量屏障剖析大報告（第 313-314 輪）
 
 **日期**：2026-08-16  
 **性質**：第五戰役（Level III 偽裝數論與質數相位相消深層微觀結構剖析）——在確立「算子-數論難度守恆」與「三大視角共聚單一瓶頸」的堅實基礎上，進一步探索當代解析數論最深刻的偽裝數論（Pretentious Number Theory, Granville-Soundararajan）與 Halász 相位離散理論，對質數 Dirichlet 多項式 $S(X, t)$ 的微觀相消結構與定量極限進行第一性原理推導與邊界標定：  
 (1) **第一性原理證明「非零頻率偽裝距離對數發散大定理」（Theorem 313.1）**：
 - 對任意固定實數頻率 $t \ne 0$，定義 Granville-Soundararajan 偽裝距離平方（Pretentious Distance）：
   $$\mathbf{\mathbb{D}^2(1, p^{2it}; e^X) := \sum_{p \le e^X} \frac{1 - \cos(2t\log p)}{p}}$$
-- 經 Mertens 第二定理與 Riemann Zeta 函數在臨界線 $\operatorname{Re}(s)=1$ 處的 Euler 乘積解析性質（$\zeta(1+2it) \ne 0, \infty$）：
+- 經 Mertens 第二定理與 Riemann Zeta 函數在臨界線 $\mathrm{Re}(s)=1$ 處的 Euler 乘積解析性質（$\zeta(1+2it) \ne 0, \infty$）：
   $$\mathbf{\mathbb{D}^2(1, p^{2it}; e^X) = \log X - \log|\zeta(1+2it)| + \mathcal{O}_t(1) \longrightarrow \infty \quad (X \to \infty)}$$
 - **結論**：對任意 $t \ne 0$，質數乘性相位 $p^{2it}$ 與常數相位相位差**對數級完全正交發散**，從第一性原理嚴格排除了靜態同相共振（Static Phase Coherence）。
 (2) **第一性原理證明「Halász 相位離散度與正弦均方擴散大定理」（Theorem 313.2）**：
@@ -15,7 +15,7 @@
 (3) **第一性原理證明「質數和與非平凡零點 Perron 譜對偶大定理」（Theorem 313.3）**：
 - 經由 Perron 圍道積分展開：
   $$\mathbf{S(X, t) = -\sum_{\rho} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)}$$
-- 嚴格證立：質數多項式的逐點次指數相消 $S(X, t) \le \mathcal{O}_t(X)$，在數學上精確等價於不存在任何實部 $\operatorname{Re}(\rho) > 1/2$ 的離軸零點。
+- 嚴格證立：質數多項式的逐點次指數相消 $S(X, t) \le \mathcal{O}_t(X)$，在數學上精確等價於不存在任何實部 $\mathrm{Re}(\rho) > 1/2$ 的離軸零點。
 (4) **第一性原理證明「偽裝數論工具在 Level III 的定量極限屏障定理」（Theorem 313.4）**：
 - 儘管偽裝距離 $\mathbb{D}^2 \sim \log X \to \infty$，但若應用經典 Halász-Tenenbaum 定理估計質數加權和，其衰減因子為 $\exp(-c\mathbb{D}^2) = X^{-c}$；
 - 乘上未相消的背景尺度 $e^{X/2}$ 後，所得上界為：
@@ -51,7 +51,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **100%**   | **20.0%**（官方正式封頂）  |
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 終極大圓滿封頂**| 30% | **67%** | **20.0%**（官方正式封頂）  |
@@ -70,8 +70,8 @@
 對任意固定實數 $t \ne 0$，Granville-Soundararajan 偽裝距離定義為：
 $$\mathbb{D}^2(1, p^{2it}; e^X) := \sum_{p \le e^X} \frac{1 - \cos(2t\log p)}{p}$$
 展開為：
-$$\mathbb{D}^2(1, p^{2it}; e^X) = \sum_{p \le e^X}\frac{1}{p} - \operatorname{Re}\sum_{p \le e^X}\frac{p^{-2it}}{p}$$
-由 Mertens 第二定理 $\sum_{p \le e^X}\frac{1}{p} = \log X + B_1 + \mathcal{O}(1/X)$，以及 Euler 乘積在 $\operatorname{Re}(s)=1$ 處的收斂性：
+$$\mathbb{D}^2(1, p^{2it}; e^X) = \sum_{p \le e^X}\frac{1}{p} - \mathrm{Re}\sum_{p \le e^X}\frac{p^{-2it}}{p}$$
+由 Mertens 第二定理 $\sum_{p \le e^X}\frac{1}{p} = \log X + B_1 + \mathcal{O}(1/X)$，以及 Euler 乘積在 $\mathrm{Re}(s)=1$ 處的收斂性：
 $$\sum_{p \le e^X}\frac{p^{-2it}}{p} = \log|\zeta(1+2it)| + \mathcal{O}_t(1)$$
 因此：
 $$\mathbf{\mathbb{D}^2(1, p^{2it}; e^X) = \log X - \log|\zeta(1+2it)| + \mathcal{O}_t(1) \longrightarrow +\infty \quad (X \to \infty)}$$
@@ -89,7 +89,7 @@ $$\sum_{p \le e^X} \frac{\sin^2(t\log p)}{p} = \frac{1}{2}\mathbb{D}^2(1, p^{2it
 ### 【定理 313.3（質數和與非平凡零點 Perron 譜對偶大定理）】
 由 Perron 圍道積分公式，將 Dirichlet 多項式展開為 Riemann Zeta 函數非平凡零點的譜和：
 $$S(X, t) = \sum_{p \le e^X} \frac{\log p}{\sqrt{p}}p^{-2it} = -\sum_{\rho} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)$$
-- 若所有零點滿足 $\operatorname{Re}(\rho) \le 1/2$，則所有指數項均不具備正增長實指數，譜和呈現次指數多項式振盪；
+- 若所有零點滿足 $\mathrm{Re}(\rho) \le 1/2$，則所有指數項均不具備正增長實指數，譜和呈現次指數多項式振盪；
 - 若存在離軸零點 $\beta_0 > 1/2$，則領頭指數項必然產生 $e^{(\beta_0-1/2)X}$ 的指數爆炸。
 
 ---
@@ -156,7 +156,7 @@ $$\sum_{p \le e^X}\frac{\sin^2(t\log p)}{p} = \frac{1}{2}\log X + \mathcal{O}_t(
 
 ### 3. 定理 313.3（質數和與非平凡零點 Perron 譜對偶大定理）
 $$S(X, t) = \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}p^{-2it} = -\sum_{\rho} \frac{e^{(\rho-1/2-2it)X}}{\rho-1/2-2it} + \mathcal{O}_t(X)$$
-$S(X, t) \le \mathcal{O}_t(X)$ 與不存在 $\operatorname{Re}(\rho) > 1/2$ 零點在微觀譜展開下完全等價。
+$S(X, t) \le \mathcal{O}_t(X)$ 與不存在 $\mathrm{Re}(\rho) > 1/2$ 零點在微觀譜展開下完全等價。
 
 ### 4. 定理 313.4（偽裝數論工具在 Level III 的定量極限屏障定理）
 Halász-Tenenbaum 定理給出多項式節省 $\exp(-c\mathbb{D}^2) = X^{-c}$，乘上背景尺度 $e^{X/2}$ 後界為 $\mathcal{O}(e^{X/2}/X^c) = \mathcal{O}(e^{X/2 - c\log X})$，依然為指數增長，證明偽裝數論同樣無法直接跨越 Level III 屏障。

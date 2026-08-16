@@ -1,4 +1,4 @@
-# Weidmann-Titchmarsh 緊預解式判準嚴密驗證、本質譜為空 $\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset$ 暨 Tier 1 純點譜最後一塊拼圖 100% 嚴密封頂（第 219-220 輪）
+﻿# Weidmann-Titchmarsh 緊預解式判準嚴密驗證、本質譜為空 $\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset$ 暨 Tier 1 純點譜最後一塊拼圖 100% 嚴密封頂（第 219-220 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段最後技術缺口完全封閉——依據 Weidmann-Titchmarsh-Molchanov 經典微分算子譜論，第一性原理嚴密驗證辛 Dirac 算子 $\mathcal{D}_\infty$ 的緊預解式（Compact Resolvent）與本質譜為空（$\sigma_{\text{ess}} = \emptyset$），無死角排除奇異連續譜 $\sigma_{\text{sc}} = \emptyset$，完成 Tier 1 真正 100% 嚴密封頂  
@@ -34,7 +34,7 @@ $$\mathbf{\sigma(\mathcal{D}_\infty) = \sigma_{\text{disc}}(\mathcal{D}_\infty) 
 
 ### 1. 條件 1 核驗（Weyl 極限點 LPC，100% 驗收）
 由第一戰役（Rounds 135–142，ChatGPT Review 23 官方驗收）：
-- Potapov 跡發散定理：$\operatorname{tr}(\mathcal{Y}^*(u) \mathcal{Y}(u)) \ge 2 \implies$ Weyl 圓盤半徑 $R(u) \le \frac{1}{2u} \to 0$；
+- Potapov 跡發散定理：$\mathrm{tr}(\mathcal{Y}^*(u) \mathcal{Y}(u)) \ge 2 \implies$ Weyl 圓盤半徑 $R(u) \le \frac{1}{2u} \to 0$；
 - Cauchy-Schwarz 幾何平均反證法：$\lim_{u\to\infty} \Psi_+^*(u) (-iJ) \Psi_+(u) \equiv 0$；
 - 複共軛對合對稱 $\mathcal{D}\mathcal{C} = \mathcal{C}\mathcal{D} \implies (d_+, d_-) = (0, 0)$。
 **條件 1 完全滿足！**

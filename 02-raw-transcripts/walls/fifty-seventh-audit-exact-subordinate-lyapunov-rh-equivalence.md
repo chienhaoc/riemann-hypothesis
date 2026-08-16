@@ -1,4 +1,4 @@
-# 排除從屬解邏輯缺口糾偏、Kotani-Gilbert-Pearson 廣義 Lyapunov 指數 $\gamma(t)$ 確立 暨 奇異連續譜排除與黎曼猜想等價性大定理（第 205-206 輪）
+﻿# 排除從屬解邏輯缺口糾偏、Kotani-Gilbert-Pearson 廣義 Lyapunov 指數 $\gamma(t)$ 確立 暨 奇異連續譜排除與黎曼猜想等價性大定理（第 205-206 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段從屬解邏輯缺口修正、Lyapunov 指數 $\gamma(t)$ 譜論映射與 RH 逆譜等價之牆嚴密定錨  
@@ -27,7 +27,7 @@ $$\mathbf{\gamma(t) \equiv \limsup_{X \to \infty} \frac{1}{X} \log\|\mathcal{Y}(
 
 ### 【定理 205.1（Lyapunov 指數與零點實部偏離的解析數論對偶定理）】
 設 $t \in \mathbb{R} \setminus \{0\}$。由定理 199.1，Prüfer 振幅的方向依賴非對稱線性項完全由臨界線質數 Dirichlet 指數和支配：
-$$\log R_\theta(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \mathcal{R}_\theta(X, t)$$
+$$\log R_\theta(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \mathcal{R}_\theta(X, t)$$
 
 1. **質數 Dirichlet 多項式的顯式零點表示**：
    由 Riemann 顯式公式（Explicit Formula），對任意有限截斷 $X$：
@@ -36,7 +36,7 @@ $$\log R_\theta(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left( -\f
    若 $\zeta(s)$ 存在離軸非平凡零點 $\rho_0 = \beta_0 + i\gamma_0$ 使得 $\beta_0 > 1/2$，則在頻率 $2t \approx \gamma_0$ 處：
    $$\left| \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right| \sim \frac{e^{(\beta_0 - 1/2)X}}{|\rho_0 - (1/2 - 2it)|} \implies \text{線性斜率產生指數級偏離！}$$
 3. **Lyapunov 指數的零點實部閉式公式**：
-   $$\mathbf{\gamma(t) = \max\left( 0, \sup_{\zeta(\rho)=0, \operatorname{Im}\rho = 2t} \left( \operatorname{Re}(\rho) - \frac{1}{2} \right) \right)}$$
+   $$\mathbf{\gamma(t) = \max\left( 0, \sup_{\zeta(\rho)=0, \mathrm{Im}\rho = 2t} \left( \mathrm{Re}(\rho) - \frac{1}{2} \right) \right)}$$
 
 ---
 
@@ -46,7 +46,7 @@ $$\log R_\theta(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left( -\f
 對極限自伴辛 Dirac 算子 $\mathcal{D}_\infty$，下述四個命題在數學上**嚴格等價**：
 
 $$\begin{aligned}
-\text{(I) 黎曼猜想（Riemann Hypothesis）} & \iff \forall \zeta(\rho)=0, \operatorname{Re}(\rho) = \frac{1}{2} \\
+\text{(I) 黎曼猜想（Riemann Hypothesis）} & \iff \forall \zeta(\rho)=0, \mathrm{Re}(\rho) = \frac{1}{2} \\
 & \Updownarrow \\
 \text{(II) 質數 Dirichlet 多項式亞線性振盪} & \iff \forall t \in \mathbb{R}, \sum_{p \le e^X} \frac{\log p}{p^{1/2-2it}} = o(X) \\
 & \Updownarrow \\

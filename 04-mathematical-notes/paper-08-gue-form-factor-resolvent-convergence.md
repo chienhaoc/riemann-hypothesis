@@ -1,4 +1,4 @@
-# Paper 8: Montgomery-GUE Form Factor Defect Duality and Strong Resolvent Convergence of Dirac Truncations
+﻿# Paper 8: Montgomery-GUE Form Factor Defect Duality and Strong Resolvent Convergence of Dirac Truncations
 # 論文八：Montgomery-GUE 形式因子缺陷對偶與 Dirac 截斷算子族的強預解式收斂定理
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -20,7 +20,7 @@
 **Theorem 8.1 (GUE Pair Correlation / GUE 對關聯定理)**.  
 *The spectral form factor $K(\tau) = |\tau|$ for $|\tau| \le 1$ produces the pair correlation:*
 $$1 - R_2(s) = \int_{-1}^1 (1 - |\tau|) e^{2\pi i s \tau} d\tau = 2\int_0^1 (1 - \tau)\cos(2\pi s \tau) d\tau = \left(\frac{\sin\pi s}{\pi s}\right)^2$$
-*Thus $R_2(s) = 1 - \operatorname{sinc}^2(s)$, matching the Montgomery-Odlyzko GUE conjecture.*
+*Thus $R_2(s) = 1 - \mathrm{sinc}^2(s)$, matching the Montgomery-Odlyzko GUE conjecture.*
 
 ### 2. Strong Resolvent Convergence / 強預解式收斂定理
 

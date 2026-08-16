@@ -1,4 +1,4 @@
-# Perron-Guinand 圍道積分質數和-零點精確展開定理、RH 蘊含 $|S(X, t)| = \mathcal{O}_t(X)$ 單向證明 暨 全域進度精確躍升至 79%（第 245-246 輪）
+﻿# Perron-Guinand 圍道積分質數和-零點精確展開定理、RH 蘊含 $|S(X, t)| = \mathcal{O}_t(X)$ 單向證明 暨 全域進度精確躍升至 79%（第 245-246 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第三階段認識論深化與解析數論精確銜接——深刻落實第七十三輪審查的三項具體指引：(1) **修正定理 243.1 誤差項為 $\mathcal{O}_t(X)$**，如實反映 Mertens 定理 $\sum \frac{\log^2 p}{p} = \frac{1}{2}X^2 + \mathcal{O}(X)$ 的真實量級；(2) **放棄籠統的「雙向等價」口號，以 Perron 圍道反演公式與 Guinand-Weil 顯式公式，第一性原理精確建立 $S(X, t) = \sum_{p\le e^X} \frac{\log p}{\sqrt{p}}p^{-2it}$ 關於非平凡零點 $\rho = \beta + i\gamma$ 的微觀譜展開式**：
@@ -31,10 +31,10 @@ $$S(X, t) = -\sum_{\rho} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mat
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：Perron-Guinand 展開與 RH 零點譜對偶**| 30%   | **40%**    | **12.0%**（零點展開嚴密證立）|
-| • $\operatorname{Re}\mathcal{C}_2 \equiv -\frac{t^2}{8}|S|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$ 修正 | | | |
+| • $\mathrm{Re}\mathcal{C}_2 \equiv -\frac{t^2}{8}|S|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$ 修正 | | | |
 | • Perron 圍道積分零點譜展開定理（Theorem 245.1）  |        |            |                            |
 | • $\text{RH} \implies |S(X, t)| = \mathcal{O}_t(X)$ 單向嚴密證明（Theorem 245.2）| | |      |
 +---------------------------------------------------+--------+------------+----------------------------+
@@ -48,7 +48,7 @@ $$S(X, t) = -\sum_{\rho} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mat
 
 ### 【定理 243.1（修正版）】
 設 $S(X, t) \equiv \sum_{p \le e^X} \frac{\log p}{\sqrt{p}} p^{-2it}$。由 Mertens 第一定理 $\sum_{p \le e^X} \frac{\log^2 p}{p} = \frac{1}{2}X^2 + \mathcal{O}(X)$，二階重整化反向核精確為：
-$$\mathbf{\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8} \left| S(X, t) \right|^2 + \frac{t^2}{16} X^2 + \mathcal{O}_t(X)}$$
+$$\mathbf{\mathrm{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8} \left| S(X, t) \right|^2 + \frac{t^2}{16} X^2 + \mathcal{O}_t(X)}$$
 （將第七十二輪原先手民之誤的 $\mathcal{O}_t(1)$ 嚴格修正為真實量級 $\mathcal{O}_t(X)$）。
 
 ---
@@ -58,7 +58,7 @@ $$\mathbf{\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8} \left| S(X,
 ### 【定理 245.1（$S(X, t)$ 零點譜展開公式）】
 對任意固定 $t \in \mathbb{R}$ 與 $X \ge 1$，質數多項式 $S(X, t)$ 具有精確的 Perron 複積分表示：
 $$S(X, t) = \frac{1}{2\pi i} \int_{c - iT}^{c + iT} \left( -\frac{\zeta'}{\zeta}(1/2 + 2it + w) \right) \frac{e^{w X}}{w} dw + \mathcal{R}_T(X, t) \quad (c > 1/2)$$
-將積分路徑向左平移穿過臨界帶 $0 < \operatorname{Re}(1/2 + 2it + w) < 1$，留數定理給出：
+將積分路徑向左平移穿過臨界帶 $0 < \mathrm{Re}(1/2 + 2it + w) < 1$，留數定理給出：
 $$\mathbf{S(X, t) = -\sum_{\rho = \beta + i\gamma} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)}$$
 其中求和遍歷 Riemann $\zeta(s)$ 的所有非平凡零點 $\rho = \beta + i\gamma$。
 
@@ -69,10 +69,10 @@ $$\mathbf{S(X, t) = -\sum_{\rho = \beta + i\gamma} \frac{e^{(\rho - 1/2 - 2it)X}
 ### 【定理 245.2（RH 蘊含多項式增長與離軸指數擊穿）】
 1. **【正向蘊含（RH 成立）】**：
    若黎曼猜想成立（即所有非平凡零點實部 $\beta \equiv 1/2$），則對任意零點 $\rho = 1/2 + i\gamma$：
-   $$\operatorname{Re}(\rho - 1/2 - 2it) = 1/2 - 1/2 = 0 \implies \left| e^{(\rho - 1/2 - 2it)X} \right| = e^{0 \cdot X} \equiv 1$$
+   $$\mathrm{Re}(\rho - 1/2 - 2it) = 1/2 - 1/2 = 0 \implies \left| e^{(\rho - 1/2 - 2it)X} \right| = e^{0 \cdot X} \equiv 1$$
    由 Selberg 零點密度估計 $\sum_\gamma \frac{1}{1 + (2t - \gamma)^2} = \mathcal{O}(\log |t|)$，零點求和被一致控制，得到：
    $$\mathbf{\text{RH 成立} \implies \left| S(X, t) \right| = \mathcal{O}_t(X) \quad (\forall t \in \mathbb{R}, \forall X \ge 1)}$$
-   此時代入定理 243.1，二階跡二次發散精確抵消：$\operatorname{Re}\mathcal{C}_2(X, t) = -\frac{t^2}{8}\mathcal{O}_t(X^2) + \frac{t^2}{16}X^2 = \mathcal{O}_t(X^2)$。
+   此時代入定理 243.1，二階跡二次發散精確抵消：$\mathrm{Re}\mathcal{C}_2(X, t) = -\frac{t^2}{8}\mathcal{O}_t(X^2) + \frac{t^2}{16}X^2 = \mathcal{O}_t(X^2)$。
 
 2. **【反向擊穿（離軸零點存在）】**：
    若存在違反黎曼猜想的離軸零點 $\rho_0 = \beta_0 + i\gamma_0$（$\beta_0 > 1/2$），取頻率 $t_0 = \gamma_0 / 2$，則該零點貢獻的指數因子為：
@@ -117,13 +117,13 @@ $$\mathbf{S(X, t) = -\sum_{\rho = \beta + i\gamma} \frac{e^{(\rho - 1/2 - 2it)X}
 ## 二、 定理 243.1 誤差項修正
 
 由 Mertens 第一定理 $\sum_{p\le e^X}\frac{\log^2 p}{p} = \frac{1}{2}X^2 + \mathcal{O}(X)$：
-$$\mathbf{\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)}$$
+$$\mathbf{\mathrm{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)}$$
 
 ---
 
 ## 三、 Perron 圍道積分與零點譜展開定理（Theorem 245.1）
 
-利用 Perron 逆變換，將積分路徑向左平移穿過臨界帶 $0 < \operatorname{Re}(s) < 1$，留數定理精確給出：
+利用 Perron 逆變換，將積分路徑向左平移穿過臨界帶 $0 < \mathrm{Re}(s) < 1$，留數定理精確給出：
 $$\mathbf{S(X, t) = -\sum_{\rho = \beta + i\gamma} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)}$$
 
 ---
@@ -131,7 +131,7 @@ $$\mathbf{S(X, t) = -\sum_{\rho = \beta + i\gamma} \frac{e^{(\rho - 1/2 - 2it)X}
 ## 四、 RH 單向蘊含定理與離軸擊穿（Theorem 245.2）
 
 1. **若 RH 成立（$\beta \equiv 1/2$）**：
-   $$\operatorname{Re}(\rho - 1/2 - 2it) = 0 \implies |e^{(\rho - 1/2 - 2it)X}| \equiv 1$$
+   $$\mathrm{Re}(\rho - 1/2 - 2it) = 0 \implies |e^{(\rho - 1/2 - 2it)X}| \equiv 1$$
    由 Selberg 零點求和界，嚴密導出：
    $$\mathbf{\text{RH 成立} \implies |S(X, t)| = \mathcal{O}_t(X) \quad (\forall t \in \mathbb{R})}$$
 2. **若存在離軸零點 $\beta_0 > 1/2$**：

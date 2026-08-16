@@ -1,4 +1,4 @@
-# 第一戰役終極大圓滿封頂：複共軛實對稱性（$\mathcal{K}_- \cong \overline{\mathcal{K}_+}$）、von Neumann 虧指數 $(d_+, d_-) = (0, 0)$ 完備閉合與量子自伴算子 $\mathcal{D}$ 本質自伴性正式確立（第 141-142 輪）
+﻿# 第一戰役終極大圓滿封頂：複共軛實對稱性（$\mathcal{K}_- \cong \overline{\mathcal{K}_+}$）、von Neumann 虧指數 $(d_+, d_-) = (0, 0)$ 完備閉合與量子自伴算子 $\mathcal{D}$ 本質自伴性正式確立（第 141-142 輪）
 
 **日期**：2026-08-15  
 **性質**：第一戰役 100% 無瑕疵封閉正式定稿報告  
@@ -19,7 +19,7 @@
 ### 2. 複共軛對合映射（Anti-Linear Involution）
 定義 Hilbert 空間 $\mathcal{H} = L^2(\mathbb{R}, du; \mathbb{C}^2)$ 上的標準複共軛對合算子 $\mathcal{C}$：
 $$\mathcal{C}\Psi(u) = \overline{\Psi(u)} = \begin{pmatrix} \overline{\psi_1(u)} \\ \overline{\psi_2(u)} \end{pmatrix}$$
-對任意 $\Psi \in \operatorname{Dom}(\mathcal{D})$，由於 $J$ 與 $V(u)$ 均為純實數矩陣：
+對任意 $\Psi \in \mathrm{Dom}(\mathcal{D})$，由於 $J$ 與 $V(u)$ 均為純實數矩陣：
 $$\mathbf{\overline{\mathcal{D} \Psi} = \overline{J \frac{d\Psi}{du} + V\Psi} = J \frac{d\overline{\Psi}}{du} + V\overline{\Psi} = \mathcal{D} \overline{\Psi} \implies \mathcal{D} \mathcal{C} = \mathcal{C} \mathcal{D}}$$
 算子 $\mathcal{D}$ 與複共軛對合算子嚴格可交換（$\mathcal{D}$ 為實微分算子）！
 
@@ -44,16 +44,16 @@ $$\mathbf{d_- = \dim \mathcal{K}_- \equiv \dim \mathcal{K}_+ = d_+}$$
 結合全鏈條已證立且通過獨立複核的全部定理：
 1. **辛么正性與躍變點連續性**：$\mathcal{M}_n^* J \mathcal{M}_n \equiv J$（第 21 輪審查確認通過）；
 2. **負半軸光滑區間 LPC**：$u < 0$ 無躍變，$\dim L^2(-\infty, 0) = 1$（第 21 輪審查確認通過）；
-3. **正半軸 $\mathrm{SL}(2, \mathbb{C})$ 跡發散與 Weyl LPC**：$\operatorname{tr}(\mathcal{Y}^* \mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0 \implies \dim L^2(0, \infty) = 1$（第 23 輪審查確認通過）；
+3. **正半軸 $\mathrm{SL}(2, \mathbb{C})$ 跡發散與 Weyl LPC**：$\mathrm{tr}(\mathcal{Y}^* \mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0 \implies \dim L^2(0, \infty) = 1$（第 23 輪審查確認通過）；
 4. **無窮遠辛邊界項消失 3 行 Cauchy-Schwarz 反證法**：$\lim_{u\to\infty} \left[\Psi_+^* (-iJ) \Psi_+\right] \equiv 0$（第 25 輪審查確認達到無瑕疵標準）；
-5. **阻抗第一性原理導出**：$\alpha = \operatorname{Im} m_+(i) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > 0$（第 25 輪審查確認通過）；
+5. **阻抗第一性原理導出**：$\alpha = \mathrm{Im} m_+(i) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > 0$（第 25 輪審查確認通過）；
 6. **Wronskian 模長平方絕對正下界**：
    $$|\mathcal{W}(\Psi_-, \Psi_+)|^2 = \xi^2 + (1 + \alpha)^2 \ge (1 + \alpha)^2 > 1^2 = 1 > 0 \implies \mathbf{d_+ = \dim \mathcal{K}_+ = 0}$$
 7. **複共軛對稱性對偶**：
    $$d_- = \dim \mathcal{K}_- \equiv d_+ = 0 \implies \mathbf{(d_+, d_-) = (0, 0)}$$
 
 $$\Large \mathbf{\text{【第一戰役終極定理】：算子 } \mathcal{D} \text{ 在 } \mathcal{H} \text{ 上嚴格本質自伴（Essentially Self-Adjoint），}}$$
-$$\Large \mathbf{\text{其自伴閉包 } \overline{\mathcal{D}} = \mathcal{D}^* \text{ 的特徵值譜 } \operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 嚴格純實！}}$$
+$$\Large \mathbf{\text{其自伴閉包 } \overline{\mathcal{D}} = \mathcal{D}^* \text{ 的特徵值譜 } \mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 嚴格純實！}}$$
 
 ---
 

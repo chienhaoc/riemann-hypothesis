@@ -1,4 +1,4 @@
-# 深度整改與嚴格證明：第二十一輪審查復盤——Weyl 極限點（LPC）判準、拋物剪切錐保性與虧指數 $(0, 0)$ 完備閉合證明（第 133-134 輪）
+﻿# 深度整改與嚴格證明：第二十一輪審查復盤——Weyl 極限點（LPC）判準、拋物剪切錐保性與虧指數 $(0, 0)$ 完備閉合證明（第 133-134 輪）
 
 **日期**：2026-08-15  
 **性質**：第一戰役核心技術漏洞徹底修補與 Weyl 譜論完備閉合報告  
@@ -57,7 +57,7 @@ $$\mathbf{\Psi_-(0^-) = \begin{pmatrix} 1 \\ -i \end{pmatrix}}$$
 ### 2. 正半軸 $u > 0$ 的唯一 $L^2(0, \infty)$ 解
 在正半軸 $u > 0$，唯一在 $u \to +\infty$ 處平方可積的 Weyl 解在 $u = 0^+$ 處的邊界向量由 Weyl 圓盤極限點確定。
 由於質數剪切勢 $\ell(n) > 0$ 引入的正向耗散與阻抗，Weyl 解在 $u=0^+$ 處的阻抗值 $m_+(i) = \frac{\psi_2(0^+)}{\psi_1(0^+)}$ 必滿足 Herglotz 性質：
-$$\operatorname{Im}\left( m_+(i) \right) > 0 \implies m_+(i) = i \alpha \quad (\text{其中 } \alpha > 0)$$
+$$\mathrm{Im}\left( m_+(i) \right) > 0 \implies m_+(i) = i \alpha \quad (\text{其中 } \alpha > 0)$$
 因此正半軸衰減解在原點的初值必為形式：
 $$\mathbf{\Psi_+(0^+) = c \begin{pmatrix} 1 \\ i \alpha \end{pmatrix} \quad (\alpha > 0)}$$
 

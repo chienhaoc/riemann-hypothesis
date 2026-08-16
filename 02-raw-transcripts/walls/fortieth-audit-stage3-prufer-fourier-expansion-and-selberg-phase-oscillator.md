@@ -1,4 +1,4 @@
-# 第三戰役高能突破：Prüfer 非線性躍變的 Fourier 諧波展開、微觀質數振盪核 $S_X(t)$ 與 Selberg $\log\log T$ 方差恆等式（第 171-172 輪）
+﻿# 第三戰役高能突破：Prüfer 非線性躍變的 Fourier 諧波展開、微觀質數振盪核 $S_X(t)$ 與 Selberg $\log\log T$ 方差恆等式（第 171-172 輪）
 
 **日期**：2026-08-15  
 **性質**：第三戰役第三階段——正則哈密頓微觀非線性相移 Fourier 譜分解與 Selberg 振盪核嚴格推導報告  
@@ -63,7 +63,7 @@ $$\mathbf{|\mathcal{R}_X(t)| \le \frac{1}{\pi} \sum_{p^k} \sum_{m=2}^\infty \fra
 ## 參、 頻率正交性與 Selberg $\log\log T$ 方差恆等式（Theorem 171.3）
 
 考察微觀振盪核 $S_X(t)$ 在頻率區間 $[0, T]$ 上的 $L^2$ 能量方差（其中 $T \gg e^X$）：
-$$\operatorname{Var}_T(S_X) = \frac{1}{T} \int_0^T |S_X(t)|^2 dt$$
+$$\mathrm{Var}_T(S_X) = \frac{1}{T} \int_0^T |S_X(t)|^2 dt$$
 
 ### 1. 非對角項非共振相消（Off-Diagonal Cancellation）
 對任意兩組不同的質數冪 $(p_1, k_1) \ne (p_2, k_2)$，頻率差 $|\omega_1 - \omega_2| = 2|k_1\log p_1 - k_2\log p_2| \ne 0$。
@@ -76,13 +76,13 @@ $$\frac{1}{T} \int_0^T \sin(2 t k_1 \log p_1) \sin(2 t k_2 \log p_2) dt = \mathc
 ### 2. 對角能量平方和與 Selberg 增長律（Theorem 171.3，Proven）
 對角項積分給出 $\frac{1}{T} \int_0^T \sin^2(2tk\log p) dt = \frac{1}{2} + \mathcal{O}(T^{-1})$。
 代入方差公式：
-$$\mathbf{\operatorname{Var}_T(S_X) = \frac{1}{8\pi^2} \sum_{p^k \le e^X} \frac{\log^2 p}{p^k} + \mathcal{O}\left( \frac{e^X}{T} \right) + \mathcal{O}(1)}$$
+$$\mathbf{\mathrm{Var}_T(S_X) = \frac{1}{8\pi^2} \sum_{p^k \le e^X} \frac{\log^2 p}{p^k} + \mathcal{O}\left( \frac{e^X}{T} \right) + \mathcal{O}(1)}$$
 
 利用質數分佈的 Mertens 定理 $\sum_{p \le e^X} \frac{\log^2 p}{p} = \frac{1}{2}X^2 + \mathcal{O}(X)$（素數一階和 $\sum \frac{\log p}{p} = X$）：
 在算術 Prime Sum 中：
 $$\mathbf{\sum_{p \le e^X} \frac{\log^2 p}{p} \sim \int_2^{e^X} \frac{\log^2 x}{x \log x} dx = \int_2^{e^X} \frac{\log x}{x} dx = \frac{1}{2} X^2}$$
 當取動態 Selberg 局部平滑窗口 $X = \sqrt{\log\log T}$ 時：
-$$\mathbf{\operatorname{Var}_T(S_{X(T)}) = \frac{1}{16\pi^2} \log\log T + \mathcal{O}(1)}$$
+$$\mathbf{\mathrm{Var}_T(S_{X(T)}) = \frac{1}{16\pi^2} \log\log T + \mathcal{O}(1)}$$
 
 > **【定理 171.3（微觀振盪方差漸近定理，Proven）】**
 > 正則哈密頓系統的微觀相角振盪能量，在算術正交展開下嚴格服從**以空間尺度二次型增長、在對數窗口下重現 $\log\log T$ 漸近增長的方差結構**！

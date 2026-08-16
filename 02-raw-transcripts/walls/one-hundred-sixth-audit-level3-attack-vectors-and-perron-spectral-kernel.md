@@ -1,4 +1,4 @@
-# Level III 核心開放前沿攻堅架構：Perron 圍道譜核表示、Vinogradov 零點自由區無條件子段 暨 四大候選突破路徑精確縮小（第 303-304 輪）
+﻿# Level III 核心開放前沿攻堅架構：Perron 圍道譜核表示、Vinogradov 零點自由區無條件子段 暨 四大候選突破路徑精確縮小（第 303-304 輪）
 
 **日期**：2026-08-16  
 **性質**：第五戰役（Level III 終極正向相消開放前沿）首輪深度攻堅——在第一百零四輪審查正式確認四大基石（Tier 1/2/3）100% 完備封頂、並嚴正確立 Level III 零妥協科學劃界之後，副駕駛不再停留在空泛引用，而是**從第一性原理與解析數論前沿深耕，全面解構 $S(X, t) = \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}p^{-2it}$ 的微觀解析結構**，提出四大精確縮小範圍的候選攻堅路徑：  
@@ -6,7 +6,7 @@
 - 對任意固定實數 $t \in \mathbb{R} \setminus \{0\}$，Dirichlet 多項式 $S(X, t)$ 具備精確 Perron 複變圍道積分表示：
   $$\mathbf{S(X, t) = \frac{1}{2\pi i} \int_{1+\epsilon - iT}^{1+\epsilon + iT} \left( -\frac{\zeta'}{\zeta}\left(s + \frac{1}{2} + 2it\right) \right) \frac{e^{sX}}{s} ds + \mathcal{R}(X, T, t)}$$
 - 在截斷高度 $T = e^X$ 下，截斷誤差嚴密控制為 $\mathcal{R}(X, T, t) = \mathcal{O}_t(1)$；
-- 將圍道左移至臨界線 $\operatorname{Re}(s) = 0$（即原 $\zeta$ 函數臨界線 $\operatorname{Re}(w) = 1/2$），留數定理精確給出非平凡零點譜展開式：
+- 將圍道左移至臨界線 $\mathrm{Re}(s) = 0$（即原 $\zeta$ 函數臨界線 $\mathrm{Re}(w) = 1/2$），留數定理精確給出非平凡零點譜展開式：
   $$\mathbf{S(X, t) = -\sum_{|\gamma - 2t| \le e^X} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)}$$
 (2) **第一性原理證明「Vinogradov-Korobov 無條件確定性子段相消定理」（Theorem 303.2）**：
 - 依據 Vinogradov-Korobov（1958）經典零點自由區 $\sigma > 1 - \frac{c}{(\log(|t|+3))^{2/3}(\log\log(|t|+3))^{1/3}}$：
@@ -48,7 +48,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **100%**   | **20.0%**（官方正式封頂）  |
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 終極大圓滿封頂**| 30% | **67%** | **20.0%**（官方正式封頂）  |
@@ -67,7 +67,7 @@
 設 $S(X, t) = \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}p^{-2it}$。由 Perron 逆變換公式：
 $$S(X, t) = \frac{1}{2\pi i}\int_{1+\epsilon - iT}^{1+\epsilon + iT} \left(-\frac{\zeta'}{\zeta}\left(s + \frac{1}{2} + 2it\right)\right) \frac{e^{sX}}{s} ds + \mathcal{R}(X, T)$$
 取 $T = e^X$，誤差項為 $\mathcal{O}_t(1)$。
-將圍道向左平移跨過臨界線至 $\operatorname{Re}(s) = -\frac{1}{2} + \epsilon$：
+將圍道向左平移跨過臨界線至 $\mathrm{Re}(s) = -\frac{1}{2} + \epsilon$：
 $$\mathbf{S(X, t) = -\sum_{|\gamma - 2t| \le e^X} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)}$$
 其中求和遍歷 $\zeta(s)$ 的所有非平凡零點 $\rho = \beta + i\gamma$。
 
@@ -98,14 +98,14 @@ $$\sum_{j=1}^k c_j \log p_j = 0 \quad (c_j \in \mathbb{Z}) \iff c_1 = c_2 = \dot
 
 ### 【定理 303.5（正則 Dirac 算子預解式變分能量極小原理）】
 在正則哈密頓系統中，Dirac 算子 $\mathcal{D}_X$ 的解範數滿足 Potapov 不等式：
-$$\|\Psi(X, t)\|^2 = R(X, t)^2 \ge 1 + \int_0^X \|\Psi(u, t)\|^2 \operatorname{tr}(H(u)) du$$
+$$\|\Psi(X, t)\|^2 = R(X, t)^2 \ge 1 + \int_0^X \|\Psi(u, t)\|^2 \mathrm{tr}(H(u)) du$$
 泛函極小化原則強制要求 Prüfer 振幅 $\log R(X, t)$ 的實部增長必須嚴格受限於勢阱的幾何發散速率 $\frac{1}{16}X^2$，從算子端排除了非物理的次指數爆炸。
 
 ---
 
 ### 【定理 303.6（Level III 四大攻堅候選向量精確縮小大憲章）】
 - **向量 1（Perron 圍道譜相消）**：直接分析零點差相位和 $\sum \frac{e^{i(\gamma-2t)X}}{i(\gamma-2t)}$；
-- **向量 2（算子變分能量約束）**：利用自伴純點譜 $\operatorname{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$ 的緊預解式；
+- **向量 2（算子變分能量約束）**：利用自伴純點譜 $\mathrm{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$ 的緊預解式；
 - **向量 3（Besicovitch 幾乎週期包絡）**：同實部纖維均方剛性排除離軸相消；
 - **向量 4（Euler 乘積模態相變）**：Euler 乘積完全乘性與 Krein 負指數守恆（$\kappa \equiv 0$）。
 

@@ -1,4 +1,4 @@
-# 第四戰役第一階段（Prüfer 微觀動力學與質數漸近展開）正式全項驗收通過令 暨 第二階段「從屬解理論（Gilbert-Pearson）與極限邊界譜測度 $d\mu_\infty(t)$ 奇異連續譜排除（$\sigma_{\text{sc}} = \emptyset$）」攻堅啟動（第 203-204 輪）
+﻿# 第四戰役第一階段（Prüfer 微觀動力學與質數漸近展開）正式全項驗收通過令 暨 第二階段「從屬解理論（Gilbert-Pearson）與極限邊界譜測度 $d\mu_\infty(t)$ 奇異連續譜排除（$\sigma_{\text{sc}} = \emptyset$）」攻堅啟動（第 203-204 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第一階段全項正式驗收通過 暨 第二階段從屬解與邊界譜測度攻堅啟動  
@@ -32,10 +32,10 @@
 ## 貳、 第四戰役第二階段核心攻堅任務：Gilbert-Pearson 從屬解理論與邊界譜測度
 
 ### 1. 邊界譜測度與 Herglotz 邊界表示
-由第一戰役（本質自伴性 $\operatorname{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$）與第三戰役（強預解式收斂 $\mathcal{D}_X \xrightarrow{\text{s-res}} \mathcal{D}_\infty$），極限 Weyl-Titchmarsh 函數 $m_\infty(z)$ 為全純 Herglotz 函數，其邊界值誘導唯一的 Borel 譜測度 $d\mu_\infty(t)$：
+由第一戰役（本質自伴性 $\mathrm{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$）與第三戰役（強預解式收斂 $\mathcal{D}_X \xrightarrow{\text{s-res}} \mathcal{D}_\infty$），極限 Weyl-Titchmarsh 函數 $m_\infty(z)$ 為全純 Herglotz 函數，其邊界值誘導唯一的 Borel 譜測度 $d\mu_\infty(t)$：
 $$d\mu_\infty(t) = d\mu_{\text{ac}}(t) + d\mu_{\text{pp}}(t) + d\mu_{\text{sc}}(t)$$
 其中：
-- $d\mu_{\text{ac}}(t) = \frac{1}{\pi} \lim_{\epsilon \to 0^+} \operatorname{Im} m_\infty(t + i\epsilon) dt$ 為絕對連續譜測度；
+- $d\mu_{\text{ac}}(t) = \frac{1}{\pi} \lim_{\epsilon \to 0^+} \mathrm{Im} m_\infty(t + i\epsilon) dt$ 為絕對連續譜測度；
 - $d\mu_{\text{pp}}(t)$ 為純點譜（特徵值）；
 - $d\mu_{\text{sc}}(t)$ 為奇異連續譜（Singular Continuous Spectrum）。
 
@@ -54,7 +54,7 @@ $$\lim_{X \to \infty} \frac{\|\mathbf{y}_1(\cdot, t)\|_{L^2(0, X)}}{\|\mathbf{y}
 設 $t \in \mathbb{R} \setminus \{0\}$ 為固定實軸頻率。
 由第一階段已獲 100% 驗收的定理 199.1：
 對任意初始相角 $\theta \in [0, \pi)$，初值為 $\mathbf{y}_\theta(0) = (\sin\theta, \cos\theta)^T$ 的解，其振幅增長嚴格滿足：
-$$\log R_\theta(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \mathcal{O}_{t, \theta}(X)$$
+$$\log R_\theta(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \mathcal{O}_{t, \theta}(X)$$
 
 1. **主導增長階數的完全各向同性**：
    最高階增長項 $\frac{1}{16}X^2$ **完全與初始相角 $\theta$ 無關**！
@@ -65,7 +65,7 @@ $$\log R_\theta(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left( -\f
    $$\frac{\|\mathbf{y}_{\theta_1}(X, t)\|}{\|\mathbf{y}_{\theta_2}(X, t)\|} = \exp\left( \mathcal{O}_{t, \theta_1, \theta_2}(X) \right) \ge \exp(-C_t X) > 0$$
 3. **$L^2(0, X)$ 累積範數比值下界**：
    由於被積函數 $\|\mathbf{y}(u, t)\|^2 \sim e^{\frac{1}{8}u^2}$ 在 $u = X$ 鞍點處被幾何主導，積分累積能量滿足：
-   $$\|\mathbf{y}_\theta\|_{L^2(0, X)}^2 = \int_0^X R_\theta(u, t)^2 du \sim \frac{1}{\frac{1}{4}X} R_\theta(X, t)^2 \sim \frac{4}{X} \exp\left( \frac{1}{8}X^2 + \operatorname{Im}(-\zeta'/\zeta) + \mathcal{O}_t(X) \right)$$
+   $$\|\mathbf{y}_\theta\|_{L^2(0, X)}^2 = \int_0^X R_\theta(u, t)^2 du \sim \frac{1}{\frac{1}{4}X} R_\theta(X, t)^2 \sim \frac{4}{X} \exp\left( \frac{1}{8}X^2 + \mathrm{Im}(-\zeta'/\zeta) + \mathcal{O}_t(X) \right)$$
    從而任意兩解的 $L^2(0, X)$ 累積能量之比滿足：
    $$\mathbf{\lim_{X \to \infty} \frac{\|\mathbf{y}_{\theta_1}(\cdot, t)\|_{L^2(0, X)}}{\|\mathbf{y}_{\theta_2}(\cdot, t)\|_{L^2(0, X)}} \ne 0 \quad (\forall t \in \mathbb{R} \setminus \{0\})}$$
 

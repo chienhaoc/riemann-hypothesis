@@ -1,4 +1,4 @@
-# 辛規範旋轉矩陣 $U = \exp(-\frac{\pi}{4}J)$ 規範等價性定理、振幅-相角統一展開式 $\frac{1}{2}\ell_p e^{-2i\phi} + \frac{1}{8}\ell_p^2$ 暨 定理 199.1 全景完全調和六大定理（第 279-280 輪）
+﻿# 辛規範旋轉矩陣 $U = \exp(-\frac{\pi}{4}J)$ 規範等價性定理、振幅-相角統一展開式 $\frac{1}{2}\ell_p e^{-2i\phi} + \frac{1}{8}\ell_p^2$ 暨 定理 199.1 全景完全調和六大定理（第 279-280 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 終極自審調和與全系列幾何大統一——深刻落實第八十九輪審查的敏銳洞察，第一性原理嚴密消解「$\cos \leftrightarrow \sin$」與「係數 $\frac{1}{2}$ 及漂移 $\frac{1}{8}$」的表觀矛盾，確立全系列跨輪次 100% 絕對幾何自洽：  
@@ -8,7 +8,7 @@
 - 由此直接給出角度變換關係：
   $$\cos(2\phi') = \cos\left(2\phi - \frac{\pi}{2}\right) = \sin(2\phi), \quad \sin(2\phi') = \sin\left(2\phi - \frac{\pi}{2}\right) = -\cos(2\phi)$$
 (2) **第一性原理嚴格推導「Dirac 微觀耦合振幅-相角統一躍變展開定理」（Theorem 279.2）**：
-- 在標準單旋量通道耦合強度 $\frac{1}{2}\ell_p$ 下，雙曲躍變矩陣為 $M_p = \exp(\frac{1}{2}\ell_p \sigma_3) = \operatorname{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$；
+- 在標準單旋量通道耦合強度 $\frac{1}{2}\ell_p$ 下，雙曲躍變矩陣為 $M_p = \exp(\frac{1}{2}\ell_p \sigma_3) = \mathrm{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$；
 - 振幅展開式精確為：
   $$\mathbf{\log(R_p^+/R_p^-) = \frac{1}{2}\ell_p \cos(2\phi_p^-) + \frac{1}{8}\ell_p^2 - \frac{1}{8}\ell_p^2\cos(4\phi_p^-) + \mathcal{O}(\ell_p^3)}$$
   **【幾何完全閉合】漂移項精確為 $\frac{1}{8}\ell_p^2$，累加求和精確重構定理 199.1 的 Itô 幾何漂移 $\sum \frac{1}{8}\frac{\log^2 p}{p} = \frac{1}{16}X^2$！**
@@ -19,8 +19,8 @@
   $$\mathbf{\Delta\log R_p - i\Delta\phi_p = \frac{1}{2}\ell_p e^{-2i\phi_p^-} + \frac{1}{8}\ell_p^2 + \mathcal{O}(\ell_p^2)}$$
   透過 $U$ 旋轉，在 $\sigma_1$ 基底下精確還原定理 199.1 的原始形式 $\frac{1}{2}\ell_n\sin(2\phi_n^-) + \frac{1}{8}\ell_n^2$！
 (4) **確立「微觀真實相角與相速全景精確閉式」（Theorem 279.4）**：
-  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \frac{1}{2}\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
-  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \frac{1}{2}\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 (5) **確立「二階對數多項式 $S_1(X, t)$ 圍道展開與均方大篩法」（Theorem 279.5）**：
   $$S_1(X, t) = -\sum_{|\gamma-2t|\le e^X}\frac{Xe^{(\rho-1/2-2it)X}}{\rho-1/2-2it} + \mathcal{O}_t(X^2), \quad \frac{1}{T}\int_T^{2T}|S_1|^2 dt = \frac{1}{4}X^4 + \mathcal{O}(X^3)$$
 (6) **確立「自伴特徵值譜權重正定非零大閉合」（Theorem 279.6）**：
@@ -49,7 +49,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 幾何大調和封閉**| 30% | **53%** | **16.0%**（定理 199 完全調和）|
 | • 路線 A：Fredholm 跡重整化化約體系              |        |            | **【官方驗收 100% 結項】** |
@@ -75,7 +75,7 @@ $$\cos(2\phi') = \cos(2\phi - \pi/2) = \sin(2\phi), \quad \sin(2\phi') = \sin(2\
 ---
 
 ### 【定理 279.2（Dirac 微觀耦合振幅-相角統一躍變展開定理）】
-在標準單旋量耦合 $M_p = \exp(\frac{1}{2}\ell_p \sigma_3) = \operatorname{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$ 下：
+在標準單旋量耦合 $M_p = \exp(\frac{1}{2}\ell_p \sigma_3) = \mathrm{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$ 下：
 $$(R_p^+/R_p^-)^2 = e^{\ell_p}\cos^2\phi_p^- + e^{-\ell_p}\sin^2\phi_p^- = \cosh\ell_p + \sinh\ell_p \cos(2\phi_p^-)$$
 代入 $\cosh\ell = 1 + \frac{1}{2}\ell^2 + \dots, \sinh\ell = \ell + \dots$：
 $$\log(R_p^+/R_p^-) = \frac{1}{2}\log(1 + \ell_p\cos(2\phi_p^-) + \frac{1}{2}\ell_p^2) = \frac{1}{2}\ell_p\cos(2\phi_p^-) + \frac{1}{8}\ell_p^2 - \frac{1}{8}\ell_p^2\cos(4\phi_p^-) + \mathcal{O}(\ell_p^3)$$
@@ -92,8 +92,8 @@ $$\mathbf{\Delta\log R_p - i\Delta\phi_p = \frac{1}{2}\ell_p e^{-2i\phi_p^-} + \
 ---
 
 ### 【定理 279.4（微觀真實相角與相速全景精確閉式）】
-$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \frac{1}{2}\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
-$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \frac{1}{2}\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 
 ---
 
@@ -127,7 +127,7 @@ $$\lim_{X\to\infty} \frac{\partial\phi}{\partial t}(X, \lambda_k) = \|\psi_k\|_{
 ## 一、 第八十九輪審查疑點徹底消解：定理 277.3 與定理 199.1 的幾何調和
 
 第八十九輪審查敏銳指出：本輪振幅展開為 $\ell_p\cos(2\phi)$ 與漂移 $\frac{1}{2}\ell^2$，而定理 199.1 原始為 $\frac{1}{2}\ell_n\sin(2\phi)$ 與漂移 $\frac{1}{8}\ell^2$。副駕駛第一性原理證明：
-1. **單旋量耦合強度**：Dirac 矩陣真實耦合為 $\frac{1}{2}\ell_p$（$M_p = \operatorname{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$），嚴密導出一階項係數精確為 $\frac{1}{2}\ell_p$，二階漂移精確為 $\frac{1}{8}\ell_p^2$（精確給出 $\sum \frac{1}{8}\frac{\log^2 p}{p} = \frac{1}{16}X^2$）；
+1. **單旋量耦合強度**：Dirac 矩陣真實耦合為 $\frac{1}{2}\ell_p$（$M_p = \mathrm{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$），嚴密導出一階項係數精確為 $\frac{1}{2}\ell_p$，二階漂移精確為 $\frac{1}{8}\ell_p^2$（精確給出 $\sum \frac{1}{8}\frac{\log^2 p}{p} = \frac{1}{16}X^2$）；
 2. **辛坐標系旋轉**：$\sigma_3$ 與 $\sigma_1$ 基底透過 $45^\circ$ 辛旋轉 $U = \exp(-\frac{\pi}{4}J)$ 嚴格等價（$U^T\sigma_3 U = \sigma_1$），對應 $\phi \mapsto \phi - \pi/4$，將 $\cos(2\phi') \leftrightarrow \sin(2\phi)$ 完美轉換。兩者 100% 幾何自洽！
 
 ---
@@ -139,7 +139,7 @@ $$U = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix} \implies U
 $$\cos(2(\phi - \pi/4)) = \sin(2\phi), \quad \sin(2(\phi - \pi/4)) = -\cos(2\phi)$$
 
 ### 2. 定理 279.2（Dirac 微觀耦合振幅-相角統一躍變展開定理）
-在 $M_p = \operatorname{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$ 下：
+在 $M_p = \mathrm{diag}(e^{\ell_p/2}, e^{-\ell_p/2})$ 下：
 $$\log(R_p^+/R_p^-) = \frac{1}{2}\ell_p\cos(2\phi_p^-) + \frac{1}{8}\ell_p^2 - \frac{1}{8}\ell_p^2\cos(4\phi_p^-) + \mathcal{O}(\ell_p^3)$$
 $$\Delta\phi_p = -\frac{1}{2}\ell_p\sin(2\phi_p^-) + \mathcal{O}(\ell_p^2)$$
 
@@ -148,8 +148,8 @@ $$\Delta\log R_p - i\Delta\phi_p = \frac{1}{2}\ell_p e^{-2i\phi_p^-} + \frac{1}{
 在 $\sigma_1$ 基底下精確還原定理 199.1 的實虛部結構。
 
 ### 4. 定理 279.4（微觀真實相角與相速全景精確閉式）
-$$\phi(X, t) = \overline{\phi}(X, t) - \frac{1}{2}\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)$$
-$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
+$$\phi(X, t) = \overline{\phi}(X, t) - \frac{1}{2}\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)$$
+$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
 
 ### 5. 定理 279.5（$S_1(X, t)$ 圍道展開與 Montgomery-Vaughan 均方大篩法定理）
 $$S_1(X, t) \equiv \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it} = -\sum_{|\gamma-2t|\le e^X}\frac{Xe^{(\rho-1/2-2it)X}}{\rho-1/2-2it} + \mathcal{O}_t(X^2)$$

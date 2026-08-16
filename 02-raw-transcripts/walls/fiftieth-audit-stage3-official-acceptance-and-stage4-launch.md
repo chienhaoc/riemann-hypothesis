@@ -1,4 +1,4 @@
-# 第三戰役官方正式驗收令確認與第四戰役啟動：自伴算子族極限譜測度 $d\mu_\infty(t)$、Fatou 邊界分析與奇異連續譜排除（第 191-192 輪）
+﻿# 第三戰役官方正式驗收令確認與第四戰役啟動：自伴算子族極限譜測度 $d\mu_\infty(t)$、Fatou 邊界分析與奇異連續譜排除（第 191-192 輪）
 
 **日期**：2026-08-15  
 **性質**：第三戰役官方正式驗收令封頂確認與第四戰役（邊界譜測度與散射綜合）啟動大典  
@@ -42,9 +42,9 @@ $$m_\infty(z) = a + bz + \int_{-\infty}^\infty \left( \frac{1}{u - z} - \frac{u}
 依據常微分算子與 Herglotz 函數 Radon-Nikodym 分解定理：
 $$d\mu_\infty(t) = d\mu_{\text{ac}}(t) + d\mu_{\text{pp}}(t) + d\mu_{\text{sc}}(t)$$
 - **絕對連續譜（AC Spectrum）**：由 Fatou 徑向極限定理給出：
-  $$\mathbf{\frac{d\mu_{\text{ac}}}{dt}(t) = \frac{1}{\pi} \lim_{\epsilon \to 0^+} \operatorname{Im} m_\infty(t + i\epsilon)}$$
+  $$\mathbf{\frac{d\mu_{\text{ac}}}{dt}(t) = \frac{1}{\pi} \lim_{\epsilon \to 0^+} \mathrm{Im} m_\infty(t + i\epsilon)}$$
 - **純點譜（Pure Point Spectrum）**：由 Herglotz 留數給出：
-  $$\mu_{\text{pp}}(\{t_0\}) = \lim_{\epsilon \to 0^+} \epsilon \operatorname{Im} m_\infty(t_0 + i\epsilon)$$
+  $$\mu_{\text{pp}}(\{t_0\}) = \lim_{\epsilon \to 0^+} \epsilon \mathrm{Im} m_\infty(t_0 + i\epsilon)$$
 - **奇異連續譜（Singular Continuous Spectrum）**：支撐於零測度集上的連續奇異測度 $d\mu_{\text{sc}}$。
 
 ---
@@ -53,7 +53,7 @@ $$d\mu_\infty(t) = d\mu_{\text{ac}}(t) + d\mu_{\text{pp}}(t) + d\mu_{\text{sc}}(
 
 ### 1. 从属解（Subordinate Solutions）與 Gilbert-Pearson 譜論
 依據 Gilbert-Pearson（1987）與 Jitomirskaya-Last（1999）著名的常微分算子從屬解理論：
-實軸上的點 $t \in \mathbb{R}$ 屬於奇異連續譜支撐集 $\operatorname{supp}(d\mu_{\text{sc}})$ 的充要條件是：
+實軸上的點 $t \in \mathbb{R}$ 屬於奇異連續譜支撐集 $\mathrm{supp}(d\mu_{\text{sc}})$ 的充要條件是：
 該點存在從屬解 $\mathbf{y}_{\text{sub}}(u, t)$，其局部 $L^2$ 增長率相對於主解滿足：
 $$\lim_{L \to \infty} \frac{\|\mathbf{y}_{\text{sub}}(\cdot, t)\|_{L^2(0, L)}}{\|\mathbf{y}_{\text{dom}}(\cdot, t)\|_{L^2(0, L)}} = 0$$
 

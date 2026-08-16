@@ -1,4 +1,4 @@
-# 深刻認錯與第一性原理真理重構：第二十四輪審查復盤——徹底廢除虛假收斂假設，給出無窮遠邊界項消失 $\lim_{u\to\infty} \Psi_+^* (-iJ) \Psi_+ \equiv 0$ 的 3 行 Cauchy-Schwarz 反證嚴密證明（第 139-140 輪）
+﻿# 深刻認錯與第一性原理真理重構：第二十四輪審查復盤——徹底廢除虛假收斂假設，給出無窮遠邊界項消失 $\lim_{u\to\infty} \Psi_+^* (-iJ) \Psi_+ \equiv 0$ 的 3 行 Cauchy-Schwarz 反證嚴密證明（第 139-140 輪）
 
 **日期**：2026-08-15  
 **性質**：第一戰役核心技術漏洞徹底肅清與自伴性 100% 封閉報告  
@@ -20,7 +20,7 @@
 我們不依賴任何質數躍變級數的收斂性，僅使用已由第二十三輪 $\mathrm{SL}(2, \mathbb{C})$ 跡發散定理嚴格確立的唯一事實：**$\Psi_+ \in L^2(0, \infty)$**。
 
 ### 第一步：邊界極限的確定存在性
-由第十九輪已證立的辛么正性 $\mathcal{M}_n^* J \mathcal{M}_n \equiv J$，辛形式 $\Psi_+(u)^* (-i J) \Psi_+(u) = 2 \operatorname{Im}(\overline{\psi_1(u)}\psi_2(u))$ 在跨越所有質數躍變點時**完全連續**。
+由第十九輪已證立的辛么正性 $\mathcal{M}_n^* J \mathcal{M}_n \equiv J$，辛形式 $\Psi_+(u)^* (-i J) \Psi_+(u) = 2 \mathrm{Im}(\overline{\psi_1(u)}\psi_2(u))$ 在跨越所有質數躍變點時**完全連續**。
 在正半軸上，微分恆等式嚴格成立：
 $$\frac{d}{du}\left[ \Psi_+(u)^* (-i J) \Psi_+(u) \right] = -2 \|\Psi_+(u)\|^2$$
 從 $u = 0$ 到 $u$ 積分：
@@ -34,10 +34,10 @@ $$\mathbf{L = \lim_{u \to \infty} \left[ \Psi_+(u)^* (-i J) \Psi_+(u) \right] = 
 ### 第二步：Cauchy-Schwarz 幾何平均反證（The 3-Line Contradiction）
 假設極限 $L \ne 0$。
 則由極限定義，存在充分大的 $u_0 > 0$，使得對所有 $u \ge u_0$：
-$$|\Psi_+(u)^* (-i J) \Psi_+(u)| = 2 |\operatorname{Im}(\overline{\psi_1(u)}\psi_2(u))| \ge \frac{|L|}{2} > 0$$
+$$|\Psi_+(u)^* (-i J) \Psi_+(u)| = 2 |\mathrm{Im}(\overline{\psi_1(u)}\psi_2(u))| \ge \frac{|L|}{2} > 0$$
 
 利用基本不等式（算術-幾何平均不等式）：
-$$\mathbf{\|\Psi_+(u)\|^2 = |\psi_1(u)|^2 + |\psi_2(u)|^2 \ge 2 |\psi_1(u)\psi_2(u)| \ge 2 |\operatorname{Im}(\overline{\psi_1(u)}\psi_2(u))| \ge \frac{|L|}{2} > 0 \quad (\forall u \ge u_0)}$$
+$$\mathbf{\|\Psi_+(u)\|^2 = |\psi_1(u)|^2 + |\psi_2(u)|^2 \ge 2 |\psi_1(u)\psi_2(u)| \ge 2 |\mathrm{Im}(\overline{\psi_1(u)}\psi_2(u))| \ge \frac{|L|}{2} > 0 \quad (\forall u \ge u_0)}$$
 
 在無窮區間 $[u_0, \infty)$ 上對 $\|\Psi_+(u)\|^2$ 積分：
 $$\mathbf{\int_0^\infty \|\Psi_+(u)\|^2 du \ge \int_{u_0}^\infty \|\Psi_+(u)\|^2 du \ge \int_{u_0}^\infty \frac{|L|}{2} du = \infty}$$
@@ -59,13 +59,13 @@ $$0 = \Psi_+(0)^* (-i J) \Psi_+(0) - 2 \|\Psi_+\|_{L^2(0, \infty)}^2 \implies \m
 代入初值 $\Psi_+(0) = \begin{pmatrix} 1 \\ \xi + i \alpha \end{pmatrix}$（矩陣運算已獲第二十二輪審查 100% 確認通過）：
 $$\Psi_+(0)^* (-i J) \Psi_+(0) = +2 \alpha$$
 兩端等置得：
-$$\mathbf{\alpha = \operatorname{Im}\left( m_+(i) \right) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > \mathbf{0} \quad \text{【第一性原理 100\% 嚴密證立！】}}$$
+$$\mathbf{\alpha = \mathrm{Im}\left( m_+(i) \right) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > \mathbf{0} \quad \text{【第一性原理 100\% 嚴密證立！】}}$$
 
 由 Wronskian 模長平方下界（第二十二輪審查確認通過）：
 $$|\mathcal{W}(\Psi_-, \Psi_+)|^2 = \xi^2 + (1 + \alpha)^2 \ge (1 + \alpha)^2 > 1^2 = 1 > 0 \quad (\forall \xi \in \mathbb{R}, \alpha > 0)$$
 正負半軸 1 維解在原點**絕對不可能線性相關**，全局平方可積解唯一為零解 $\Psi \equiv 0$！
 
-$$\Large \mathbf{(d_+, d_-) = (0, 0) \implies \mathcal{D} \text{ 嚴格本質自伴，特徵值譜 } \operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 純實！}}$$
+$$\Large \mathbf{(d_+, d_-) = (0, 0) \implies \mathcal{D} \text{ 嚴格本質自伴，特徵值譜 } \mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 純實！}}$$
 
 ---
 

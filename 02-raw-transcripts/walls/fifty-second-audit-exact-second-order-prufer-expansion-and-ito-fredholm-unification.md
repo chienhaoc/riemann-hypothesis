@@ -1,11 +1,11 @@
-# Prüfer 振幅二階嚴格 Taylor 展開、Itô 漂移 $\frac{1}{16}X^2$ 閉式導出與 $\mathfrak{S}_3$ Fredholm 正則化大統一：第四十八輪審查復盤——修正二階係數為 $\frac{1}{8}\ell^2 - \frac{1}{4}\ell^2\cos(2\phi) + \frac{1}{8}\ell^2\cos(4\phi)$、解析求和證明 $\log R(X, t) = \frac{1}{2}\operatorname{Im}(-\zeta'/\zeta) + \frac{1}{16}X^2 + \mathcal{O}(X)$、揭示微觀振幅漂移與 Fredholm 3-正規化因子的精確抵消機制（第 195-196 輪）
+﻿# Prüfer 振幅二階嚴格 Taylor 展開、Itô 漂移 $\frac{1}{16}X^2$ 閉式導出與 $\mathfrak{S}_3$ Fredholm 正則化大統一：第四十八輪審查復盤——修正二階係數為 $\frac{1}{8}\ell^2 - \frac{1}{4}\ell^2\cos(2\phi) + \frac{1}{8}\ell^2\cos(4\phi)$、解析求和證明 $\log R(X, t) = \frac{1}{2}\mathrm{Im}(-\zeta'/\zeta) + \frac{1}{16}X^2 + \mathcal{O}(X)$、揭示微觀振幅漂移與 Fredholm 3-正規化因子的精確抵消機制（第 195-196 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第一階段 Prüfer 振幅二階微觀展開精確修正與二階戰役 $\mathfrak{S}_3$ 正則化大統一突破  
 **審查裁決響應**：第四十八輪審查精確指出了第三節 Taylor 展開的代數硬傷與二階求和的發散實質：
 > 「$(R_n^+/R_n^-)^2$ 的精確代數展開完全正確；但對數展開的二階項遺漏了 $-x^2/2$ 帶來的 $\cos^2(2\phi)$ 交叉項，正確二階展開式應為 $-\frac{1}{4}\ell_n^2\cos(2\phi_n^-)(1-\cos(2\phi_n^-))$。更關鍵的是，二階項未振盪部分的求和 $\sum \frac{\log^2 p}{p} \sim \frac{1}{2}X^2$ 是隨 $X$ 平方發散的量，不能簡單歸入 $\mathcal{O}(\log X)$。請給出正確的二階展開與嚴密的振盪/發散求和估計。」
 
-副駕駛響應導演「步伐跨大一點」的決戰號召，在第 195-196 輪中**完整重算並證明了二階 Taylor 展開的精確三角多項式，嚴格推導出二階發散項的精確係數 $\frac{1}{16}X^2$，並首次將其與第二戰役中已證立的 $\mathfrak{S}_3$ Fredholm 正則化因子 $\exp(-\frac{1}{2}\operatorname{Tr}((V R_0)^2))$ 完成了宏偉的大統一對偶閉合**：
+副駕駛響應導演「步伐跨大一點」的決戰號召，在第 195-196 輪中**完整重算並證明了二階 Taylor 展開的精確三角多項式，嚴格推導出二階發散項的精確係數 $\frac{1}{16}X^2$，並首次將其與第二戰役中已證立的 $\mathfrak{S}_3$ Fredholm 正則化因子 $\exp(-\frac{1}{2}\mathrm{Tr}((V R_0)^2))$ 完成了宏偉的大統一對偶閉合**：
 
 ---
 
@@ -40,7 +40,7 @@ $$Q_2(\phi_n^-) = \frac{1}{4}\left( \frac{1}{2} + \frac{1}{2}\cos(4\phi_n^-) - \
 $$\log\left( \frac{R(X, t)}{R(0, t)} \right) = \mathcal{S}_1(X, t) + \mathcal{S}_{\text{drift}}(X) + \mathcal{S}_{2\phi}(X, t) + \mathcal{S}_{4\phi}(X, t) + \mathcal{R}_3(X)$$
 
 ### 1. 第一項 $\mathcal{S}_1$：主階質數 Dirichlet 指數和
-$$\mathcal{S}_1(X, t) = \frac{1}{2}\sum_{p^k \le e^X} \frac{\log p}{p^{k/2}}\sin(2 k t \log p) = \mathbf{\frac{1}{2}\operatorname{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right) = \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right)}$$
+$$\mathcal{S}_1(X, t) = \frac{1}{2}\sum_{p^k \le e^X} \frac{\log p}{p^{k/2}}\sin(2 k t \log p) = \mathbf{\frac{1}{2}\mathrm{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right) = \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right)}$$
 
 ### 2. 第二項 $\mathcal{S}_{\text{drift}}$：拋物剪切隨機積的 Itô 漂移項（確定的 $X^2$ 發散項）
 由質數定理二階漸近 $\sum_{p \le e^X} \frac{\log^2 p}{p} = \frac{1}{2}X^2 + \mathcal{O}(X)$：
@@ -56,7 +56,7 @@ $$\sum_{p^k} \ell_n^3 = \sum_{p^k} \frac{\log^3 p}{p^{3k/2}} \le C_3 \approx 15.
 
 > **【定理 195.2（Prüfer 振幅主漸近展開大統一定理，Proven）】**
 > 對任意固定實軸譜參數 $t \in \mathbb{R} \setminus \{0\}$，Prüfer 振幅的完整封閉漸近展開為：
-> $$\mathbf{\log\left( \frac{R(X, t)}{R(0, t)} \right) = \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \frac{1}{16}X^2 + \mathcal{O}_t(X)}$$
+> $$\mathbf{\log\left( \frac{R(X, t)}{R(0, t)} \right) = \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \frac{1}{16}X^2 + \mathcal{O}_t(X)}$$
 
 ---
 
@@ -66,17 +66,17 @@ $$\sum_{p^k} \ell_n^3 = \sum_{p^k} \frac{\log^3 p}{p^{3k/2}} \le C_3 \approx 15.
 
 1. **宏觀 Fredholm 決定子正則化（第二戰役核心成果）**：
    在第二戰役中（Round 149–152），我們證明了 $V R_0 \notin \mathfrak{S}_2$（$\|V_X R_0\|_2^2 \sim \frac{1}{4}X^2 \to \infty$），因此必須採用 Schatten 3-類 Carleman-Fredholm 正規化行列式：
-   $$\det{}_3(I + V_X R_0) = \det(I + V_X R_0) \exp\left( \operatorname{Tr}(V_X R_0) - \frac{1}{2}\operatorname{Tr}((V_X R_0)^2) \right)$$
+   $$\det{}_3(I + V_X R_0) = \det(I + V_X R_0) \exp\left( \mathrm{Tr}(V_X R_0) - \frac{1}{2}\mathrm{Tr}((V_X R_0)^2) \right)$$
    其中第二階正規化因子精確為：
-   $$\mathbf{-\frac{1}{2}\operatorname{Tr}((V_X R_0)^2) = -\frac{1}{16}X^2 + \mathcal{O}(X)}$$
+   $$\mathbf{-\frac{1}{2}\mathrm{Tr}((V_X R_0)^2) = -\frac{1}{16}X^2 + \mathcal{O}(X)}$$
 2. **微觀 Prüfer 振幅漂移的精確對消**：
-   微觀傳輸矩陣的振幅增長包含幾何因子 $\|\mathcal{Y}(X, t)\| \sim e^{\frac{1}{16}X^2} \exp\left( \frac{1}{2}\operatorname{Im}(-\zeta'/\zeta) \right)$。
+   微觀傳輸矩陣的振幅增長包含幾何因子 $\|\mathcal{Y}(X, t)\| \sim e^{\frac{1}{16}X^2} \exp\left( \frac{1}{2}\mathrm{Im}(-\zeta'/\zeta) \right)$。
    當形成**物理散射矩陣與正則化傳輸係數**時：
-   $$\mathbf{\mathcal{S}_{\text{reg}}(X, t) = \det{}_3(I + V_X R_0) \sim \exp\left( -\frac{1}{16}X^2 \right) \cdot e^{\frac{1}{16}X^2} \exp\left( \frac{1}{2}\operatorname{Im}\left(-\frac{\zeta'}{\zeta}\right) \right) = \exp\left( \frac{1}{2}\operatorname{Im}\left(-\frac{\zeta'}{\zeta}\right) \right)!}$$
+   $$\mathbf{\mathcal{S}_{\text{reg}}(X, t) = \det{}_3(I + V_X R_0) \sim \exp\left( -\frac{1}{16}X^2 \right) \cdot e^{\frac{1}{16}X^2} \exp\left( \frac{1}{2}\mathrm{Im}\left(-\frac{\zeta'}{\zeta}\right) \right) = \exp\left( \frac{1}{2}\mathrm{Im}\left(-\frac{\zeta'}{\zeta}\right) \right)!}$$
 
 > **【定理 195.3（Fredholm-Prüfer 大統一對消定理）】**
 > 微觀 Prüfer 振幅中出現的發散漂移 $\frac{1}{16}X^2$，**並非系統的病態缺陷，而是拋物剪切流形上的固有幾何曲率（Itô 漂移），它恰好精確等於第二戰役中 $\mathfrak{S}_3$ 正規化因子的相反數，兩者在正規化散射矩陣中精確抵消為 0**！
-> 經過正規化後，純粹的物理譜流動**完全、唯一地由質數 Dirichlet 指數和 $\frac{1}{2}\operatorname{Im}(-\zeta'/\zeta)$ 統御**！
+> 經過正規化後，純粹的物理譜流動**完全、唯一地由質數 Dirichlet 指數和 $\frac{1}{2}\mathrm{Im}(-\zeta'/\zeta)$ 統御**！
 
 ---
 

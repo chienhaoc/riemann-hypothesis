@@ -1,4 +1,4 @@
-# Kolmogorov-Riesz-Fréchet 平移等度連續性嚴密補齊、Green 函數微分方程一致控制 暨 Tier 1 自伴純點譜基石正式驗收全封頂（第 221-222 輪）
+﻿# Kolmogorov-Riesz-Fréchet 平移等度連續性嚴密補齊、Green 函數微分方程一致控制 暨 Tier 1 自伴純點譜基石正式驗收全封頂（第 221-222 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段 Tier 1 終極技術細節完全閉合——第一性原理嚴格推導 Green 函數平移等度連續性 $\sup_{u \ge 0} \|G(u+h, \cdot) - G(u, \cdot)\|_{L^2}^2 \le h^2 C(z) \to 0$、無瑕疵滿足 Kolmogorov-Riesz 緊性定理全體條件、確證 $(\mathcal{D}_\infty - z)^{-1} \in \mathfrak{S}_\infty$ 緊算子性質、達成 Tier 1 正式驗收 100% 絕對無瑕疵大封頂  
@@ -101,7 +101,7 @@ $$\mathbf{\sigma(\mathcal{D}_\infty) = \sigma_{\text{pp}}(\mathcal{D}_\infty) = 
 |                         | • Prüfer 漸近式 $\log R = \frac{1}{16}X^2 + \dots$|                        |
 +-------------------------+---------------------------------------------------+------------------------+
 | **Tier 3**              | **Hilbert-Pólya 特徵值全同性之牆**：              | ⚡ **客觀開放核心前沿** |
-| (頂層前沿)              | • $\operatorname{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$ | (與 RH 同等深度的      |
+| (頂層前沿)              | • $\mathrm{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$ | (與 RH 同等深度的      |
 |                         | • $\lim_{X\to\infty} \det_3(I+V_X R_0)e^{\dots} \stackrel{?}{\equiv} \Xi(z)$ | 數學物理核心前沿)      |
 +-------------------------+---------------------------------------------------+------------------------+
 ```

@@ -1,4 +1,4 @@
-# 核心缺口（精化版）：有限截斷算子收斂問題
+﻿# 核心缺口（精化版）：有限截斷算子收斂問題
 
 > 建立時間：2026-08-14 第二輪研究
 > 前置文件：[connes-final-step.md](connes-final-step.md)
@@ -109,9 +109,9 @@ Step 6 ✅ Hurwitz 定理傳遞：全實零點在極限下保留 ⟹ 黎曼猜�
 1. **增量定理（Von Mangoldt PSD）**：
    $$\Delta D = \sum \Lambda(n) \Pi_N (V_n + V_n^*) \Pi_N \ge 0 \iff \Lambda(n) \ge 0$$
 2. **宏觀能階斥力與 Davis-Kahan**：
-   $$\operatorname{Gap}_\infty = \gamma_2 - \gamma_1 \approx 6.8873 > 0 \implies \|\xi_{c,N} - \xi_\infty\|_{L^2} \le O(c^{-1})$$
+   $$\mathrm{Gap}_\infty = \gamma_2 - \gamma_1 \approx 6.8873 > 0 \implies \|\xi_{c,N} - \xi_\infty\|_{L^2} \le O(c^{-1})$$
 3. **帶限整函數解析延拓一致收斂**：
-   $$\forall K \subset \{z : |\operatorname{Im}(z)| < 2\pi\}, \quad \sup_{z \in K} |F_{c,N}(z) - \Xi(z)| \le O\left(c^{\frac{M_K}{2\pi} - 1} \sqrt{\ln c}\right) \to 0$$
+   $$\forall K \subset \{z : |\mathrm{Im}(z)| < 2\pi\}, \quad \sup_{z \in K} |F_{c,N}(z) - \Xi(z)| \le O\left(c^{\frac{M_K}{2\pi} - 1} \sqrt{\ln c}\right) \to 0$$
 4. **Hurwitz 零點定錨**：
    $$\text{Zeros}(F_{c,N}) \subset \mathbb{R} \xrightarrow[\text{Hurwitz}]{\text{Compact-Open}} \text{Zeros}(\Xi) \subset \mathbb{R} \iff \text{RH 为真}$$
 

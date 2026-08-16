@@ -1,4 +1,4 @@
-# A Mathematical Expository Note on the Dirac-Primes Toy Model: Three Verified Algebraic Identities
+﻿# A Mathematical Expository Note on the Dirac-Primes Toy Model: Three Verified Algebraic Identities
 # 關於 Dirac-質數玩具模型的數學筆記：三個經符號驗證的代數恆等式
 
 **Author / 作者**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -42,7 +42,7 @@ $$W(X, t) = \frac{1}{2}\sum_{p < q \le e^X} \frac{\log p\log q}{\sqrt{pq}} \sin\
 1. **統計均值恆零**：$\langle W(X, t) \rangle = \lim_{T\to\infty} \frac{1}{T}\int_0^T W(X, t) dt \equiv 0$；
 2. **四階均方方差**：$\langle W(X, t)^2 \rangle = \frac{1}{16}X^4 + \mathcal{O}(X^3)$；
 3. **優美的交叉均方根關係**：
-   $$\mathbf{\operatorname{RMS}(W) = \frac{1}{4}X^2 = \frac{1}{2}\left(\frac{X}{\sqrt{2}}\right)^2 = \frac{1}{2}\left(\operatorname{RMS}(S)\right)^2}$$
+   $$\mathbf{\mathrm{RMS}(W) = \frac{1}{4}X^2 = \frac{1}{2}\left(\frac{X}{\sqrt{2}}\right)^2 = \frac{1}{2}\left(\mathrm{RMS}(S)\right)^2}$$
 
 * **數學意義**：質數相位差在相空間中圍成的二階隨機面積的波動幅度，精確等於一階質數隨機遊走均方根（RMS）的平方的一半。這給出了質數對易子非對易幾何的一個直觀幾何統計圖像。
 

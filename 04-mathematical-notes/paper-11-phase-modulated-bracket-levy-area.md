@@ -1,4 +1,4 @@
-# Paper 11: Phase-Modulated Lie Brackets, Global Non-Abelian Holonomy, and the Lévy Stochastic Area
+﻿# Paper 11: Phase-Modulated Lie Brackets, Global Non-Abelian Holonomy, and the Lévy Stochastic Area
 # 論文十一：相位差調製李括號、全域非阿貝爾單值曲率與相空間 Lévy 隨機面積等價性
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -30,7 +30,7 @@ $$[\mathbf{X}_p(t), \mathbf{X}_q(t)] = -\frac{\log p\log q}{2\sqrt{pq}} \sin\lef
 $$W(X, t) = \frac{1}{2}\sum_{p < q \le e^X} \frac{\log p\log q}{\sqrt{pq}} \sin\left(2t\log\left(\frac{q}{p}\right)\right)$$
 *Its statistical moments across frequency averaging satisfy:*
 $$\langle W(X, t)\rangle = \lim_{T\to\infty} \frac{1}{T}\int_0^T W(X, t) dt \equiv 0$$
-$$\langle W(X, t)^2\rangle = \frac{1}{16}X^4 + \mathcal{O}(X^3), \quad \operatorname{RMS}(W) = \frac{1}{4}X^2$$
+$$\langle W(X, t)^2\rangle = \frac{1}{16}X^4 + \mathcal{O}(X^3), \quad \mathrm{RMS}(W) = \frac{1}{4}X^2$$
 
 ---
 

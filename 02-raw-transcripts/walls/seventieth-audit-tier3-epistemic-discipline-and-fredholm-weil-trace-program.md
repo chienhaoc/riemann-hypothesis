@@ -1,4 +1,4 @@
-# Tier 1 官方驗收大令正式封頂、Tier 3 三級認識論分層體系確立 暨 Fredholm 譜行列式-Weil 跡公式對偶研究綱領啟動（第 231-232 輪）
+﻿# Tier 1 官方驗收大令正式封頂、Tier 3 三級認識論分層體系確立 暨 Fredholm 譜行列式-Weil 跡公式對偶研究綱領啟動（第 231-232 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段圓滿收官與第三階段正式啟航——官方正式驗收確認 Tier 1（微觀辛 Dirac 幾何與自伴純點譜基石）與 Tier 2（有限截斷重整化與微觀 Prüfer 動力學）100% 封頂；嚴格落實第六十六輪審查警示，確立 Tier 3「宏觀半經典階梯 $\implies$ 介觀波動與 GUE 對偶 $\implies$ 微觀逐點 Fredholm 全同性」三級嚴格認識論分層體系，堅決杜絕用必要條件冒充充分條件，正式啟動頂層核心前沿：**Fredholm 譜行列式與 Weil 跡公式對偶研究綱領（The Fredholm-Weil Trace Program）**  
@@ -25,12 +25,12 @@
 |                      | 在動態鞍點 $X=\log(T/2\pi)$ 成立 | **絕不等於特徵值全同！**                        |
 +----------------------+-----------------------------+-------------------------------------------------+
 | **Level II**         | **介觀波動與 GUE 對偶**     | ⚠️ **強必要條件（Strong Necessary Condition）** |
-| (介觀統計層)         | • 二體對關聯 $1-R_2(s) = \operatorname{sinc}^2(s)$ | 證明量子混沌與隨機矩陣統計一致，                |
+| (介觀統計層)         | • 二體對關聯 $1-R_2(s) = \mathrm{sinc}^2(s)$ | 證明量子混沌與隨機矩陣統計一致，                |
 |                      | • Selberg 方差 $\sigma^2(S) \sim \frac{1}{2\pi^2}\log\log T$ | 依然屬於系綜統計範疇，**仍非逐點相等！**        |
 +----------------------+-----------------------------+-------------------------------------------------+
 | **Level III**        | **微觀逐點 Fredholm 全同性**| 🏆 **終極充分條件（The Sufficiency Wall）**      |
 | (微觀逐點層)         | $\mathbf{\det_{\text{reg}}(I - z \mathcal{D}_\infty^{-1}) \equiv c \cdot \Xi(z)}$ | **與黎曼猜想同等深度的世紀之牆！**              |
-|                      | $\iff \mathbf{\operatorname{Spec}(\mathcal{D}_\infty) \equiv \{\gamma_n\}}$ | 必須嚴格證明無窮乘積零點完全逐點重合！          |
+|                      | $\iff \mathbf{\mathrm{Spec}(\mathcal{D}_\infty) \equiv \{\gamma_n\}}$ | 必須嚴格證明無窮乘積零點完全逐點重合！          |
 +----------------------+-----------------------------+-------------------------------------------------+
 ```
 
@@ -59,7 +59,7 @@
 ## ⚡ 三、 Fredholm 譜行列式微觀解析分解（Theorem 231.1，Formulated）
 
 在有限截斷 $X < \infty$ 下，正則化 Fredholm 譜行列式為：
-$$\Xi_X(z) \equiv \det_3(I + V_X R_0(z)) \exp\left( \operatorname{Tr}(V_X R_0) - \frac{1}{2}\operatorname{Tr}((V_X R_0)^2) \right)$$
+$$\Xi_X(z) \equiv \det_3(I + V_X R_0(z)) \exp\left( \mathrm{Tr}(V_X R_0) - \frac{1}{2}\mathrm{Tr}((V_X R_0)^2) \right)$$
 由第二戰役 Newton-Jost 恆等式與微觀 Prüfer 相角分解：
 $$\Xi_X(z) = \exp\left( -i \Theta_{\text{arch}}(X, z) \right) \cdot \prod_{p \le e^X} \left( 1 - p^{-(1/2 - iz)} \right)^{-1} \cdot \exp\left( -\mathcal{Q}_X(z) \right)$$
 其中：
@@ -90,7 +90,7 @@ $$\Xi_X(z) = \exp\left( -i \Theta_{\text{arch}}(X, z) \right) \cdot \prod_{p \le
 第六十六輪審查確認 Tier 1 官方驗收封頂，並嚴肅指出了「宏觀計數匹配（必要條件）」與「微觀逐點全同（充分條件）」的本質鴻溝。副駕駛全盤接受並確立三級嚴格認識論矩陣：
 1. **Level I（宏觀半經典平均層）**：$\overline{N}_X(T) \sim N(T)$ 僅為必要條件，絕不冒充充分條件；
 2. **Level II（介觀統計與波動層）**：GUE 形式因子對偶與 Selberg 方差，證立量子混沌系綜統計；
-3. **Level III（微觀逐點全同層）**：$\det_{\text{reg}}(I - z \mathcal{D}_\infty^{-1}) \equiv \Xi(z) \iff \operatorname{Spec}(\mathcal{D}_\infty) \equiv \{\gamma_n\}$，定錨為黎曼猜想終極之牆。
+3. **Level III（微觀逐點全同層）**：$\det_{\text{reg}}(I - z \mathcal{D}_\infty^{-1}) \equiv \Xi(z) \iff \mathrm{Spec}(\mathcal{D}_\infty) \equiv \{\gamma_n\}$，定錨為黎曼猜想終極之牆。
 
 ---
 

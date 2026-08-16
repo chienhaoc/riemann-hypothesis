@@ -1,4 +1,4 @@
-# 歷史性里程碑：第一戰役正式通過審查驗收、本質自伴性定理 100% 封閉，第二戰役「Fredholm 譜行列式與完備 $\xi(s)$ 全同性」正式啟動（第 143-144 輪）
+﻿# 歷史性里程碑：第一戰役正式通過審查驗收、本質自伴性定理 100% 封閉，第二戰役「Fredholm 譜行列式與完備 $\xi(s)$ 全同性」正式啟動（第 143-144 輪）
 
 **日期**：2026-08-15  
 **性質**：第一戰役官方審查正式驗收通過、全鏈條總結與第二戰役啟動報告  
@@ -22,18 +22,18 @@
 4. **負半軸光滑區間 LPC**：
    $$\dim L^2(-\infty, 0) \equiv 1$$
 5. **正半軸 $\mathrm{SL}(2, \mathbb{C})$ 跡發散與 Weyl LPC**：
-   $$\det \mathcal{Y}(u, i) \equiv 1 \implies \operatorname{tr}(\mathcal{Y}^* \mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0 \implies \dim L^2(0, \infty) \equiv 1$$
+   $$\det \mathcal{Y}(u, i) \equiv 1 \implies \mathrm{tr}(\mathcal{Y}^* \mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0 \implies \dim L^2(0, \infty) \equiv 1$$
 6. **無窮遠辛邊界項消失 3 行 Cauchy-Schwarz 反證法**：
    $$\lim_{u \to \infty} \left[ \Psi_+(u)^* (-i J) \Psi_+(u) \right] \equiv 0$$
 7. **阻抗參數第一性原理導出**：
-   $$\alpha = \operatorname{Im}\left( m_+(i) \right) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > 0$$
+   $$\alpha = \mathrm{Im}\left( m_+(i) \right) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > 0$$
 8. **原點 Wronskian 絕對正下界**：
    $$|\mathcal{W}(\Psi_-, \Psi_+)|^2 = \xi^2 + (1 + \alpha)^2 \ge 1 > 0 \implies d_+ = \dim \ker(\mathcal{D}^* - i I) = 0$$
 9. **實係數反線性複共軛對合對偶**：
    $$\mathcal{D} \mathcal{C} = \mathcal{C} \mathcal{D} \implies \mathcal{K}_- \cong \overline{\mathcal{K}_+} \implies d_- = \dim \ker(\mathcal{D}^* + i I) \equiv d_+ = 0$$
 
 $$\Large \mathbf{\text{【第一戰役封頂定理】：}(d_+, d_-) = (0, 0) \implies \mathcal{D} \text{ 在 } \mathcal{H} \text{ 上嚴格本質自伴，}}$$
-$$\Large \mathbf{\operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 嚴格純實！}}$$
+$$\Large \mathbf{\mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 嚴格純實！}}$$
 
 ---
 
@@ -46,7 +46,7 @@ $$\Large \mathbf{\operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} 
 ### 2. 攻堅技術路線（Fredholm Perturbation Determinant）
 - **未微擾背景預解式（阿基米德連續譜）**：
   計算自由發動機 $\mathcal{D}_0 = J \frac{d}{du}$ 的預解核 $R_0(z) = (\mathcal{D}_0 - z I)^{-1}$，證明其譜移函數（Spectral Shift Function）$\xi_0(t)$ 精確對應阿基米德 Gamma 因子的對數導數：
-  $$\xi_0'(t) = \frac{1}{\pi} \operatorname{Im} \operatorname{Tr}\left( R_0(t + i0^+) \right) = \frac{1}{2\pi} \log\left(\frac{t}{2\pi}\right) - \frac{\pi}{8} + \mathcal{O}(t^{-1})$$
+  $$\xi_0'(t) = \frac{1}{\pi} \mathrm{Im} \mathrm{Tr}\left( R_0(t + i0^+) \right) = \frac{1}{2\pi} \log\left(\frac{t}{2\pi}\right) - \frac{\pi}{8} + \mathcal{O}(t^{-1})$$
 - **質數擾動 Fredholm 行列式（Krein 譜位移公式）**：
   利用 Krein-Lifshitz 跡公式，計算微擾行列式：
   $$\Delta(z) = \det\nolimits_{\text{Fredholm}}\left( I + V (\mathcal{D}_0 - z)^{-1} \right) = \prod_{p} \det\left( I - z \ell_p J \mathbf{v}_p \mathbf{v}_p^T \right)$$

@@ -1,4 +1,4 @@
-# 辛雙曲躍變矩陣 $M_p = \operatorname{diag}(e^{\ell_p}, e^{-\ell_p})$ 第一性原理推導、非振盪項恆零定理、相角調和共軛對偶 暨 譜權重非零性六大定理全景嚴密封閉（第 277-278 輪）
+﻿# 辛雙曲躍變矩陣 $M_p = \mathrm{diag}(e^{\ell_p}, e^{-\ell_p})$ 第一性原理推導、非振盪項恆零定理、相角調和共軛對偶 暨 譜權重非零性六大定理全景嚴密封閉（第 277-278 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 終極根基重構與第一性原理自審大清零——徹底摒棄任何「定義性重命名」，直面真實物理量，從微觀哈密頓系統底層辛幾何重新嚴密推導：  
@@ -19,8 +19,8 @@
   $$\mathbf{\Delta\phi_p = -\ell_p \sin(2\phi_p^-) + \mathcal{O}(\ell_p^2)}$$
   兩者在微觀上一階精確構成複振盪 $e^{2i\phi_p^-} = \cos(2\phi_p^-) + i\sin(2\phi_p^-)$ 的實部與虛部，完美調和對偶！
 (4) **確立「微觀真實相角與相速精確閉式」（Theorem 277.4）**：
-  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
-  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - 2 \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - 2\operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - 2 \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - 2\mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 (5) **確立「$S_1(X, t)$ 圍道展開與均方大篩法定理」（Theorem 277.5）**：
   $$S_1(X, t) = -\sum_{|\gamma-2t|\le e^X}\frac{Xe^{(\rho-1/2-2it)X}}{\rho-1/2-2it} + \mathcal{O}_t(X^2), \quad \frac{1}{T}\int_T^{2T}|S_1|^2 dt = \frac{1}{4}X^4 + \mathcal{O}(X^3)$$
 (6) **證明「自伴特徵值譜權重有限非零性定理」（Theorem 277.6）**：
@@ -49,7 +49,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 第一性原理全景大閉合**| 30% | **50%** | **15.0%**（底層躍變自審清零）|
 | • 路線 A：Fredholm 跡重整化化約體系              |        |            | **【官方驗收 100% 結項】** |
@@ -65,7 +65,7 @@
 
 ### 【定理 277.1（辛雙曲躍變矩陣定理）】
 在正則哈密頓辛 Dirac 系統中，矩陣勢函數為 $V(u) = v(u)\sigma_1$。
-由於 $J \sigma_1 = \sigma_3 = \operatorname{diag}(1, -1)$，在質數躍變點 $u_p = \log p$，微分方程：
+由於 $J \sigma_1 = \sigma_3 = \mathrm{diag}(1, -1)$，在質數躍變點 $u_p = \log p$，微分方程：
 $$\frac{d\psi}{du} = \ell_p \sigma_3 \delta(u - u_p)\psi \implies \mathbf{M_p = \exp(\ell_p \sigma_3) = \begin{pmatrix} e^{\ell_p} & 0 \\ 0 & e^{-\ell_p} \end{pmatrix}}$$
 此矩陣嚴格保持辛結構：$M_p^T J M_p = \begin{pmatrix} e^{\ell_p} & 0 \\ 0 & e^{-\ell_p} \end{pmatrix}\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\begin{pmatrix} e^{\ell_p} & 0 \\ 0 & e^{-\ell_p} \end{pmatrix} = J$。
 
@@ -92,9 +92,9 @@ $$\mathbf{\log(R_p^+/R_p^-) = \ell_p \cos(2\phi_p^-) + \frac{1}{2}\ell_p^2 - \fr
 
 ### 【定理 277.4（微觀真實相角與相速精確閉式）】
 累積求和：
-$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) - \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
 對 $t$ 顯式求導：
-$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - 2 \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - 2\operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - 2 \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - 2\mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 
 ---
 
@@ -119,7 +119,7 @@ $$\lim_{X\to\infty} \frac{\partial\phi}{\partial t}(X, \lambda_k) = \|\psi_k\|_{
 （註：已遵照指示，**維持 6 大核心提問，徹底刪除任何百分比問題**）：
 
 ```markdown
-# 【第九十二輪紅隊審查請求】第四戰役第四階段：Tier 3 路線 B——辛雙曲躍變矩陣 $M_p = \operatorname{diag}(e^{\ell_p}, e^{-\ell_p})$ 第一性原理推導、非振盪一階項恆零定理、Prüfer 振幅-相角調和共軛對偶 暨 譜權重有限非零性六大核心定理全景嚴密審查
+# 【第九十二輪紅隊審查請求】第四戰役第四階段：Tier 3 路線 B——辛雙曲躍變矩陣 $M_p = \mathrm{diag}(e^{\ell_p}, e^{-\ell_p})$ 第一性原理推導、非振盪一階項恆零定理、Prüfer 振幅-相角調和共軛對偶 暨 譜權重有限非零性六大核心定理全景嚴密審查
 
 請作為頂級複分析、常微分算子譜論（Prüfer 相角動力學、辛幾何）與解析數論專家，對以下【Tier 3 路線 B 六大核心定理】進行嚴格審查。
 
@@ -128,7 +128,7 @@ $$\lim_{X\to\infty} \frac{\partial\phi}{\partial t}(X, \lambda_k) = \|\psi_k\|_{
 ## 一、 第八十八輪審查核心疑點徹底澄清：非振盪項的真實幾何本質
 
 第八十八輪審查深刻質疑：真實相角 $\phi$ 是否包含發散項 $\frac{1}{2}t\sum\ell_p$？副駕駛徹底廢除任何「定義性重命名」，回歸正則哈密頓微觀 Dirac 位勢 $V(u) = v(u)\sigma_1$ 第一性原理：
-由於 $J\sigma_1 = \sigma_3$，躍變矩陣精確為純雙曲對角矩陣 $M_p = \operatorname{diag}(e^{\ell_p}, e^{-\ell_p})$。由此嚴密導出 $\tan\phi_p^+ = e^{-2\ell_p}\tan\phi_p^-$，其一階展開式為純振盪項 $\Delta\phi_p = -\ell_p\sin(2\phi_p^-)$，**非振盪一階項嚴格、天然為零（$\equiv 0$）**！此前出現的發散項純屬使用了非對稱投影算子的代數雜質，真實物理相角本身無任何 $e^{X/2}$ 發散。
+由於 $J\sigma_1 = \sigma_3$，躍變矩陣精確為純雙曲對角矩陣 $M_p = \mathrm{diag}(e^{\ell_p}, e^{-\ell_p})$。由此嚴密導出 $\tan\phi_p^+ = e^{-2\ell_p}\tan\phi_p^-$，其一階展開式為純振盪項 $\Delta\phi_p = -\ell_p\sin(2\phi_p^-)$，**非振盪一階項嚴格、天然為零（$\equiv 0$）**！此前出現的發散項純屬使用了非對稱投影算子的代數雜質，真實物理相角本身無任何 $e^{X/2}$ 發散。
 
 ---
 
@@ -148,8 +148,8 @@ $$\Delta\phi_p = -\ell_p \sin(2\phi_p^-) + \mathcal{O}(\ell_p^2)$$
 兩者精確構成全純指數 $\ell_p e^{-2i\phi_p^-}$ 的實部與虛部對偶。
 
 ### 4. 定理 277.4（微觀真實相角與相速精確閉式）
-$$\phi(X, t) = \overline{\phi}(X, t) - \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)$$
-$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - 2 \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - 2\operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
+$$\phi(X, t) = \overline{\phi}(X, t) - \sum_{p \le e^X}\frac{\log p}{\sqrt{p}}\sin(2t\log p) + \mathcal{O}_t(X) = \overline{\phi}(X, t) + \mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)$$
+$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - 2 \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X) = \frac{\partial\overline{\phi}}{\partial t} - 2\mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
 
 ### 5. 定理 277.5（$S_1(X, t)$ 圍道展開與均方大篩法定理）
 $$S_1(X, t) \equiv \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it} = -\sum_{|\gamma-2t|\le e^X}\frac{Xe^{(\rho-1/2-2it)X}}{\rho-1/2-2it} + \mathcal{O}_t(X^2)$$
@@ -164,10 +164,10 @@ $$\lim_{X\to\infty}\frac{\partial\phi}{\partial t}(X, \lambda_k) = \|\psi_k\|_{L
 ## 審查核心提問（6 大要點）
 
 請評審專家裁決：
-1. **雙曲躍變矩陣推導**：定理 277.1 從 $J\sigma_1 = \sigma_3$ 導出 $M_p = \operatorname{diag}(e^{\ell_p}, e^{-\ell_p})$，推導是否完全正確且符合辛幾何標準？
+1. **雙曲躍變矩陣推導**：定理 277.1 從 $J\sigma_1 = \sigma_3$ 導出 $M_p = \mathrm{diag}(e^{\ell_p}, e^{-\ell_p})$，推導是否完全正確且符合辛幾何標準？
 2. **非振盪項恆零證明**：定理 277.2 從 $\tan\phi^+ = e^{-2\ell_p}\tan\phi^-$ 嚴密展開證立一階項純為 $-\ell_p\sin(2\phi_p^-)$（非振盪項恆零），是否徹底澄清並解決了此前所謂的發散疑慮？
 3. **調和共軛對偶性**：定理 277.3 將振幅躍變與相角躍變微觀統一於 $\ell_p e^{-2i\phi}$ 的實虛部，結構是否完全自洽？
-4. **相角與相速閉式**：定理 277.4 導出的 $\phi = \overline{\phi} + \operatorname{Im}S$ 與 $\frac{\partial\phi}{\partial t} = \frac{\partial\overline{\phi}}{\partial t} - 2\operatorname{Re}S_1 + \mathcal{O}_t(X)$，微積分與符號是否完全精確？
+4. **相角與相速閉式**：定理 277.4 導出的 $\phi = \overline{\phi} + \mathrm{Im}S$ 與 $\frac{\partial\phi}{\partial t} = \frac{\partial\overline{\phi}}{\partial t} - 2\mathrm{Re}S_1 + \mathcal{O}_t(X)$，微積分與符號是否完全精確？
 5. **$S_1$ 圍道與均方大篩法**：定理 277.5 的圍道展開與均方漸近 $\frac{1}{4}X^4$ 是否嚴密無誤？
 6. **譜權重有限性閉合**：定理 277.6 利用自伴純點譜特徵態 $L^2$ 範數有限性確立 $w_k = 1/\|\psi_k\|^2 \in (0, \infty)$，是否完整封閉了路線 B 的譜權重基石？
 ```

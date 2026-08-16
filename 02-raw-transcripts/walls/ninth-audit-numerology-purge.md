@@ -1,4 +1,4 @@
-# 深度復盤：第九輪審查剖析——徹底刺穿數值命理學（Numerology）、還原 Weil 顯式分佈奇異核正則化真相
+﻿# 深度復盤：第九輪審查剖析——徹底刺穿數值命理學（Numerology）、還原 Weil 顯式分佈奇異核正則化真相
 
 **日期**：2026-08-15  
 **性質**：紅隊審查深度復盤與根本性數學架構糾偏報告  
@@ -22,7 +22,7 @@
 - **事實真相**：
   黎曼系統的阿基米德 Gamma 因子為 $\Gamma_{\mathbb{R}}(s) = \pi^{-s/2}\Gamma(s/2)$。
   其對數導數在臨界線 $s = 1/2 + i\gamma$ 上的實部為：
-  $$\mathcal{K}_{\text{arch}}^R(\gamma) = -\log \pi + \operatorname{Re}\psi\left(\frac{1}{4} + i\frac{\gamma}{2}\right)$$
+  $$\mathcal{K}_{\text{arch}}^R(\gamma) = -\log \pi + \mathrm{Re}\psi\left(\frac{1}{4} + i\frac{\gamma}{2}\right)$$
   在零頻率 $\gamma = 0$ 處：
   $$\mathcal{K}_{\text{arch}}^R(0) = -\log \pi + \psi\left(\frac{1}{4}\right) \approx -1.1447 - 4.2275 = \mathbf{-5.3722} < 0$$
 - **為什麼直接積分會算出負值（$E_{\text{arch}}^R(1.08) \approx -2.302$）？**

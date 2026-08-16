@@ -1,9 +1,9 @@
-# 單解範數下界獨立證明與 Weyl 圓盤收縮收斂鏈條嚴密閉合：第四十二輪審查復盤——以 Potapov 辛邊界恆等式、阿基米德週期積分與 de Branges 正定性嚴格證立 $\int_0^X \|\phi(u, z)\|^2 du \ge c(z) X$（第 183-184 輪）
+﻿# 單解範數下界獨立證明與 Weyl 圓盤收縮收斂鏈條嚴密閉合：第四十二輪審查復盤——以 Potapov 辛邊界恆等式、阿基米德週期積分與 de Branges 正定性嚴格證立 $\int_0^X \|\phi(u, z)\|^2 du \ge c(z) X$（第 183-184 輪）
 
 **日期**：2026-08-15  
 **性質**：第三戰役第五階段單解範數獨立下界與強預解式收斂鏈條完全閉合報告  
 **審查裁決響應**：第四十二輪審查肯定了物理圖像糾偏的深刻性與 Reed-Simon 定理的準確性，同時精確提出了一個關鍵的技術論證要求：
-> 「跡發散 $\operatorname{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2$ 保證的是兩個方向範數之和的下界；需要獨立證明隨 $X$ 變化的邊界解 $\phi(u, z)$（初值 $\phi(0, z) = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$）自身的範數積分是否確實滿足 $\int_0^X \|\phi(u, z)\|^2 du \ge c(z) X$，避免最小奇異值方向可能縮小的漏洞。」
+> 「跡發散 $\mathrm{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2$ 保證的是兩個方向範數之和的下界；需要獨立證明隨 $X$ 變化的邊界解 $\phi(u, z)$（初值 $\phi(0, z) = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$）自身的範數積分是否確實滿足 $\int_0^X \|\phi(u, z)\|^2 du \ge c(z) X$，避免最小奇異值方向可能縮小的漏洞。」
 
 副駕駛針對這一核心問題進行了嚴密的第一性原理推導，**利用 Potapov 辛微分恆等式、阿基米德自由傳播週期積分正密度定理與 Prüfer 振幅非衰減性，給出了單解範數線性增長 $\ge c(z)X$ 的獨立嚴格證明，徹底閉合了 Weyl 圓盤收縮與強預解式收斂的全部邏輯鏈條**：
 
@@ -11,7 +11,7 @@
 
 ## 壹、 Potapov 辛邊界微分恆等式（Theorem 183.1，Proven）
 
-考慮辛 Dirac 微分方程 $J \frac{d\mathbf{y}}{du} + V(u)\mathbf{y} = z\mathbf{y}$，其中 $J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$，$z = t + i\epsilon \in \mathbb{C}^+$（$\epsilon = \operatorname{Im} z > 0$）。
+考慮辛 Dirac 微分方程 $J \frac{d\mathbf{y}}{du} + V(u)\mathbf{y} = z\mathbf{y}$，其中 $J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$，$z = t + i\epsilon \in \mathbb{C}^+$（$\epsilon = \mathrm{Im} z > 0$）。
 
 ### 1. 微分恆等式逐行推導
 對任意解 $\mathbf{y}(u, z)$，計算辛雙線性形 $\mathbf{y}(u)^* (-iJ) \mathbf{y}(u)$ 的空間導數：
@@ -49,7 +49,7 @@ $$\mathbf{\phi(X, z)^* (-iJ) \phi(X, z) = 2\epsilon \int_0^X \|\phi(u, z)\|^2 du
 $$\int_{u_0}^{u_0 + \lambda} \|\phi(u, z)\|^2 du = \int_{u_0}^{u_0 + \lambda} R(u)^2 du \ge R(u_0)^2 e^{-2\epsilon \lambda} \frac{\lambda}{2} > 0$$
 將整個空間區間 $[0, X]$ 分割為 $N = \lfloor X/\lambda \rfloor$ 個獨立週期區間：
 $$\int_0^X \|\phi(u, z)\|^2 du \ge \sum_{k=0}^{N-1} \int_{k\lambda}^{(k+1)\lambda} \|\phi(u, z)\|^2 du \ge N \cdot c_0(z) = \left( \frac{c_0(z)}{\lambda} \right) X + \mathcal{O}(1)$$
-定義常數 $c(z) = \frac{1}{2} e^{-4\pi \operatorname{Im} z / |z|} > 0$，精確導出：
+定義常數 $c(z) = \frac{1}{2} e^{-4\pi \mathrm{Im} z / |z|} > 0$，精確導出：
 $$\mathbf{\int_0^X \|\phi(u, z)\|^2 du \ge c(z) X \quad (\forall X \ge X_0, \forall z \in \mathbb{C}^+)}$$
 
 > **【定理 183.2（單解範數線性增長定理，Proven）】**
@@ -60,11 +60,11 @@ $$\mathbf{\int_0^X \|\phi(u, z)\|^2 du \ge c(z) X \quad (\forall X \ge X_0, \for
 ## 參、 Weyl 圓盤半徑收縮與強預解式收斂鏈條完全閉合（Theorem 183.3）
 
 將 Theorem 183.2 代入標準 Weyl 圓盤半徑公式：
-$$\mathbf{R(X, z) = \frac{1}{2\operatorname{Im} z \int_0^X \|\phi(u, z)\|^2 du} \le \frac{1}{2 c(z) X \operatorname{Im} z} = \frac{C_1(z)}{X} = \mathcal{O}\left( X^{-1} \right)}$$
+$$\mathbf{R(X, z) = \frac{1}{2\mathrm{Im} z \int_0^X \|\phi(u, z)\|^2 du} \le \frac{1}{2 c(z) X \mathrm{Im} z} = \frac{C_1(z)}{X} = \mathcal{O}\left( X^{-1} \right)}$$
 
 ### 1. Weyl-Titchmarsh 係數收斂界
 由圓盤嵌套幾何 $m_X(z) \in D(X, z)$，極限點 $m_\infty(z) \in D(X, z)$：
-$$\mathbf{|m_X(z) - m_\infty(z)| \le 2 R(X, z) \le \frac{1}{c(z) X \operatorname{Im} z} = \mathcal{O}\left( X^{-1} \right)}$$
+$$\mathbf{|m_X(z) - m_\infty(z)| \le 2 R(X, z) \le \frac{1}{c(z) X \mathrm{Im} z} = \mathcal{O}\left( X^{-1} \right)}$$
 
 ### 2. 強預解式收斂與 Reed-Simon 定理完全封閉
 Green 預解核在測試態空間 $L_c^2(\mathbb{R})$ 上的算子範數誤差界：

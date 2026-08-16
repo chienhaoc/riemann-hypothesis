@@ -1,4 +1,4 @@
-# 正則哈密頓系統與 Herglotz 譜識別路線圖 (The Canonical-Herglotz Framework)
+﻿# 正則哈密頓系統與 Herglotz 譜識別路線圖 (The Canonical-Herglotz Framework)
 
 > 建立時間：2026-08-14 第十三輪研究
 > 核心文獻依據：Suzuki (arXiv:2606.09096), Makarov-Poltoratski-Zhang (arXiv:2603.13586), Remling (2018-2024)
@@ -7,7 +7,7 @@
 
 ## 1. 核心思想：為什麼 Herglotz / Canonical System 能超越傳統整函數逼近？
 
-傳統的 Connes-Groskin 路線試圖逼近整函數 $F_c(z) \to \Xi(z)$，在帶寬 $\tau_c = \frac{\ln c}{2\pi} \to \infty$ 時，向複平面虛部延拓會面臨嚴重的指數增長 $c^{\frac{|\operatorname{Im}(z)|}{2\pi}}$，使得全域 Montel 一致性難以建立。
+傳統的 Connes-Groskin 路線試圖逼近整函數 $F_c(z) \to \Xi(z)$，在帶寬 $\tau_c = \frac{\ln c}{2\pi} \to \infty$ 時，向複平面虛部延拓會面臨嚴重的指數增長 $c^{\frac{|\mathrm{Im}(z)|}{2\pi}}$，使得全域 Montel 一致性難以建立。
 
 **革命性轉向**：
 改為逼近對數導數特徵比值（Weyl-Titchmarsh $m$-函數）：
@@ -40,11 +40,11 @@ $$W(a, \theta; z) = e^{i\theta/2} E_a(z) + e^{-i\theta/2} E_a^\#(z)$$
 **無條件結論**：對任意有限 $a < \infty$，所有零點嚴格為純實數。
 
 ### (2) Schwarz-Pick 雙曲正規族 (Lemma B - Proven)
-令 $\widetilde{m}_a(z) = \frac{m_a(z) - \operatorname{Re} m_a(i)}{\operatorname{Im} m_a(i)}$，滿足 $\widetilde{m}_a(i) = i$。
+令 $\widetilde{m}_a(z) = \frac{m_a(z) - \mathrm{Re} m_a(i)}{\mathrm{Im} m_a(i)}$，滿足 $\widetilde{m}_a(i) = i$。
 由 Schwarz-Pick 引理，族 $\{\widetilde{m}_a\}$ 在上半平面 $\mathbb{C}^+$ 上為**正規族（Normal Family）**，任意子序列在 $\mathbb{C}^+$ 的緊緻集上局部一致收斂於 Herglotz 函數 $m_\infty$。
 
 ### (3) 跡規範哈密頓量緊緻性 (Lemma C - Proven)
-跡規範化 $\operatorname{tr} H_a(x) = 1$ 保證 $H_a(x) dx$ 在 $L^1_{\text{loc}}$ 中具備弱星緊緻性（Banach-Alaoglu 定理）。
+跡規範化 $\mathrm{tr} H_a(x) = 1$ 保證 $H_a(x) dx$ 在 $L^1_{\text{loc}}$ 中具備弱星緊緻性（Banach-Alaoglu 定理）。
 
 ### (4) 留數權重與 de Branges 正交基 (Lemma D - Calculated)
 在每個黎曼零點 $\gamma_n$ 處，正譜測度的點權重為：
@@ -57,7 +57,7 @@ $$c_n = \text{Res}_{z=\gamma_n} m_\infty(z) = \frac{K}{|\xi''(1/2 + i\gamma_n)|^
 
 要使自伴算子模型無懈可擊地證明黎曼猜想，必須且只需確立雙向包含：
 
-$$\boxed{ \operatorname{Spec}_{\text{point}}(D_\infty) \subseteq \{\gamma : \xi(1/2 - i\gamma) = 0\} \quad \text{且} \quad \{\gamma : \xi(1/2 - i\gamma) = 0\} \subseteq \operatorname{Spec}_{\text{point}}(D_\infty) }$$
+$$\boxed{ \mathrm{Spec}_{\text{point}}(D_\infty) \subseteq \{\gamma : \xi(1/2 - i\gamma) = 0\} \quad \text{且} \quad \{\gamma : \xi(1/2 - i\gamma) = 0\} \subseteq \mathrm{Spec}_{\text{point}}(D_\infty) }$$
 
 - **前向包含**：保證算子譜的所有特徵值都是真正的黎曼零點。
 - **後向包含**：排除任何離軸零點（如 Epstein 系統中產生的虛部溢出）逃逸於算子譜之外。
@@ -77,8 +77,8 @@ $$\boxed{ m_\infty(z) = \mathcal{M}\left[ z^2 \frac{\xi(1/2 - iz)}{\xi'(1/2 - iz
 現代分析學與數論證明，以下四個命題在數學上**嚴格等價（Strictly Equivalent）**：
 
 $$\begin{aligned}
-\text{\textbf{(I) Riemann Hypothesis}} &\iff \text{All non-trivial zeros satisfy } \operatorname{Re}(\rho) = 1/2 \\
-\text{\textbf{(II) Herglotz Log-Derivative}} &\iff \operatorname{Im}\left( \frac{\xi'(1/2 - iz)}{\xi(1/2 - iz)} \right) > 0 \quad (\forall z \in \mathbb{C}^+) \\
+\text{\textbf{(I) Riemann Hypothesis}} &\iff \text{All non-trivial zeros satisfy } \mathrm{Re}(\rho) = 1/2 \\
+\text{\textbf{(II) Herglotz Log-Derivative}} &\iff \mathrm{Im}\left( \frac{\xi'(1/2 - iz)}{\xi(1/2 - iz)} \right) > 0 \quad (\forall z \in \mathbb{C}^+) \\
 \text{\textbf{(III) de Branges Phase Monotonicity}} &\iff \Phi'(t) = \frac{d}{dt} \left[ -\arg(\xi(1/2 - it) - i\xi'(1/2 - it)) \right] > 0 \quad (\forall t \in \mathbb{R}) \\
 \text{\textbf{(IV) Suzuki Canonical Model Identification}} &\iff m_\infty(z) = \mathcal{M}\left[ z^2 \frac{\xi(1/2 - iz)}{\xi'(1/2 - iz)} \right] \text{ is a true Herglotz function}
 \end{aligned}$$

@@ -1,4 +1,4 @@
-# 複對數生成元全展開與微觀振盪核嚴密修正：第三十七輪審查復盤——發現並修正非奇函數展開缺陷、精確導出完整 Fourier 級數（DC 項、餘弦主項與正弦修正項）與數值全點核算（第 173-174 輪）
+﻿# 複對數生成元全展開與微觀振盪核嚴密修正：第三十七輪審查復盤——發現並修正非奇函數展開缺陷、精確導出完整 Fourier 級數（DC 項、餘弦主項與正弦修正項）與數值全點核算（第 173-174 輪）
 
 **日期**：2026-08-15  
 **性質**：第三戰役第三階段重大自我修正與 Prüfer 非線性相移完整 Fourier 閉式解報告  
@@ -83,9 +83,9 @@ $$\mathbf{a_1(\ell(p^k)) = \frac{\log p}{2p^{k/2}} + \mathcal{O}\left( \frac{\lo
 ### 2. 頻域方差的精確積分與 Selberg 定理重現（Theorem 173.4，Proven）
 計算 $S_X(t)$ 在區間 $[0, T]$ 上的 $L^2$ 能量方差（$T \gg e^X$）：
 由頻率正交性 $\frac{1}{T}\int_0^T \cos^2(\omega t) dt = \frac{1}{2} + \mathcal{O}(T^{-1})$，$\frac{1}{T}\int_0^T \sin^2(\omega t) dt = \frac{1}{2} + \mathcal{O}(T^{-1})$，且正餘弦正交 $\int \cos\sin = 0$：
-$$\operatorname{Var}_T(S_X) = \frac{1}{\pi^2} \sum_{p^k \le e^X} \left[ \frac{1}{2} a_1(\ell(p^k))^2 + \frac{1}{2} b_1(\ell(p^k))^2 \right] + \mathcal{O}(1)$$
+$$\mathrm{Var}_T(S_X) = \frac{1}{\pi^2} \sum_{p^k \le e^X} \left[ \frac{1}{2} a_1(\ell(p^k))^2 + \frac{1}{2} b_1(\ell(p^k))^2 \right] + \mathcal{O}(1)$$
 代入 $a_1^2 = \frac{\log^2 p}{4p^k} + \mathcal{O}(p^{-2k})$，得：
-$$\mathbf{\operatorname{Var}_T(S_X) = \frac{1}{8\pi^2} \sum_{p^k \le e^X} \frac{\log^2 p}{p^k} + \mathcal{O}(1)}$$
+$$\mathbf{\mathrm{Var}_T(S_X) = \frac{1}{8\pi^2} \sum_{p^k \le e^X} \frac{\log^2 p}{p^k} + \mathcal{O}(1)}$$
 
 > **【定理 173.4（修正後的 Selberg 振盪方差定理，Proven）】**
 > 在完整的 Fourier 正弦-餘弦與直流偏移分解下，正則哈密頓微觀相角振盪方差**在嚴格數學推導下依然精確收斂於 $\frac{1}{8\pi^2}\sum_{p^k \le e^X} \frac{\log^2 p}{p^k}$**，在對數窗口 $X = \sqrt{\log\log T}$ 下完全重現了 Selberg 方差漸近律！

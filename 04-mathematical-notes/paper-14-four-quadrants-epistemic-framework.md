@@ -1,4 +1,4 @@
-# Paper 14: The Four-Quadrant Epistemic Framework: Resolving Unconditional Statistics and Conditional Bounds in Operator-Zeta Duality
+﻿# Paper 14: The Four-Quadrant Epistemic Framework: Resolving Unconditional Statistics and Conditional Bounds in Operator-Zeta Duality
 # 論文十四：四象限認識論框架：算子-數論對偶體系中無條件統計與條件性界的嚴格劃界大定理
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -9,9 +9,9 @@
 
 ### Abstract / 摘要
 
-**English**: We establish a comprehensive $2 \times 2$ epistemic classification matrix that cleanly separates unconditional mathematical facts from conditional hypotheses in the reduction theory of the Riemann Hypothesis. The matrix comprises: Quadrant I (Unconditional Mean-Square: $\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$, proven via Riemann-Stieltjes integration without assuming RH); Quadrant II (Unconditional Pointwise: $|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}})$ and $|\operatorname{Re}\mathcal{C}_2| \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$, the tightest bound from classical zero-free regions); Quadrant III (Conditional Pointwise under RH: $|S(X, t_0)| \le C_{t_0}X \implies \operatorname{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$); and Quadrant IV (Conditional Consistency: $\sigma^2(X) = \frac{1}{2}X^2$). This framework eliminates epistemic category cross-overs and establishes the Conservation of Analytical Difficulty.
+**English**: We establish a comprehensive $2 \times 2$ epistemic classification matrix that cleanly separates unconditional mathematical facts from conditional hypotheses in the reduction theory of the Riemann Hypothesis. The matrix comprises: Quadrant I (Unconditional Mean-Square: $\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$, proven via Riemann-Stieltjes integration without assuming RH); Quadrant II (Unconditional Pointwise: $|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}})$ and $|\mathrm{Re}\mathcal{C}_2| \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$, the tightest bound from classical zero-free regions); Quadrant III (Conditional Pointwise under RH: $|S(X, t_0)| \le C_{t_0}X \implies \mathrm{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$); and Quadrant IV (Conditional Consistency: $\sigma^2(X) = \frac{1}{2}X^2$). This framework eliminates epistemic category cross-overs and establishes the Conservation of Analytical Difficulty.
 
-**中文**：本文建立了一個完備的 $2 \times 2$ 認識論矩陣，在黎曼猜想化約體系中清晰劃分無條件數學事實與條件性假說。該矩陣包含：象限 I（無條件統計均方：$\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$，無需 RH 假設、由 Riemann-Stieltjes 積分完全證明）；象限 II（無條件逐點界：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}})$ 暨 $|\operatorname{Re}\mathcal{C}_2| \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$，來自經典零點自由區的直接最緊界）；象限 III（條件性 RH 逐點界：【以 RH 為前提】$|S(X, t_0)| \le C_{t_0}X \implies \operatorname{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$）；以及象限 IV（條件性均方自洽：方差 $\sigma^2(X) = \frac{1}{2}X^2$）。該框架徹底消除了範疇跨越，確立了解析難度守恆律。
+**中文**：本文建立了一個完備的 $2 \times 2$ 認識論矩陣，在黎曼猜想化約體系中清晰劃分無條件數學事實與條件性假說。該矩陣包含：象限 I（無條件統計均方：$\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$，無需 RH 假設、由 Riemann-Stieltjes 積分完全證明）；象限 II（無條件逐點界：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}})$ 暨 $|\mathrm{Re}\mathcal{C}_2| \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$，來自經典零點自由區的直接最緊界）；象限 III（條件性 RH 逐點界：【以 RH 為前提】$|S(X, t_0)| \le C_{t_0}X \implies \mathrm{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$）；以及象限 IV（條件性均方自洽：方差 $\sigma^2(X) = \frac{1}{2}X^2$）。該框架徹底消除了範疇跨越，確立了解析難度守恆律。
 
 ---
 
@@ -19,8 +19,8 @@
 
 | 認識論維度 | 統計均方（Mean-Square / Ensemble） | 局部逐點（Pointwise / Fixed $t$） |
 |---|---|---|
-| **無條件軌道（Unconditional）** | **【象限 I】** $\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$ (已證實微積分事實) | **【象限 II】** $|S| \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}})$ (當前已知最緊界) |
-| **條件性軌道（Conditional on RH）** | **【象限 IV】** $\sigma^2(X) = \frac{1}{2}X^2, \operatorname{RMS} = \frac{X}{\sqrt{2}}$ (統計自洽性) | **【象限 III】** $|S| \le \mathcal{O}_t(X) \implies \operatorname{Re}\mathcal{C}_2 \le \mathcal{O}_t(X^2)$ (核心等價開放前沿) |
+| **無條件軌道（Unconditional）** | **【象限 I】** $\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$ (已證實微積分事實) | **【象限 II】** $|S| \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}})$ (當前已知最緊界) |
+| **條件性軌道（Conditional on RH）** | **【象限 IV】** $\sigma^2(X) = \frac{1}{2}X^2, \mathrm{RMS} = \frac{X}{\sqrt{2}}$ (統計自洽性) | **【象限 III】** $|S| \le \mathcal{O}_t(X) \implies \mathrm{Re}\mathcal{C}_2 \le \mathcal{O}_t(X^2)$ (核心等價開放前沿) |
 
 ### 2. The Conservation of Analytical Difficulty / 解析難度守恆大定理
 

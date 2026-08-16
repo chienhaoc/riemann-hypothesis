@@ -1,4 +1,4 @@
-# Paper 12: Lorentz-Killing Determinant Invariants on $\mathfrak{sl}(2, \mathbb{R})$, Magnus Hyperbolic Domains, and Singular Value Area Conservation
+﻿# Paper 12: Lorentz-Killing Determinant Invariants on $\mathfrak{sl}(2, \mathbb{R})$, Magnus Hyperbolic Domains, and Singular Value Area Conservation
 # 論文十二：$\mathfrak{sl}(2, \mathbb{R})$ 勞倫茲-Killing 度規行列式不變量、Magnus 雙曲定義域與奇異值相空間面積守恆
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -19,7 +19,7 @@
 
 **Theorem 12.1 (Determinant Metric Identity / 行列式度規恆等式)**.  
 *For $\mathbf{A} = a K_1 + b K_2 + c J \in \mathfrak{sl}(2, \mathbb{R})$:*
-$$-\det\mathbf{A} = \frac{1}{4}(a^2 + b^2) - c^2 = \frac{1}{8} \operatorname{Killing}(\mathbf{A}, \mathbf{A})$$
+$$-\det\mathbf{A} = \frac{1}{4}(a^2 + b^2) - c^2 = \frac{1}{8} \mathrm{Killing}(\mathbf{A}, \mathbf{A})$$
 *which coincides with the $(2, 1)$ signature Minkowski metric on $\mathbb{R}^{2,1}$.*
 
 ### 2. Chebyshev Hyperbolic Domain / Chebyshev 雙曲定義域

@@ -1,4 +1,4 @@
-# 【嚴密復盤與漏洞修補】臨界線非可和性與特徵內函數奇異因子之精確分析
+﻿# 【嚴密復盤與漏洞修補】臨界線非可和性與特徵內函數奇異因子之精確分析
 
 **性質**：第二輪 ChatGPT 紅隊審查漏洞精確復盤與嚴格修補  
 **審查結果**：局部代數（壹）與 Weyl 圓盤收縮（參）驗證通過；無窮乘積臨界線發散（貳）與特徵內函數奇異因子推論錯誤（肆）被精確標定。  
@@ -38,7 +38,7 @@ ChatGPT 本次審查以無可辯駁的 Nevanlinna 理論與解析數論分析，
 ## 一、 漏洞一修補：從「無窮純量乘積」到「Stieltjes 測度微分方程流」
 
 ### 1. 問題本質
-- 若嘗試直接對整個臨界線 $\operatorname{Re}(s)=1/2$ 寫下無窮多個質數因子的連乘積 $M_\infty(z) = \prod_{k=1}^\infty (I - z\ell_k JH_k)$，因 $\sum \ell_k = \sum \frac{\log p}{\sqrt{p}} = \infty$，該無窮乘積的矩陣範數 $\|M_\infty(z)\| \to \infty$ 發散。
+- 若嘗試直接對整個臨界線 $\mathrm{Re}(s)=1/2$ 寫下無窮多個質數因子的連乘積 $M_\infty(z) = \prod_{k=1}^\infty (I - z\ell_k JH_k)$，因 $\sum \ell_k = \sum \frac{\log p}{\sqrt{p}} = \infty$，該無窮乘積的矩陣範數 $\|M_\infty(z)\| \to \infty$ 發散。
 - 這不是偶然，而是算子在無窮遠處進入 **Limit-Point（點極限）** 的必然表現（總長度發散）。
 
 ### 2. 嚴格數學修補方案（Stieltjes Integral Equations）
@@ -46,7 +46,7 @@ ChatGPT 本次審查以無可辯駁的 Nevanlinna 理論與解析數論分析，
 1. 定義定義在實半軸 $[0, \infty)$ 上的**半正定矩陣值 Radon 測度** $d\mathbf{M}(x) \succeq 0$：
    $$d\mathbf{M}(x) = H_0(x) dx + \sum_{p, k} \frac{\log p}{p^{k/2}} H_{p, k} \, \delta(x - k\log p) dx$$
 2. 在任意有限截斷空間尺度 $X < \infty$ 上，總變差（Total Variation）為有限值：
-   $$\|\mathbf{M}\|_{[0, X]} = \int_0^X \operatorname{tr} H_0(x) dx + \sum_{k\log p \le X} \frac{\log p}{p^{k/2}} < \infty$$
+   $$\|\mathbf{M}\|_{[0, X]} = \int_0^X \mathrm{tr} H_0(x) dx + \sum_{k\log p \le X} \frac{\log p}{p^{k/2}} < \infty$$
 3. 由 Picard-Lindelöf-Stieltjes 定理，Volterra 積分方程：
    $$Y(X, z) = I_2 - z J \int_0^X d\mathbf{M}(t) Y(t, z)$$
    在任意有限 $X < \infty$ 及任意 $z \in \mathbb{C}$ 上**無條件存在唯一的整矩陣解** $Y(X, z) \in \mathrm{SL}(2, \mathbb{C})$，且滿足 Potapov $J$-單調性。
@@ -69,7 +69,7 @@ ChatGPT 本次審查以無可辯駁的 Nevanlinna 理論與解析數論分析，
 2. **奇異測度的真實排除通道**：
    - 特異內因子 $S(z)$ 的奇異測度 $d\nu$ 集中於 $\Theta_\infty(z) \to 1$ 的邊界點集；
    - 根據 Clark–Poltoratski 定理，邊界點 $t \in \mathbb{R}$ 支撐奇異連續測度 $d\nu_{\text{sc}} \ne 0$ 的充要條件是：
-     $$\lim_{y \downarrow 0} \operatorname{Im} m_\infty(t + iy) = +\infty \quad \text{在某個零 Lebesgue 測度但不可數集合上成立}$$
+     $$\lim_{y \downarrow 0} \mathrm{Im} m_\infty(t + iy) = +\infty \quad \text{在某個零 Lebesgue 測度但不可數集合上成立}$$
    - 要排除 $S_\infty(z)$ 中的奇異連續成分，**絕不能靠內函數定義**，必須回到 **Gilbert-Pearson 從屬解理論** 或 **Prüfer 振幅的有界性分析**，證明在實軸上不存在使解增長率次級衰減的從屬態。
 3. **無窮遠型態的術語釐清**：
    - 指數因子 $e^{i\tau z}$（$\tau > 0$）在 Nevanlinna 理論中本質上是集中於無窮遠點 $\infty$ 的 Dirac 測度奇異因子；

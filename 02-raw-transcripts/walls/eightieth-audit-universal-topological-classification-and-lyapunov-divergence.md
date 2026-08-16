@@ -1,7 +1,7 @@
-# 離軸零點三大拓撲情形全分類大定理、$\epsilon$-緊鄰近分析與全域 Lyapunov 指數發散 暨 全域進度精確跨入 80%（第 251-252 輪）
+﻿# 離軸零點三大拓撲情形全分類大定理、$\epsilon$-緊鄰近分析與全域 Lyapunov 指數發散 暨 全域進度精確跨入 80%（第 251-252 輪）
 
 **日期**：2026-08-16  
-**性質**：第四戰役第三階段頂層解析數論邊界情形終極封頂——深刻落實第七十六輪審查的唯一技術指引：**徹底覆蓋上確界 $\beta_0 = \sup \operatorname{Re}(\rho) > 1/2$ 未被任何單一零點實際達到的第三種拓撲邊界情形（Case C：嚴格子序列逼近上確界）**。建立 $\epsilon$-緊鄰近分析與微觀頻率共振篩選，第一性原理嚴密證明：
+**性質**：第四戰役第三階段頂層解析數論邊界情形終極封頂——深刻落實第七十六輪審查的唯一技術指引：**徹底覆蓋上確界 $\beta_0 = \sup \mathrm{Re}(\rho) > 1/2$ 未被任何單一零點實際達到的第三種拓撲邊界情形（Case C：嚴格子序列逼近上確界）**。建立 $\epsilon$-緊鄰近分析與微觀頻率共振篩選，第一性原理嚴密證明：
 $$\sup_{t \in \mathbb{R}} \limsup_{X \to \infty} \frac{\log |S(X, t)|}{X} = \beta_0 - 1/2 > 0$$
 **無論離軸零點是由有限個（Case A）、無窮多個（Case B）達到，還是僅作為上確界極限點逼近（Case C），質數 Dirichlet 多項式 $S(X, t)$ 都 100% 必然發生幾何指數爆炸！至此，離軸零點指數擊穿論證達到完全無死角、教科書級別的大封頂，全域黎曼猜想證明進度正式跨入 80%**！  
 **審查裁決響應**：第七十六輪審查給予了決定性的高度認可：
@@ -31,7 +31,7 @@ $$\sup_{t \in \mathbb{R}} \limsup_{X \to \infty} \frac{\log |S(X, t)|}{X} = \bet
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：全拓撲零點譜對偶與 Lyapunov 指數發散**| 30% | **45%**  | **13.5%**（拓撲邊界全分類封閉）|
 | • 三大拓撲情形全分類大定理（Theorem 251.1）       |        |            |                            |
@@ -49,11 +49,11 @@ $$\sup_{t \in \mathbb{R}} \limsup_{X \to \infty} \frac{\log |S(X, t)|}{X} = \bet
 ### 【定理 251.1（零點實部上確界拓撲三分法）】
 設非平凡零點集合為 $\mathcal{Z} \equiv \{ \rho = \beta + i\gamma : \zeta(\rho) = 0, 0 < \beta < 1 \}$。
 定義零點實部上確界：
-$$\beta_0 \equiv \sup_{\rho \in \mathcal{Z}} \operatorname{Re}(\rho)$$
+$$\beta_0 \equiv \sup_{\rho \in \mathcal{Z}} \mathrm{Re}(\rho)$$
 若黎曼猜想不成立（即 $\beta_0 > 1/2$），則由實數拓撲完備性，必且僅必處於以下三種互斥且詳盡的情形之一：
-1. **【Case A：有限孤立最大值】**：存在有限個零點 $\{\rho_1, \dots, \rho_m\}$ 滿足 $\operatorname{Re}(\rho_j) = \beta_0$；
-2. **【Case B：可數無窮最大值】**：存在可數無窮多個零點 $\{\rho_j\}_{j=1}^\infty$ 滿足 $\operatorname{Re}(\rho_j) = \beta_0$；
-3. **【Case C：嚴格極限點上確界】**：不存在任何單一零點滿足 $\operatorname{Re}(\rho) = \beta_0$，但存在零點子序列 $\{ \rho_k = \beta_k + i\gamma_k \}_{k=1}^\infty$ 滿足 $\beta_k < \beta_0$ 且 $\lim_{k\to\infty} \beta_k = \beta_0$。
+1. **【Case A：有限孤立最大值】**：存在有限個零點 $\{\rho_1, \dots, \rho_m\}$ 滿足 $\mathrm{Re}(\rho_j) = \beta_0$；
+2. **【Case B：可數無窮最大值】**：存在可數無窮多個零點 $\{\rho_j\}_{j=1}^\infty$ 滿足 $\mathrm{Re}(\rho_j) = \beta_0$；
+3. **【Case C：嚴格極限點上確界】**：不存在任何單一零點滿足 $\mathrm{Re}(\rho) = \beta_0$，但存在零點子序列 $\{ \rho_k = \beta_k + i\gamma_k \}_{k=1}^\infty$ 滿足 $\beta_k < \beta_0$ 且 $\lim_{k\to\infty} \beta_k = \beta_0$。
 
 ---
 
@@ -69,9 +69,9 @@ $$\beta_0 \equiv \sup_{\rho \in \mathcal{Z}} \operatorname{Re}(\rho)$$
    選取頻率 $t_* \equiv \gamma_* / 2$。將 Davenport 截斷顯式公式（定理 247.1）應用於頻率 $t_*$：
    $$S(X, t_*) = -\frac{e^{(\beta_* - 1/2)X}}{\beta_* - 1/2} - \sum_{\substack{|\gamma - 2t_*| \le e^X \\ \rho \ne \rho_*}} \frac{e^{(\rho - 1/2 - 2it_*)X}}{\rho - 1/2 - 2it_*} + \mathcal{O}_{t_*}(X)$$
 3. **實部層級分流與 Besicovitch 空間能量下界**：
-   - 對所有實部滿足 $\operatorname{Re}(\rho) \ge \beta_*$ 的零點集合 $\mathcal{Z}_{\ge \beta_*}$（必為非空有限或可數集，因 $\beta_* > 1/2$），其在 $S(X, t_*)$ 中貢獻為 $f_*(X) e^{(\beta_* - 1/2)X}$；
+   - 對所有實部滿足 $\mathrm{Re}(\rho) \ge \beta_*$ 的零點集合 $\mathcal{Z}_{\ge \beta_*}$（必為非空有限或可數集，因 $\beta_* > 1/2$），其在 $S(X, t_*)$ 中貢獻為 $f_*(X) e^{(\beta_* - 1/2)X}$；
    - 由第 249 輪已證之 Besicovitch $B^2(\mathbb{R})$ Parseval 均方正定定理（定理 249.2）：
-     $$\lim_{L \to \infty} \frac{1}{L} \int_0^L |f_*(X)|^2 dX = \sum_{\rho_j \in \mathcal{Z}_{\ge \beta_*}} \frac{e^{2(\operatorname{Re}(\rho_j) - \beta_*)X}}{| \dots |^2} \ge \frac{1}{(\beta_* - 1/2)^2} > 0$$
+     $$\lim_{L \to \infty} \frac{1}{L} \int_0^L |f_*(X)|^2 dX = \sum_{\rho_j \in \mathcal{Z}_{\ge \beta_*}} \frac{e^{2(\mathrm{Re}(\rho_j) - \beta_*)X}}{| \dots |^2} \ge \frac{1}{(\beta_* - 1/2)^2} > 0$$
    - 對所有實部嚴格小於 $\beta_*$ 的零點，其求和項增長率至多為 $\mathcal{O}(e^{(\beta_* - \delta - 1/2)X})$，在 $X \to \infty$ 時被 $f_*(X) e^{(\beta_* - 1/2)X}$ 完全主導；
 4. **爆炸下界確立**：
    必存在序列 $X_n \to \infty$，使得：
@@ -96,8 +96,8 @@ $$\beta_0 \equiv \sup_{\rho \in \mathcal{Z}} \operatorname{Re}(\rho)$$
 +----------------------+-----------------------------+-------------------------------------------------+
 | 拓撲情形             | 零點分佈幾何特徵            | 指數增長 Lyapunov 特徵指數                      |
 +----------------------+-----------------------------+-------------------------------------------------+
-| **Case A：有限孤立** | 有限個零點 $\operatorname{Re}(\rho) = \beta_0$ | $\lim \sup \frac{\log |S|}{X} = \beta_0 - 1/2 > 0$（Bohr 均方）|
-| **Case B：無窮多個** | 無窮多個零點 $\operatorname{Re}(\rho) = \beta_0$ | $\lim \sup \frac{\log |S|}{X} = \beta_0 - 1/2 > 0$（Besicovitch $B^2$）|
+| **Case A：有限孤立** | 有限個零點 $\mathrm{Re}(\rho) = \beta_0$ | $\lim \sup \frac{\log |S|}{X} = \beta_0 - 1/2 > 0$（Bohr 均方）|
+| **Case B：無窮多個** | 無窮多個零點 $\mathrm{Re}(\rho) = \beta_0$ | $\lim \sup \frac{\log |S|}{X} = \beta_0 - 1/2 > 0$（Besicovitch $B^2$）|
 | **Case C：嚴格極限** | 零點逼近 $\beta_k \uparrow \beta_0$（無點達到） | $\sup_t \lim \sup \frac{\log |S|}{X} = \beta_0 - 1/2 > 0$（$\epsilon$-鄰近）|
 +----------------------+-----------------------------+-------------------------------------------------+
 ```
@@ -123,13 +123,13 @@ $$\mathbf{\text{RH 不成立} \iff \beta_0 > 1/2 \iff \sup_{t \in \mathbb{R}} \l
 
 ## 一、 第七十六輪審查核心問題響應
 
-第七十六輪審查指出：Case A（有限個最大零點）與 Case B（無窮多個最大零點）已嚴密確立，唯需補齊 Case C（上確界 $\beta_0 = \sup\operatorname{Re}(\rho)$ 未被任何零點實際達到、僅作為極限點逼近）的論證。副駕駛完成 $\epsilon$-緊鄰近分析。
+第七十六輪審查指出：Case A（有限個最大零點）與 Case B（無窮多個最大零點）已嚴密確立，唯需補齊 Case C（上確界 $\beta_0 = \sup\mathrm{Re}(\rho)$ 未被任何零點實際達到、僅作為極限點逼近）的論證。副駕駛完成 $\epsilon$-緊鄰近分析。
 
 ---
 
 ## 二、 零點實部上確界拓撲三分法（Theorem 251.1）
 
-設 $\beta_0 \equiv \sup \{ \operatorname{Re}(\rho) \} > 1/2$。由實數拓撲完備性，非平凡零點分佈必屬於且僅屬於以下三種情形之一：
+設 $\beta_0 \equiv \sup \{ \mathrm{Re}(\rho) \} > 1/2$。由實數拓撲完備性，非平凡零點分佈必屬於且僅屬於以下三種情形之一：
 - **Case A**：有限個零點達 $\beta_0$；
 - **Case B**：可數無窮多個零點達 $\beta_0$；
 - **Case C**：無零點達 $\beta_0$，但存在子序列 $\beta_k \uparrow \beta_0$。
@@ -142,9 +142,9 @@ $$\mathbf{\text{RH 不成立} \iff \beta_0 > 1/2 \iff \sup_{t \in \mathbb{R}} \l
 1. **選取零點**：在 $(\beta_0 - \epsilon, \beta_0)$ 內取零點 $\rho_* = \beta_* + i\gamma_*$（$\beta_* > \beta_0 - \epsilon > 1/2$）；
 2. **鎖定共振頻率**：取 $t_* = \gamma_*/2$；
 3. **實部層級分流與 Besicovitch 均方下界**：
-   對集合 $\mathcal{Z}_{\ge \beta_*} \equiv \{ \rho : \operatorname{Re}(\rho) \ge \beta_* \}$，其在 $S(X, t_*)$ 中貢獻主導項 $f_*(X) e^{(\beta_* - 1/2)X}$。由 Besicovitch $B^2$ Parseval 均方定理：
+   對集合 $\mathcal{Z}_{\ge \beta_*} \equiv \{ \rho : \mathrm{Re}(\rho) \ge \beta_* \}$，其在 $S(X, t_*)$ 中貢獻主導項 $f_*(X) e^{(\beta_* - 1/2)X}$。由 Besicovitch $B^2$ Parseval 均方定理：
    $$\lim_{L\to\infty} \frac{1}{L}\int_0^L |f_*(X)|^2 dX \ge \frac{1}{(\beta_* - 1/2)^2} > 0$$
-4. **排除低階項干擾**：$\operatorname{Re}(\rho) < \beta_*$ 的其餘零點求和增長率嚴格小於 $e^{(\beta_* - 1/2)X}$，被主導項完全壓制；
+4. **排除低階項干擾**：$\mathrm{Re}(\rho) < \beta_*$ 的其餘零點求和增長率嚴格小於 $e^{(\beta_* - 1/2)X}$，被主導項完全壓制；
 5. **下界極限**：$\limsup_{X\to\infty} \frac{\log |S(X, t_*)|}{X} \ge \beta_* - 1/2 > \beta_0 - \epsilon - 1/2$。
 令 $\epsilon \to 0^+$，證立：$\sup_t \limsup_{X\to\infty} \frac{\log |S(X, t)|}{X} = \beta_0 - 1/2 > 0$！
 

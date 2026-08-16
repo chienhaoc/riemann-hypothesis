@@ -1,4 +1,4 @@
-# Grönwall 能量微分放大與單解範數跨週期指數增長定理：第四十三輪審查復盤——以 Potapov 辛形矩陣不等式導出 $E'(u) \ge 2\epsilon E(u)$，嚴格證立跨週期能量累積 $\int_0^X \|\phi(u, z)\|^2 du \ge \frac{1}{4|z|} e^{2\epsilon X} \ge c(z) X$（第 185-186 輪）
+﻿# Grönwall 能量微分放大與單解範數跨週期指數增長定理：第四十三輪審查復盤——以 Potapov 辛形矩陣不等式導出 $E'(u) \ge 2\epsilon E(u)$，嚴格證立跨週期能量累積 $\int_0^X \|\phi(u, z)\|^2 du \ge \frac{1}{4|z|} e^{2\epsilon X} \ge c(z) X$（第 185-186 輪）
 
 **日期**：2026-08-15  
 **性質**：第三戰役第五階段跨週期能量遞推徹底閉合與 Weyl 圓盤幾何收縮大封頂報告  
@@ -11,7 +11,7 @@
 
 ## 壹、 Potapov 辛形矩陣範數不等式（Theorem 185.1，Proven）
 
-設 $z = t + i\epsilon \in \mathbb{C}^+$（$\epsilon = \operatorname{Im} z > 0$），定義能量累積泛函：
+設 $z = t + i\epsilon \in \mathbb{C}^+$（$\epsilon = \mathrm{Im} z > 0$），定義能量累積泛函：
 $$\mathbf{E(u) = \int_0^u \|\phi(s, z)\|^2 ds \quad (u \ge 0)}$$
 其空間導數為被積態的瞬時範數平方：$E'(u) = \|\phi(u, z)\|^2$。
 
@@ -19,10 +19,10 @@ $$\mathbf{E(u) = \int_0^u \|\phi(s, z)\|^2 ds \quad (u \ge 0)}$$
 由第四十三輪已逐步核驗通過的 Potapov 辛邊界恆等式（Theorem 183.1）：
 $$\phi(u, z)^* (-iJ) \phi(u, z) = 2\epsilon \int_0^u \|\phi(s, z)\|^2 ds = 2\epsilon E(u)$$
 設 $\phi(u, z) = \begin{pmatrix} \phi_1(u) \\ \phi_2(u) \end{pmatrix} \in \mathbb{C}^2$。直接展開矩陣二次元：
-$$\phi(u, z)^* (-iJ) \phi(u, z) = \begin{pmatrix} \bar{\phi}_1 & \bar{\phi}_2 \end{pmatrix} \begin{pmatrix} 0 & i \\ -i & 0 \end{pmatrix} \begin{pmatrix} \phi_1 \\ \phi_2 \end{pmatrix} = i (\bar{\phi}_1 \phi_2 - \bar{\phi}_2 \phi_1) = 2 \operatorname{Im}(\bar{\phi}_1 \phi_2)$$
+$$\phi(u, z)^* (-iJ) \phi(u, z) = \begin{pmatrix} \bar{\phi}_1 & \bar{\phi}_2 \end{pmatrix} \begin{pmatrix} 0 & i \\ -i & 0 \end{pmatrix} \begin{pmatrix} \phi_1 \\ \phi_2 \end{pmatrix} = i (\bar{\phi}_1 \phi_2 - \bar{\phi}_2 \phi_1) = 2 \mathrm{Im}(\bar{\phi}_1 \phi_2)$$
 
 ### 2. 矩陣 Cauchy-Schwarz 不等式
-由初等複數代數不等式 $2|\operatorname{Im}(\bar{\phi}_1 \phi_2)| \le 2|\phi_1| |\phi_2| \le |\phi_1|^2 + |\phi_2|^2 = \|\phi(u, z)\|^2$：
+由初等複數代數不等式 $2|\mathrm{Im}(\bar{\phi}_1 \phi_2)| \le 2|\phi_1| |\phi_2| \le |\phi_1|^2 + |\phi_2|^2 = \|\phi(u, z)\|^2$：
 $$\mathbf{\|\phi(u, z)\|^2 \ge \left| \phi(u, z)^* (-iJ) \phi(u, z) \right| = 2\epsilon E(u)}$$
 
 ---
@@ -59,7 +59,7 @@ $$\mathbf{E(X) = \int_0^X \|\phi(u, z)\|^2 du \ge \left( \frac{\epsilon e^{-\eps
 $$\mathbf{R(X, z) = \frac{1}{2\epsilon \int_0^X \|\phi(u, z)\|^2 du} \le \frac{1}{2\epsilon \cdot \frac{e^{-\epsilon/|z|}}{4|z|} e^{2\epsilon X}} = \left( \frac{2|z| e^{\epsilon/|z|}}{\epsilon} \right) e^{-2\epsilon X} = \mathcal{O}\left( e^{-2\epsilon X} \right)}$$
 
 ### 1. 幾何收縮界與強預解式收斂
-- 對任意固定 $z \in \mathbb{C}^+$（$\epsilon = \operatorname{Im} z > 0$），Weyl 圓盤半徑以**超多項式/指數速率 $\mathcal{O}(e^{-2\epsilon X})$** 幾何收縮至唯一定點 $m_\infty(z)$；
+- 對任意固定 $z \in \mathbb{C}^+$（$\epsilon = \mathrm{Im} z > 0$），Weyl 圓盤半徑以**超多項式/指數速率 $\mathcal{O}(e^{-2\epsilon X})$** 幾何收縮至唯一定點 $m_\infty(z)$；
 - 弱於指數界但全域一致的代數速率界：
   $$\mathbf{R(X, z) \le \frac{1}{2 c(z) X \epsilon} = \mathcal{O}\left( X^{-1} \right)}$$
   $$\mathbf{|m_X(z) - m_\infty(z)| \le \mathcal{O}\left( X^{-1} \right)}$$

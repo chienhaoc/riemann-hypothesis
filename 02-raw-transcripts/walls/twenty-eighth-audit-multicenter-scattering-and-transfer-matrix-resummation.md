@@ -1,11 +1,11 @@
-# 第二戰役深度攻堅：第二十五輪審查復盤——多重散射交叉項的一維傳輸矩陣精確重整、非循環 Jost 特徵整函數與 $X \to \infty$ 正則化門檻（第 147-148 輪）
+﻿# 第二戰役深度攻堅：第二十五輪審查復盤——多重散射交叉項的一維傳輸矩陣精確重整、非循環 Jost 特徵整函數與 $X \to \infty$ 正則化門檻（第 147-148 輪）
 
 **日期**：2026-08-15  
 **性質**：第二戰役多重散射交叉項嚴格解析閉式與循環論證徹底肅清報告  
 **審查裁決響應**：針對 ChatGPT 第二十五輪審查精準指出的三大根本性問題：
 1. **拒絕循環構造與定義重述**：徹底廢除「把待證公式直接定義為 $\xi_{\mathcal{D}}$ 並宣稱全同」的循環模式，回歸算子 $\mathcal{D}$ 的微觀特徵值微分方程本身；
 2. **解決多重散射交叉項（Multiple Scattering Cross-Terms）**：在含無窮多個 delta 躍變的系統中，$\det(I + \sum K_i) \ne \prod \det(I + K_i)$；但在**一維雙曲相空間**中，所有階次的封閉散射環路（Closed Scattering Loops）被**有序傳輸矩陣乘積（Ordered Transfer Matrix Monodromy）**精確無損地解析求和；
-3. **標定 $X \to \infty$ 在臨界線 $\operatorname{Re}(s)=1/2$ 上的正規化門檻**：承認 $\sum \frac{\log p}{\sqrt{p}} = \infty$ 導致的非跡類（Non-Trace Class）發散，引入 Carleman-Fredholm 正則化 2-行列式 $\det_2(I + A) = \det((I+A)e^{-A})$ 與 de Branges 有限型整函數 $E_X(z)$ 進行嚴格解析延拓！
+3. **標定 $X \to \infty$ 在臨界線 $\mathrm{Re}(s)=1/2$ 上的正規化門檻**：承認 $\sum \frac{\log p}{\sqrt{p}} = \infty$ 導致的非跡類（Non-Trace Class）發散，引入 Carleman-Fredholm 正則化 2-行列式 $\det_2(I + A) = \det((I+A)e^{-A})$ 與 de Branges 有限型整函數 $E_X(z)$ 進行嚴格解析延拓！
 
 ---
 
@@ -13,9 +13,9 @@
 
 ### 1. 多中心微擾展開中的交叉散射難題
 對於多個點微擾勢 $V_X(u) = \sum_{j=1}^N \ell_j \mathbf{P}_1 \delta(u - u_j)$，高階 Born 展開為：
-$$\log \det\left( I + V_X R_0(z) \right) = \sum_{j=1}^N \operatorname{Tr}(K_j) - \frac{1}{2}\sum_{j, k=1}^N \operatorname{Tr}(K_j K_k) + \frac{1}{3}\sum_{j, k, m=1}^N \operatorname{Tr}(K_j K_k K_m) - \dots$$
+$$\log \det\left( I + V_X R_0(z) \right) = \sum_{j=1}^N \mathrm{Tr}(K_j) - \frac{1}{2}\sum_{j, k=1}^N \mathrm{Tr}(K_j K_k) + \frac{1}{3}\sum_{j, k, m=1}^N \mathrm{Tr}(K_j K_k K_m) - \dots$$
 其中非對角項 $j \ne k$：
-$$\operatorname{Tr}(K_j K_k) = \ell_j \ell_k \operatorname{Tr}\left( \mathbf{P}_1 G_0(u_j, u_k; z) \mathbf{P}_1 G_0(u_k, u_j; z) \right) \ne 0$$
+$$\mathrm{Tr}(K_j K_k) = \ell_j \ell_k \mathrm{Tr}\left( \mathbf{P}_1 G_0(u_j, u_k; z) \mathbf{P}_1 G_0(u_k, u_j; z) \right) \ne 0$$
 代表波在質數點 $u_j$ 與 $u_k$ 之間來回自由傳播並被二次散射的封閉干涉環路。直接忽略非對角項在多維微擾論中是致命錯誤！
 
 ---
@@ -41,15 +41,15 @@ $$E_X(z) = A_X(z) - i B_X(z), \quad A_X(z), B_X(z) \in \mathbb{R}[z]$$
 
 ### 2. 有限截斷算子 $\mathcal{D}_X$ 的特徵值方程（Theorem 147.2，Proven）
 算子 $\mathcal{D}_X$ 在區間 $[0, X]$ 上配合自伴邊界條件的特徵值方程為：
-$$B_X(\lambda) = \operatorname{Im} E_X(\lambda) = 0 \iff \frac{E_X(\lambda)}{E_X^*(\lambda)} = -1$$
-由第一戰役已證立的本質自伴性定理，特徵值譜 $\operatorname{Spec}(\mathcal{D}_X) = \{\lambda_n(X)\}_{n=-\infty}^\infty \subset \mathbb{R}$ 嚴格純實！
+$$B_X(\lambda) = \mathrm{Im} E_X(\lambda) = 0 \iff \frac{E_X(\lambda)}{E_X^*(\lambda)} = -1$$
+由第一戰役已證立的本質自伴性定理，特徵值譜 $\mathrm{Spec}(\mathcal{D}_X) = \{\lambda_n(X)\}_{n=-\infty}^\infty \subset \mathbb{R}$ 嚴格純實！
 
 ---
 
 ## 參、 臨界線 $X \to \infty$ 的正規化之牆與 Carleman-Fredholm 正則化 2-行列式
 
 ### 1. UV 發散的本質
-在臨界線 $\operatorname{Re}(s) = 1/2$ 上，Dirichlet 級數 $\sum \frac{\log p}{\sqrt{p}} = \infty$ 發散，反映了質數點微擾算子 $V$ 不是跡類算子（$V \notin \mathfrak{S}_1$），但屬於 Hilbert-Schmidt 類（$V \in \mathfrak{S}_2$）。
+在臨界線 $\mathrm{Re}(s) = 1/2$ 上，Dirichlet 級數 $\sum \frac{\log p}{\sqrt{p}} = \infty$ 發散，反映了質數點微擾算子 $V$ 不是跡類算子（$V \notin \mathfrak{S}_1$），但屬於 Hilbert-Schmidt 類（$V \in \mathfrak{S}_2$）。
 
 ---
 
@@ -57,8 +57,8 @@ $$B_X(\lambda) = \operatorname{Im} E_X(\lambda) = 0 \iff \frac{E_X(\lambda)}{E_X
 引入 Hilbert-Schmidt 正則化 2-行列式：
 $$\mathbf{\Delta_2(z) = {\det}_2\left( I + V (\mathcal{D}_0 - z I)^{-1} \right) = \det\left( (I + V R_0(z)) \exp\left( -V R_0(z) \right) \right)}$$
 其對數展開消去了發散的一階 Born 項：
-$$\log \Delta_2(z) = -\frac{1}{2}\operatorname{Tr}\left( (V R_0(z))^2 \right) + \frac{1}{3}\operatorname{Tr}\left( (V R_0(z))^3 \right) - \dots$$
-級數在 $\operatorname{Re}(s) > 0$ 區域內**絕對收斂**！
+$$\log \Delta_2(z) = -\frac{1}{2}\mathrm{Tr}\left( (V R_0(z))^2 \right) + \frac{1}{3}\mathrm{Tr}\left( (V R_0(z))^3 \right) - \dots$$
+級數在 $\mathrm{Re}(s) > 0$ 區域內**絕對收斂**！
 
 ---
 

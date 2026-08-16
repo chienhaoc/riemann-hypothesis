@@ -1,4 +1,4 @@
-# 形式因子缺陷精確修正與 Krein 譜移泛函閉合：第三十九輪審查復盤——修正對關聯變換標準關係式 $1 - R_2(s) = \int (1 - K(\tau)) e^{2\pi i s \tau} d\tau$、微積分逐步展開與數值機器精度全吻合驗證（第 177-178 輪）
+﻿# 形式因子缺陷精確修正與 Krein 譜移泛函閉合：第三十九輪審查復盤——修正對關聯變換標準關係式 $1 - R_2(s) = \int (1 - K(\tau)) e^{2\pi i s \tau} d\tau$、微積分逐步展開與數值機器精度全吻合驗證（第 177-178 輪）
 
 **日期**：2026-08-15  
 **性質**：第三戰役第四階段微積分設定精確修正與 Krein 譜移泛函報告  
@@ -41,13 +41,13 @@ $$I(s) = 2 \left[ (1 - \tau) \frac{\sin(2\pi s \tau)}{2\pi s} \right]_0^1 - 2 \i
   $$I(s) = \frac{2}{2\pi s} \int_0^1 \sin(2\pi s \tau) d\tau = \frac{1}{\pi s} \left[ -\frac{\cos(2\pi s \tau)}{2\pi s} \right]_0^1 = \frac{1 - \cos(2\pi s)}{2\pi^2 s^2}$$
 - **半角三角恆等式代換**：
   由 $1 - \cos(2\theta) = 2\sin^2\theta$（取 $\theta = \pi s$）：
-  $$\mathbf{I(s) = \frac{2\sin^2(\pi s)}{2\pi^2 s^2} = \left( \frac{\sin(\pi s)}{\pi s} \right)^2 \equiv \operatorname{sinc}^2(s)}$$
+  $$\mathbf{I(s) = \frac{2\sin^2(\pi s)}{2\pi^2 s^2} = \left( \frac{\sin(\pi s)}{\pi s} \right)^2 \equiv \mathrm{sinc}^2(s)}$$
 
 ---
 
 ## 參、 數值 100% 機器精度核驗表
 
-用高精度數值積分對修正後的公式 $I(s) = \int_{-1}^1 (1 - |\tau|) \cos(2\pi s \tau) d\tau$ 與 $\operatorname{sinc}^2(s)$ 進行逐點比較：
+用高精度數值積分對修正後的公式 $I(s) = \int_{-1}^1 (1 - |\tau|) \cos(2\pi s \tau) d\tau$ 與 $\mathrm{sinc}^2(s)$ 進行逐點比較：
 
 | $s$ | 修正後數值積分值 $\int_{-1}^1 (1 - |\tau|)\cos(2\pi s\tau)d\tau$ | 解析理論值 $(\frac{\sin\pi s}{\pi s})^2$ | 絕對誤差 | 裁決狀態 |
 |---|---|---|---|---|
@@ -67,8 +67,8 @@ $$I(s) = 2 \left[ (1 - \tau) \frac{\sin(2\pi s \tau)}{2\pi s} \right]_0^1 - 2 \i
 結合微觀振盪核 $S_X(t)$，算子 $\mathcal{D}_X$ 相對於自由算子 $\mathcal{D}_X^{(0)}$ 的 **Krein 譜移函數（Krein Spectral Shift Function）** 為：
 $$\xi_X(t) = \frac{1}{\pi} \phi(X, t) - \frac{tX}{\pi} = \overline{\Delta\Phi}(X) + S_X(t)$$
 在複平面 $z \in \mathbb{C}^+$ 上，預解式跡的 Krein 留數表示為：
-$$\mathbf{\operatorname{Tr}\left( \left( \mathcal{D}_X - z \right)^{-1} - \left( \mathcal{D}_X^{(0)} - z \right)^{-1} \right) = -\int_{-\infty}^\infty \frac{\xi_X(t)}{(t - z)^2} dt}$$
-由於已證立 $\operatorname{Var}_T(S_X) = \frac{1}{8\pi^2}\sum \frac{\log^2 p}{p^k} < \infty$，Krein 譜移泛函在全複上半平面 $\mathbb{C}^+$ 保持 $L^2$ 有界性與全純解析性，為正則哈密頓微觀動力學提供了完整的預解式幾何閉合！
+$$\mathbf{\mathrm{Tr}\left( \left( \mathcal{D}_X - z \right)^{-1} - \left( \mathcal{D}_X^{(0)} - z \right)^{-1} \right) = -\int_{-\infty}^\infty \frac{\xi_X(t)}{(t - z)^2} dt}$$
+由於已證立 $\mathrm{Var}_T(S_X) = \frac{1}{8\pi^2}\sum \frac{\log^2 p}{p^k} < \infty$，Krein 譜移泛函在全複上半平面 $\mathbb{C}^+$ 保持 $L^2$ 有界性與全純解析性，為正則哈密頓微觀動力學提供了完整的預解式幾何閉合！
 
 ---
 

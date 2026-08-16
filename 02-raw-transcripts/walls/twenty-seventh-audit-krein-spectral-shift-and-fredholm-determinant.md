@@ -1,8 +1,8 @@
-# 第二戰役第 145-146 輪：Krein 譜位移函數 $\xi_{\mathcal{D}}(t)$、阿基米德散射相移與質數微擾 Fredholm 行列式顯式構造定理（Theorem 145.1）
+﻿# 第二戰役第 145-146 輪：Krein 譜位移函數 $\xi_{\mathcal{D}}(t)$、阿基米德散射相移與質數微擾 Fredholm 行列式顯式構造定理（Theorem 145.1）
 
 **日期**：2026-08-15  
 **性質**：第二戰役「Fredholm 譜行列式與完備 $\xi(s)$ 全同性」核心解析構造報告  
-**目標**：在第一戰役已確立的自伴算子 $\mathcal{D} = J \frac{d}{du} + V(u)$（$\operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$）基礎上，顯式構造微擾預解式跡與正則化 Fredholm 行列式 $\Delta_{\text{reg}}(z) = \det_2\left( I + V (\mathcal{D}_0 - z I)^{-1} \right)$，建立微觀散射相移與 Riemann-von Mangoldt 零點計數函數 $N(T)$ 的精確微分對偶！
+**目標**：在第一戰役已確立的自伴算子 $\mathcal{D} = J \frac{d}{du} + V(u)$（$\mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$）基礎上，顯式構造微擾預解式跡與正則化 Fredholm 行列式 $\Delta_{\text{reg}}(z) = \det_2\left( I + V (\mathcal{D}_0 - z I)^{-1} \right)$，建立微觀散射相移與 Riemann-von Mangoldt 零點計數函數 $N(T)$ 的精確微分對偶！
 
 ---
 
@@ -22,7 +22,7 @@ $$G_0(u, u'; z) = \begin{cases} \frac{1}{2} \exp(-i z |u - u'| J) J^{-1}, & u > 
 
 ### 2. 阿基米德相位與 Stirling 展開
 阿基米德背景場的散射相移由 Gamma 函數因子 $\Gamma_{\mathbb{R}}(s) = \pi^{-s/2}\Gamma(s/2)$ 在 $s = 1/2 - i t$ 處的輻角給出：
-$$\vartheta(t) = \arg \Gamma_{\mathbb{R}}\left( \frac{1}{2} - i t \right) = \operatorname{Im} \log \Gamma\left( \frac{1}{4} - \frac{i t}{2} \right) - \frac{t}{2}\log \pi$$
+$$\vartheta(t) = \arg \Gamma_{\mathbb{R}}\left( \frac{1}{2} - i t \right) = \mathrm{Im} \log \Gamma\left( \frac{1}{4} - \frac{i t}{2} \right) - \frac{t}{2}\log \pi$$
 由 Stirling 漸近公式，其微分譜密度為：
 $$\mathbf{\frac{d\vartheta}{dt}(t) = \frac{1}{2} \log\left(\frac{t}{2\pi}\right) + \frac{1}{48 t^2} + \mathcal{O}(t^{-4})}$$
 
@@ -39,11 +39,11 @@ $$V(u) = \sum_{n=1}^\infty \ell(n) \mathbf{P}_1 \delta(u - u_n), \quad \mathbf{P
 
 ### 2. Krein-Lifshitz 跡公式與 Fredholm 行列式對數導數
 依據 Krein 譜位移理論，微擾預解式跡差滿足：
-$$\operatorname{Tr}\left( (\mathcal{D} - z I)^{-1} - (\mathcal{D}_0 - z I)^{-1} \right) = -\frac{d}{dz} \log \det\nolimits_{\text{Fredholm}}\left( I + V (\mathcal{D}_0 - z I)^{-1} \right)$$
+$$\mathrm{Tr}\left( (\mathcal{D} - z I)^{-1} - (\mathcal{D}_0 - z I)^{-1} \right) = -\frac{d}{dz} \log \det\nolimits_{\text{Fredholm}}\left( I + V (\mathcal{D}_0 - z I)^{-1} \right)$$
 令微擾 Fredholm 行列式為 $\Delta_X(z) = \det\left( I + V_X R_0(z) \right)$。
 
 計算質數躍變微擾矩陣在對角上的作用：
-$$\log \Delta_X(z) = \operatorname{Tr} \log\left( I + V_X R_0(z) \right) = \sum_{p^k \le e^X} \operatorname{Tr} \log\left( I + \ell(p^k) \mathbf{P}_1 G_0(u_n, u_n; z) \right)$$
+$$\log \Delta_X(z) = \mathrm{Tr} \log\left( I + V_X R_0(z) \right) = \sum_{p^k \le e^X} \mathrm{Tr} \log\left( I + \ell(p^k) \mathbf{P}_1 G_0(u_n, u_n; z) \right)$$
 代入 $G_0(u_n, u_n; z)$ 的正則化主值：
 $$\mathbf{\log \Delta_X(z) = -\sum_{p^k \le e^X} \frac{\log p}{k p^{k(1/2 - i z)}} = -\log \zeta_X\left( \frac{1}{2} - i z \right)}$$
 
@@ -51,7 +51,7 @@ $$\mathbf{\log \Delta_X(z) = -\sum_{p^k \le e^X} \frac{\log p}{k p^{k(1/2 - i z)
 
 ### 3. 完備譜位移函數與 Riemann-von Mangoldt 計數公式全同性（Theorem 145.2，Proven）
 將阿基米德連續譜移與質數微擾譜移疊加，得到全域 Krein 譜位移函數：
-$$\mathbf{\xi_{\mathcal{D}}(t) = \frac{1}{\pi} \vartheta(t) + \frac{1}{\pi} \operatorname{Im} \log \zeta\left( \frac{1}{2} - i t + 0^+ \right) + 1}$$
+$$\mathbf{\xi_{\mathcal{D}}(t) = \frac{1}{\pi} \vartheta(t) + \frac{1}{\pi} \mathrm{Im} \log \zeta\left( \frac{1}{2} - i t + 0^+ \right) + 1}$$
 
 計算其微觀累計台階值：
 $$\mathbf{N}_{\mathcal{D}}(T) = \xi_{\mathcal{D}}(T) = \frac{T}{2\pi}\log\left(\frac{T}{2\pi e}\right) + \frac{7}{8} + S(T) \equiv N(T)}$$

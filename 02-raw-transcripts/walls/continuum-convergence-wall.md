@@ -1,4 +1,4 @@
-# 終極之牆：有限截斷實零點 $\not\implies$ 極限收斂至 $\Xi$ (The Continuum Convergence Wall)
+﻿# 終極之牆：有限截斷實零點 $\not\implies$ 極限收斂至 $\Xi$ (The Continuum Convergence Wall)
 
 > 建立時間：2026-08-14 第十輪研究
 > 核心文獻依據：Groskin 2026a (arXiv:2605.20224), Groskin 2026b (arXiv:2607.02828)
@@ -26,7 +26,7 @@ $$\boxed{ \forall c < \infty, \quad \text{Zeros}(F_c) \subset \mathbb{R} \quad \
 
 ### (C) 帶寬增長下的複平面放大 (High-Frequency Exponential Amplification)
 - 帶寬 $\tau_c = \frac{\ln c}{2\pi} \to \infty$。
-- 向複平面虛部延拓時，evaluation 常數 $e^{\tau_c |\operatorname{Im}(z)|} = c^{\frac{|\operatorname{Im}(z)|}{2\pi}} \to \infty$。
+- 向複平面虛部延拓時，evaluation 常數 $e^{\tau_c |\mathrm{Im}(z)|} = c^{\frac{|\mathrm{Im}(z)|}{2\pi}} \to \infty$。
 - 單純的實軸 $L^2$ 強收斂不能跨越到複平面緊緻集的一致收斂，必須獨立證明指數加權 Resolvent 界限（Combes-Thomas）。
 
 ---
@@ -44,4 +44,4 @@ $$\boxed{ \forall c < \infty, \quad \text{Zeros}(F_c) \subset \mathbb{R} \quad \
 
 要真正封閉此缺口，必須攻克以下兩項純分析定理（而非數值觀察）：
 1. **定理 1**：在不依賴 RH 的前提下，證明半局部 Weil 算子族 $A_c$ 的第一激發態與基態存在統一常數譜隙 $\delta > 0$。
-2. **定理 2**：證明 $A_c$ 滿足指數共軛 Combes-Thomas 估計 $\sup_c \|e^{\eta_0 |D|} (A_c - z)^{-1} e^{-\eta_0 |D|}\| \le \frac{2}{\operatorname{dist}(z, \sigma(A_c))}$。
+2. **定理 2**：證明 $A_c$ 滿足指數共軛 Combes-Thomas 估計 $\sup_c \|e^{\eta_0 |D|} (A_c - z)^{-1} e^{-\eta_0 |D|}\| \le \frac{2}{\mathrm{dist}(z, \sigma(A_c))}$。

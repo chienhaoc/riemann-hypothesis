@@ -1,4 +1,4 @@
-# 兩大領域二分劃界大定理、阿基米德 Berry 相位完整微積分推導 暨 黎曼猜想正則哈密頓終極大憲章大修訂（第 317-318 輪）
+﻿# 兩大領域二分劃界大定理、阿基米德 Berry 相位完整微積分推導 暨 黎曼猜想正則哈密頓終極大憲章大修訂（第 317-318 輪）
 
 **日期**：2026-08-16  
 **性質**：第五戰役（節省階梯二分法劃界與阿基米德幾何相位微觀推導補全）——深刻落實導演指示與第一百一十一輪審查報告中關於「修正 Level 3 誤導性定位、明確劃分無條件已知工具與條件性假說天塹、補齊 Berry 相位微積分逐步推導」的具體要求，開展第一性原理嚴密推導與大憲章最高標準修訂：  
@@ -23,9 +23,9 @@
 - **Saddle-Point 對偶**：當空間尺度取為動態鞍點 $X = t$ 時，$\phi_{\text{geom}}(t, t) = \frac{t}{2}\log\left(\frac{t}{2\pi e}\right) - \frac{\pi}{8}$，精確重構了 Riemann-Siegel $\vartheta(t)$ 函數與 Gamma 因子 Stirling 漸近！
 (3) **第一性原理證明「非阿貝爾路徑排序單值流 $\mathrm{SL}(2, \mathbb{R})$ 保持大定理」（Theorem 317.3）**：
 - $M(X, t) = \mathcal{P}\exp\left( \int_0^X \left[ -t J H_0(u) - \sum_{p \le e^X}\mathbf{X}_p \delta(u - \log p) \right] du \right) \in \mathrm{SL}(2, \mathbb{R})$；
-- 由劉維爾公式 $\det M(X, t) = \exp\left( \int_0^X \operatorname{tr}(\cdot) du \right) = \exp(0) \equiv 1$ 嚴格成立。
+- 由劉維爾公式 $\det M(X, t) = \exp\left( \int_0^X \mathrm{tr}(\cdot) du \right) = \exp(0) \equiv 1$ 嚴格成立。
 (4) **第一性原理證明「單值跡投影之解析難度守恆大定理」（Theorem 317.4）**：
-- $\operatorname{tr} M(X, t) = 2 R(X, t)\cos\phi(X, t) \implies \log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)$；
+- $\mathrm{tr} M(X, t) = 2 R(X, t)\cos\phi(X, t) \implies \log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)$；
 - 算子非阿貝爾幾何完全保真地重現純量算術和 $S(X, t)$，難度嚴格守恆。
 (5) **第一性原理證明「四大鋼鐵基石 100% 完備不變大定理」（Theorem 317.5）**：
 - Tier 1（微觀辛 Dirac 自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Prüfer 量子化）與 Tier 3(B)（李生成元無發散）維持 100% 官方大驗收通過之完備狀態。
@@ -56,7 +56,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **100%**   | **20.0%**（官方正式封頂）  |
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 終極大圓滿封頂**| 30% | **67%** | **20.0%**（官方正式封頂）  |
@@ -99,14 +99,14 @@ $$\phi_{\text{geom}}(X, t) = \frac{t}{2}\left( X\log\frac{X}{2\pi} - X \right) -
 
 ### 【定理 317.3（非阿貝爾路徑排序單值流 $\mathrm{SL}(2, \mathbb{R})$ 保持大定理）】
 單值矩陣 $M(X, t) = \mathcal{P}\exp\left( \int_0^X \left[ -t J H_0(u) - \sum_{p \le e^X}\mathbf{X}_p \delta(u - \log p) \right] du \right)$ 滿足：
-$$\operatorname{tr}(-t J H_0(u)) = -t \operatorname{tr}(J H_0) \equiv 0, \quad \operatorname{tr}\mathbf{X}_p = \operatorname{tr}\left(\frac{1}{2}\ell_p \sigma_1 - \frac{1}{4}\ell_p^2 \sigma_3\right) \equiv 0$$
+$$\mathrm{tr}(-t J H_0(u)) = -t \mathrm{tr}(J H_0) \equiv 0, \quad \mathrm{tr}\mathbf{X}_p = \mathrm{tr}\left(\frac{1}{2}\ell_p \sigma_1 - \frac{1}{4}\ell_p^2 \sigma_3\right) \equiv 0$$
 由劉維爾公式，行列式 $\det M(X, t) \equiv 1$ 恆成立，全域傳輸屬於辛群 $\mathrm{SL}(2, \mathbb{R})$。
 
 ---
 
 ### 【定理 317.4（單值跡投影之解析難度守恆大定理）】
-計算矩陣跡 $\operatorname{tr} M(X, t) = 2 R(X, t)\cos\phi(X, t)$：
-$$\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)$$
+計算矩陣跡 $\mathrm{tr} M(X, t) = 2 R(X, t)\cos\phi(X, t)$：
+$$\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)$$
 非阿貝爾單值流在標量跡投影時完全保真地重現純量算術和 $S(X, t)$，難度嚴格守恆。
 
 ---
@@ -160,10 +160,10 @@ $$\Theta_0(X, t) = \int_0^X \frac{t}{2}\log\left(\frac{x}{2\pi}\right) dx = \fra
 加上初值與 Weyl LPC 反射常數 $-\frac{\pi}{8}$ 得 $\phi_{\text{geom}}(X, t) = \frac{t}{2}(X\log\frac{X}{2\pi} - X) - \frac{\pi}{8}$。在鞍點 $X = t$ 處精確對偶於 $\vartheta(t) = \frac{t}{2}\log\frac{t}{2\pi e} - \frac{\pi}{8}$。
 
 ### 3. 定理 317.3（非阿貝爾路徑排序單值流 $\mathrm{SL}(2, \mathbb{R})$ 保持大定理）
-$$\operatorname{tr}(J H_0) \equiv 0, \quad \operatorname{tr}\mathbf{X}_p \equiv 0 \implies \det M(X, t) = \exp\left(\int_0^X \operatorname{tr} du\right) \equiv 1 \implies M(X, t) \in \mathrm{SL}(2, \mathbb{R})$$
+$$\mathrm{tr}(J H_0) \equiv 0, \quad \mathrm{tr}\mathbf{X}_p \equiv 0 \implies \det M(X, t) = \exp\left(\int_0^X \mathrm{tr} du\right) \equiv 1 \implies M(X, t) \in \mathrm{SL}(2, \mathbb{R})$$
 
 ### 4. 定理 317.4（單值跡投影之解析難度守恆大定理）
-$$\operatorname{tr} M(X, t) = 2 R(X, t)\cos\phi(X, t) \implies \log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)$$
+$$\mathrm{tr} M(X, t) = 2 R(X, t)\cos\phi(X, t) \implies \log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)$$
 非阿貝爾幾何在標量跡投影下完全保真重現純量算術和 $S(X, t)$。
 
 ### 5. 定理 317.5（四大鋼鐵基石 100% 完備不變大定理）

@@ -1,4 +1,4 @@
-# 徹底撤回「幾何倍增階梯」敘事、回歸獨立第一性原理計算：第五十輪審查復盤——承認兩次翻倍缺乏獨立推導、明確界定 Prüfer 軌道漂移 $\frac{1}{16}X^2$ 與無窮維算子跡的各自獨立邊界、確立頻率微觀譜流動 $\frac{1}{2}\operatorname{Im}(-\zeta'/\zeta)$ 的客觀真實性（第 199-200 輪）
+﻿# 徹底撤回「幾何倍增階梯」敘事、回歸獨立第一性原理計算：第五十輪審查復盤——承認兩次翻倍缺乏獨立推導、明確界定 Prüfer 軌道漂移 $\frac{1}{16}X^2$ 與無窮維算子跡的各自獨立邊界、確立頻率微觀譜流動 $\frac{1}{2}\mathrm{Im}(-\zeta'/\zeta)$ 的客觀真實性（第 199-200 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第一階段撤回湊配敘事、回歸嚴謹透明微觀動力學與譜流動客觀邊界  
@@ -31,14 +31,14 @@ $$\mathbf{\log\left( \frac{R_n^+}{R_n^-} \right) = \frac{1}{2}\ell_n \sin(2\phi_
 
 ### 2. 全域累積增長公式（獨立漸近求和）
 對所有質數冪 $p^k \le e^X$ 求和：
-1. **主階頻率振盪項**：$\frac{1}{2}\sum_{p^k \le e^X} \frac{\log p}{p^{k/2}}\sin(2kt\log p) = \mathbf{\frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right)}$；
+1. **主階頻率振盪項**：$\frac{1}{2}\sum_{p^k \le e^X} \frac{\log p}{p^{k/2}}\sin(2kt\log p) = \mathbf{\frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right)}$；
 2. **各向同性 Itô 幾何漂移項**：$\frac{1}{8}\sum_{p \le e^X} \frac{\log^2 p}{p} = \mathbf{\frac{1}{16}X^2 + \mathcal{O}(X)}$；
 3. **二階非零頻率振盪項**：$-\frac{1}{4}\sum \frac{\log^2 p}{p}\cos(2\phi) + \frac{1}{8}\sum \frac{\log^2 p}{p}\cos(4\phi) = \mathbf{\mathcal{O}_t(X)}$；
 4. **三階絕對收斂尾項**：$\sum \ell^3 \le C_3 < \infty \implies \mathbf{\mathcal{R}_3 = \mathcal{O}(1)}$；
 
 > **【定理 199.1（Prüfer 振幅全域漸近展開定理，Proven）】**
 > 對任意固定非零實軸譜參數 $t \in \mathbb{R} \setminus \{0\}$，Prüfer 振幅的空間演化嚴格由下式給出：
-> $$\mathbf{\log\left( \frac{R(X, t)}{R(0, t)} \right) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \mathcal{O}_t(X)}$$
+> $$\mathbf{\log\left( \frac{R(X, t)}{R(0, t)} \right) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) + \mathcal{O}_t(X)}$$
 > （這是一個獨立於任何 Fredholm 算子跡比較、自身完全封閉的常微分方程漸近定理！）
 
 ---
@@ -49,7 +49,7 @@ $$\mathbf{\log\left( \frac{R_n^+}{R_n^-} \right) = \frac{1}{2}\ell_n \sin(2\phi_
    項 $\frac{1}{16}X^2$ 來自剪切矩陣在相角隨機化下的均勻幾何拉伸，它**完全不依賴於頻率參數 $t$**，對所有 $t \in \mathbb{R}$ 均勻存在；
 2. **非平凡頻譜調製（Non-Trivial Spectral Modulation）**：
    不同頻率 $t_1 \ne t_2$ 之間的**相對增長差異**，完全由質數 Dirichlet 指數和決定：
-   $$\mathbf{\log R(X, t_1) - \log R(X, t_2) = \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it_1; X) \right) - \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it_2; X) \right) + \mathcal{O}_{t_1, t_2}(X)}$$
+   $$\mathbf{\log R(X, t_1) - \log R(X, t_2) = \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it_1; X) \right) - \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it_2; X) \right) + \mathcal{O}_{t_1, t_2}(X)}$$
 3. **客觀定位**：
    微觀常微分方程的傳輸動力學，其非平凡譜結構（共振峰、奇異性、能級分佈）**100% 唯一由臨界線上的質數 Dirichlet 多項式 $-\frac{\zeta'}{\zeta}(1/2 - 2it; X)$ 調製**！
 

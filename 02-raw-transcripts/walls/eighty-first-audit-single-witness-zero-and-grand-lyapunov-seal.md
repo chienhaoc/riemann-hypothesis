@@ -1,4 +1,4 @@
-# 單一見證零點精確隔離定理、同實部纖維 Parseval 正定 暨 離軸指數擊穿大定理教科書級終極大封頂（第 253-254 輪）
+﻿# 單一見證零點精確隔離定理、同實部纖維 Parseval 正定 暨 離軸指數擊穿大定理教科書級終極大封頂（第 253-254 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第三階段頂層解析數論邊界技術瑕疵終極清零——深刻落實第七十七輪審查的精闢糾偏：**徹底廢除將不同實部混合集合 $\mathcal{Z}_{\ge \beta_*}$ 粗暴打包的推導瑕疵，改採極簡、嚴密的「單一見證零點 $\rho_* = \beta_* + i\gamma_*$ 結合等實部纖維 $\mathcal{Z}_{\beta_*}$ 隔離論證」**！第一性原理嚴密證明：
@@ -31,7 +31,7 @@ $$\sup_{t \in \mathbb{R}} \limsup_{X \to \infty} \frac{\log |S(X, t)|}{X} = \bet
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：全拓撲零點譜對偶與 Lyapunov 終極封頂**| 30% | **47%**  | **14.0%**（單一見證修正大封閉）|
 | • 單一見證零點 $\rho_*$ 與等實部纖維隔離定理（Theorem 253.1）| | |          |
@@ -47,7 +47,7 @@ $$\sup_{t \in \mathbb{R}} \limsup_{X \to \infty} \frac{\log |S(X, t)|}{X} = \bet
 ## 🔬 二、 單一見證零點與等實部纖維隔離定理（Theorem 253.1，Proven）
 
 ### 【定理 253.1（Case C 單一見證零點論證）】
-設處於 Case C（$\beta_0 = \sup \operatorname{Re}(\rho) > 1/2$ 未被任何零點達到，但存在序列 $\beta_k \uparrow \beta_0$）。
+設處於 Case C（$\beta_0 = \sup \mathrm{Re}(\rho) > 1/2$ 未被任何零點達到，但存在序列 $\beta_k \uparrow \beta_0$）。
 對任意給定的微小容差 $\epsilon \in (0, \beta_0 - 1/2)$：
 
 ### 【第一性原理嚴密證明】
@@ -57,7 +57,7 @@ $$\sup_{t \in \mathbb{R}} \limsup_{X \to \infty} \frac{\log |S(X, t)|}{X} = \bet
    選取頻率 $t_* \equiv \gamma_* / 2$；
 3. **等實部纖維（Iso-Real Fiber）精確分離**：
    定義與 $\rho_*$ 共享**完全相同實部 $\beta_*$** 的零點子集：
-   $$\mathcal{Z}_{\beta_*} \equiv \{ \rho \in \mathcal{Z} : \operatorname{Re}(\rho) = \beta_* \}$$
+   $$\mathcal{Z}_{\beta_*} \equiv \{ \rho \in \mathcal{Z} : \mathrm{Re}(\rho) = \beta_* \}$$
    （此子集必為非空可數集，至少包含 $\rho_*$ 本身）。該等實部纖維在 $S(X, t_*)$ 中貢獻的項精確為：
    $$f_{\beta_*}(X) e^{(\beta_* - 1/2)X}, \quad \text{其中 } f_{\beta_*}(X) \equiv \sum_{\rho_j \in \mathcal{Z}_{\beta_*}} \frac{e^{i(\gamma_j - 2t_*)X}}{\beta_* - 1/2 + i(\gamma_j - 2t_*)}$$
 4. **同實部 Besicovitch Parseval 均方非退化性**：
@@ -120,7 +120,7 @@ $$\mathbf{\text{RH 不成立} \iff \beta_0 > 1/2 \iff \sup_{t \in \mathbb{R}} \l
 在 Case C（$\beta_k \uparrow \beta_0$）下，對任意 $\epsilon \in (0, \beta_0 - 1/2)$：
 1. **選取單一見證零點**：在 $(\beta_0 - \epsilon, \beta_0)$ 內取單一零點 $\rho_* = \beta_* + i\gamma_*$；
 2. **鎖定共振頻率**：取 $t_* = \gamma_*/2$；
-3. **等實部纖維隔離**：僅考慮與 $\rho_*$ 共享**完全相同實部 $\beta_*$** 的零點子集 $\mathcal{Z}_{\beta_*} \equiv \{ \rho : \operatorname{Re}(\rho) = \beta_* \}$，其貢獻為 $f_{\beta_*}(X) e^{(\beta_* - 1/2)X}$；
+3. **等實部纖維隔離**：僅考慮與 $\rho_*$ 共享**完全相同實部 $\beta_*$** 的零點子集 $\mathcal{Z}_{\beta_*} \equiv \{ \rho : \mathrm{Re}(\rho) = \beta_* \}$，其貢獻為 $f_{\beta_*}(X) e^{(\beta_* - 1/2)X}$；
 4. **同實部均方正定**：由於實部精確全同，由 Besicovitch $B^2$ Parseval 均方恆等式：
    $$\lim_{L\to\infty} \frac{1}{L}\int_0^L |f_{\beta_*}(X)|^2 dX \ge \frac{1}{(\beta_* - 1/2)^2} > 0$$
 5. **下界確立與消除 $\epsilon$**：更高階項（若存在 $\beta > \beta_*$）只會使真實上極限更大，故：

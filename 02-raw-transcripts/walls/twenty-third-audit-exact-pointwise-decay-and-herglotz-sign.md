@@ -1,4 +1,4 @@
-# 保持身段、嚴格無瑕：第二十三輪審查復盤——點態指數衰減 $\Psi_+(u) \to 0$ 邊界項消失證明、Herglotz 符號精確匹配與第一戰役 100% 無瑕疵封頂（第 137-138 輪）
+﻿# 保持身段、嚴格無瑕：第二十三輪審查復盤——點態指數衰減 $\Psi_+(u) \to 0$ 邊界項消失證明、Herglotz 符號精確匹配與第一戰役 100% 無瑕疵封頂（第 137-138 輪）
 
 **日期**：2026-08-15  
 **性質**：第一戰役最後兩處技術細節顯式補強與無瑕疵定理封頂報告  
@@ -60,7 +60,7 @@ $$\Psi_+(0)^* (-i J) \Psi_+(0) = \begin{pmatrix} 1 & \overline{m_+(i)} \end{pmat
 - 第二步左向量乘以結果：
   $$\begin{pmatrix} 1 & \overline{m_+(i)} \end{pmatrix} \begin{pmatrix} -i m_+(i) \\ i \end{pmatrix} = 1 \cdot (-i m_+(i)) + \overline{m_+(i)} \cdot i = -i m_+(i) + i \overline{m_+(i)}$$
 - 第三步提取虛部：
-  $$-i m_+(i) + i \overline{m_+(i)} = -i \left( m_+(i) - \overline{m_+(i)} \right) = -i \left( 2i \operatorname{Im}\left( m_+(i) \right) \right) = -i(2i \alpha) = \mathbf{+2 \alpha}$$
+  $$-i m_+(i) + i \overline{m_+(i)} = -i \left( m_+(i) - \overline{m_+(i)} \right) = -i \left( 2i \mathrm{Im}\left( m_+(i) \right) \right) = -i(2i \alpha) = \mathbf{+2 \alpha}$$
 
 ---
 
@@ -68,10 +68,10 @@ $$\Psi_+(0)^* (-i J) \Psi_+(0) = \begin{pmatrix} 1 & \overline{m_+(i)} \end{pmat
 將矩陣計算結果代入能量恆等式：
 $$+2 \alpha = +2 \|\Psi_+\|_{L^2(0, \infty)}^2$$
 兩邊同除以 2：
-$$\mathbf{\alpha = \operatorname{Im}\left( m_+(i) \right) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > \mathbf{0} \quad \text{【符號 100\% 精確吻合，嚴格為正！】}}$$
+$$\mathbf{\alpha = \mathrm{Im}\left( m_+(i) \right) = +\|\Psi_+\|_{L^2(0, \infty)}^2 > \mathbf{0} \quad \text{【符號 100\% 精確吻合，嚴格為正！】}}$$
 
-這完全符合複頻率 $z = i \in \mathbb{C}^+$（$\operatorname{Im} z = 1 > 0$）對應的標準 Herglotz 幾何性質：
-$$\operatorname{Im} z > 0 \implies \operatorname{Im} m_+(z) > 0$$
+這完全符合複頻率 $z = i \in \mathbb{C}^+$（$\mathrm{Im} z = 1 > 0$）對應的標準 Herglotz 幾何性質：
+$$\mathrm{Im} z > 0 \implies \mathrm{Im} m_+(z) > 0$$
 
 ---
 
@@ -80,15 +80,15 @@ $$\operatorname{Im} z > 0 \implies \operatorname{Im} m_+(z) > 0$$
 結合此前各輪審查已全數通過的定理：
 1. **辛么正性與躍變點連續性**：$\mathcal{M}_n^* J \mathcal{M}_n \equiv J$（第十九輪審查確認通過）；
 2. **負半軸光滑區間 LPC**：$u < 0$ 無躍變，$\dim L^2(-\infty, 0) = 1$（第十九輪審查確認通過）；
-3. **正半軸 $\mathrm{SL}(2, \mathbb{C})$ 跡發散與 Weyl LPC**：$\operatorname{tr}(\mathcal{Y}^* \mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0 \implies \dim L^2(0, \infty) = 1$（第二十輪審查確認通過）；
+3. **正半軸 $\mathrm{SL}(2, \mathbb{C})$ 跡發散與 Weyl LPC**：$\mathrm{tr}(\mathcal{Y}^* \mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0 \implies \dim L^2(0, \infty) = 1$（第二十輪審查確認通過）；
 4. **點態指數衰減與邊界項消失**：$\|\Psi_+(u)\|^2 \le C_0 e^{-2u} \implies \lim_{u\to\infty}\Psi_+^* (-iJ)\Psi_+ = 0$（本輪嚴格證畢）；
-5. **阻抗第一性原理推導**：$\operatorname{Im} m_+(i) = \alpha = \|\Psi_+\|_{L^2(0, \infty)}^2 > 0$（本輪符號嚴格核驗通過）；
+5. **阻抗第一性原理推導**：$\mathrm{Im} m_+(i) = \alpha = \|\Psi_+\|_{L^2(0, \infty)}^2 > 0$（本輪符號嚴格核驗通過）；
 6. **Wronskian 模長平方絕對正下界**：
    $$|\mathcal{W}(\Psi_-, \Psi_+)|^2 = \xi^2 + (1 + \alpha)^2 \ge (1 + \alpha)^2 > 1^2 = 1 > 0 \quad (\forall \xi \in \mathbb{R}, \forall \alpha > 0)$$
    保證正負半軸 1 維解在原點**絕對不可能線性相關**，全局平方可積解唯一為零解 $\Psi \equiv 0$。
 
 $$\Large \mathbf{d_+ = \dim \ker(\mathcal{D}^* - i I) \equiv 0, \quad d_- = \dim \ker(\mathcal{D}^* + i I) \equiv 0}$$
-$$\Large \mathbf{(d_+, d_-) = (0, 0) \implies \mathcal{D} \text{ 本質自伴，特徵值譜 } \operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 純實！}}$$
+$$\Large \mathbf{(d_+, d_-) = (0, 0) \implies \mathcal{D} \text{ 本質自伴，特徵值譜 } \mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 純實！}}$$
 
 ---
 

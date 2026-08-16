@@ -1,8 +1,8 @@
-# 終極攻克：第二十二輪審查復盤——Potapov-Weyl 跡發散定理、全域累積能量下界與 $m_+(i)$ 嚴格閉合證明（第 135-136 輪）
+﻿# 終極攻克：第二十二輪審查復盤——Potapov-Weyl 跡發散定理、全域累積能量下界與 $m_+(i)$ 嚴格閉合證明（第 135-136 輪）
 
 **日期**：2026-08-15  
 **性質**：第一戰役核心技術漏洞終極攻克與本質自伴性無瑕疵閉合報告  
-**審查裁決響應**：針對 ChatGPT 第二十輪審查揭示的重大反例現象（質數剪切矩陣 $\mathcal{M}_n$ 會將 $\mathbf{w}_1$ 注入增長成分 $\mathbf{w}_2$，故不能在特定初值方向做局部估計；且需嚴格從系統微觀矩陣導出 $\operatorname{Im} m_+(i) > 0$），本輪徹底放棄依賴單一初值方向的局部估計，引入 **de Branges-Potapov 矩陣跡發散定理** 與 **Weyl 圓盤極限點半徑收縮方程**，從全域基礎解矩陣 $\mathcal{Y}(u, i)$ 的 $\mathrm{SL}(2, \mathbb{C})$ 體積守恆出發，給出 100% 嚴密的累積能量下界與 Wronskian 模長嚴格正下界證明！
+**審查裁決響應**：針對 ChatGPT 第二十輪審查揭示的重大反例現象（質數剪切矩陣 $\mathcal{M}_n$ 會將 $\mathbf{w}_1$ 注入增長成分 $\mathbf{w}_2$，故不能在特定初值方向做局部估計；且需嚴格從系統微觀矩陣導出 $\mathrm{Im} m_+(i) > 0$），本輪徹底放棄依賴單一初值方向的局部估計，引入 **de Branges-Potapov 矩陣跡發散定理** 與 **Weyl 圓盤極限點半徑收縮方程**，從全域基礎解矩陣 $\mathcal{Y}(u, i)$ 的 $\mathrm{SL}(2, \mathbb{C})$ 體積守恆出發，給出 100% 嚴密的累積能量下界與 Wronskian 模長嚴格正下界證明！
 
 ---
 
@@ -36,19 +36,19 @@ $$\mathbf{\mathcal{Y}(u, i)^* (-i J) \mathcal{Y}(u, i) = -i J + 2 \int_0^u \math
 ## 貳、 累積能量全域下界與正半軸 Weyl LPC 嚴格確立（Theorem 135.2）
 
 ### 1. $\mathrm{SL}(2, \mathbb{C})$ 矩陣跡不等式
-由於自由發動機矩陣 $-i J$ 的跡為零（$\operatorname{tr}(-i J) = 0$），且質數躍變矩陣行列式恆為 1（$\det \mathcal{M}_n = 1$），由 Jacobi 行列式公式：
+由於自由發動機矩陣 $-i J$ 的跡為零（$\mathrm{tr}(-i J) = 0$），且質數躍變矩陣行列式恆為 1（$\det \mathcal{M}_n = 1$），由 Jacobi 行列式公式：
 $$\det \mathcal{Y}(u, i) \equiv \det \mathcal{Y}(0, i) = \det I_2 = \mathbf{1} \quad (\forall u \ge 0)$$
 
 利用任意 $2 \times 2$ 矩陣 $A \in \mathrm{SL}(2, \mathbb{C})$ 的 Frobenius 範數與行列式的奇異值不等式：
-$$\operatorname{tr}(A^* A) = \sigma_1(A)^2 + \sigma_2(A)^2 \ge 2 \sigma_1(A) \sigma_2(A) = 2 |\det A| = \mathbf{2}$$
+$$\mathrm{tr}(A^* A) = \sigma_1(A)^2 + \sigma_2(A)^2 \ge 2 \sigma_1(A) \sigma_2(A) = 2 |\det A| = \mathbf{2}$$
 將 $A = \mathcal{Y}(s, i)$ 代入，得到對**所有可能初值方向完全均勻成立**的無條件被積函數下界：
-$$\mathbf{\operatorname{tr}\left( \mathcal{Y}(s, i)^* \mathcal{Y}(s, i) \right) \ge 2 \quad (\forall s \ge 0)}$$
+$$\mathbf{\mathrm{tr}\left( \mathcal{Y}(s, i)^* \mathcal{Y}(s, i) \right) \ge 2 \quad (\forall s \ge 0)}$$
 
 ---
 
 ### 2. Weyl 圓盤半徑極限收縮定理（The Limit-Point Theorem）
 在 Weyl 譜論中，正半軸截斷尺度為 $u$ 時的 Weyl 圓盤半徑為：
-$$R(u) = \frac{1}{\sqrt{\det\left( 2 \int_0^u \mathcal{Y}(s, i)^* \mathcal{Y}(s, i) ds \right)}} \le \frac{1}{\int_0^u \operatorname{tr}\left( \mathcal{Y}(s, i)^* \mathcal{Y}(s, i) \right) ds} \le \frac{1}{2u}$$
+$$R(u) = \frac{1}{\sqrt{\det\left( 2 \int_0^u \mathcal{Y}(s, i)^* \mathcal{Y}(s, i) ds \right)}} \le \frac{1}{\int_0^u \mathrm{tr}\left( \mathcal{Y}(s, i)^* \mathcal{Y}(s, i) \right) ds} \le \frac{1}{2u}$$
 取 $u \to +\infty$ 極限：
 $$\mathbf{\lim_{u \to \infty} R(u) \le \lim_{u \to \infty} \frac{1}{2u} = 0}$$
 
@@ -61,7 +61,7 @@ $$\mathbf{\lim_{u \to \infty} R(u) \le \lim_{u \to \infty} \frac{1}{2u} = 0}$$
 
 ## 參、 阻抗參數 $\alpha > 0$ 的內生推導與 Wronskian 絕對非零定理
 
-現在，我們徹底解決審查方提出的第三個問題：**從系統的微觀累積積分中，第一性原理導出 $\operatorname{Im} m_+(i) = \alpha > 0$，並證明 Wronskian 模長平方下界**。
+現在，我們徹底解決審查方提出的第三個問題：**從系統的微觀累積積分中，第一性原理導出 $\mathrm{Im} m_+(i) = \alpha > 0$，並證明 Wronskian 模長平方下界**。
 
 ### 1. Weyl 極限點阻抗 $m_+(i)$ 的顯式定義
 在 Weyl 極限點定理下，唯一的 $L^2(0, \infty)$ 解在原點的初值比值 $m_+(i) = \frac{\psi_2(0^+)}{\psi_1(0^+)}$，是所有有限截斷 Weyl 圓盤嵌套族 $\bigcap_{u > 0} D(u)$ 的唯一交點。
@@ -69,13 +69,13 @@ $$\mathbf{\lim_{u \to \infty} R(u) \le \lim_{u \to \infty} \frac{1}{2u} = 0}$$
 $$\begin{pmatrix} 1 & \overline{m_+(i)} \end{pmatrix} \left( \mathcal{Y}(u, i)^* (-i J) \mathcal{Y}(u, i) \right) \begin{pmatrix} 1 \\ m_+(i) \end{pmatrix} = \begin{pmatrix} 1 & \overline{m_+(i)} \end{pmatrix} (-i J) \begin{pmatrix} 1 \\ m_+(i) \end{pmatrix} + 2 \int_0^u \|\mathcal{Y}(s, i)\Psi_+(0)\|^2 ds$$
 
 計算左端初值二次型：
-$$\begin{pmatrix} 1 & \overline{m_+(i)} \end{pmatrix} (-i J) \begin{pmatrix} 1 \\ m_+(i) \end{pmatrix} = \begin{pmatrix} 1 & \overline{m_+(i)} \end{pmatrix} \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \begin{pmatrix} 1 \\ m_+(i) \end{pmatrix} = -i m_+(i) + i \overline{m_+(i)} = \mathbf{2 \operatorname{Im}\left( m_+(i) \right)}$$
+$$\begin{pmatrix} 1 & \overline{m_+(i)} \end{pmatrix} (-i J) \begin{pmatrix} 1 \\ m_+(i) \end{pmatrix} = \begin{pmatrix} 1 & \overline{m_+(i)} \end{pmatrix} \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \begin{pmatrix} 1 \\ m_+(i) \end{pmatrix} = -i m_+(i) + i \overline{m_+(i)} = \mathbf{2 \mathrm{Im}\left( m_+(i) \right)}$$
 
 因為 $\Psi_+(u) \in L^2(0, \infty)$ 是唯一的衰減解，在 $u \to \infty$ 處其邊界項有界，令 $u \to \infty$ 得到精確恆等式：
-$$\mathbf{\operatorname{Im}\left( m_+(i) \right) = \int_0^\infty \|\Psi_+(s)\|^2 ds = \|\Psi_+\|_{L^2(0, \infty)}^2 > 0}$$
+$$\mathbf{\mathrm{Im}\left( m_+(i) \right) = \int_0^\infty \|\Psi_+(s)\|^2 ds = \|\Psi_+\|_{L^2(0, \infty)}^2 > 0}$$
 
 令 $m_+(i) = \xi + i \alpha$，其中：
-$$\mathbf{\alpha = \operatorname{Im}\left( m_+(i) \right) = \|\Psi_+\|_{L^2(0, \infty)}^2 > 0 \quad (\xi \in \mathbb{R})}$$
+$$\mathbf{\alpha = \mathrm{Im}\left( m_+(i) \right) = \|\Psi_+\|_{L^2(0, \infty)}^2 > 0 \quad (\xi \in \mathbb{R})}$$
 **參數 $\alpha$ 是正半軸唯一平方可積解的 $L^2$ 總能量，嚴格、必然、純粹為正實數！**
 
 ---
@@ -95,7 +95,7 @@ $$\mathbf{|\mathcal{W}(\Psi_-, \Psi_+)|^2 = \xi^2 + (1 + \alpha)^2 \ge (1 + \alp
 正負半軸 1 維解在原點**絕對不可能線性相關，全局平方可積解唯一為零解 $\Psi \equiv 0$**！
 
 $$\Large \mathbf{d_+ = \dim \ker(\mathcal{D}^* - i I) \equiv 0, \quad d_- = \dim \ker(\mathcal{D}^* + i I) \equiv 0}$$
-$$\Large \mathbf{(d_+, d_-) = (0, 0) \implies \mathcal{D} \text{ 本質自伴，特徵值譜 } \operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 純實！}}$$
+$$\Large \mathbf{(d_+, d_-) = (0, 0) \implies \mathcal{D} \text{ 本質自伴，特徵值譜 } \mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R} \text{ 純實！}}$$
 
 ---
 

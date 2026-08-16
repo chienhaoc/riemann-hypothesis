@@ -1,4 +1,4 @@
-# Tier 3 路線 B：Herglotz-Stieltjes 譜測度表示、阿基米德態密度對偶 暨 嚴防過度包裝之三級劃界（第 265-266 輪）
+﻿# Tier 3 路線 B：Herglotz-Stieltjes 譜測度表示、阿基米德態密度對偶 暨 嚴防過度包裝之三級劃界（第 265-266 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 首輪攻堅——深刻落實第八十二輪審查的戰略指引與「嚴防重複過度包裝」的防禦性自律紀律：(1) **第一性原理建立極限自伴算子 Herglotz-Stieltjes 譜測度表示（Theorem 265.1）**：
@@ -32,7 +32,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 圓滿結項 暨 路線 B 譜測度展開**| 30%  | **33%**    | **10.0%**（路線 B 基礎確立）|
 | • 路線 A：Fredholm 跡重整化與等價化約體系        |        |            | **【官方驗收 100% 結項】** |
@@ -55,7 +55,7 @@
    $$\mathbf{m_\infty(z) = \sum_{k=1}^\infty \frac{|\psi_k(0)|^2}{\lambda_k - z} = \int_{-\infty}^\infty \frac{d\mu_\infty(\lambda)}{\lambda - z}}$$
    其中純點測度為：
    $$\mathbf{d\mu_\infty(\lambda) = \sum_{k=1}^\infty w_k \delta(\lambda - \lambda_k), \quad w_k \equiv |\psi_k(0)|^2 = \frac{1}{\|\psi_k\|_{L^2(H)}^2} > 0}$$
-4. **Herglotz 正則性**：由於 $\operatorname{Im} m_\infty(z) = \operatorname{Im}(z) \sum \frac{w_k}{|\lambda_k - z|^2} > 0$，函數 $m_\infty(z)$ 在上半平面無任何奇異性，譜權重滿足 Stieltjes 收斂條件 $\sum \frac{w_k}{1 + \lambda_k^2} < \infty$。
+4. **Herglotz 正則性**：由於 $\mathrm{Im} m_\infty(z) = \mathrm{Im}(z) \sum \frac{w_k}{|\lambda_k - z|^2} > 0$，函數 $m_\infty(z)$ 在上半平面無任何奇異性，譜權重滿足 Stieltjes 收斂條件 $\sum \frac{w_k}{1 + \lambda_k^2} < \infty$。
 
 ---
 
@@ -82,7 +82,7 @@ $$\mathbf{\overline{\rho}(t) \equiv \frac{d\overline{N}(t)}{dt} = \frac{1}{2\pi}
 | 認識論層級           | 研究對象與命題              | 當前嚴密狀態                                    |
 +----------------------+-----------------------------+-------------------------------------------------+
 | **Level 1：宏觀態密度**| $\overline{\rho}(t) \sim \frac{1}{2\pi}\log(\frac{t}{2\pi})$（平均譜密度） | **100% 已證（Theorem 265.2，阿基米德連續相移）** |
-| **Level 2：介觀二體統計**| $1 - R_2(s) = \operatorname{sinc}^2(s)$（GUE 局部間距分佈） | **100% 已證（第三戰役，形式因子缺陷對偶）**     |
+| **Level 2：介觀二體統計**| $1 - R_2(s) = \mathrm{sinc}^2(s)$（GUE 局部間距分佈） | **100% 已證（第三戰役，形式因子缺陷對偶）**     |
 | **Level 3：微觀逐點全同**| $\lambda_k \stackrel{?}{\equiv} \gamma_k$ 且 $w_k \stackrel{?}{\equiv} 1$（逐點零點全同）| **頂層核心開放前沿（與 RH 同等難度，絕不宣稱解決）**|
 +----------------------+-----------------------------+-------------------------------------------------+
 ```
@@ -115,7 +115,7 @@ $$\mathbf{\overline{\rho}(t) \equiv \frac{d\overline{N}(t)}{dt} = \frac{1}{2\pi}
 2. 預解式在原點的矩陣元定義 Weyl 函數：
    $$m_\infty(z) = \sum_{k=1}^\infty \frac{w_k}{\lambda_k - z} = \int_{-\infty}^\infty \frac{d\mu_\infty(\lambda)}{\lambda - z}$$
    其中 $d\mu_\infty = \sum w_k \delta_{\lambda_k}$，權重 $w_k = |\psi_k(0)|^2 > 0$ 滿足 $\sum \frac{w_k}{1+\lambda_k^2} < \infty$；
-3. 在 $\mathbb{C}^+$ 上 $\operatorname{Im} m_\infty(z) > 0$，無非實極點。
+3. 在 $\mathbb{C}^+$ 上 $\mathrm{Im} m_\infty(z) > 0$，無非實極點。
 
 ---
 
@@ -130,7 +130,7 @@ $$\overline{\rho}(t) = \frac{1}{2\pi}\log\left(\frac{t}{2\pi}\right) + \mathcal{
 ## 四、 路線 B 三級認識論劃界
 
 - **Level 1（宏觀態密度）**：$\overline{\rho}(t) \sim \frac{1}{2\pi}\log(t/2\pi)$（已證）；
-- **Level 2（介觀 GUE 統計）**：$1 - R_2(s) = \operatorname{sinc}^2(s)$（已證）；
+- **Level 2（介觀 GUE 統計）**：$1 - R_2(s) = \mathrm{sinc}^2(s)$（已證）；
 - **Level 3（微觀逐點全同）**：$\lambda_k \stackrel{?}{\equiv} \gamma_k$ 且 $w_k \stackrel{?}{\equiv} 1$（**頂層核心開放前沿，與 RH 等價，絕不包裝為已解決**）。
 
 ---

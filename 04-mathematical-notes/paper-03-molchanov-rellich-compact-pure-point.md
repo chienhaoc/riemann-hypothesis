@@ -1,4 +1,4 @@
-# Paper 3: Molchanov Potential Well Divergence and Rellich-Kondrachov Compact Pure Point Spectrum of the Dirac Limit Operator
+﻿# Paper 3: Molchanov Potential Well Divergence and Rellich-Kondrachov Compact Pure Point Spectrum of the Dirac Limit Operator
 # 論文三：Molchanov 勢阱發散與 Dirac 極限算子的 Rellich-Kondrachov 緊預解式純點譜定理
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -9,9 +9,9 @@
 
 ### Abstract / 摘要
 
-**English**: We analyze the spectral decomposition of the self-adjoint Dirac Hamiltonian $\mathcal{D}_\infty$ with an asymptotically divergent Archimedean-prime background matrix potential $V(u) \sim \frac{u}{8}I_2$ as $u \to \infty$. By applying Molchanov's discreteness criterion and the Rellich-Kondrachov Sobolev embedding theorem, we prove that the operator domain $\mathcal{D}(\mathcal{D}_\infty)$ equipped with the graph norm is compactly embedded into $\mathcal{H} = L^2([0, \infty); \mathbb{C}^2)$. Consequently, the resolvent operator $(\mathcal{D}_\infty - z)^{-1}$ belongs to the Schatten compact ideal $\mathfrak{S}_\infty$. This rigorously establishes that the essential spectrum is empty, $\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset$, and the spectrum consists purely of discrete, isolated real eigenvalues of finite multiplicity: $\operatorname{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$.
+**English**: We analyze the spectral decomposition of the self-adjoint Dirac Hamiltonian $\mathcal{D}_\infty$ with an asymptotically divergent Archimedean-prime background matrix potential $V(u) \sim \frac{u}{8}I_2$ as $u \to \infty$. By applying Molchanov's discreteness criterion and the Rellich-Kondrachov Sobolev embedding theorem, we prove that the operator domain $\mathcal{D}(\mathcal{D}_\infty)$ equipped with the graph norm is compactly embedded into $\mathcal{H} = L^2([0, \infty); \mathbb{C}^2)$. Consequently, the resolvent operator $(\mathcal{D}_\infty - z)^{-1}$ belongs to the Schatten compact ideal $\mathfrak{S}_\infty$. This rigorously establishes that the essential spectrum is empty, $\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset$, and the spectrum consists purely of discrete, isolated real eigenvalues of finite multiplicity: $\mathrm{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$.
 
-**中文**：本文分析了具有漸近發散阿基米德-質數背景矩陣勢 $V(u) \sim \frac{u}{8}I_2$（$u \to \infty$）的自伴 Dirac 哈密頓算子 $\mathcal{D}_\infty$ 的譜分解。透過應用 Molchanov 離散譜準則與 Rellich-Kondrachov Sobolev 緊嵌入定理，我們證明了賦予圖像範數的算子定義域 $\mathcal{D}(\mathcal{D}_\infty)$ 緊緻嵌入於希爾伯特空間 $\mathcal{H} = L^2([0, \infty); \mathbb{C}^2)$ 中。因此，預解式算子 $(\mathcal{D}_\infty - z)^{-1}$ 屬於 Schatten 緊算子理想 $\mathfrak{S}_\infty$。這嚴格確立了本質譜為空 $\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset$，且算子譜完全由有限重數的離散孤立實特徵值構成：$\operatorname{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$。
+**中文**：本文分析了具有漸近發散阿基米德-質數背景矩陣勢 $V(u) \sim \frac{u}{8}I_2$（$u \to \infty$）的自伴 Dirac 哈密頓算子 $\mathcal{D}_\infty$ 的譜分解。透過應用 Molchanov 離散譜準則與 Rellich-Kondrachov Sobolev 緊嵌入定理，我們證明了賦予圖像範數的算子定義域 $\mathcal{D}(\mathcal{D}_\infty)$ 緊緻嵌入於希爾伯特空間 $\mathcal{H} = L^2([0, \infty); \mathbb{C}^2)$ 中。因此，預解式算子 $(\mathcal{D}_\infty - z)^{-1}$ 屬於 Schatten 緊算子理想 $\mathfrak{S}_\infty$。這嚴格確立了本質譜為空 $\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset$，且算子譜完全由有限重數的離散孤立實特徵值構成：$\mathrm{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$。
 
 ---
 
@@ -36,7 +36,7 @@ $$\iota : \mathcal{D}(\mathcal{D}_\infty) \hookrightarrow L^2([0, \infty); \math
 *The resolvent $(\mathcal{D}_\infty - z)^{-1}$ is compact for all $z \in \rho(\mathcal{D}_\infty)$. Therefore:*
 $$\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset, \quad \sigma_{\text{ac}}(\mathcal{D}_\infty) = \emptyset, \quad \sigma_{\text{sc}}(\mathcal{D}_\infty) = \emptyset$$
 *The spectrum consists exclusively of a countably infinite set of real eigenvalues without finite accumulation points:*
-$$\operatorname{Spec}(\mathcal{D}_\infty) = \{\lambda_n\}_{n=1}^\infty \subset \mathbb{R}, \quad \lim_{n\to\infty} |\lambda_n| = \infty$$
+$$\mathrm{Spec}(\mathcal{D}_\infty) = \{\lambda_n\}_{n=1}^\infty \subset \mathbb{R}, \quad \lim_{n\to\infty} |\lambda_n| = \infty$$
 
 ---
 

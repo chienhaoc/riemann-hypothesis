@@ -1,4 +1,4 @@
-# 正則哈密頓微觀辛幾何與黎曼猜想化約體系：全域研究成果總彙編與論文專題系列大綱
+﻿# 正則哈密頓微觀辛幾何與黎曼猜想化約體系：全域研究成果總彙編與論文專題系列大綱
 
 **專題名稱**：*Microscopic Symplectic Dirac Geometry, Regularized Multi-Center Scattering, and the Continuum Transference Barrier of the Riemann Hypothesis*  
 **編撰日期**：2026-08-16  
@@ -14,7 +14,7 @@
 ### 📄 論文 1：一維辛 Dirac 算子的 Potapov 跡發散與 Weyl 極限點分類
 - **核心定理**：
   - 辛微分算子定義：$\mathcal{D} = J \frac{d}{du} + V(u)$，其中 $J = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$，作用於 $\mathcal{H} = L^2(\mathbb{R}, du; \mathbb{C}^2)$；
-  - 基礎解矩陣 $\mathcal{Y}(u, z)$ 在正半軸上的 Potapov 跡單調發散定理：$\operatorname{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2$；
+  - 基礎解矩陣 $\mathcal{Y}(u, z)$ 在正半軸上的 Potapov 跡單調發散定理：$\mathrm{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2$；
   - Weyl 圓盤半徑幾何收縮：$R(u) \le \frac{1}{2u} \to 0$，無條件確立正半軸處於 Weyl 極限點情況（Limit Point Case, LPC）。
 
 ### 論文 2：辛邊界不變量消失與 von Neumann 虧指數 $(0,0)$ 定理
@@ -22,14 +22,14 @@
   - 3 行 Cauchy-Schwarz 幾何平均反證法：對任意 $\Psi_+ \in \mathcal{D}(\mathcal{D}^*)$，無窮遠辛邊界項嚴密消失 $\lim_{u\to\infty} \Psi_+^*(u)(-iJ)\Psi_+(u) \equiv 0$；
   - 正性二次型構造：$\alpha = \|\Psi_+\|_{L^2}^2 > 0 \implies |W|^2 = \xi^2 + (1+\alpha)^2 \ge 1 > 0$；
   - 實係數共軛對合對稱性 $\mathcal{DC} = \mathcal{CD} \implies \dim\mathcal{K}_+ = \dim\mathcal{K}_- = 0$；
-  - 嚴密確立極限算子本質自伴性，$\operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$。
+  - 嚴密確立極限算子本質自伴性，$\mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$。
 
 ### 論文 3：Molchanov 勢阱發散與 Rellich-Kondrachov 緊預解式純點譜定理
 - **核心定理**：
   - 質數對數尺度下的位勢發散：$W(u) \sim \frac{u}{8} \to \infty$；
   - 算子定義域緊嵌入：$\mathcal{D}(\mathcal{D}_\infty) \underset{\text{compact}}{\hookrightarrow} L^2([0, \infty); \mathbb{C}^2)$；
   - 預解式 Schatten 緊性：$(\mathcal{D}_\infty - z)^{-1} \in \mathfrak{S}_\infty$；
-  - 本質譜為空定理：$\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset \implies \sigma_{\text{ac}} = \emptyset, \sigma_{\text{sc}} = \emptyset, \operatorname{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$。
+  - 本質譜為空定理：$\sigma_{\text{ess}}(\mathcal{D}_\infty) = \emptyset \implies \sigma_{\text{ac}} = \emptyset, \sigma_{\text{sc}} = \emptyset, \mathrm{Spec}(\mathcal{D}_\infty) = \sigma_{\text{pp}} \subset \mathbb{R}$。
 
 ---
 
@@ -48,14 +48,14 @@
   - 2-類發散判定：$\|V R_0\|_2^2 \sim \frac{1}{4}X^2 \to \infty \implies V R_0 \notin \mathfrak{S}_2$；
   - 3-類絕對收斂：$\sum_{p} \frac{\log^3 p}{p^{3/2}} < C_3 \approx 15.9143 < \infty \implies V R_0 \in \mathfrak{S}_3$；
   - 正則化 Fredholm 行列式分解：$\det_3(I + V_X R_0(z)) \equiv E_X(z) \exp(\mathcal{C}_2(X, z))$；
-  - 一階跡辛對稱恆零 $\operatorname{Tr}(V_X R_0) \equiv 0$ 與二階色散核係數 $-\frac{z^2}{8}$ 之精確閉式。
+  - 一階跡辛對稱恆零 $\mathrm{Tr}(V_X R_0) \equiv 0$ 與二階色散核係數 $-\frac{z^2}{8}$ 之精確閉式。
 
 ### 論文 6：Prüfer 振幅微觀動力學、Itô 漂移與質數諧波相消
 - **核心定理**：
   - Prüfer 振幅微分躍變之 Itô 幾何漂移：$\mathcal{S}_{\text{drift}}(X) = \frac{1}{16}X^2 + \mathcal{O}(X)$；
   - 基於 Hadamard-de la Vallée Poussin PNT 零點自由區 $\zeta(1-i\omega) \ne 0$ 的 5 步 Abel 分部求和；
   - 二階質數諧波和界：$\sum_{p \le e^X} \frac{\log^2 p}{p}\cos(\omega\log p) = \mathcal{O}_\omega(X)$；
-  - Prüfer 振幅漸近公式：$\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left(-\frac{\zeta'}{\zeta}(\frac{1}{2}-2it; X)\right) + \mathcal{O}_t(X)$。
+  - Prüfer 振幅漸近公式：$\log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}\left(-\frac{\zeta'}{\zeta}(\frac{1}{2}-2it; X)\right) + \mathcal{O}_t(X)$。
 
 ---
 
@@ -106,7 +106,7 @@
 - **核心定理**：
   - Magnus 雙曲定義域：$\mathcal{D}_{\text{hyp}}(X) = \{|W| < \frac{1}{2}X^2\}$，Chebyshev 測度下界 $\mathbb{P} \ge \frac{3}{4}$；
   - 單值矩陣奇異值倒數對稱性：$s_1 s_2 \equiv 1$ 暨相空間橢圓面積 $\mathcal{A} = \pi s_1 s_2 \equiv \pi$ 嚴格守恆；
-  - Oseledets 陪域測度滿秩引理：$\operatorname{Leb}(\mathcal{E}_X(c)) \le \frac{C}{X}e^{-cX^2} \to 0 \implies \log R_1 = \log s_1 + \mathcal{O}_t(1)$ 幾乎處處成立。
+  - Oseledets 陪域測度滿秩引理：$\mathrm{Leb}(\mathcal{E}_X(c)) \le \frac{C}{X}e^{-cX^2} \to 0 \implies \log R_1 = \log s_1 + \mathcal{O}_t(1)$ 幾乎處處成立。
 
 ---
 
@@ -116,23 +116,23 @@
 
 ### 論文 13：Riemann-Stieltjes 分部積分與算子預解式無條件均方色散抵消
 - **核心定理**：
-  - 二階色散核分解：$\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
+  - 二階色散核分解：$\mathrm{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
   - 精確 Riemann-Stieltjes 分部積分：$\int_0^T t^2 |S|^2 dt = [t^2 F]_0^T - \int 2t F dt = \frac{1}{2}X^2 T^3 - \frac{1}{3}X^2 T^3 = \frac{1}{6}X^2 T^3 + \mathcal{O}(X T^3)$；
   - 無條件均方色散精確歸零：$-\frac{1}{8T}\left(\frac{1}{6}X^2 T^3\right) + \frac{X^2}{16T}\left(\frac{1}{3}T^3\right) = -\frac{1}{48}X^2 T^2 + \frac{1}{48}X^2 T^2 \equiv 0\cdot X^2 T^2 + \mathcal{O}(X T^2)$。
 
 ### 論文 14：算子-數論對偶體系之四象限認識論劃界大定理
 - **核心定理**：
-  - **象限 I（無條件統計均方）**：$\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$（微積分客觀事實，無需 RH）；
-  - **象限 II（無條件逐點界）**：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}}) \implies |\operatorname{Re}\mathcal{C}_2|_{\text{uncond}} \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$（直接最緊界）；
-  - **象限 III（條件性 RH 逐點界）**：【以 RH 為前提】$|S(X, t_0)| \le C_{t_0}X \implies \operatorname{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
+  - **象限 I（無條件統計均方）**：$\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$（微積分客觀事實，無需 RH）；
+  - **象限 II（無條件逐點界）**：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}}) \implies |\mathrm{Re}\mathcal{C}_2|_{\text{uncond}} \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$（直接最緊界）；
+  - **象限 III（條件性 RH 逐點界）**：【以 RH 為前提】$|S(X, t_0)| \le C_{t_0}X \implies \mathrm{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
   - **象限 IV（條件性 RH 均方自洽）**：方差 $\sigma^2(X) = \frac{1}{2}X^2$ 與 RMS $\frac{X}{\sqrt{2}}$ 保持自洽。
 
 ### 論文 15：de Branges 空間鏈等距嵌入與連續極限傳遞障壁（Groskin 牆）
 - **核心定理**：
   - de Branges 空間鏈等距嵌入：$\mathcal{H}(E_{X_1}) \hookrightarrow \mathcal{H}(E_{X_2})$（$\forall X_1 < X_2$）；
-  - Hurwitz 極限整函數全實零點：$\mathcal{E}_X(z) \to \mathcal{E}_\infty(z) \in \mathcal{HB} \implies \operatorname{Zeros}(\mathcal{E}_\infty) = \operatorname{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$；
+  - Hurwitz 極限整函數全實零點：$\mathcal{E}_X(z) \to \mathcal{E}_\infty(z) \in \mathcal{HB} \implies \mathrm{Zeros}(\mathcal{E}_\infty) = \mathrm{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$；
   - 連續極限傳遞障壁（Groskin 牆）精確等價性：
-    $$\mathbf{\mathcal{E}_\infty(z) \leftrightarrow \Xi(z) \iff \operatorname{Re}\mathcal{C}_2(X, t) \le \mathcal{O}_t(X^2) \iff |S(X, t)| \le \mathcal{O}_t(X)}$$
+    $$\mathbf{\mathcal{E}_\infty(z) \leftrightarrow \Xi(z) \iff \mathrm{Re}\mathcal{C}_2(X, t) \le \mathcal{O}_t(X^2) \iff |S(X, t)| \le \mathcal{O}_t(X)}$$
   - 確立了算子譜實性與黎曼猜想數論實質之間的精確等價性與難度守恆律。
 
 ---

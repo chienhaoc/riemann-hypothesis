@@ -1,4 +1,4 @@
-# Prüfer 軌道、$\mathrm{SL}(2, \mathbb{R})$ 矩陣範數與 Hilbert-Schmidt 跡的幾何倍增階梯字典：第四十九輪審查復盤——澄清 $\frac{1}{16}X^2 \xrightarrow{\times 2} \frac{1}{8}X^2 \xrightarrow{\times 2} \frac{1}{4}X^2$ 的維度倍增本質、建立微觀-宏觀嚴密對應字典與散射矩陣精確流動方程（第 197-198 輪）
+﻿# Prüfer 軌道、$\mathrm{SL}(2, \mathbb{R})$ 矩陣範數與 Hilbert-Schmidt 跡的幾何倍增階梯字典：第四十九輪審查復盤——澄清 $\frac{1}{16}X^2 \xrightarrow{\times 2} \frac{1}{8}X^2 \xrightarrow{\times 2} \frac{1}{4}X^2$ 的維度倍增本質、建立微觀-宏觀嚴密對應字典與散射矩陣精確流動方程（第 197-198 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第一階段微觀軌道與宏觀算子跡精確幾何維度字典確立  
@@ -24,7 +24,7 @@ $$\mathbf{\log R(X, t) \sim \mathcal{S}_{\text{drift}}(X) = \frac{1}{8}\left( \f
 傳輸矩陣 $\mathcal{Y}(X, t)$ 作用於二維旋量空間，滿足 $\det \mathcal{Y}(X, t) \equiv 1$。
 設其奇異值為 $\sigma_1(X) \ge 1 \ge \sigma_2(X) = 1/\sigma_1(X)$。
 主奇異值 $\sigma_1(X)$ 的增長對應於最大 Lyapunov 射線，滿足 $\sigma_1(X) \sim R(X, t) \sim e^{\frac{1}{16}X^2}$。
-計算傳輸矩陣的 Frobenius 範數平方 $\|\mathcal{Y}(X, t)\|_F^2 = \operatorname{Tr}(\mathcal{Y}^T \mathcal{Y})$：
+計算傳輸矩陣的 Frobenius 範數平方 $\|\mathcal{Y}(X, t)\|_F^2 = \mathrm{Tr}(\mathcal{Y}^T \mathcal{Y})$：
 $$\|\mathcal{Y}(X, t)\|_F^2 = \sigma_1(X)^2 + \sigma_2(X)^2 = e^{2 \times \frac{1}{16}X^2} + e^{-2 \times \frac{1}{16}X^2} \sim e^{\frac{1}{8}X^2}$$
 取對數得傳輸矩陣的能量增長率：
 $$\mathbf{\log\|\mathcal{Y}(X, t)\|_F^2 \sim 2 \log R(X, t) \sim \frac{1}{8}X^2 \quad (\text{2D 矩陣範數平方漂移階數})}$$
@@ -33,7 +33,7 @@ $$\mathbf{\log\|\mathcal{Y}(X, t)\|_F^2 \sim 2 \log R(X, t) \sim \frac{1}{8}X^2 
 ### 3. 無窮維 $L^2(0, X; \mathbb{C}^2)$ 積分核 Hilbert-Schmidt 跡範數（Infinite-D Operator）
 算子 $V_X R_0$ 是作用在 $L^2(0, X; \mathbb{C}^2)$ 上的積分算子，具有 2-分量旋量結構。
 其 Hilbert-Schmidt 範數平方為雙重空間積分：
-$$\|V_X R_0\|_{\mathfrak{S}_2}^2 = \sum_{m, n} \ell_m \ell_n \operatorname{Tr}_{\mathbb{C}^2}\left( P_m R_0(u_m, u_n) P_n R_0(u_n, u_m) \right)$$
+$$\|V_X R_0\|_{\mathfrak{S}_2}^2 = \sum_{m, n} \ell_m \ell_n \mathrm{Tr}_{\mathbb{C}^2}\left( P_m R_0(u_m, u_n) P_n R_0(u_n, u_m) \right)$$
 在第二十九輪的獨立高精度核算中，2-分量旋量跡與雙重上三角求和給出：
 $$\mathbf{\|V_X R_0\|_{\mathfrak{S}_2}^2 = 2 \times \left( \frac{1}{2} \log\|\mathcal{Y}\|_F^2 \right) \sim 2 \times \frac{1}{8}X^2 = \frac{1}{4}X^2 \quad (\text{無窮維 Hilbert-Schmidt 跡})}$$
 （從 2D 單點傳輸矩陣到連續空間 2-分量雙重積分核，係數**再次精確翻倍 $\times 2$**：$\frac{1}{8} \times 2 = \frac{1}{4}$！）
@@ -76,13 +76,13 @@ $$\mathbf{\|V_X R_0\|_{\mathfrak{S}_2}^2 = 2 \times \left( \frac{1}{2} \log\|\ma
 在建立上述精確幾何字典後，微觀與宏觀的物理流動完全封閉：
 
 1. **單軌道正規化振幅**：
-   $$\mathbf{R_{\text{reg}}(X, t) \equiv R(X, t) \exp\left( -\frac{1}{16}X^2 \right) = \exp\left( \frac{1}{2}\operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) \right) \cdot \mathcal{O}(e^{\mathcal{O}_t(X)})}$$
+   $$\mathbf{R_{\text{reg}}(X, t) \equiv R(X, t) \exp\left( -\frac{1}{16}X^2 \right) = \exp\left( \frac{1}{2}\mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) \right) \cdot \mathcal{O}(e^{\mathcal{O}_t(X)})}$$
 2. **傳輸矩陣正規化 Frobenius 範數**：
-   $$\mathbf{\|\mathcal{Y}_{\text{reg}}(X, t)\|_F^2 \equiv \|\mathcal{Y}(X, t)\|_F^2 \exp\left( -\frac{1}{8}X^2 \right) = \exp\left( \operatorname{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) \right) \cdot \mathcal{O}(1)}$$
+   $$\mathbf{\|\mathcal{Y}_{\text{reg}}(X, t)\|_F^2 \equiv \|\mathcal{Y}(X, t)\|_F^2 \exp\left( -\frac{1}{8}X^2 \right) = \exp\left( \mathrm{Im}\left( -\frac{\zeta'}{\zeta}(1/2 - 2it; X) \right) \right) \cdot \mathcal{O}(1)}$$
 3. **宏觀 Fredholm 正規化行列式**：
    $$\mathbf{\det{}_3(I + V_X R_0) \equiv \det(I + V_X R_0) \exp\left( -\frac{1}{4}X^2 \right) \cdot \dots}$$
 
-> **【定理 197.3 結論】在各自層級剔除對應的幾何漂移因子後，所有微觀、介觀與宏觀物理量，其非平凡振盪與譜奇異性特徵，均無一例外、精確同構地由臨界線質數 Dirichlet 指數和 $\operatorname{Im}(-\zeta'/\zeta(1/2-2it; X))$ 唯一統御！**
+> **【定理 197.3 結論】在各自層級剔除對應的幾何漂移因子後，所有微觀、介觀與宏觀物理量，其非平凡振盪與譜奇異性特徵，均無一例外、精確同構地由臨界線質數 Dirichlet 指數和 $\mathrm{Im}(-\zeta'/\zeta(1/2-2it; X))$ 唯一統御！**
 
 ---
 

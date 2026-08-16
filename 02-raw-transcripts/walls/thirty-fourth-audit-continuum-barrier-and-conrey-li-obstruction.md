@@ -1,4 +1,4 @@
-# 終極障礙客觀解構與非局部性屏障：第三十一輪審查復盤——徹底拔除「世紀會師」虛假宣稱、標定 $X \to \infty$ 連續極限之牆（Conrey-Li 逆定理與 Lagarias 非局部性屏障）與第二戰役真實數學邊界（第 159-160 輪）
+﻿# 終極障礙客觀解構與非局部性屏障：第三十一輪審查復盤——徹底拔除「世紀會師」虛假宣稱、標定 $X \to \infty$ 連續極限之牆（Conrey-Li 逆定理與 Lagarias 非局部性屏障）與第二戰役真實數學邊界（第 159-160 輪）
 
 **日期**：2026-08-15  
 **性質**：第二戰役終極數學障礙（The Continuum Convergence Wall）全景解構與科學定錨報告  
@@ -10,10 +10,10 @@
 
 1. **徹底撤回「$\Xi_\infty(z) \equiv \frac{\xi(1/2 - iz)}{\xi(1/2)}$ 已經證立」的虛妄宣稱**：
    - 承認在上一輪報告中，將有限截斷的 $E_X(z)$ 過渡到 $X \to \infty$ 的極限時，僅用一個「$\equiv$」符號直接跳過了連續極限收斂性證明；
-   - 承認第一戰役的「自伴純實譜 $\operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$」**目前只獨立屬於構造算子 $\mathcal{D}$ 本身**，在嚴格證明 $\Xi_\infty(z) \equiv \xi(1/2 - iz)$ 之前，**絕對不等於證明了黎曼猜想**！
+   - 承認第一戰役的「自伴純實譜 $\mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$」**目前只獨立屬於構造算子 $\mathcal{D}$ 本身**，在嚴格證明 $\Xi_\infty(z) \equiv \xi(1/2 - iz)$ 之前，**絕對不等於證明了黎曼猜想**！
 
 2. **承認深空漸近的局限性**：
-   - 深空 $\operatorname{Re}(s) > 1$ 的漸近吻合只是確認了有限系統 $\mathcal{D}_X$ 的構造符合 Euler 乘積的設計初衷，**無法自動跨越 $X \to \infty$ 在臨界線 $\operatorname{Re}(s)=1/2$ 上的相變障礙**。
+   - 深空 $\mathrm{Re}(s) > 1$ 的漸近吻合只是確認了有限系統 $\mathcal{D}_X$ 的構造符合 Euler 乘積的設計初衷，**無法自動跨越 $X \to \infty$ 在臨界線 $\mathrm{Re}(s)=1/2$ 上的相變障礙**。
 
 ---
 

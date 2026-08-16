@@ -1,4 +1,4 @@
-# 質數 Dirichlet 多項式典型方差 $\sim X$ 的客觀誠實承認、$\ell^2$ 不可和性微擾風險剖析 暨 頻域譜平均（Spectral Averaging）的真正泛函路徑定錨：第五十五輪審查復盤（第 209-210 輪）
+﻿# 質數 Dirichlet 多項式典型方差 $\sim X$ 的客觀誠實承認、$\ell^2$ 不可和性微擾風險剖析 暨 頻域譜平均（Spectral Averaging）的真正泛函路徑定錨：第五十五輪審查復盤（第 209-210 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段難度層級客觀誠實標注——承認 $S(X, t)$ 典型隨機波動為 $\sim X$、剖析 $\sum\ell_n^2=\infty$ 的微擾風險、確立頻域譜平均的嚴密泛函分析路徑  
@@ -50,7 +50,7 @@ $$\int_{T_1}^{T_2} |S(X, t)|^2 dt = \sum_{p, q \le e^X} \frac{\log p}{\sqrt{p}} 
 
 ### 2. Simon-Last 譜測度弱收斂與絕對連續密度下界
 由 Aronszajn-Donoghue 譜平均原理，邊界譜測度 $d\mu_\infty(t)$ 在頻帶 $[T_1, T_2]$ 上的總能量是由頻率積分平均所控制的，而非取決於單點最壞波動：
-$$\mathbf{\int_{T_1}^{T_2} \frac{d\mu_{\text{ac}}}{dt}(t) dt = \lim_{\epsilon \to 0^+} \frac{1}{\pi} \int_{T_1}^{T_2} \operatorname{Im} m_\infty(t + i\epsilon) dt > 0}$$
+$$\mathbf{\int_{T_1}^{T_2} \frac{d\mu_{\text{ac}}}{dt}(t) dt = \lim_{\epsilon \to 0^+} \frac{1}{\pi} \int_{T_1}^{T_2} \mathrm{Im} m_\infty(t + i\epsilon) dt > 0}$$
 在第三戰役（Rounds 185-190，ChatGPT Review 46 正式驗收）中，我們已證明在全上半平面 $\mathbb{C}^+$ 上 Grönwall 累積能量具有一致正下界 $E(X, z) \ge c_0(z) e^{2\epsilon X} > 0$。
 透過頻帶譜平均，**微觀隨機遊走 $\mathcal{O}_t(X)$ 在宏觀頻率積分下被均勻平滑，保證了絕對連續譜測度在頻帶上的總測度非零（$\mu_{\text{ac}}([T_1, T_2]) > 0$）**！
 

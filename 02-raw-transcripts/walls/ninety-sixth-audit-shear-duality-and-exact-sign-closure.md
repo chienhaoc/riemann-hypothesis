@@ -1,4 +1,4 @@
-# 上/下三角剪切對偶矩陣 $M_p^\pm$ 第一性原理精確代入定理、三大二階項符號嚴密消解、漂移不變性 $\frac{1}{16}X^2$ 暨 六大核心定理全景無瑕大封頂（第 283-284 輪）
+﻿# 上/下三角剪切對偶矩陣 $M_p^\pm$ 第一性原理精確代入定理、三大二階項符號嚴密消解、漂移不變性 $\frac{1}{16}X^2$ 暨 六大核心定理全景無瑕大封頂（第 283-284 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 終極微觀符號消解與多面向深度自審大封頂——深刻落實導演「必須進行多面向深度自我審查、先出具自審報告再提交」的指示，第一性原理嚴密透明展示每一步代入計算，徹底消解上/下三角剪切矩陣的符號對偶：  
@@ -18,8 +18,8 @@
 (3) **證明「二階諧波項 Abel 耗散定理」（Theorem 283.3）**：
   不論符號為 $\pm\frac{1}{4}\ell_p^2\cos(2\phi)$，由 PNT 零點自由線（定理 201.1），$\sum_{p \le e^X}\pm\frac{1}{4}\frac{\log^2 p}{p}\cos(2t\log p) = \mathcal{O}_t(X)$ 恆成立，主階增長完全唯一；
 (4) **確立「微觀相角與相速全景解析閉式」（Theorem 283.4）**：
-  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
-  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 (5) **確立「$S_1(X, t)$ 圍道展開與均方大篩法漸近定理」（Theorem 283.5）**：
   $$\langle|S_1|^2\rangle = \frac{1}{4}X^4 + \mathcal{O}(X^3)$$
 (6) **證明「自伴特徵值譜權重有限正定性終極定理」（Theorem 283.6）**：
@@ -48,7 +48,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 剪切對偶完全閉合**| 30% | **60%** | **18.0%**（剪切對偶符號閉合）|
 | • 路線 A：Fredholm 跡重整化化約體系              |        |            | **【官方驗收 100% 結項】** |
@@ -90,8 +90,8 @@ $$\sum_{p \le e^X}\left(\pm\frac{1}{4}\ell_p^2\cos(2\phi_p^-) + \frac{1}{8}\ell_
 ---
 
 ### 【定理 283.4（微觀相角與相速全景解析閉式）】
-$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
-$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 
 ---
 
@@ -147,8 +147,8 @@ $$\sum_{p \le e^X}\frac{1}{8}\ell_p^2 = \frac{1}{16}X^2 + \mathcal{O}(X)$$
 $$\sum_{p \le e^X}\left(\pm\frac{1}{4}\ell_p^2\cos(2\phi_p^-) + \frac{1}{8}\ell_p^2\cos(4\phi_p^-)\right) = \mathcal{O}_t(X)$$
 
 ### 4. 定理 283.4（微觀相角與相速全景解析閉式）
-$$\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)$$
-$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
+$$\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)$$
+$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
 
 ### 5. 定理 283.5（$S_1(X, t)$ 圍道展開與均方大篩法定理）
 $$S_1(X, t) \equiv \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it} = -\sum_{|\gamma-2t|\le e^X}\frac{Xe^{(\rho-1/2-2it)X}}{\rho-1/2-2it} + \mathcal{O}_t(X^2)$$

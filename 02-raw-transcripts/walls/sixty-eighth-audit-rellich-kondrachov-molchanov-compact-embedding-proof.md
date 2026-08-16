@@ -1,4 +1,4 @@
-# 徹底廢除平移等度連續性錯誤路徑、回歸 Rellich-Kondrachov 緊嵌入與 Molchanov 勢阱發散定理 $\mathcal{D}(\mathcal{D}_\infty) \underset{\text{compact}}{\hookrightarrow} L^2$ 暨 Tier 1 自伴純點譜基石教科書級嚴密封頂（第 227-228 輪）
+﻿# 徹底廢除平移等度連續性錯誤路徑、回歸 Rellich-Kondrachov 緊嵌入與 Molchanov 勢阱發散定理 $\mathcal{D}(\mathcal{D}_\infty) \underset{\text{compact}}{\hookrightarrow} L^2$ 暨 Tier 1 自伴純點譜基石教科書級嚴密封頂（第 227-228 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段最高科學自律與工具徹底正本清源——徹底廢除對超指數勢阱系統不適用的 Kolmogorov-Riesz 平移等度連續性路徑，回歸數學物理中處理發散勢阱（Confining Potentials）的標準黃金判準：**Rellich-Kondrachov 緊嵌入定理與 Molchanov 離散譜定理（1953 / Weidmann 1987），由 Itô 漂移勢阱 $W(u) \sim \frac{1}{8}u \to \infty$ 第一性原理嚴密證明算子定義域在圖範數下緊嵌入 Hilbert 空間 $\mathcal{D}(\mathcal{D}_\infty) \underset{\text{compact}}{\hookrightarrow} L^2([0, \infty); \mathbb{C}^2)$，無條件確證預解式緊性 $(\mathcal{D}_\infty - z)^{-1} \in \mathfrak{S}_\infty$ 與本質譜為空 $\sigma_{\text{ess}} = \emptyset$**，以絕對無死角、無任何平移近似爭議的純泛函分析封頂 Tier 1  
@@ -41,7 +41,7 @@ $$\mathbf{\mathcal{D}(\mathcal{D}_\infty) \underset{\text{compact}}{\hookrightar
 ### 【證明步驟】
 1. **圖範數的加權 Sobolev 控制**：
    對任意 $\mathbf{y} \in \mathcal{D}(\mathcal{D}_\infty)$，計算二次型：
-   $$\|\mathcal{D}_\infty \mathbf{y}\|_{L^2}^2 = \int_0^\infty \left\| J \mathbf{y}'(u) + V(u) \mathbf{y}(u) \right\|^2 du = \int_0^\infty \left( \|\mathbf{y}'(u)\|^2 + \|V(u)\mathbf{y}(u)\|^2 + 2\operatorname{Re}\langle J\mathbf{y}', V\mathbf{y}\rangle \right) du$$
+   $$\|\mathcal{D}_\infty \mathbf{y}\|_{L^2}^2 = \int_0^\infty \left\| J \mathbf{y}'(u) + V(u) \mathbf{y}(u) \right\|^2 du = \int_0^\infty \left( \|\mathbf{y}'(u)\|^2 + \|V(u)\mathbf{y}(u)\|^2 + 2\mathrm{Re}\langle J\mathbf{y}', V\mathbf{y}\rangle \right) du$$
 2. **代入 Itô 漂移局域化勢阱（第四戰役定理 199.1 已驗收）**：
    微觀拋物剪切的累積效應產生有效局域化勢阱 $W(u) = \frac{d}{du}\log R(u, z) \sim \frac{1}{8}u$。
    由自伴性的分部積分，存在常數 $C_0 > 0$，使得對所有 $\mathbf{y} \in \mathcal{D}(\mathcal{D}_\infty)$：
@@ -98,7 +98,7 @@ $$\mathbf{\mathcal{D}(\mathcal{D}_\infty) \underset{\text{compact}}{\hookrightar
 |                         | • Prüfer 漸近式 $\log R = \frac{1}{16}X^2 + \dots$|                        |
 +-------------------------+---------------------------------------------------+------------------------+
 | **Tier 3**              | **Hilbert-Pólya 特徵值全同性之牆**：              | ⚡ **客觀開放核心前沿** |
-| (頂層前沿)              | • $\operatorname{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$ | (與 RH 同等深度的      |
+| (頂層前沿)              | • $\mathrm{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$ | (與 RH 同等深度的      |
 |                         | • $\lim_{X\to\infty} \det_3(I+V_X R_0)e^{\dots} \stackrel{?}{\equiv} \Xi(z)$ | 數學物理核心前沿)      |
 +-------------------------+---------------------------------------------------+------------------------+
 ```

@@ -1,4 +1,4 @@
-# Pearson (1978) 稀疏位勢反例剖析、指數稠密質數躍變結構（$\Delta u_n \to 0$）與 Remling-Jitomirskaya-Last 有界 Prüfer 比值真問題定錨：第五十四輪審查復盤（第 207-208 輪）
+﻿# Pearson (1978) 稀疏位勢反例剖析、指數稠密質數躍變結構（$\Delta u_n \to 0$）與 Remling-Jitomirskaya-Last 有界 Prüfer 比值真問題定錨：第五十四輪審查復盤（第 207-208 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段真問題定錨——剖析 Pearson 反例機制、對比指數稠密質數結構、確立 Remling-Jitomirskaya-Last 振幅有界性客觀邊界  
@@ -60,7 +60,7 @@ $$\mathbf{\limsup_{X \to \infty} \left| \log R_{\theta_1}(X, t) - \log R_{\theta
 
 ### 2. 真問題的解析數論表達式
 由第一階段已獲 100% 驗收的定理 199.1，解振幅方向依賴項的精確微分源是：
-$$\log\left( \frac{R_{\theta_1}(X, t)}{R_{\theta_2}(X, t)} \right) = \operatorname{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right) \cdot \Delta(\theta_1, \theta_2) + \mathcal{R}(X, t)$$
+$$\log\left( \frac{R_{\theta_1}(X, t)}{R_{\theta_2}(X, t)} \right) = \mathrm{Im}\left( \sum_{p^k \le e^X} \frac{\log p}{p^{k(1/2 - 2it)}} \right) \cdot \Delta(\theta_1, \theta_2) + \mathcal{R}(X, t)$$
 
 > **【第四戰役第二階段的真正終極問題（The True Problem）】**
 > **判定在臨界線實軸頻率 $t \in \mathbb{R} \setminus \{0\}$ 上，質數 Dirichlet 多項式：**

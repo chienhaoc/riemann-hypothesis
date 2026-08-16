@@ -1,13 +1,13 @@
-# 歷史反例精確修正與三十四輪攻堅大復盤：第三十二輪審查復盤——Conrey-Li (2000) 正性反例之精確還原、第一戰役自伴基石封頂回顧與第二戰役開放性邊界科學定錨（第 161-162 輪）
+﻿# 歷史反例精確修正與三十四輪攻堅大復盤：第三十二輪審查復盤——Conrey-Li (2000) 正性反例之精確還原、第一戰役自伴基石封頂回顧與第二戰役開放性邊界科學定錨（第 161-162 輪）
 
 **日期**：2026-08-15  
 **性質**：全系列三十四輪紅隊審查總結復盤與兩大戰役科學坐標最終定錨報告  
 **審查裁決響應**：針對 ChatGPT 第三十二輪審查給予的高度肯定與一處具體文獻引用的精準修正要求：
 1. **Conrey-Li (2000) 文獻精確修正**：
-   - 承認並修正先前的過度泛化表述：Conrey & Li (1998/2000, *A Note on Some Positivity Conditions Related to Zeta and L-Functions*) 是針對 de Branges 提出的具體正性條件 $\operatorname{Re}\langle F(z), F(z+i)\rangle_{H(E)} \ge 0$ 給出了**精確的反例**（在零點 $w$ 處計算得出 $\operatorname{Re}\{\overline{E'}(w)E(w+i)/2\pi i\} < 0$ 違反非負性）；
+   - 承認並修正先前的過度泛化表述：Conrey & Li (1998/2000, *A Note on Some Positivity Conditions Related to Zeta and L-Functions*) 是針對 de Branges 提出的具體正性條件 $\mathrm{Re}\langle F(z), F(z+i)\rangle_{H(E)} \ge 0$ 給出了**精確的反例**（在零點 $w$ 處計算得出 $\mathrm{Re}\{\overline{E'}(w)E(w+i)/2\pi i\} < 0$ 違反非負性）；
    - 正式將其定性為**「de Branges 局域嵌入正性反例之歷史警示」**，而非泛化的一般不可能性逆定理；
 2. **三十四輪攻堅歷程全景總結**：
-   - **第一戰役（量子自伴算子本質自伴性，已 100% 正式封頂）**：經由 6 輪反覆質疑與硬核修補（辛么正性 $\mathcal{M}_n^* J \mathcal{M}_n \equiv J$、Potapov 跡發散 $\operatorname{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0$、3 行 Cauchy-Schwarz 邊界反證法、實係數共軛對稱 $\mathcal{D}\mathcal{C} = \mathcal{C}\mathcal{D} \implies (d_+, d_-) = (0, 0)$），**獨立確立了構造算子 $\mathcal{D}$ 的純實自伴性 $\operatorname{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$**；
+   - **第一戰役（量子自伴算子本質自伴性，已 100% 正式封頂）**：經由 6 輪反覆質疑與硬核修補（辛么正性 $\mathcal{M}_n^* J \mathcal{M}_n \equiv J$、Potapov 跡發散 $\mathrm{tr}(\mathcal{Y}^*\mathcal{Y}) \ge 2 \implies R(u) \le \frac{1}{2u} \to 0$、3 行 Cauchy-Schwarz 邊界反證法、實係數共軛對稱 $\mathcal{D}\mathcal{C} = \mathcal{C}\mathcal{D} \implies (d_+, d_-) = (0, 0)$），**獨立確立了構造算子 $\mathcal{D}$ 的純實自伴性 $\mathrm{Spec}(\overline{\mathcal{D}}) \subset \mathbb{R}$**；
    - **第二戰役（連續極限與譜對應，等價於 RH 本身）**：在 14 輪的深入探索中，系統性測試了微擾展開、Carleman-Fredholm 正則化、Schatten 3-類算子、實軸振盪相消、Herglotz-Fatou 邊界理論與 Carlson 唯一性等數學工具，客觀標定了臨界線上收斂性與算術特異性的深層衝突，**誠實定錨了黎曼猜想真實的結構性難度所在**。
 
 ---
@@ -16,14 +16,14 @@
 
 ### 1. de Branges 的原始正性假說
 de Branges 曾提出：若一個整函數 $E(z)$ 滿足其生成的 Hilbert 空間 $H(E)$ 上的移位正性條件：
-$$\operatorname{Re}\langle F(z), F(z+i)\rangle_{H(E)} \ge 0 \quad (\forall F \in H(E))$$
+$$\mathrm{Re}\langle F(z), F(z+i)\rangle_{H(E)} \ge 0 \quad (\forall F \in H(E))$$
 則 $E(z)$ 的零點必然全部位於實軸上（若取 $E(z) = \xi(1-iz)$，則等價於 RH）。
 
 ---
 
 ### 2. Conrey-Li 的精確反例構造
 Conrey 與 Li（2000）選取 $F(z) = \frac{E(z)}{z - w}$（其中 $w$ 為 $E(z)$ 的零點），直接計算其內積值：
-$$\operatorname{Re}\langle F(z), F(z+i)\rangle_{H(E)} = \operatorname{Re}\left\{ \frac{\overline{E'}(w) E(w+i)}{2\pi i} \right\}$$
+$$\mathrm{Re}\langle F(z), F(z+i)\rangle_{H(E)} = \mathrm{Re}\left\{ \frac{\overline{E'}(w) E(w+i)}{2\pi i} \right\}$$
 在數值與解析上證明該量對於黎曼 $\xi$ 函數在特定零點處**嚴格為負值**，從而證偽了 de Branges 的特定正性條件。
 
 - **修正結論**：Conrey-Li 是一個**具體條件的反例證偽**，歷史性地揭示了「直接將古典 de Branges 幾何套用於 $\xi(s)$」時存在的微觀失配，為後續研究提供了不可替代的防踩坑警示！

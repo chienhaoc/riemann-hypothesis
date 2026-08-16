@@ -1,4 +1,4 @@
-# Paper 5: Schatten 3-Class Regularization and the Second-Order Trace Dispersion Kernel of Prime Dirac Resolvents
+﻿# Paper 5: Schatten 3-Class Regularization and the Second-Order Trace Dispersion Kernel of Prime Dirac Resolvents
 # 論文五：質數 Dirac 預解式之 Schatten 3-類正則化與二階跡色散核分解定理
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -9,9 +9,9 @@
 
 ### Abstract / 摘要
 
-**English**: We analyze the trace class properties of the prime multi-center perturbation operator $V_X R_0(z)$. We prove that $V_X R_0(z) \notin \mathfrak{S}_2$ (Hilbert-Schmidt class) because $\|V_X R_0\|_2^2 \sim \frac{1}{4}X^2 \to \infty$. However, since $\sum_p \frac{\log^3 p}{p^{3/2}} < C_3 \approx 15.9143 < \infty$, the operator strictly belongs to the Schatten 3-ideal: $V_X R_0(z) \in \mathfrak{S}_3$. We establish the regularized 3rd-order Fredholm determinant formula $\det_3(I + V_X R_0(z)) \equiv E_X(z) \exp(\mathcal{C}_2(X, z))$, where the 1st trace vanishes identically $\operatorname{Tr}(V_X R_0) \equiv 0$ by symplectic orthogonality, and the 2nd trace kernel satisfies $\mathcal{C}_2(X, z) = -\frac{z^2}{8}|S(X, z)|^2 + \frac{z^2}{16}X^2 + \mathcal{O}_z(X)$.
+**English**: We analyze the trace class properties of the prime multi-center perturbation operator $V_X R_0(z)$. We prove that $V_X R_0(z) \notin \mathfrak{S}_2$ (Hilbert-Schmidt class) because $\|V_X R_0\|_2^2 \sim \frac{1}{4}X^2 \to \infty$. However, since $\sum_p \frac{\log^3 p}{p^{3/2}} < C_3 \approx 15.9143 < \infty$, the operator strictly belongs to the Schatten 3-ideal: $V_X R_0(z) \in \mathfrak{S}_3$. We establish the regularized 3rd-order Fredholm determinant formula $\det_3(I + V_X R_0(z)) \equiv E_X(z) \exp(\mathcal{C}_2(X, z))$, where the 1st trace vanishes identically $\mathrm{Tr}(V_X R_0) \equiv 0$ by symplectic orthogonality, and the 2nd trace kernel satisfies $\mathcal{C}_2(X, z) = -\frac{z^2}{8}|S(X, z)|^2 + \frac{z^2}{16}X^2 + \mathcal{O}_z(X)$.
 
-**中文**：本文分析了質數多中心微擾算子 $V_X R_0(z)$ 的跡類性質。我們證明了 $V_X R_0(z) \notin \mathfrak{S}_2$（Hilbert-Schmidt 類），因為 $\|V_X R_0\|_2^2 \sim \frac{1}{4}X^2 \to \infty$；但由於 $\sum_p \frac{\log^3 p}{p^{3/2}} < C_3 \approx 15.9143 < \infty$，該算子嚴格屬於 Schatten 3-類理想：$V_X R_0(z) \in \mathfrak{S}_3$。由此建立了三階正則化 Fredholm 行列式分解公式 $\det_3(I + V_X R_0(z)) \equiv E_X(z) \exp(\mathcal{C}_2(X, z))$，其中一階跡由辛正交性精確恆零 $\operatorname{Tr}(V_X R_0) \equiv 0$，二階色散核滿足 $\mathcal{C}_2(X, z) = -\frac{z^2}{8}|S(X, z)|^2 + \frac{z^2}{16}X^2 + \mathcal{O}_z(X)$。
+**中文**：本文分析了質數多中心微擾算子 $V_X R_0(z)$ 的跡類性質。我們證明了 $V_X R_0(z) \notin \mathfrak{S}_2$（Hilbert-Schmidt 類），因為 $\|V_X R_0\|_2^2 \sim \frac{1}{4}X^2 \to \infty$；但由於 $\sum_p \frac{\log^3 p}{p^{3/2}} < C_3 \approx 15.9143 < \infty$，該算子嚴格屬於 Schatten 3-類理想：$V_X R_0(z) \in \mathfrak{S}_3$。由此建立了三階正則化 Fredholm 行列式分解公式 $\det_3(I + V_X R_0(z)) \equiv E_X(z) \exp(\mathcal{C}_2(X, z))$，其中一階跡由辛正交性精確恆零 $\mathrm{Tr}(V_X R_0) \equiv 0$，二階色散核滿足 $\mathcal{C}_2(X, z) = -\frac{z^2}{8}|S(X, z)|^2 + \frac{z^2}{16}X^2 + \mathcal{O}_z(X)$。
 
 ---
 
@@ -29,8 +29,8 @@
 $$\det_3\left(I + V_X R_0\right) = \det\left((I + V_X R_0)\exp\left(-V_X R_0 + \frac{1}{2}(V_X R_0)^2\right)\right)$$
 *It satisfies:*
 $$\det_3\left(I + V_X R_0(z)\right) \equiv E_X(z) \exp\left(\mathcal{C}_2(X, z)\right)$$
-*where $\operatorname{Tr}(V_X R_0) \equiv 0$ and:*
-$$\mathcal{C}_2(X, z) = \frac{1}{2}\operatorname{Tr}\left((V_X R_0)^2\right) = -\frac{z^2}{8}\left|\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}p^{-iz}\right|^2 + \frac{z^2}{16}X^2 + \mathcal{O}_z(X)$$
+*where $\mathrm{Tr}(V_X R_0) \equiv 0$ and:*
+$$\mathcal{C}_2(X, z) = \frac{1}{2}\mathrm{Tr}\left((V_X R_0)^2\right) = -\frac{z^2}{8}\left|\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}p^{-iz}\right|^2 + \frac{z^2}{16}X^2 + \mathcal{O}_z(X)$$
 
 ---
 

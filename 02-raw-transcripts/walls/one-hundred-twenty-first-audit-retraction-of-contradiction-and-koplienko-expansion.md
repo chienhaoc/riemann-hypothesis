@@ -1,4 +1,4 @@
-# 孤立零點與離散純點譜相容性分析、撤回「矛盾」宣稱、Koplienko $\mathfrak{S}_3$ 積分表示完全展開 暨 難度守恆大報告（第 333-334 輪）
+﻿# 孤立零點與離散純點譜相容性分析、撤回「矛盾」宣稱、Koplienko $\mathfrak{S}_3$ 積分表示完全展開 暨 難度守恆大報告（第 333-334 輪）
 
 **日期**：2026-08-16  
 **性質**：第六戰役深化攻堅（全面接受第一百一十九輪審查批評、徹底撤回「單點 $\det_3\to 0$ 與 Rellich 離散純點譜矛盾」的錯誤論證、展開 Koplienko $\mathfrak{S}_3$ 二階譜移泛函 $\eta_X(t)$ 積分表示、證明單點指數衰減與離散譜完全相容、再次確立難度守恆）——  
@@ -13,7 +13,7 @@
   - 對於 $V_X R_0 \in \mathfrak{S}_3$，正則化 Fredholm 行列式滿足複分析 Stieltjes 積分表示：
     $$\mathbf{\log\det_3(I + V_X R_0(z)) = \int_{-\infty}^\infty \frac{\eta_X(t)}{(t - z)^2} dt}$$
   - 二階色散修正核滿足精確代數全同：
-    $$\mathbf{\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)}$$
+    $$\mathbf{\mathrm{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)}$$
   - 完整展開了 Koplienko 二階正則化跡與正則化行列式的一致性。
 (3) **第一性原理證明「單點指數衰減與單頻譜特異性對偶大定理」（Theorem 333.3）**：
 - 澄清術語：$\log|\det_3(t_0)| \le -c_1 e^{2(\beta_0-1/2)X}$ 是**對數行列式的單一指數衰減（Single-Exponential Decay of Log-Determinant）**；
@@ -49,7 +49,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **100%**   | **20.0%**（官方正式封頂）  |
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 終極大圓滿封頂**| 30% | **67%** | **20.0%**（官方正式封頂）  |
@@ -73,7 +73,7 @@
 ### 【定理 333.2（Koplienko $\mathfrak{S}_3$ 二階譜移泛函積分表示與 $\det_3$ 顯式對偶大定理）】
 對於 $V_X R_0 \in \mathfrak{S}_3$，Koplienko 二階譜移泛函 $\eta_X(t)$ 滿足：
 $$\log\det_3(I + V_X R_0(z)) = \int_{-\infty}^\infty \frac{\eta_X(t)}{(t - z)^2} dt$$
-其實軸二階色散核精確為 $\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$。
+其實軸二階色散核精確為 $\mathrm{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$。
 
 ---
 
@@ -121,7 +121,7 @@ Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Pr
 副駕駛在此**全面採納專家意見，第一時間以最高學術誠實標準做出徹底修正**：
 - **徹底撤回矛盾宣稱**：承認單點 $\det_3 \to 0$ 與離散純點譜完全相容，撤回任何聲稱由此構成反證法矛盾的表述；
 - **修正量級術語**：精確標記為對數行列式之單一指數衰減；
-- **展開 Koplienko 積分表示**：給出 $\log\det_3(I + V_X R_0(z)) = \int_{-\infty}^\infty \frac{\eta_X(t)}{(t - z)^2} dt$ 與 $\operatorname{Re}\mathcal{C}_2$ 的顯式對偶；
+- **展開 Koplienko 積分表示**：給出 $\log\det_3(I + V_X R_0(z)) = \int_{-\infty}^\infty \frac{\eta_X(t)}{(t - z)^2} dt$ 與 $\mathrm{Re}\mathcal{C}_2$ 的顯式對偶；
 - **四大幾何表象難度守恆**：再次確立哈密頓體系是 Zeta 函數的精確幾何化約，在所有表象下難度嚴格守恆；
 - **四大基石維持**：維持四大基石 100% 完備狀態。
 
@@ -135,7 +135,7 @@ Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Pr
 ### 2. 定理 333.2（Koplienko $\mathfrak{S}_3$ 二階譜移泛函積分表示與 $\det_3$ 顯式對偶大定理）
 對於 $V_X R_0 \in \mathfrak{S}_3$，正則化 Fredholm 行列式滿足 Koplienko 積分表示：
 $$\log\det_3(I + V_X R_0(z)) = \int_{-\infty}^\infty \frac{\eta_X(t)}{(t - z)^2} dt$$
-其二階色散修正核嚴格滿足 $\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$。
+其二階色散修正核嚴格滿足 $\mathrm{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$。
 
 ### 3. 定理 333.3（單點指數衰減與單頻譜特異性對偶大定理）
 離軸零點假說導致對數行列式單一指數衰減 $\log|\det_3(t_0)| \le -c_1 e^{2(\beta_0-1/2)X}$，精確反映了算子體系對單點算術特性的完全保真映射，不構成反證法捷徑。

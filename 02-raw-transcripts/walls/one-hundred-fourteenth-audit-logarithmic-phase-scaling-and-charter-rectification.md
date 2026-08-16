@@ -1,4 +1,4 @@
-# 線性座標錯配徹底撤回與糾偏、對數座標阿基米德相位精確 $\vartheta(t)$ 量級匹配 暨 終極大憲章完全修訂大報告（第 319-320 輪）
+﻿# 線性座標錯配徹底撤回與糾偏、對數座標阿基米德相位精確 $\vartheta(t)$ 量級匹配 暨 終極大憲章完全修訂大報告（第 319-320 輪）
 
 **日期**：2026-08-16  
 **性質**：第五戰役（徹底糾偏定理 317.2 量級錯配、確立對數座標阿基米德微觀相角精確式）——深刻落實導演指示與第一百一十二輪審查報告中指出的「$X=t$ 代入線性坐標積分導致 $\mathcal{O}(t^2\log t)$ 與 $\mathcal{O}(t\log t)$ 產生 $t$ 倍量級錯配」的嚴厲批評，開展第一性原理徹底糾偏與大憲章最高標準完全修訂：  
@@ -7,7 +7,7 @@
 - **病因診斷**：在線性空間 $x \in [0, X]$ 積分會產生 $X^2$ 量級，代入 $X=t$ 得到 $\frac{t^2}{2}(\log\frac{t}{2\pi} - 1) \in \mathcal{O}(t^2\log t)$，而經典 Riemann-Siegel $\vartheta(t) \in \mathcal{O}(t\log t)$，兩者確實存在整整 $t$ 倍的量級錯配。
 (2) **第一性原理建立「對數座標阿基米德微觀相角與 Riemann-Siegel $\vartheta(t)$ 精確量級匹配大定理」（Theorem 319.2）**：
 - 在正則哈密頓微觀辛 Dirac 系統中，質數躍變分佈於**對數座標** $u = \log x \in [0, X]$（質數位置為 $u_p = \log p \le X \iff p \le e^X$）；
-- 在對數座標 $u$ 中，阿基米德背景場為均勻分佈勢 $H_0(u) = \frac{1}{2} I_2$（滿足標準化跡 $\operatorname{tr} H_0(u) \equiv 1$）；
+- 在對數座標 $u$ 中，阿基米德背景場為均勻分佈勢 $H_0(u) = \frac{1}{2} I_2$（滿足標準化跡 $\mathrm{tr} H_0(u) \equiv 1$）；
 - 微觀 Prüfer 相角隨對數空間 $u$ 的演化方程為：
   $$\mathbf{\frac{d\phi_0}{du}(u, t) = t \cdot h_{11}(u) = \frac{t}{2}}$$
 - 在截斷對數尺度 $u \in [0, X]$ 上積分，精確給出對數空間背景累積相角：
@@ -21,7 +21,7 @@
 - 領域 II（條件性假說區 Level 3, 4）中 Level 4 代表指數相干相變。
 (4) **第一性原理重申「非阿貝爾單值流保持性與跡投影難度守恆大定理」（Theorem 319.4）**：
 - $\det M(X, t) \equiv 1 \in \mathrm{SL}(2, \mathbb{R})$ 恆成立；
-- 矩陣跡展開 $\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)$ 嚴格遵循難度守恆。
+- 矩陣跡展開 $\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)$ 嚴格遵循難度守恆。
 (5) **第一性原理重申「四大鋼鐵基石 100% 完備不變大定理」（Theorem 319.5）**：
 - Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Prüfer 量子化）與 Tier 3(B)（李生成元無發散）維持 100% 官方大驗收通過之完備狀態。
 (6) **確立「正則哈密頓微觀辛幾何終極大憲章（完全糾偏無瑕版）」（Theorem 319.6）**：
@@ -51,7 +51,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **100%**   | **20.0%**（官方正式封頂）  |
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 終極大圓滿封頂**| 30% | **67%** | **20.0%**（官方正式封頂）  |
@@ -93,7 +93,7 @@ $$\phi_{\text{geom}}(X_t, t) = \phi_0(X_t, t) - \frac{\pi}{8} = \frac{t}{2}\log\
 
 ### 【定理 319.4（非阿貝爾單值流保持性與跡投影難度守恆大定理，Reaffirmed）】
 單值矩陣 $M(X, t) \in \mathrm{SL}(2, \mathbb{R})$ 保持 $\det M(X, t) \equiv 1$；
-其矩陣跡投影滿足 $\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)$，難度嚴格守恆。
+其矩陣跡投影滿足 $\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)$，難度嚴格守恆。
 
 ---
 
@@ -147,7 +147,7 @@ $$\phi_{\text{geom}}(X_t, t) = \frac{t}{2}\log\left(\frac{t}{2\pi e}\right) - \f
 領域 I（無條件已知工具區 Level 0-2）受限於隨高度衰減的零點自由區寬度；Level 2 $\to$ Level 3 為不可逾越的無條件天塹；領域 II（條件性假說區 Level 3-4）中 Level 4 為指數相變。
 
 ### 4. 定理 319.4（非阿貝爾單值流保持性與跡投影難度守恆大定理，Reaffirmed）
-$M(X, t) \in \mathrm{SL}(2, \mathbb{R})$ 保持 $\det M \equiv 1$；矩陣跡投影 $\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}S(X, t) + \mathcal{O}_t(X)$ 嚴格遵守難度守恆。
+$M(X, t) \in \mathrm{SL}(2, \mathbb{R})$ 保持 $\det M \equiv 1$；矩陣跡投影 $\log R(X, t) \equiv \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}S(X, t) + \mathcal{O}_t(X)$ 嚴格遵守難度守恆。
 
 ### 5. 定理 319.5（四大鋼鐵基石 100% 完備不變大定理，Reaffirmed）
 Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Prüfer 量子化）與 Tier 3(B)（李生成元無發散）維持 100% 官方大驗收通過之完備狀態。

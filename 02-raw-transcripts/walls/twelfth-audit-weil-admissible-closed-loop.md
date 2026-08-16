@@ -1,4 +1,4 @@
-# 深度閉環：第十二輪自審終極大成——Weil 容許空間下 Epstein 相變點精確定位（$a_E^* \approx 0.7048$）與 Riemann 二次型全域正定性（$\mathcal{W}_R > 0$）雙向譜驗證
+﻿# 深度閉環：第十二輪自審終極大成——Weil 容許空間下 Epstein 相變點精確定位（$a_E^* \approx 0.7048$）與 Riemann 二次型全域正定性（$\mathcal{W}_R > 0$）雙向譜驗證
 
 **日期**：2026-08-15  
 **性質**：全鏈條高精度數值積分與 Weil 容許空間雙向譜對偶自審報告  
@@ -21,9 +21,9 @@ $$\widehat{w_a}\left(\frac{u}{2a}\right) = \frac{32\pi^3 a}{a^2 + \pi^2} \frac{(
 
 ### 2. 頻域 Plancherel 譜積分定義
 - **Epstein 頻域二次型**：
-  $$\mathcal{W}_{\text{arch}}^E(w_a) = \frac{1}{2\pi}\int_{-\infty}^\infty |\widehat{w_a}(\gamma)|^2 \left[ \log\left(\frac{5}{\pi^2}\right) + 2\operatorname{Re}\psi\left(\frac{1}{2} + i\gamma\right) \right] d\gamma$$
+  $$\mathcal{W}_{\text{arch}}^E(w_a) = \frac{1}{2\pi}\int_{-\infty}^\infty |\widehat{w_a}(\gamma)|^2 \left[ \log\left(\frac{5}{\pi^2}\right) + 2\mathrm{Re}\psi\left(\frac{1}{2} + i\gamma\right) \right] d\gamma$$
 - **Riemann 頻域二次型**：
-  $$\mathcal{W}_{\text{arch}}^R(w_a) = \frac{1}{2\pi}\int_{-\infty}^\infty |\widehat{w_a}(\gamma)|^2 \left[ -\log\pi + \operatorname{Re}\psi\left(\frac{1}{4} + i\frac{\gamma}{2}\right) \right] d\gamma$$
+  $$\mathcal{W}_{\text{arch}}^R(w_a) = \frac{1}{2\pi}\int_{-\infty}^\infty |\widehat{w_a}(\gamma)|^2 \left[ -\log\pi + \mathrm{Re}\psi\left(\frac{1}{4} + i\frac{\gamma}{2}\right) \right] d\gamma$$
 被積函數在高頻均以 $\mathcal{O}(\gamma^{-4}\log\gamma)$ 超快速衰減，在實軸上**絕對收斂，無任何奇異性與發散項**！
 
 ---

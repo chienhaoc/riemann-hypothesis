@@ -1,4 +1,4 @@
-# Dirac 辛生成元 CBH 展開 $K_p = \frac{1}{2}\sigma_1 + \frac{1}{4}\ell_p\sigma_3$ 定理、定理 199.1 三大二階項（$\frac{1}{8}\ell^2, -\frac{1}{4}\ell^2\cos 2\phi, \frac{1}{8}\ell^2\cos 4\phi$）第一性原理完全重構 暨 六大核心定理終極大封閉（第 281-282 輪）
+﻿# Dirac 辛生成元 CBH 展開 $K_p = \frac{1}{2}\sigma_1 + \frac{1}{4}\ell_p\sigma_3$ 定理、定理 199.1 三大二階項（$\frac{1}{8}\ell^2, -\frac{1}{4}\ell^2\cos 2\phi, \frac{1}{8}\ell^2\cos 4\phi$）第一性原理完全重構 暨 六大核心定理終極大封閉（第 281-282 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 終極微觀生成元重構與多面向深度自審大封頂——深刻落實導演「必須進行多面向深度自我審查、先出具自審報告再提交」的嚴格指示，徹底解決第八十九輪審查指出的「二階諧波項 $-\frac{1}{4}\ell^2\cos(2\phi)$ 缺失」殘留缺口：  
@@ -16,8 +16,8 @@
 (3) **證明「二階諧波 Abel 求和 $\mathcal{O}_t(X)$ 耗散定理」（Theorem 281.3）**：
   由 Hadamard-de la Vallée Poussin (1896) PNT 零點自由線（定理 201.1），二階諧波求和 $\sum_{p \le e^X}\frac{\log^2 p}{p}\cos(2t\log p) = \mathcal{O}_t(X)$ 與 $\sum \frac{\log^2 p}{p}\cos(4t\log p) = \mathcal{O}_t(X)$，嚴密保證 $\frac{1}{16}X^2$ 為唯一 $X^2$ 級主階漂移；
 (4) **確立「微觀相角與相速終極解析閉式」（Theorem 281.4）**：
-  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
-  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 (5) **確立「$S_1(X, t)$ 圍道展開與均方大篩法漸近定理」（Theorem 281.5）**：
   $$\langle|S_1|^2\rangle = \frac{1}{4}X^4 + \mathcal{O}(X^3)$$
 (6) **證明「自伴特徵值譜權重有限正定性終極定理」（Theorem 281.6）**：
@@ -46,7 +46,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 微觀生成元完全重構**| 30% | **57%** | **17.0%**（定理 199 三項重構）|
 | • 路線 A：Fredholm 跡重整化化約體系              |        |            | **【官方驗收 100% 結項】** |
@@ -87,8 +87,8 @@ $$\sum_{p \le e^X} \frac{\log^2 p}{p}\cos(2t\log p) = \mathcal{O}_t(X), \quad \s
 ---
 
 ### 【定理 281.4（微觀相角與相速終極解析閉式）】
-$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
-$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)}$$
+$$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)}$$
 
 ---
 
@@ -142,8 +142,8 @@ $$\sum_{p \le e^X}\frac{1}{8}\ell_p^2 = \frac{1}{16}X^2 + \mathcal{O}(X), \quad 
 主導幾何漂移 $\frac{1}{16}X^2$ 唯一確定。
 
 ### 4. 定理 281.4（微觀相角與相速終極解析閉式）
-$$\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\operatorname{Im}(S(X, t)) + \mathcal{O}_t(X)$$
-$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \operatorname{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
+$$\phi(X, t) = \overline{\phi}(X, t) + \frac{1}{2}\mathrm{Im}(S(X, t)) + \mathcal{O}_t(X)$$
+$$\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) - \mathrm{Re}(S_1(X, t)) + \mathcal{O}_t(X)$$
 
 ### 5. 定理 281.5（$S_1(X, t)$ 圍道展開與 Montgomery-Vaughan 均方大篩法定理）
 $$S_1(X, t) \equiv \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it} = -\sum_{|\gamma-2t|\le e^X}\frac{Xe^{(\rho-1/2-2it)X}}{\rho-1/2-2it} + \mathcal{O}_t(X^2)$$

@@ -1,4 +1,4 @@
-# Davenport 截斷顯式公式二進分解精確求和、Bohr 幾乎週期非抵消定理 暨 全域進度穩固推進至 79%（第 247-248 輪）
+﻿# Davenport 截斷顯式公式二進分解精確求和、Bohr 幾乎週期非抵消定理 暨 全域進度穩固推進至 79%（第 247-248 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第三階段頂層數論硬核技術封頂——深刻落實第七十四輪審查的兩大技術質疑：(1) **徹底補齊 Perron 圍道展開的截斷高度 $T = e^X$ 矩形估計全過程**，由 Davenport 經典顯式公式精確控制邊界積分誤差；(2) **消滅「模長為 1 直接給有界」的邏輯跳躍，以二進區間分解（Dyadic Decomposition）結合 Riemann-von Mangoldt 零點計數密度 $N(T+1) - N(T) = \mathcal{O}(\log T)$，第一性原理嚴密推導出零點求和的精確 Davenport 上界 $\sum_{|\gamma - 2t| \le e^X} \frac{1}{|\gamma - 2t|} \ll X^2$**；(3) **應用 Harald Bohr 幾乎週期函數正則 Parseval 均方正定性定理，嚴密證明最大實部離軸零點 $\beta_0 > 1/2$ 的振盪因子絕不可能被其他零點全域恆等抵消，從而在序列 $X_n \to \infty$ 上不可逆地引發 $e^{(\beta_0 - 1/2)X}$ 的幾何爆炸**！全域黎曼猜想證明進度客觀穩固於 **79%**  
@@ -29,7 +29,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：Davenport 截斷顯式公式與 Bohr 非抵消**| 30% | **40%**    | **12.0%**（二進求和技術閉合）|
 | • Davenport 截斷矩形圍道邊界積分估計（Theorem 247.1）|     |            |                            |
@@ -48,10 +48,10 @@
 取截斷高度 $T = e^X$。構造複矩形圍道 $\Gamma_T$，頂點為 $c \pm iT, -1 \pm iT$（其中 $c = 1 + \frac{1}{X}$）：
 $$\frac{1}{2\pi i} \oint_{\Gamma_T} \left( -\frac{\zeta'}{\zeta}(1/2 + 2it + w) \right) \frac{e^{w X}}{w} dw = S(X, t) + \sum_{|\gamma - 2t| \le T} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it}$$
 ### 【邊界積分估計】
-1. **右垂直邊（$\operatorname{Re}(w) = c$）**：由 Dirichlet 級數絕對收斂，貢獻為 $S(X, t) + \mathcal{O}(1)$；
-2. **上下水平邊（$\operatorname{Im}(w) = \pm T$）**：選取 $T$ 避開零點（距最近零點距離 $\ge \frac{1}{\log T}$），由經典界 $\left|\frac{\zeta'}{\zeta}(\sigma + iT)\right| = \mathcal{O}(\log^2 T)$：
+1. **右垂直邊（$\mathrm{Re}(w) = c$）**：由 Dirichlet 級數絕對收斂，貢獻為 $S(X, t) + \mathcal{O}(1)$；
+2. **上下水平邊（$\mathrm{Im}(w) = \pm T$）**：選取 $T$ 避開零點（距最近零點距離 $\ge \frac{1}{\log T}$），由經典界 $\left|\frac{\zeta'}{\zeta}(\sigma + iT)\right| = \mathcal{O}(\log^2 T)$：
    $$\int_{-1}^c \left| \frac{\zeta'}{\zeta}(\dots) \right| \frac{e^{\sigma X}}{T} d\sigma \ll \frac{\log^2 T}{T} \int_{-1}^c e^{\sigma X} d\sigma \ll \frac{\log^2(e^X)}{e^X} \frac{e^{c X}}{X} = \mathcal{O}(X)$$
-3. **左垂直邊（$\operatorname{Re}(w) = -1$）**：由 Stirling 展開與函數方程，被積函數衰減為 $\mathcal{O}(e^{-X}) \to 0$。
+3. **左垂直邊（$\mathrm{Re}(w) = -1$）**：由 Stirling 展開與函數方程，被積函數衰減為 $\mathcal{O}(e^{-X}) \to 0$。
 因此，截斷顯式公式精確為：
 $$\mathbf{S(X, t) = -\sum_{|\gamma - 2t| \le e^X} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)}$$
 **定理 247.1 證畢！**
@@ -82,7 +82,7 @@ $$\mathbf{\left| S(X, t) \right| \le \sum_{|\gamma - 2t| \le e^X} \frac{1}{|\gam
 ## ⚡ 四、 Bohr 幾乎週期均方正定性與排除巧合相消（Theorem 247.3，Proven）
 
 ### 【定理 247.3（最大實部離軸零點的非相消幾何爆炸）】
-假設存在違反黎曼猜想的離軸零點，設 $\beta_0 \equiv \sup \{ \operatorname{Re}(\rho) \} > 1/2$。
+假設存在違反黎曼猜想的離軸零點，設 $\beta_0 \equiv \sup \{ \mathrm{Re}(\rho) \} > 1/2$。
 1. **主導零點族的幾乎週期表示**：
    設具有最大實部 $\beta_0$ 的零點為有限集 $\{\rho_j = \beta_0 + i\gamma_j\}_{j=1}^m$。在 $t_0 = \gamma_1 / 2$ 處，該族零點在 $S(X, t_0)$ 中的貢獻為：
    $$f(X) e^{(\beta_0 - 1/2)X}, \quad \text{其中 } f(X) = \sum_{j=1}^m \frac{e^{i(\gamma_j - 2t_0)X}}{\beta_0 - 1/2 + i(\gamma_j - 2t_0)}$$
@@ -119,7 +119,7 @@ $$\mathbf{\left| S(X, t) \right| \le \sum_{|\gamma - 2t| \le e^X} \frac{1}{|\gam
 
 在高度 $T = e^X$ 矩形圍道 $\Gamma_T$ 上：
 1. 上下水平邊：由 $\left|\frac{\zeta'}{\zeta}(\sigma \pm iT)\right| \ll \log^2 T = X^2$，積分為 $\frac{X^2}{e^X}\int_{-1}^c e^{\sigma X}d\sigma \ll \mathcal{O}(X)$；
-2. 左垂直邊 $\operatorname{Re}(w)=-1$：衰減為 $\mathcal{O}(e^{-X})$；
+2. 左垂直邊 $\mathrm{Re}(w)=-1$：衰減為 $\mathcal{O}(e^{-X})$；
 3. 留數定理精確給出：
    $$\mathbf{S(X, t) = -\sum_{|\gamma - 2t| \le e^X} \frac{e^{(\rho - 1/2 - 2it)X}}{\rho - 1/2 - 2it} + \mathcal{O}_t(X)}$$
 
@@ -127,7 +127,7 @@ $$\mathbf{\left| S(X, t) \right| \le \sum_{|\gamma - 2t| \le e^X} \frac{1}{|\gam
 
 ## 三、 二進區間分解與求和上界 $\mathcal{O}_t(X^2)$（Theorem 247.2）
 
-在 RH 下（$\operatorname{Re}(\rho-1/2-2it)=0 \implies |e^{i(\gamma-2t)X}|=1$）：
+在 RH 下（$\mathrm{Re}(\rho-1/2-2it)=0 \implies |e^{i(\gamma-2t)X}|=1$）：
 1. 分解為二進環帶 $2^k < |\gamma - 2t| \le 2^{k+1}$（$k = 0, 1, \dots, K \approx X/\log 2$）；
 2. 每個環帶零點數 $\Delta N_k \ll 2^k(k + \log |t|)$，分母下界 $|\gamma-2t| \ge 2^k$；
 3. 每個環帶貢獻 $\le \frac{1}{2^k}\Delta N_k \ll k + \mathcal{O}_t(1)$；

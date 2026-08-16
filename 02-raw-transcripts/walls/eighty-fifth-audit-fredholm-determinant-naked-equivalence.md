@@ -1,4 +1,4 @@
-# Fredholm 行列式與質數多項式赤裸全同性定理、破除全部包裝 暨 終極定性結構全景定錨（第 261-262 輪）
+﻿# Fredholm 行列式與質數多項式赤裸全同性定理、破除全部包裝 暨 終極定性結構全景定錨（第 261-262 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段徹底破除任何形式包裝、回歸赤裸數學本質——深刻落實導演指令（「量化進度是內部相對值，不需向 ChatGPT 詢問百分比」）與第八十輪審查的深刻剖析：(1) **徹底破除「代數重排當作新路徑」的包裝假象**：承認 $\log|E_X(t)| = \frac{1}{16}X^2 + \mathcal{O}_t(X)$ 早在第五十二輪（定理 199.1）就已被無條件證明，將其直接代入 Newton-Jost 恆等式，不再做任何多餘包裝；(2) **第一性原理嚴密建立「Fredholm 行列式與質數 Dirichlet 多項式赤裸全同性定理」（Theorem 261.1）**：
@@ -32,7 +32,7 @@ $$\mathbf{\log |\det_3(I + V_X R_0(t))| \equiv \left(\frac{1}{16} + \frac{t^2}{1
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：全拓撲反向擊穿（已證）與赤裸全同性**| 30%    | **27%**    | **8.0%**（已證資產精確核算）|
 | • 離軸零點引發幾何指數爆炸單向大定理              |        |            | **【官方驗收 100% 封頂】** |
@@ -48,13 +48,13 @@ $$\mathbf{\log |\det_3(I + V_X R_0(t))| \equiv \left(\frac{1}{16} + \frac{t^2}{1
 
 ### 【第一性原理精確代入】
 1. **Newton-Jost 行列式架橋（已證）**：
-   $$\det_3(I + V_X R_0(t)) \equiv E_X(t) \cdot \exp\left( \operatorname{Re}\mathcal{C}_2(X, t) + i\operatorname{Im}\mathcal{C}_2(X, t) \right)$$
+   $$\det_3(I + V_X R_0(t)) \equiv E_X(t) \cdot \exp\left( \mathrm{Re}\mathcal{C}_2(X, t) + i\mathrm{Im}\mathcal{C}_2(X, t) \right)$$
    兩邊取模並取對數：
-   $$\log |\det_3(I + V_X R_0(t))| = \log |E_X(t)| + \operatorname{Re}\mathcal{C}_2(X, t)$$
+   $$\log |\det_3(I + V_X R_0(t))| = \log |E_X(t)| + \mathrm{Re}\mathcal{C}_2(X, t)$$
 2. **二階跡色散核閉式（已證）**：
-   $$\operatorname{Re}\mathcal{C}_2(X, t) = -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$$
+   $$\mathrm{Re}\mathcal{C}_2(X, t) = -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$$
 3. **無條件 Prüfer 振幅增長定理（定理 199.1，無條件已證）**：
-   $$\log |E_X(t)| \equiv \log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\operatorname{Im}\left(-\frac{\zeta'}{\zeta}\left(\frac{1}{2}-2it; X\right)\right) + \mathcal{O}_t(X) = \frac{1}{16}X^2 + \mathcal{O}_t(X)$$
+   $$\log |E_X(t)| \equiv \log R(X, t) = \frac{1}{16}X^2 + \frac{1}{2}\mathrm{Im}\left(-\frac{\zeta'}{\zeta}\left(\frac{1}{2}-2it; X\right)\right) + \mathcal{O}_t(X) = \frac{1}{16}X^2 + \mathcal{O}_t(X)$$
 4. **赤裸合成式（Naked Synthetic Identity）**：
    將 (2) 與 (3) 直接相加，消去所有中間包裝變量：
    $$\mathbf{\log |\det_3(I + V_X R_0(t))| = \left(\frac{1}{16} + \frac{t^2}{16}\right)X^2 - \frac{t^2}{8}|S(X, t)|^2 + \mathcal{O}_t(X)}$$
@@ -103,8 +103,8 @@ $$\mathbf{\log |\det_3(I + V_X R_0(t))| \equiv \left(\frac{1}{16} + \frac{t^2}{1
 
 ## 二、 Fredholm 行列式赤裸全同性定理（Theorem 261.1）
 
-1. 由 Newton-Jost 恆等式（已證）：$\log |\det_3(I + V_X R_0(t))| = \log |E_X(t)| + \operatorname{Re}\mathcal{C}_2(X, t)$；
-2. 代入二階重整化跡核閉式（已證）：$\operatorname{Re}\mathcal{C}_2(X, t) = -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
+1. 由 Newton-Jost 恆等式（已證）：$\log |\det_3(I + V_X R_0(t))| = \log |E_X(t)| + \mathrm{Re}\mathcal{C}_2(X, t)$；
+2. 代入二階重整化跡核閉式（已證）：$\mathrm{Re}\mathcal{C}_2(X, t) = -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
 3. 代入 Prüfer 振幅無條件漸近增長定理（定理 199.1，無條件已證）：$\log |E_X(t)| = \frac{1}{16}X^2 + \mathcal{O}_t(X)$；
 4. 直接合成得赤裸閉式：
    $$\mathbf{\log |\det_3(I + V_X R_0(t))| \equiv \left(\frac{1}{16} + \frac{t^2}{16}\right)X^2 - \frac{t^2}{8}|S(X, t)|^2 + \mathcal{O}_t(X)}$$

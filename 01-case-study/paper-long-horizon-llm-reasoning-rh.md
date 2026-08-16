@@ -1,4 +1,4 @@
-# From Narrative Inflation to Verifiable Self-Correction: An Empirical Longitudinal Case Study of Multi-Turn LLM Mathematical Reasoning on the Riemann Hypothesis
+﻿# From Narrative Inflation to Verifiable Self-Correction: An Empirical Longitudinal Case Study of Multi-Turn LLM Mathematical Reasoning on the Riemann Hypothesis
 
 # 從敘事膨脹到可驗證自我修正：大語言模型在長程多輪前沿數學推理中的失敗模式與修正機制實證研究
 
@@ -112,7 +112,7 @@ The three Tier-C cases are, we think, the most methodologically important findin
 Entries 371–374. Taylor-expanding $\sqrt{1-4W^2/X^4}$ around 0 despite a typical value of $\approx1/4$. Independently reproduced in SymPy.
 
 ### Mode 9: Notation-Masked Unproven Assumptions
-Entries 279–280, 355–356, 365–366. A cosmetic change of variables masking an unproven independence assumption; resolved via an explicit $\mathfrak{sl}(2,\mathbb R)$ commutator derivation, independently reproduced in SymPy.
+Entries 279–280, 355–356, 365–366. A cosmetic change of variables masking an unproven independence assumption; resolved via an explicit $\mathfrak{sl}(2,\mathbb{R})$ commutator derivation, independently reproduced in SymPy.
 
 ### Mode 10: Adversarially Induced True Self-Correction
 Seven chains independently re-verified (319→321, 345→347, 351→353→355, 371→373→375, 381→383, plus two others).

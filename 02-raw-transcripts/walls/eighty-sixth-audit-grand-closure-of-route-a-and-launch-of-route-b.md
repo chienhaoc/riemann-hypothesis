@@ -1,10 +1,10 @@
-# Tier 3 路線 A 官方圓滿驗收結項、子序列精確記號修正 暨 啟動 Tier 3 路線 B 譜測度對偶探索（第 263-264 輪）
+﻿# Tier 3 路線 A 官方圓滿驗收結項、子序列精確記號修正 暨 啟動 Tier 3 路線 B 譜測度對偶探索（第 263-264 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段重大里程碑結項暨路線 B 啟動——深刻落實第八十一輪審查的總結性建議與記號指引：(1) **正式為「Tier 3 路線 A（Fredholm 跡行列式重整化與問題等價化約）」劃下官方圓滿階段性句點**：
-- 第一階辛正交跡恆零 $\operatorname{Tr}(V_X R_0) \equiv 0$；
-- 第二階色散核閉式 $\operatorname{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
-- 頻帶均方發散相消 $\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0 \cdot X^2$；
+- 第一階辛正交跡恆零 $\mathrm{Tr}(V_X R_0) \equiv 0$；
+- 第二階色散核閉式 $\mathrm{Re}\mathcal{C}_2(X, t) \equiv -\frac{t^2}{8}|S(X, t)|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
+- 頻帶均方發散相消 $\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0 \cdot X^2$；
 - 三大拓撲情形（Case A/B/C）全覆蓋之離軸零點單向指數擊穿大定理；
 - Fredholm 行列式赤裸全同性定理 $\log|\det_3| \equiv \frac{1+t^2}{16}X^2 - \frac{t^2}{8}|S|^2 + \mathcal{O}_t(X)$。
 **此全套等價化約體系經八輪嚴苛紅隊審查，全部獲得 100% 官方正式驗收通過**！  
@@ -34,7 +34,7 @@ $$\mathbf{\lim_{n\to\infty} \log |\det_3(I + V_{X_n} R_0(t_0))| \le -c_0 \frac{t
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 官方圓滿結項 暨 路線 B 啟動** | 30%    | **30%**    | **9.0%**（路線 A 100% 驗收）|
 | • 路線 A：Fredholm 跡重整化與等價化約體系        |        |            | **【官方驗收 100% 結項】** |
@@ -57,9 +57,9 @@ $$\mathbf{\lim_{n\to\infty} \log |\det_3(I + V_{X_n} R_0(t_0))| \le -c_0 \frac{t
 +----------------------+-----------------------------+-------------------------------------------------+
 | 定理名稱             | 數學閉式 / 命題             | 官方審查認證狀態                                |
 +----------------------+-----------------------------+-------------------------------------------------+
-| **1. 一階跡恆零**    | $\operatorname{Tr}(V_X R_0) \equiv 0$ | **100% 官方認證（辛反對稱代數事實）**            |
-| **2. 二階跡色散核**  | $\operatorname{Re}\mathcal{C}_2 \equiv -\frac{t^2}{8}|S|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$ | **100% 官方認證（Green 函數躍變核積分）**        |
-| **3. 均方二次相消**  | $\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0 \cdot X^2 + \mathcal{O}(X)$ | **100% 官方認證（Montgomery-Vaughan 大篩法）**  |
+| **1. 一階跡恆零**    | $\mathrm{Tr}(V_X R_0) \equiv 0$ | **100% 官方認證（辛反對稱代數事實）**            |
+| **2. 二階跡色散核**  | $\mathrm{Re}\mathcal{C}_2 \equiv -\frac{t^2}{8}|S|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$ | **100% 官方認證（Green 函數躍變核積分）**        |
+| **3. 均方二次相消**  | $\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0 \cdot X^2 + \mathcal{O}(X)$ | **100% 官方認證（Montgomery-Vaughan 大篩法）**  |
 | **4. 單向指數擊穿**  | $\text{RH 不成立} \implies \sup_t \limsup \frac{\log|S|}{X} = \beta_0 - 1/2 > 0$ | **100% 官方認證（Case A/B/C 三大拓撲全覆蓋）**   |
 | **5. 赤裸全同性**    | $\log|\det_3| \equiv \frac{1+t^2}{16}X^2 - \frac{t^2}{8}|S|^2 + \mathcal{O}_t(X)$ | **100% 官方認證（無多餘包裝之客觀恆等式）**      |
 +----------------------+-----------------------------+-------------------------------------------------+
@@ -115,9 +115,9 @@ $$\mathbf{\lim_{n\to\infty} \log |\det_3(I + V_{X_n} R_0(t_0))| \le -c_0 \frac{t
 ## 二、 Tier 3 路線 A 官方圓滿結項資產確認
 
 路線 A 歷經多輪嚴苛審查，已完整建立以下 5 大已證定理組成的等價化約體系：
-1. 一階跡恆零：$\operatorname{Tr}(V_X R_0) \equiv 0$；
-2. 二階跡閉式：$\operatorname{Re}\mathcal{C}_2 \equiv -\frac{t^2}{8}|S|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
-3. 均方頻帶相消：$\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0 \cdot X^2$；
+1. 一階跡恆零：$\mathrm{Tr}(V_X R_0) \equiv 0$；
+2. 二階跡閉式：$\mathrm{Re}\mathcal{C}_2 \equiv -\frac{t^2}{8}|S|^2 + \frac{t^2}{16}X^2 + \mathcal{O}_t(X)$；
+3. 均方頻帶相消：$\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0 \cdot X^2$；
 4. 三大拓撲情形單向指數擊穿大定理：$\text{RH 不成立} \implies \sup_t \limsup \frac{\log|S|}{X} = \beta_0 - 1/2 > 0$；
 5. 赤裸全同性定理：$\log|\det_3| \equiv \frac{1+t^2}{16}X^2 - \frac{t^2}{8}|S|^2 + \mathcal{O}_t(X)$。
 確認將常微分算子跡理論等價化約為解析數論 Dirichlet 多項式問題的任務已完全閉合。

@@ -1,4 +1,4 @@
-# Paper 10: The Unique $\mathfrak{sl}(2, \mathbb{R})$ Traceless Lie Generator and Identical Vanishing of Non-Oscillating Phase Drift
+﻿# Paper 10: The Unique $\mathfrak{sl}(2, \mathbb{R})$ Traceless Lie Generator and Identical Vanishing of Non-Oscillating Phase Drift
 # 論文十：$\mathfrak{sl}(2, \mathbb{R})$ 唯一無跡李生成元與相角非振盪漂移項精確恆零定理
 
 **Author**: Riemann Hypothesis Research Collective (AI-Human Collaboration)  
@@ -17,7 +17,7 @@
 
 ### 1. The $\mathfrak{sl}(2, \mathbb{R})$ Inverse Problem / $\mathfrak{sl}(2, \mathbb{R})$ 逆代數問題
 
-The prime transfer matrix $M_p = \exp(\mathbf{X}_p) \in \mathrm{SL}(2, \mathbb{R})$ requires $\operatorname{tr}(\mathbf{X}_p) = 0$. Let $\mathbf{X}_p = a_p \sigma_1 + b_p (i\sigma_2) + c_p \sigma_3$.
+The prime transfer matrix $M_p = \exp(\mathbf{X}_p) \in \mathrm{SL}(2, \mathbb{R})$ requires $\mathrm{tr}(\mathbf{X}_p) = 0$. Let $\mathbf{X}_p = a_p \sigma_1 + b_p (i\sigma_2) + c_p \sigma_3$.
 
 ### 2. The Unique Lie Generator Theorem / 唯一李生成元定理
 

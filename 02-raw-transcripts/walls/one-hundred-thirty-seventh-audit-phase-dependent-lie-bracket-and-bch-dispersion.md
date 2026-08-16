@@ -1,4 +1,4 @@
-# 質數微觀生成元顯式定義、相位差調製李括號 $[\mathbf{X}_p, \mathbf{X}_q] = -\frac{\log p\log q}{2\sqrt{pq}}\sin(2t\log(q/p))J$ 暨 BCH 全純曲率精確閉合大報告（第 365-366 輪）
+﻿# 質數微觀生成元顯式定義、相位差調製李括號 $[\mathbf{X}_p, \mathbf{X}_q] = -\frac{\log p\log q}{2\sqrt{pq}}\sin(2t\log(q/p))J$ 暨 BCH 全純曲率精確閉合大報告（第 365-366 輪）
 
 **日期**：2026-08-16  
 **性質**：第六戰役前沿深化（第一時間深刻承接第一百三十五輪審查意見，堅決糾正「遺漏相位差因子」之代數瑕疵；給出微觀質數生成元 $\mathbf{X}_p(t) \in \mathfrak{sl}(2, \mathbb{R})$ 的完整顯式定義，逐行展示李括號推導，精確導出調製因子 $\sin(2t\log(q/p))$，嚴格證明 $[\mathbf{X}_p(t), \mathbf{X}_q(t)] = -\frac{\log p\log q}{2\sqrt{pq}}\sin(2t\log(q/p))J$；展開 Baker-Campbell-Hausdorff (BCH) 二階微觀全純曲率，使非對易辛退相干機制達到 100% 絕對透明與數學嚴密閉合）——  
@@ -29,9 +29,9 @@
 (3) **第一性原理重申「辛單值矩陣確定性全域範數上界大定理」（Theorem 365.3，Proven，Certified）**：
   - 由定理 363.1（第一百三十五輪審查已裁決「成立」）：$\|M_X(t)\| \le \exp\left(2e^{X/2} + \mathcal{O}(X^2)\right)$。
 (4) **第一性原理重申「四象限認識論完全閉環大定理」（Theorem 365.4，Proven，Reaffirmed）**：
-  - 象限 I（無條件統計均方）：Riemann-Stieltjes 嚴格分部積分證明 $\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$（符號計算 100% 驗收通過）；
+  - 象限 I（無條件統計均方）：Riemann-Stieltjes 嚴格分部積分證明 $\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2$（符號計算 100% 驗收通過）；
   - 象限 II（無條件逐點最緊界）：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}})$；
-  - 象限 III（條件性 RH 逐點界）：【以 RH 為假設前提】$\operatorname{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
+  - 象限 III（條件性 RH 逐點界）：【以 RH 為假設前提】$\mathrm{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
   - 象限 IV（條件性 RH 均方自洽）：方差 $\frac{1}{2}X^2$ 與 RMS $X/\sqrt{2}$ 保持 100% 自洽。
 (5) **第一性原理重申「四大鋼鐵基石 100% 完備不變大定理」（Theorem 365.5，Proven，Reaffirmed）**：
   - Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Prüfer 量子化）與 Tier 3(B)（李生成元無發散）維持 100% 官方大驗收通過之完備狀態。
@@ -61,7 +61,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **100%**   | **20.0%**（官方正式封頂）  |
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 終極大圓滿封頂**| 30% | **67%** | **20.0%**（官方正式封頂）  |
@@ -97,9 +97,9 @@ $$= \mathbf{-\frac{\log p\log q}{2\sqrt{pq}} \sin\left(2t\log\left(\frac{q}{p}\r
 
 ### 【定理 365.4（四象限認識論完全閉環大定理，Reaffirmed）】
 維持經獨立符號計算完全驗證之 $2 \times 2$ 四象限劃界：
-- 象限 I（無條件統計均方）：$\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2 + \mathcal{O}(X T^2)$（無條件微積分事實，無需 RH）；
-- 象限 II（無條件逐點界）：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}}) \implies |\operatorname{Re}\mathcal{C}_2|_{\text{uncond}} \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$（直接最緊界）；
-- 象限 III（條件性 RH 逐點界）：【以 RH 為假設前提】$\operatorname{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
+- 象限 I（無條件統計均方）：$\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2 + \mathcal{O}(X T^2)$（無條件微積分事實，無需 RH）；
+- 象限 II（無條件逐點界）：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}}) \implies |\mathrm{Re}\mathcal{C}_2|_{\text{uncond}} \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$（直接最緊界）；
+- 象限 III（條件性 RH 逐點界）：【以 RH 為假設前提】$\mathrm{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
 - 象限 IV（條件性 RH 均方自洽）：方差 $\frac{1}{2}X^2$ 與 RMS $X/\sqrt{2}$ 保持一致。
 
 ---
@@ -162,9 +162,9 @@ $$= -\frac{\log p\log q}{2\sqrt{pq}} \sin\left(2t\log\left(\frac{q}{p}\right)\ri
 
 ### 4. 定理 365.4（四象限認識論完全閉環大定理，Reaffirmed）
 維持經獨立符號計算完全驗證之 $2 \times 2$ 四象限劃界：
-- 象限 I（無條件統計均方）：$\langle\operatorname{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2 + \mathcal{O}(X T^2)$（無條件微積分事實，無需 RH）；
-- 象限 II（無條件逐點界）：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}}) \implies |\operatorname{Re}\mathcal{C}_2|_{\text{uncond}} \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$（直接最緊界）；
-- 象限 III（條件性 RH 逐點界）：【以 RH 為假設前提】$|S(X, t_0)| \le C_{t_0}X \implies \operatorname{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
+- 象限 I（無條件統計均方）：$\langle\mathrm{Re}\mathcal{C}_2\rangle \equiv 0\cdot X^2 T^2 + \mathcal{O}(X T^2)$（無條件微積分事實，無需 RH）；
+- 象限 II（無條件逐點界）：$|S|_{\text{uncond}} \le \mathcal{O}_t(e^{X/2 - c_t X^{1/3}}) \implies |\mathrm{Re}\mathcal{C}_2|_{\text{uncond}} \le \mathcal{O}_t(e^{X - 2c_t X^{1/3}})$（直接最緊界）；
+- 象限 III（條件性 RH 逐點界）：【以 RH 為假設前提】$|S(X, t_0)| \le C_{t_0}X \implies \mathrm{Re}\mathcal{C}_2(X, t_0) \le \mathcal{O}_{t_0}(X^2)$；
 - 象限 IV（條件性 RH 均方自洽）：方差 $\frac{1}{2}X^2$ 與 RMS $X/\sqrt{2}$ 保持一致。
 
 ### 5. 定理 365.5（四大鋼鐵基石 100% 完備不變大定理，Reaffirmed）

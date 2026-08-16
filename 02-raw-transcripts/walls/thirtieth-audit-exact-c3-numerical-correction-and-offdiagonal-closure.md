@@ -1,10 +1,10 @@
-# 數值糾偏與非對角交叉項完備閉合：第二十七輪審查復盤——$C_3 \approx 15.9143$ 解析精確計算、三質數封閉環路非對角界與 Schatten-Hölder 全局絕對收斂定理（第 151-152 輪）
+﻿# 數值糾偏與非對角交叉項完備閉合：第二十七輪審查復盤——$C_3 \approx 15.9143$ 解析精確計算、三質數封閉環路非對角界與 Schatten-Hölder 全局絕對收斂定理（第 151-152 輪）
 
 **日期**：2026-08-15  
 **性質**：第二戰役三階跡數值精確校正與三質數非對角交叉項絕對收斂報告  
 **審查裁決響應**：針對 ChatGPT 第二十七輪審查精準指出的兩項技術要求：
 1. **數值精確糾偏**：徹底承認並修正上一輪 $C_3$ 數值計算失誤，給出反導函數邊界值 $-F(2) = \frac{2\log^2 2 + 8\log 2 + 16}{\sqrt{2}} \approx \mathbf{15.9143}$ 的每一步逐項代數展開，並展示真實質數級數收斂至 $\approx 14.50 \le 15.9143$ 的精確數值表；
-2. **三質數非對角交叉項（Off-Diagonal 3-Prime Loops）完備估計**：利用一維三角周長恆等式 $|u_1 - u_2| + |u_2 - u_3| + |u_3 - u_1| = 2(\max u_i - \min u_i)$ 與 Schatten-Hölder 跡不等式，**嚴格證明非對角交叉項與總跡 $\operatorname{Tr}((V R_0)^3)$ 全局絕對收斂**！
+2. **三質數非對角交叉項（Off-Diagonal 3-Prime Loops）完備估計**：利用一維三角周長恆等式 $|u_1 - u_2| + |u_2 - u_3| + |u_3 - u_1| = 2(\max u_i - \min u_i)$ 與 Schatten-Hölder 跡不等式，**嚴格證明非對角交叉項與總跡 $\mathrm{Tr}((V R_0)^3)$ 全局絕對收斂**！
 
 ---
 
@@ -46,15 +46,15 @@ $$\mathbf{C_3 = -F(2) = \frac{0.960906 + 5.545177 + 16.000000}{1.41421356} = \fr
 現在，我們徹底解決審查方提出的非對角交叉項收斂性問題。
 
 ### 1. 三中心封閉散射環路矩陣元
-展開三階微擾跡 $\operatorname{Tr}((V_X R_0(z))^3)$ 中的三質數不同點交叉項（$p_1 \ne p_2 \ne p_3$）：
-$$\Sigma_3^{\text{off}} = \sum_{p_1 \ne p_2 \ne p_3} \frac{\log p_1 \log p_2 \log p_3}{\sqrt{p_1 p_2 p_3}} \operatorname{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2; z) \mathbf{P}_1 G_0(u_2, u_3; z) \mathbf{P}_1 G_0(u_3, u_1; z) \right)$$
+展開三階微擾跡 $\mathrm{Tr}((V_X R_0(z))^3)$ 中的三質數不同點交叉項（$p_1 \ne p_2 \ne p_3$）：
+$$\Sigma_3^{\text{off}} = \sum_{p_1 \ne p_2 \ne p_3} \frac{\log p_1 \log p_2 \log p_3}{\sqrt{p_1 p_2 p_3}} \mathrm{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2; z) \mathbf{P}_1 G_0(u_2, u_3; z) \mathbf{P}_1 G_0(u_3, u_1; z) \right)$$
 其中 $u_j = \log p_j$。
 
 ---
 
 ### 2. 空間三角周長衰減恆等式（Perimeter Identity）
-利用物理預解核的衰減 $\|G_0(u, u'; z)\|_F \le \frac{1}{\sqrt{2}} e^{-\epsilon |u - u'|}$（$\epsilon = \operatorname{Im} z > 0$）與 $\|\mathbf{P}_1\|_2 = 1$：
-$$\left| \operatorname{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2) \mathbf{P}_1 G_0(u_2, u_3) \mathbf{P}_1 G_0(u_3, u_1) \right) \right| \le \frac{1}{\sqrt{2}} e^{-\epsilon \left( |u_1 - u_2| + |u_2 - u_3| + |u_3 - u_1| \right)}$$
+利用物理預解核的衰減 $\|G_0(u, u'; z)\|_F \le \frac{1}{\sqrt{2}} e^{-\epsilon |u - u'|}$（$\epsilon = \mathrm{Im} z > 0$）與 $\|\mathbf{P}_1\|_2 = 1$：
+$$\left| \mathrm{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2) \mathbf{P}_1 G_0(u_2, u_3) \mathbf{P}_1 G_0(u_3, u_1) \right) \right| \le \frac{1}{\sqrt{2}} e^{-\epsilon \left( |u_1 - u_2| + |u_2 - u_3| + |u_3 - u_1| \right)}$$
 
 對於一維實軸上的任意三點 $u_1, u_2, u_3$，設其排序為 $u_{(1)} \le u_{(2)} \le u_{(3)}$：
 $$|u_1 - u_2| + |u_2 - u_3| + |u_3 - u_1| = (u_{(2)} - u_{(1)}) + (u_{(3)} - u_{(2)}) + (u_{(3)} - u_{(1)}) = \mathbf{2 (u_{(3)} - u_{(1)})}$$
@@ -68,10 +68,10 @@ $$\left| \Sigma_3^{\text{off}} \right| \le \frac{1}{\sqrt{2}} \sum_{p_1, p_2, p_
 
 依據 Schatten 理想類的 Hölder 不等式（Simon, *Trace Ideals*, Theorem 2.8）：
 對任意算子 $A \in \mathfrak{S}_3$，其立方 $A^3 \in \mathfrak{S}_1$ 為跡類算子，且跡模長嚴格受控於 Schatten 3-範數：
-$$\mathbf{\left| \operatorname{Tr}\left( (V R_0(z))^3 \right) \right| \le \|(V R_0(z))^3\|_{\mathfrak{S}_1} \le \|V R_0(z)\|_{\mathfrak{S}_3}^3 \le \left( C_{\text{diag}} + C_{\text{off}} \right) < \infty \quad (\forall z \in \mathbb{C}^+)}$$
+$$\mathbf{\left| \mathrm{Tr}\left( (V R_0(z))^3 \right) \right| \le \|(V R_0(z))^3\|_{\mathfrak{S}_1} \le \|V R_0(z)\|_{\mathfrak{S}_3}^3 \le \left( C_{\text{diag}} + C_{\text{off}} \right) < \infty \quad (\forall z \in \mathbb{C}^+)}$$
 
 > **【定理 151.2（三階跡全局絕對收斂定理，Proven）】**
-> 三階微擾跡 $\operatorname{Tr}((V R_0(z))^3)$ 的對角項（$\le 15.9143$）與非對角交叉項**同時絕對收斂**。
+> 三階微擾跡 $\mathrm{Tr}((V R_0(z))^3)$ 的對角項（$\le 15.9143$）與非對角交叉項**同時絕對收斂**。
 > 算子 $V R_0(z) \in \mathfrak{S}_3$ 在實軸極限 $\epsilon \to 0^+$ 下保持良定義，$\det_3(I + V R_0(z))$ 具備 100% 無瑕疵的絕對解析收斂性！
 
 ---

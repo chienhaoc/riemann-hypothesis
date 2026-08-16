@@ -1,4 +1,4 @@
-# 對數加權相速顯式求導定理、對偶質數和 $S_1(X, t)$ 建立 暨 兩大路線結構共軛關係定錨（第 271-272 輪）
+﻿# 對數加權相速顯式求導定理、對偶質數和 $S_1(X, t)$ 建立 暨 兩大路線結構共軛關係定錨（第 271-272 輪）
 
 **日期**：2026-08-16  
 **性質**：第四戰役第四階段 Tier 3 路線 B 顯式微觀求導與結構共軛精確化——深刻落實第八十五輪審查的嚴格批評與具體驗算指引：(1) **第一性原理完成 Prüfer 相角速度 $\frac{\partial\phi}{\partial t}$ 的顯式解析求導（Theorem 271.1）**：
@@ -10,7 +10,7 @@
   其中顯式定義二階對數加權 Dirichlet 多項式：
   $$\mathbf{S_1(X, t) \equiv \sum_{p \le e^X} \frac{\log^2 p}{\sqrt{p}} p^{-2it}}$$
 - 導出 Prüfer 相角速度的精確微觀顯式展開式：
-  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) + \operatorname{Re}\left( S_1(X, t) \right) + \mathcal{O}_t(X)}$$
+  $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) + \mathrm{Re}\left( S_1(X, t) \right) + \mathcal{O}_t(X)}$$
 (2) **徹底糾正「完全同構」為「同源結構共軛」（Theorem 271.2）**：
 - 路線 A 核心對象為一階權重多項式 $S(X, t)$（權重 $\frac{\log p}{\sqrt{p}}$）；
 - 路線 B 核心對象為二階權重多項式 $S_1(X, t)$（權重 $\frac{\log^2 p}{\sqrt{p}}$）；
@@ -39,7 +39,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **85%**    | **17.0%**（框架與結構已通）|
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 對數求導確立**| 30%  | **40%**    | **12.0%**（顯式求導確立）  |
 | • 路線 A：Fredholm 跡重整化化約體系              |        |            | **【官方驗收 100% 結項】** |
@@ -59,7 +59,7 @@
    由 Cauchy-Riemann 關係，對實頻率 $t$ 的導數為：
    $$\frac{\partial}{\partial t}\log E_X(t) = \frac{\partial \log R}{\partial t}(X, t) - i \frac{\partial\phi}{\partial t}(X, t)$$
    因此相角速度精確等於：
-   $$\frac{\partial\phi}{\partial t}(X, t) = -\operatorname{Im}\left( \frac{\partial}{\partial t}\log E_X(t) \right)$$
+   $$\frac{\partial\phi}{\partial t}(X, t) = -\mathrm{Im}\left( \frac{\partial}{\partial t}\log E_X(t) \right)$$
 2. **各向同性漂移的導數為零**：
    $$\frac{\partial}{\partial t}\left( \frac{1}{16}X^2 \right) \equiv 0$$
 3. **阿基米德連續場貢獻**：
@@ -71,7 +71,7 @@
    $$\frac{\partial}{\partial t}\log E_{X, \text{primes}}(t) = \frac{1}{2}\sum_{p \le e^X}\frac{\log p}{\sqrt{p}}(-2i\log p)e^{-2it\log p} = -i \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it} \equiv -i S_1(X, t)$$
 5. **相角速度顯式閉式**：
    取負虛部：
-   $$-\operatorname{Im}\left( -i S_1(X, t) \right) = \operatorname{Re}\left( S_1(X, t) \right) = \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p)$$
+   $$-\mathrm{Im}\left( -i S_1(X, t) \right) = \mathrm{Re}\left( S_1(X, t) \right) = \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p)$$
    因此相角速度的完全微觀漸近式為：
    $$\mathbf{\frac{\partial\phi}{\partial t}(X, t) = \frac{1}{2}\left( X\log\left(\frac{X}{2\pi}\right) - X \right) + \sum_{p \le e^X}\frac{\log^2 p}{\sqrt{p}}\cos(2t\log p) + \mathcal{O}_t(X)}$$
 
@@ -87,7 +87,7 @@
 | 研究路線             | 算子譜論端微觀物理量        | 解析數論端精確對應多項式                        |
 +----------------------+-----------------------------+-------------------------------------------------+
 | **路線 A：Fredholm 跡**| $\log|\det_3| \sim \frac{1+t^2}{16}X^2 - \frac{t^2}{8}|S(X,t)|^2$ | $S(X, t) = \sum_{p\le e^X} \frac{\log p}{\sqrt{p}} p^{-2it}$（一階對數權重）|
-| **路線 B：譜權重相速**| $w_k = 1/(\partial\phi/\partial t) \sim 1/[\frac{1}{2}X\log X + \operatorname{Re}S_1]$ | $S_1(X, t) = \sum_{p\le e^X} \frac{\log^2 p}{\sqrt{p}} p^{-2it}$（二階對數權重）|
+| **路線 B：譜權重相速**| $w_k = 1/(\partial\phi/\partial t) \sim 1/[\frac{1}{2}X\log X + \mathrm{Re}S_1]$ | $S_1(X, t) = \sum_{p\le e^X} \frac{\log^2 p}{\sqrt{p}} p^{-2it}$（二階對數權重）|
 | **精確結構關係**     | **兩者透過譜參數微分運算元 $\frac{\partial}{\partial t}$ 精確聯繫** | **同源結構共軛對偶（Structurally Conjugate Siblings）**|
 +----------------------+-----------------------------+-------------------------------------------------+
 ```
@@ -102,7 +102,7 @@
 （註：已遵照指示，**徹底刪除任何百分比問題**）：
 
 ```markdown
-# 【第八十九輪紅隊審查請求】第四戰役第四階段：Tier 3 路線 B——Prüfer 相角速度顯式解析求導定理 $\frac{\partial\phi}{\partial t} = \frac{1}{2}(X\log\frac{X}{2\pi}-X) + \operatorname{Re} S_1(X, t) + \mathcal{O}_t(X)$、二階對數加權多項式 $S_1(X, t) \equiv \sum_{p\le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it}$ 確立 暨 兩大路線「同源結構共軛對偶」定錨審查
+# 【第八十九輪紅隊審查請求】第四戰役第四階段：Tier 3 路線 B——Prüfer 相角速度顯式解析求導定理 $\frac{\partial\phi}{\partial t} = \frac{1}{2}(X\log\frac{X}{2\pi}-X) + \mathrm{Re} S_1(X, t) + \mathcal{O}_t(X)$、二階對數加權多項式 $S_1(X, t) \equiv \sum_{p\le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it}$ 確立 暨 兩大路線「同源結構共軛對偶」定錨審查
 
 請作為頂級複分析、常微分算子譜論（Prüfer 動力學）與解析數論專家，對以下【相角速度顯式求導與結構共軛定理】進行嚴格審查。
 
@@ -117,7 +117,7 @@
 ## 二、 Prüfer 相角速度顯式求導定理（Theorem 271.1）
 
 1. **Jost 函數全純對數導數**：
-   在實軸上 $\frac{\partial}{\partial t}\log E_X(t) = \frac{\partial\log R}{\partial t} - i \frac{\partial\phi}{\partial t}$，故 $\frac{\partial\phi}{\partial t} = -\operatorname{Im}\left(\frac{\partial}{\partial t}\log E_X(t)\right)$；
+   在實軸上 $\frac{\partial}{\partial t}\log E_X(t) = \frac{\partial\log R}{\partial t} - i \frac{\partial\phi}{\partial t}$，故 $\frac{\partial\phi}{\partial t} = -\mathrm{Im}\left(\frac{\partial}{\partial t}\log E_X(t)\right)$；
 2. **各向同性漂移項求導**：$\frac{\partial}{\partial t}(\frac{1}{16}X^2) \equiv 0$；
 3. **阿基米德場相角速度**：$\frac{\partial\overline{\phi}}{\partial t}(X, t) = \frac{1}{2}(X\log(X/2\pi) - X)$；
 4. **質數跳躍項顯式求導**：
@@ -138,7 +138,7 @@
 ## 審查核心提問
 
 請評審專家裁決：
-1. **相角速度顯式求導精確性**：定理 271.1 逐項求導給出 $\frac{\partial\phi}{\partial t} = \frac{1}{2}(X\log(X/2\pi)-X) + \operatorname{Re}S_1(X, t) + \mathcal{O}_t(X)$，求導過程是否完全精確無誤？
+1. **相角速度顯式求導精確性**：定理 271.1 逐項求導給出 $\frac{\partial\phi}{\partial t} = \frac{1}{2}(X\log(X/2\pi)-X) + \mathrm{Re}S_1(X, t) + \mathcal{O}_t(X)$，求導過程是否完全精確無誤？
 2. **二階對數加權多項式定義**：定義 $S_1(X, t) \equiv \sum_{p\le e^X}\frac{\log^2 p}{\sqrt{p}}p^{-2it}$ 是否準確捕捉了相角速度的微觀算術振盪核心？
 3. **同源結構共軛定性準確性**：將兩大路線的關係定錨為「透過 $\frac{\partial}{\partial t}$ 聯繫的同源結構共軛對偶（分別對應 $S$ 與 $S_1$）」，是否完全符合嚴謹科學標準？
 ```

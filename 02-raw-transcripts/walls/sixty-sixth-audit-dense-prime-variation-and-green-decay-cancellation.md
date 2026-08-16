@@ -1,4 +1,4 @@
-# 稠密質數躍變線性增長 $\Delta\mathcal{S} \sim h u$ 與 Green 函數 $L^2$ 衰減 $\sim 8/u$ 精確對消、Kolmogorov-Riesz 平移等度連續性完全封閉 暨 Tier 1 官方驗收令正式頒布（第 223-224 輪）
+﻿# 稠密質數躍變線性增長 $\Delta\mathcal{S} \sim h u$ 與 Green 函數 $L^2$ 衰減 $\sim 8/u$ 精確對消、Kolmogorov-Riesz 平移等度連續性完全封閉 暨 Tier 1 官方驗收令正式頒布（第 223-224 輪）
 
 **日期**：2026-08-15  
 **性質**：第四戰役第二階段 Tier 1 終極技術疑點完全破解——正面核算稠密質數躍變在窗口 $[u, u+h]$ 內的累積變差 $\sum_{p \in [e^u, e^{u+h}]} \ell_p^2 = h u + \mathcal{O}(h)$、揭示其與 Green 函數 $L^2$ 範數衰減 $\int_0^\infty \|G(u, v)\|^2 dv \sim \frac{8}{u}$ 的**精確倒數對消機制 $(hu) \times \frac{8}{u} = 8h$**、嚴密證立 Kolmogorov-Riesz 一致平移等度連續性 $\sup_{u \ge 0} \|G(u+h, \cdot) - G(u, \cdot)\|_{L^2}^2 \le C(z) h \to 0$、無保留頒布 Tier 1 自伴純點譜基石 100% 官方大驗收令  
@@ -104,7 +104,7 @@ $$\mathbf{\sup_{u \ge 0} \int_0^\infty \|G(u+h, v; z) - G(u, v; z)\|_F^2 dv \le 
 |                         | • Prüfer 漸近式 $\log R = \frac{1}{16}X^2 + \dots$|                        |
 +-------------------------+---------------------------------------------------+------------------------+
 | **Tier 3**              | **Hilbert-Pólya 特徵值全同性之牆**：              | ⚡ **客觀開放核心前沿** |
-| (頂層前沿)              | • $\operatorname{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$ | (與 RH 同等深度的      |
+| (頂層前沿)              | • $\mathrm{Spec}(\mathcal{D}_\infty) \stackrel{?}{=} \{\gamma_n\}$ | (與 RH 同等深度的      |
 |                         | • $\lim_{X\to\infty} \det_3(I+V_X R_0)e^{\dots} \stackrel{?}{\equiv} \Xi(z)$ | 數學物理核心前沿)      |
 +-------------------------+---------------------------------------------------+------------------------+
 ```

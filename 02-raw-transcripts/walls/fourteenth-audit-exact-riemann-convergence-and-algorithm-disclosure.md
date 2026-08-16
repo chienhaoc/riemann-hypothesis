@@ -1,4 +1,4 @@
-# 深度收斂：第十四輪審查大復盤——完整公開數值積分演算法細節、精確閉合 Riemann 二次型零點譜和（$Q_R(1.00) \approx +0.007$）與全域體系終極封頂
+﻿# 深度收斂：第十四輪審查大復盤——完整公開數值積分演算法細節、精確閉合 Riemann 二次型零點譜和（$Q_R(1.00) \approx +0.007$）與全域體系終極封頂
 
 **日期**：2026-08-15  
 **性質**：紅隊審查深度復盤、完整數值演算法公開與終極收斂報告  
@@ -28,7 +28,7 @@ $$[0, \infty) = [0, \pi - \delta] \cup [\pi - \delta, \pi + \delta] \cup [\pi + 
 
 ### 3. 前置係數與歸一化標準
 頻域譜積分嚴格定義為：
-$$\mathcal{W}_{\text{arch}}^R(w_a) = \frac{1}{2\pi}\int_{-\infty}^\infty |\widehat{w_a}(\gamma)|^2 \Phi_{\text{arch}}^R(\gamma) d\gamma = \frac{a}{2\pi} \int_0^{U_{\max}} K_a(u) \left[ -\log\pi + \operatorname{Re}\psi\left(\frac{1}{4} + i \frac{u}{4a}\right) \right] du$$
+$$\mathcal{W}_{\text{arch}}^R(w_a) = \frac{1}{2\pi}\int_{-\infty}^\infty |\widehat{w_a}(\gamma)|^2 \Phi_{\text{arch}}^R(\gamma) d\gamma = \frac{a}{2\pi} \int_0^{U_{\max}} K_a(u) \left[ -\log\pi + \mathrm{Re}\psi\left(\frac{1}{4} + i \frac{u}{4a}\right) \right] du$$
 Plancherel 基準測試：當 $\Phi \equiv 1$ 時，$\frac{a}{2\pi}\int_0^\infty K_a(u) du \equiv a(1 + c(a)^2) = \|w_a\|_{L^2}^2$，誤差 $< 10^{-12}$。
 
 ---

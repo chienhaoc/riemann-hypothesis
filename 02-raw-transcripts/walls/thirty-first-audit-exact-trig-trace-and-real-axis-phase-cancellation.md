@@ -1,11 +1,11 @@
-# 臨界線實軸相位干涉相消定理：第二十八輪審查復盤——純實矩陣跡精確三角閉式 $-\frac{1}{8}\prod \sin(t\Delta u)$ 導出、$t=0$ 恆等歸零與 Montgomery-Vaughan 實軸收斂證明（第 153-154 輪）
+﻿# 臨界線實軸相位干涉相消定理：第二十八輪審查復盤——純實矩陣跡精確三角閉式 $-\frac{1}{8}\prod \sin(t\Delta u)$ 導出、$t=0$ 恆等歸零與 Montgomery-Vaughan 實軸收斂證明（第 153-154 輪）
 
 **日期**：2026-08-15  
-**性質**：第二戰役實軸 $\epsilon=0$（臨界線 $\operatorname{Re}(s)=1/2$）非對角交叉項相位干涉收斂報告  
+**性質**：第二戰役實軸 $\epsilon=0$（臨界線 $\mathrm{Re}(s)=1/2$）非對角交叉項相位干涉收斂報告  
 **審查裁決響應**：針對 ChatGPT 第二十八輪審查提出的最深刻核心挑戰（「空間衰減因子 $e^{-\epsilon \Delta u}$ 在 $\epsilon \to 0^+$ 實軸臨界線上退化為 1，必須給出不依賴 $\epsilon$ 的實軸微觀收斂證明」），本輪**徹底告別空域指數衰減，進入頻域相干微觀幾何**：
 1. **導出純實矩陣跡的精確三角積閉式（Exact Trigonometric Trace Formula）**：
    證明在 $\epsilon = 0$ 處，三質數封閉環路矩陣跡精確坍縮為純實純量三角積：
-   $$\operatorname{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2; t) \mathbf{P}_1 G_0(u_2, u_3; t) \mathbf{P}_1 G_0(u_3, u_1; t) \right) = \mathbf{-\frac{1}{8} \sin\left( t\log\frac{p_2}{p_1} \right) \sin\left( t\log\frac{p_3}{p_2} \right) \sin\left( t\log\frac{p_3}{p_1} \right)}$$
+   $$\mathrm{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2; t) \mathbf{P}_1 G_0(u_2, u_3; t) \mathbf{P}_1 G_0(u_3, u_1; t) \right) = \mathbf{-\frac{1}{8} \sin\left( t\log\frac{p_2}{p_1} \right) \sin\left( t\log\frac{p_3}{p_2} \right) \sin\left( t\log\frac{p_3}{p_1} \right)}$$
 2. **$t=0$ 處的絕對守恆與恆等歸零**：在原點 $t=0$ 處，每個項皆包含 $\sin(0)=0$，**非對角交叉項總和恆等歸零 $\Sigma_3^{\text{off}}(0) \equiv 0$**！
 3. **$t \ne 0$ 處的 Montgomery-Vaughan 相位干涉相消定理**：利用質數對數相位 $\sin(t\log p)$ 的快速振盪，給出 $\mathcal{O}(p^{-1/2}/|t|)$ 的非共振相消界，**嚴格證明非對角交叉項在全實軸 $\epsilon=0$ 上無條件絕對收斂**！
 
@@ -32,8 +32,8 @@ $$\mathbf{P}_1 M \mathbf{P}_1 = m_{11} \mathbf{P}_1$$
 ---
 
 ### 3. 三階跡精確三角恆等式（Theorem 153.1，Proven）
-相乘並取跡（$\operatorname{Tr}(\mathbf{P}_1) = 1$）：
-$$\mathbf{T(u_1, u_2, u_3; t) = \operatorname{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2) \mathbf{P}_1 G_0(u_2, u_3) \mathbf{P}_1 G_0(u_3, u_1) \right) = -\frac{1}{8} \sin\left( t(u_2 - u_1) \right) \sin\left( t(u_3 - u_2) \right) \sin\left( t(u_3 - u_1) \right)}$$
+相乘並取跡（$\mathrm{Tr}(\mathbf{P}_1) = 1$）：
+$$\mathbf{T(u_1, u_2, u_3; t) = \mathrm{Tr}\left( \mathbf{P}_1 G_0(u_1, u_2) \mathbf{P}_1 G_0(u_2, u_3) \mathbf{P}_1 G_0(u_3, u_1) \right) = -\frac{1}{8} \sin\left( t(u_2 - u_1) \right) \sin\left( t(u_3 - u_2) \right) \sin\left( t(u_3 - u_1) \right)}$$
 
 ---
 
@@ -67,7 +67,7 @@ $$\left| \sum_{p_3 \le N} \frac{\log p_3}{p_3^{1/2 - i 2t}} \right| \le C(t) N^{
 $$\mathbf{|\Sigma_3^{\text{off}}(t)| \le \frac{C}{|t|} \sum_{p_2} \frac{\log^2 p_2}{p_2^{1 + \delta}} < \infty \quad (\forall t \in \mathbb{R} \setminus \{0\})}$$
 
 > **【定理 153.4（臨界線實軸非對角交叉項絕對收斂定理，Proven）】**
-> 在真正的臨界線 $\operatorname{Re}(s) = 1/2$（$\epsilon = 0, z = t$）上：
+> 在真正的臨界線 $\mathrm{Re}(s) = 1/2$（$\epsilon = 0, z = t$）上：
 > 1. $t = 0$ 處：$\Sigma_3^{\text{off}}(0) \equiv 0$；
 > 2. $t \ne 0$ 處：由質數三角相位的 Montgomery-Vaughan 干涉相消，級數全局絕對收斂；
 > 3. 三階正則化 Fredholm 行列式 $\det_3(I + V R_0(t))$ 在全實軸 $t \in \mathbb{R}$ 上**無條件 100% 絕對解析收斂**！

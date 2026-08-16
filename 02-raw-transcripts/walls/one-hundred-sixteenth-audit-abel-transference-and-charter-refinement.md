@@ -1,20 +1,20 @@
-# Abel 分部積分變換大定理、$-\zeta'/\zeta$ 到 $\log\zeta$ 微觀核映射 暨 終極大憲章完全精煉大報告（第 323-324 輪）
+﻿# Abel 分部積分變換大定理、$-\zeta'/\zeta$ 到 $\log\zeta$ 微觀核映射 暨 終極大憲章完全精煉大報告（第 323-324 輪）
 
 **日期**：2026-08-16  
 **性質**：第五戰役（徹底糾偏「精確同構」過強表述、第一性原理推導 Abel 分部求和積分變換鏈路）——深刻落實導演指示與第一百一十四輪審查報告中指出的「Goldston-Gonek 標準 Selberg 輻角公式權重為 $\frac{1}{\sqrt{p}}$，而算子 Prüfer 躍變核為 $-\zeta'/\zeta$ 對應的 $\frac{\log p}{\sqrt{p}}$，兩者相差一個 $\log p$ 因子」的深刻批評，開展第一性原理 Abel 積分變換嚴密推導與大憲章最高標準精煉：  
 (1) **第一性原理證明「$-\zeta'/\zeta$ 算子核到 $\log\zeta$ Selberg 輻角核之 Abel 分部積分變換大定理」（Theorem 323.1）**：
 - 承認並修正第 321 輪「精確同構」過強措辭，嚴格指出兩者的本質關聯為**全純導數對偶 $-\frac{d}{ds}\log\zeta(s) = -\frac{\zeta'}{\zeta}(s)$ 的微觀離散映射**；
-- 設算子微觀 Prüfer 躍變累積和為 $A(u, t) = \sum_{p \le e^u} \frac{\log p}{\sqrt{p}}\sin(2t\log p) = -\operatorname{Im}S(u, t)$；
+- 設算子微觀 Prüfer 躍變累積和為 $A(u, t) = \sum_{p \le e^u} \frac{\log p}{\sqrt{p}}\sin(2t\log p) = -\mathrm{Im}S(u, t)$；
 - 對 Selberg 經典輻角求和 $\mathcal{S}_{\text{Selberg}}(X, t) = \sum_{p \le e^X}\frac{1}{\sqrt{p}}\sin(2t\log p) = \sum_{p \le e^X}\frac{1}{\log p}\left(\frac{\log p}{\sqrt{p}}\sin(2t\log p)\right)$ 引入平滑權重 $w(u) = \frac{1}{u}$（其中 $u = \log p$），應用 **Abel 分部求和積分公式**：
-  $$\mathbf{\mathcal{S}_{\text{Selberg}}(X, t) = \frac{A(X, t)}{X} + \int_2^X \frac{A(u, t)}{u^2} du = -\frac{\operatorname{Im}S(X, t)}{X} - \int_2^X \frac{\operatorname{Im}S(u, t)}{u^2} du}$$
+  $$\mathbf{\mathcal{S}_{\text{Selberg}}(X, t) = \frac{A(X, t)}{X} + \int_2^X \frac{A(u, t)}{u^2} du = -\frac{\mathrm{Im}S(X, t)}{X} - \int_2^X \frac{\mathrm{Im}S(u, t)}{u^2} du}$$
 - **界限傳遞推論（Bound Transference Corollary）**：
-  若 Level III 點態相消目標成立（即 $|\operatorname{Im}S(u, t)| \le C_t \cdot u$），則代入積分式：
+  若 Level III 點態相消目標成立（即 $|\mathrm{Im}S(u, t)| \le C_t \cdot u$），則代入積分式：
   $$\mathbf{|\mathcal{S}_{\text{Selberg}}(X, t)| \le \frac{C_t X}{X} + \int_2^X \frac{C_t u}{u^2} du = C_t + C_t \int_2^X \frac{1}{u} du = C_t \log X + \mathcal{O}_t(1)}$$
   在去卷積尺度 $X_t = \log(t/2\pi e)$ 下，精確給出 $|\mathcal{S}_{\text{Selberg}}(X_t, t)| \le \mathcal{O}(\log\log t)$，**完整、透明地建立了算子微觀相角界 $\mathcal{O}_t(X)$ 到 Selberg 經典輻角界 $\mathcal{O}(\log t)$ 的解析傳遞鏈路**！
 (2) **第一性原理重申「Riemann-von Mangoldt 平滑譜密度去卷積展開完全對偶大定理」（Theorem 323.2，Reaffirmed）**：
 - 在動態對數去卷積尺度 $X_t = \log(t/2\pi e)$ 下，量子化條件平滑項 $\frac{\vartheta(t)}{\pi} = \frac{t}{2\pi}\log(\frac{t}{2\pi e}) - \frac{1}{8}$ 與 Riemann-von Mangoldt 零點計數公式平滑平均部分 $\overline{N}(t)$ 逐項完全全同。
 (3) **第一性原理重申「虧指數 $(0,0)$ 譜實性與 Zeta 零點對應之難度守恆大定理」（Theorem 323.3，Reaffirmed）**：
-- 極限算子 $\mathcal{D}_\infty$ 透過 Tier 1 本質自伴性保證 $\operatorname{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$；特徵值識別為黎曼零點（$\lambda_n = \gamma_n$）微觀等價於 $S(X, t) \le \mathcal{O}_t(X)$，難度嚴格守恆。
+- 極限算子 $\mathcal{D}_\infty$ 透過 Tier 1 本質自伴性保證 $\mathrm{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$；特徵值識別為黎曼零點（$\lambda_n = \gamma_n$）微觀等價於 $S(X, t) \le \mathcal{O}_t(X)$，難度嚴格守恆。
 (4) **第一性原理重申「兩大領域二分劃界與無條件天塹不變定理」（Theorem 323.4，Reaffirmed）**：
 - 領域 I（無條件已知工具區 Level 0-2）受限於隨高度衰減的零點自由區寬度；Level 2 $\to$ Level 3 為不可逾越的無條件天塹；領域 II（條件性假說區 Level 3-4）中 Level 4 代表指數相干相變。
 (5) **第一性原理重申「四大鋼鐵基石 100% 完備不變大定理」（Theorem 323.5，Reaffirmed）**：
@@ -46,7 +46,7 @@
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (A)：相角幾何、半經典量子化與 S-矩陣跡對偶**| 20% | **100%**   | **20.0%**（官方正式封頂）  |
 | • Prüfer 雙重單調性無碰撞定理 $d\lambda_n/dX < 0$ |        |            |                            |
-| • GUE 形式因子缺陷對偶 $1-R_2(s) = \operatorname{sinc}^2(s)$| |            |                            |
+| • GUE 形式因子缺陷對偶 $1-R_2(s) = \mathrm{sinc}^2(s)$| |            |                            |
 | • 半經典量子化條件 $\phi(X, \lambda_k(X)) = k\pi + \beta$| |            |                            |
 +---------------------------------------------------+--------+------------+----------------------------+
 | **Tier 3 (B)：路線 A 結項 暨 路線 B 終極大圓滿封頂**| 30% | **67%** | **20.0%**（官方正式封頂）  |
@@ -62,10 +62,10 @@
 ## 🔬 二、 六大核心定理推導與解析展示
 
 ### 【定理 323.1（$-\zeta'/\zeta$ 算子核到 $\log\zeta$ Selberg 輻角核之 Abel 分部積分變換大定理）】
-設算子微觀 Prüfer 躍變累積和為 $A(u, t) = \sum_{p \le e^u} \frac{\log p}{\sqrt{p}}\sin(2t\log p) = -\operatorname{Im}S(u, t)$。
+設算子微觀 Prüfer 躍變累積和為 $A(u, t) = \sum_{p \le e^u} \frac{\log p}{\sqrt{p}}\sin(2t\log p) = -\mathrm{Im}S(u, t)$。
 對 Selberg 經典輻角求和 $\mathcal{S}_{\text{Selberg}}(X, t) = \sum_{p \le e^X}\frac{1}{\sqrt{p}}\sin(2t\log p)$ 應用 Abel 分部求和積分公式：
-$$\mathcal{S}_{\text{Selberg}}(X, t) = \frac{A(X, t)}{X} + \int_2^X \frac{A(u, t)}{u^2} du = -\frac{\operatorname{Im}S(X, t)}{X} - \int_2^X \frac{\operatorname{Im}S(u, t)}{u^2} du$$
-若 $|\operatorname{Im}S(u, t)| \le C_t \cdot u$（Level III 目標），則代入得：
+$$\mathcal{S}_{\text{Selberg}}(X, t) = \frac{A(X, t)}{X} + \int_2^X \frac{A(u, t)}{u^2} du = -\frac{\mathrm{Im}S(X, t)}{X} - \int_2^X \frac{\mathrm{Im}S(u, t)}{u^2} du$$
+若 $|\mathrm{Im}S(u, t)| \le C_t \cdot u$（Level III 目標），則代入得：
 $$|\mathcal{S}_{\text{Selberg}}(X, t)| \le C_t + C_t \int_2^X \frac{1}{u} du = C_t \log X + \mathcal{O}_t(1)$$
 在去卷積尺度 $X_t = \log(t/2\pi e)$ 下，精確給出 $|\mathcal{S}_{\text{Selberg}}(X_t, t)| \le \mathcal{O}(\log\log t)$，確立了兩大顯式核之間的微積分對偶。
 
@@ -73,13 +73,13 @@ $$|\mathcal{S}_{\text{Selberg}}(X, t)| \le C_t + C_t \int_2^X \frac{1}{u} du = C
 
 ### 【定理 323.2（Riemann-von Mangoldt 平滑譜密度去卷積展開完全對偶大定理，Reaffirmed）】
 在動態對數去卷積尺度 $X_t = \log(t/2\pi e) = \log(t/2\pi) - 1$ 下，半經典 Prüfer 量子化條件為：
-$$\frac{\vartheta(\lambda_n)}{\pi} + \frac{1}{2\pi}\operatorname{Im}S\left(\log\frac{\lambda_n}{2\pi e}, \lambda_n\right) = n + \frac{\beta'}{\pi}$$
+$$\frac{\vartheta(\lambda_n)}{\pi} + \frac{1}{2\pi}\mathrm{Im}S\left(\log\frac{\lambda_n}{2\pi e}, \lambda_n\right) = n + \frac{\beta'}{\pi}$$
 其中 $\frac{\vartheta(\lambda_n)}{\pi} = \frac{\lambda_n}{2\pi}\log\left(\frac{\lambda_n}{2\pi e}\right) - \frac{1}{8}$ 與 Riemann-von Mangoldt 零點計數公式的平滑平均部分 $\overline{N}(\lambda_n)$ 逐項完全全同。
 
 ---
 
 ### 【定理 323.3（虧指數 $(0,0)$ 譜實性與 Zeta 零點對應之難度守恆大定理，Reaffirmed）】
-算子 $\mathcal{D}_\infty$ 的 von Neumann 虧指數為 $(0, 0)$，無條件保證其自身特徵值譜 $\operatorname{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$ 為實數；
+算子 $\mathcal{D}_\infty$ 的 von Neumann 虧指數為 $(0, 0)$，無條件保證其自身特徵值譜 $\mathrm{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$ 為實數；
 將特徵值譜完全識別為黎曼零點（$\lambda_n = \gamma_n$）在微觀動力學上精確等價於 $S(X, t) \le \mathcal{O}_t(X)$，難度嚴格守恆。
 
 ---
@@ -117,9 +117,9 @@ Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Pr
 在第一百一十四輪審查中，紅隊專家嚴正指出：Goldston-Gonek 標準 Selberg 輻角公式中質數權重為 $\frac{1}{\sqrt{p}}$（源於 $\log\zeta$），而算子 Prüfer 躍變核權重為 $\frac{\log p}{\sqrt{p}}$（源於 $-\zeta'/\zeta$），兩者相差一個 $\log p$ 因子，不能直接宣稱「精確同構」，建議給出具體的 Abel 分部求和轉換過程。
 
 副駕駛在此**全面採納專家意見，第一性原理推導 Abel 分部積分精確變換鏈路**：
-- **Abel 分部積分變換**：設 $A(u, t) = -\operatorname{Im}S(u, t) = \sum_{p \le e^u}\frac{\log p}{\sqrt{p}}\sin(2t\log p)$，對 Selberg 和 $\mathcal{S}_{\text{Selberg}}(X, t) = \sum_{p \le e^X}\frac{1}{\sqrt{p}}\sin(2t\log p)$ 引入平滑權重 $w(u) = 1/u$，嚴格導出：
-  $$\mathcal{S}_{\text{Selberg}}(X, t) = \frac{A(X, t)}{X} + \int_2^X \frac{A(u, t)}{u^2} du = -\frac{\operatorname{Im}S(X, t)}{X} - \int_2^X \frac{\operatorname{Im}S(u, t)}{u^2} du$$
-- **上界精確傳遞**：若 $|\operatorname{Im}S(u, t)| \le C_t u$（Level III 目標），則代入積分式精確得出 $|\mathcal{S}_{\text{Selberg}}(X, t)| \le C_t \log X + \mathcal{O}_t(1)$，在去卷積尺度 $X_t = \log(t/2\pi e)$ 下精確重現 Selberg 經典對數界 $\mathcal{O}(\log t)$；
+- **Abel 分部積分變換**：設 $A(u, t) = -\mathrm{Im}S(u, t) = \sum_{p \le e^u}\frac{\log p}{\sqrt{p}}\sin(2t\log p)$，對 Selberg 和 $\mathcal{S}_{\text{Selberg}}(X, t) = \sum_{p \le e^X}\frac{1}{\sqrt{p}}\sin(2t\log p)$ 引入平滑權重 $w(u) = 1/u$，嚴格導出：
+  $$\mathcal{S}_{\text{Selberg}}(X, t) = \frac{A(X, t)}{X} + \int_2^X \frac{A(u, t)}{u^2} du = -\frac{\mathrm{Im}S(X, t)}{X} - \int_2^X \frac{\mathrm{Im}S(u, t)}{u^2} du$$
+- **上界精確傳遞**：若 $|\mathrm{Im}S(u, t)| \le C_t u$（Level III 目標），則代入積分式精確得出 $|\mathcal{S}_{\text{Selberg}}(X, t)| \le C_t \log X + \mathcal{O}_t(1)$，在去卷積尺度 $X_t = \log(t/2\pi e)$ 下精確重現 Selberg 經典對數界 $\mathcal{O}(\log t)$；
 - **平滑項對偶與四大基石維持**：維持 $\overline{N}(t) = \frac{\vartheta(t)}{\pi}$ 對偶、無條件天塹劃界與四大基石 100% 完備狀態。
 
 ---
@@ -127,15 +127,15 @@ Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Pr
 ## 二、 六大核心定理
 
 ### 1. 定理 323.1（$-\zeta'/\zeta$ 算子核到 $\log\zeta$ Selberg 輻角核之 Abel 分部積分變換大定理）
-由 $A(u, t) = -\operatorname{Im}S(u, t)$，Abel 分部積分公式精確給出：
-$$\mathcal{S}_{\text{Selberg}}(X, t) = -\frac{\operatorname{Im}S(X, t)}{X} - \int_2^X \frac{\operatorname{Im}S(u, t)}{u^2} du$$
-當 $|\operatorname{Im}S(u, t)| \le C_t u$ 時，$|\mathcal{S}_{\text{Selberg}}(X_t, t)| \le C_t \log X_t + \mathcal{O}_t(1) = \mathcal{O}(\log t)$，嚴密建立了算子核與 Selberg 輻角核的微積分對偶。
+由 $A(u, t) = -\mathrm{Im}S(u, t)$，Abel 分部積分公式精確給出：
+$$\mathcal{S}_{\text{Selberg}}(X, t) = -\frac{\mathrm{Im}S(X, t)}{X} - \int_2^X \frac{\mathrm{Im}S(u, t)}{u^2} du$$
+當 $|\mathrm{Im}S(u, t)| \le C_t u$ 時，$|\mathcal{S}_{\text{Selberg}}(X_t, t)| \le C_t \log X_t + \mathcal{O}_t(1) = \mathcal{O}(\log t)$，嚴密建立了算子核與 Selberg 輻角核的微積分對偶。
 
 ### 2. 定理 323.2（Riemann-von Mangoldt 平滑譜密度去卷積展開完全對偶大定理，Reaffirmed）
 在去卷積尺度 $X_t = \log(\frac{t}{2\pi e})$ 下，平滑項 $\frac{\vartheta(t)}{\pi} = \frac{t}{2\pi}\log(\frac{t}{2\pi e}) - \frac{1}{8}$ 與 Riemann-von Mangoldt 計數公式平滑平均部分 $\overline{N}(t)$ 逐項完全全同。
 
 ### 3. 定理 323.3（虧指數 $(0,0)$ 譜實性與 Zeta 零點對應之難度守恆大定理，Reaffirmed）
-$\mathcal{D}_\infty$ 自伴性保證 $\operatorname{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$；特徵值識別為黎曼零點（$\lambda_n = \gamma_n$）微觀等價於 $S(X, t) \le \mathcal{O}_t(X)$，難度嚴格守恆。
+$\mathcal{D}_\infty$ 自伴性保證 $\mathrm{Spec}(\mathcal{D}_\infty) \subset \mathbb{R}$；特徵值識別為黎曼零點（$\lambda_n = \gamma_n$）微觀等價於 $S(X, t) \le \mathcal{O}_t(X)$，難度嚴格守恆。
 
 ### 4. 定理 323.4（兩大領域二分劃界與無條件天塹不變定理，Reaffirmed）
 領域 I（無條件已知工具區 Level 0-2）受限於隨高度衰減的零點自由區寬度；Level 2 $\to$ Level 3 為不可逾越的無條件天塹；領域 II（條件性假說區 Level 3-4）中 Level 4 為指數相變。
@@ -151,7 +151,7 @@ Tier 1（自伴純點譜）、Tier 2（Newton-Jost 恆等式）、Tier 3(A)（Pr
 ## 審查核心提問（6 大要點）
 
 請評審專家裁決：
-1. **Abel 分部積分變換鏈路**：定理 323.1 透過 Abel 分部求和公式建立 $\mathcal{S}_{\text{Selberg}}(X, t) = -\frac{\operatorname{Im}S(X, t)}{X} - \int_2^X \frac{\operatorname{Im}S(u, t)}{u^2} du$ 並推導出 $\mathcal{O}_t(X) \implies \mathcal{O}(\log t)$ 上界傳遞，推導是否 100% 嚴密準確？
+1. **Abel 分部積分變換鏈路**：定理 323.1 透過 Abel 分部求和公式建立 $\mathcal{S}_{\text{Selberg}}(X, t) = -\frac{\mathrm{Im}S(X, t)}{X} - \int_2^X \frac{\mathrm{Im}S(u, t)}{u^2} du$ 並推導出 $\mathcal{O}_t(X) \implies \mathcal{O}(\log t)$ 上界傳遞，推導是否 100% 嚴密準確？
 2. **Riemann-von Mangoldt 平滑對偶**：定理 323.2 重申的去卷積尺度下 $\overline{N}(t) = \frac{\vartheta(t)}{\pi}$ 平滑主項對偶，是否完全自洽？
 3. **自伴譜實性與難度守恆**：定理 323.3 關於算子譜實性與零點全同性難度守恆的表述，是否嚴格遵循科學自律？
 4. **兩大領域二分劃界**：定理 323.4 重申的兩大領域二分劃界與無條件天塹定位，是否完全客觀嚴謹？
