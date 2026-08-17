@@ -103,6 +103,21 @@ $$\text{Quantitative CAS Counter-Proof} \xrightarrow{\text{forces}} \text{Rigoro
 For the full methodology and qualitative case studies of how negative-direction overreach manifests in retraction claims, see:
 👉 **[`05-open-gaps/dead-ends-rigor-assessment-methodology.md`](05-open-gaps/dead-ends-rigor-assessment-methodology.md)** (Dataset: [`05-open-gaps/dead-ends-rigor-assessment.csv`](05-open-gaps/dead-ends-rigor-assessment.csv)).
 
+### 4. Constructive Byproducts & Verified Artifacts (研究過程中的實質副產物與局部驗證成果)
+While the longitudinal exploration conclusively demonstrated that one-dimensional operator approximations cannot bypass deep analytic number theory barriers (Level III pointwise prime-sum cancellations), the human-AI collaborative process yielded several genuine, symbolically verified mathematical artifacts and toy models:
+
+* **Dirac-Primes Multi-Center Scattering Toy Model** ([`04-mathematical-notes/expository-notes-on-dirac-primes-toy-model.md`](04-mathematical-notes/expository-notes-on-dirac-primes-toy-model.md)):
+  Three exact algebraic identities independently verified via SymPy CAS:
+  1. *Fredholm Bare Duality*: $\log|\det_3(I + V_X R_0(t))| \equiv \frac{1+t^2}{16}X^2 - \frac{t^2}{8}|S(X, t)|^2 + \mathcal{O}_t(X)$
+  2. *Lévy Stochastic Area Fourth-Moment*: $\mathrm{RMS}(W) = \frac{1}{4}X^2 = \frac{1}{2}(\mathrm{RMS}(S))^2$
+  3. *$\mathfrak{sl}(2,\mathbb{R})$ Killing-Lorentz Energy Balance*: $\langle-\det\mathbf{\Omega}_{\text{total}}\rangle = \frac{3}{256}X^4 + \frac{1}{8}X^2 > 0$
+* **15-Paper Technical Monograph** ([`04-mathematical-notes/`](04-mathematical-notes/)):
+  A comprehensive collection of 15 structured technical expository notes documenting operator-theoretic, spectral-theoretic, and stochastic geometry explorations ([Collected Papers PDF](04-mathematical-notes/riemann-hypothesis-collected-papers.pdf)).
+* **Executable Verification & Lean 4 Blueprint** ([`03-verification/`](03-verification/)):
+  Automated Python/SymPy test suites for instant symbolic reproduction and an open Lean 4 formalization roadmap ([`BLUEPRINT.md`](03-verification/formal-lean4/BLUEPRINT.md)).
+
+> *(Note: These constructive results are strictly bounded within their respective toy-model formulations and do not constitute a proof of the Riemann Hypothesis.)*
+
 ---
 
 ## 🚀 Quick Start: Running Symbolic Verifications / 快速獨立驗證
