@@ -1,262 +1,308 @@
-﻿# 黎曼猜想研究 Prompt 工具箱
-# 針對 Perplexity + Gemini Pro 訂閱
+# Riemann Hypothesis Research: Physics-First Prompt Toolkit
+# 黎曼猜想研究：物理為先的 Prompt 工具箱
+
+> **Version 2.0 — Updated 2026-08-18**  
+> **Core Philosophy**: RH is a discovery in nature, not a human invention.  
+> We approach it from physics outward, not from mathematics inward.  
+>
+> **Key Reference**: Anthropic (Aug 10, 2026) pushed the zero-fraction bound from 41.6% → 67.2%  
+> using Weil quadratic forms + analytic number theory. They explicitly stated this approach  
+> will NOT prove RH. We pursue a complementary physics-first direction.
 
 ---
 
-## 平台分工
+## Platform Roles / 平台分工
 
 ```
-Gemini Pro  →  主力研究員
-               - 計算實驗（Python 程式碼執行）
-               - 長期記憶（貼入上下文繼續研究）
-               - 深度推理（多步驟數學分析）
-               - Deep Research 模式（自動多輪研究）
+Gemini Pro  →  Primary Research Executor
+               - Run Python simulations (DQPT spin models, heat equation, etc.)
+               - Deep mathematical analysis (multi-step derivations)
+               - Cross-domain pattern identification
+               - Must run Epstein Test before every major claim
 
-Perplexity  →  文獻偵察兵
-               - 「這個想法有沒有人做過？」
-               - 找最新的 arXiv 論文
-               - 查某個數學概念的現況
-               - 確認某個結果是否已知
-```
+Perplexity  →  Literature Scout & Claim Validator
+               - "Has anyone published this angle before?"
+               - Find recent arXiv papers (especially 2024-2026)
+               - Verify claims against known results
+               - Scan for community response to new ideas
 
----
-
-## ══════════════════════════════════
-## GEMINI PRO 系列 PROMPT
-## ══════════════════════════════════
-
-### 🔷 G1：開場啟動（貼入 Gemini 開始新對話）
-
-```
-你是我的黎曼猜想研究助手。我是導演，你是執行者。
-
-規則：
-- 我只做方向判斷，你做所有的事（計算、分析、程式碼、邏輯檢查）
-- 每次給我報告前，先自動做「Epstein 測試」：
-  這個論證是否也適用於沒有 Euler 乘積的 Epstein zeta 函數？
-  如果是 → 告訴我這是死路，不要浪費我的時間
-  如果否 → 繼續
-- 報告格式：數據 → 發現 → 死路 → 推薦下一步（給2-3個選項）
-- 用繁體中文，數學用 LaTeX
-
-現在執行第一輪實驗（請用 Python 直接計算並給我結果，不只是程式碼）：
-
-【實驗1：看見 ζ 函數】
-在臨界線 Re(s)=1/2 上，計算 t = 0 到 50 之間的 ζ(1/2+it)。
-列出虛部為零（即零點）的 t 值，精確到小數後三位。
-已知前幾個：14.135, 21.022, 25.011, 30.425, 32.935...
-驗證你的計算是否符合。
-
-【實驗2：Robin 邊界搜索】
-計算 n = 2 到 10000，求 f(n) = σ(n) / (e^γ × n × ln(ln(n)))
-（γ ≈ 0.5772，σ(n) 是 n 的因數和）
-找出 f(n) 最大的前 10 個 n，告訴我這些數有什麼共同特徵。
-
-【實驗3：Li 係數】
-Li 係數定義：λ_n = 1 - Σ_ρ (1 - 1/ρ)^n，求和遍歷 ζ 的所有非平凡零點
-用前 1000 個零點數值近似，計算 λ_1 到 λ_20。
-是否全正？成長速度大約是什麼？
-
-完成後告訴我哪個方向最有趣，推薦下一步。
+Claude      →  Director's Advisor (this session)
+               - Detect circular reasoning
+               - Set research direction
+               - Anti-inflation quality control
 ```
 
 ---
 
-### 🔷 G2：Deep Research 指令（Gemini 的 Deep Research 功能）
+## ══════════════════════════════════════
+## ANTI-CIRCULAR REASONING SAFEGUARDS
+## 防循環論證安全規則
+## ══════════════════════════════════════
+
+Before every session, copy this ruleset into Gemini:
 
 ```
-[Deep Research 任務]
+MANDATORY RULES FOR EVERY RESPONSE:
 
-主題：黎曼猜想的「已知死路」完整地圖
+1. EPSTEIN TEST (run before every major claim):
+   Does this argument apply to Epstein zeta functions 
+   (which have functional equations but NO Euler product)?
+   → YES: This is a dead end. Tell me directly and stop.
+   → NO: The argument uses the Euler product essentially. Continue.
 
-請自主搜索並整合以下問題的答案，給我一份完整報告：
+2. THE NEW FACT TEST:
+   What new mathematical fact about ζ(s) is used in the final step?
+   → If the answer is "zeros are on the critical line" or equivalent: STOP, circular reasoning.
+   → If the answer is a physical axiom (unitarity, KMS, topology): CONTINUE.
 
-1. 為什麼「一般解析方法」必然失敗？
-   - 找 2-3 個具體的 Epstein zeta 函數例子，它們滿足哪些 ζ 的性質，但 RH 不成立
+3. NO GRAND SEALS:
+   Never conclude "RH is proven." Every result must state:
+   "This shows X, conditional on Y, which remains open."
 
-2. Mollifier 方法（Levinson-Conrey）的理論上限是什麼？
-   - 為什麼這類方法永遠無法達到 100%？有沒有論文明確指出這個障礙？
-
-3. de Branges 的嘗試哪裡出錯了？
-   - Conrey 和 Li 是怎麼反駁的？具體是哪個引理不成立？
-
-4. 2020-2026 年有沒有任何新的方向或微小突破？
-   - 找最新的 arXiv 論文，給我標題 + 一句話摘要
-
-輸出格式：每個問題一節，附上文獻引用。
-```
-
----
-
-### 🔷 G3：「我有個想法」快速測試（最常用）
-
-```
-我有個想法，幫我快速測試：
-
-[在這裡用一句話描述你的想法]
-
-請依序：
-1. Epstein 測試——這個論證對 Epstein zeta 成立嗎？（1分鐘內回答）
-2. 如果過了：把這個想法寫成嚴格數學語言（LaTeX）
-3. 設計一個可計算驗證的實驗，直接跑，給我結果
-4. 告訴我：這個想法是 (a)已被研究過 (b)新角度 (c)可能有漏洞
-
-不要問我意見，直接做到步驟3再問。
+4. FORMAT: Data → Finding → Dead Ends → Recommended Next Steps (2-3 options)
+5. Language: English primary, Traditional Chinese secondary. Math in LaTeX.
 ```
 
 ---
 
-### 🔷 G4：每週迭代 Prompt（週一用這個繼續研究）
+## ══════════════════════════════════════
+## TRACK B: DYNAMICAL QUANTUM PHASE TRANSITIONS
+## 量子動力學相變路線（最新前沿，2025年11月）
+## ══════════════════════════════════════
+
+### 🔷 B0 — Literature Foundation (Perplexity first)
 
 ```
-繼續黎曼猜想研究。上次進展摘要：
+Search for and summarize: arXiv:2511.11199 
+"The Riemann Hypothesis Emerges in Dynamical Quantum Phase Transitions"
+(November 2025)
 
-[貼上上次最後的報告摘要，或說「這是全新開始」]
+I need:
+1. What exactly is the mathematical mapping between ζ zeros and DQPT critical times?
+   Write out the explicit formula.
 
-本週目標：[填入，例如「深入分析 Li 係數的正性來源」]
+2. What specific Hamiltonian / spin system is used?
+   Is it a standard model (Ising, XY, Heisenberg) or custom?
 
-請：
-1. 先回顧上次的發現，確認我們在哪個位置
-2. 執行本週目標的計算
-3. 給我本週報告
+3. Is the mapping proven (theorem) or conjectured?
+   What are the exact assumptions?
+
+4. What do the authors claim as implications for RH?
+   Are they claiming a proof, or just a new perspective?
+
+5. Has there been any community response (comments, follow-up papers) since Nov 2025?
+
+6. Run Epstein test on the DQPT approach:
+   Would this mapping work for Epstein zeta functions
+   (which fail RH because they lack an Euler product)?
+   This is critical — if yes, the approach is likely tangential.
 ```
 
----
-
-### 🔷 G5：零點數據深挖（進階）
+### 🔷 B1 — First Computation Session (Gemini Pro)
 
 ```
-我要分析黎曼 ζ 函數的零點數據。
+[Paste MANDATORY RULES above first]
 
-已知前 50 個非平凡零點的虛部（t 值）：
-14.1347, 21.0220, 25.0109, 30.4249, 32.9351,
-37.5862, 40.9187, 43.3271, 48.0052, 49.7738,
-52.9703, 56.4462, 59.3470, 60.8318, 65.1125,
-67.0798, 69.5465, 72.0672, 75.7047, 77.1448,
-79.3374, 82.9104, 84.7355, 87.4253, 88.8091,
-92.4919, 94.6514, 95.8706, 98.8312, 101.318,
-103.726, 105.447, 107.169, 111.030, 111.875,
-114.320, 116.227, 118.791, 121.370, 122.947,
-124.257, 127.517, 129.579, 131.088, 133.498,
-134.757, 138.116, 139.736, 141.124, 143.112
+CONTEXT: A November 2025 paper (arXiv:2511.11199) showed that zeros of the 
+Riemann zeta function on the critical line correspond to critical times 
+of Dynamical Quantum Phase Transitions (DQPTs) in spin systems.
 
-請進行以下分析：
-1. 相鄰間距分佈：畫直方圖，與理論 GUE 分佈對比
-2. 正規化間距（乘以 log(t/2π)/2π）後的統計量
-3. 三階段差分：δt_n = t_{n+1} - t_n，δ²t_n，δ³t_n 的分佈
-4. 做 FFT：零點序列的頻率成分是什麼？
-5. 找異常：有沒有特別大或特別小的間距？它們出現在哪個 t？
+The physical connection: The Loschmidt echo 
+G(z) = ⟨ψ₀|e^{-iHz}|ψ₀⟩
+has zeros at exactly the same times as ζ(1/2 + it).
 
-最後：這些數據「看起來像」什麼隨機過程？
+EXPERIMENT B1: Build and test the DQPT-RH mapping
+
+Step 1: Take the simplest possible spin Hamiltonian 
+        that exhibits DQPTs (e.g., transverse-field Ising model or equivalent).
+        Write out H explicitly.
+
+Step 2: Compute the Loschmidt echo G(t) numerically for t ∈ [0, 50].
+        Find the zeros of |G(t)| (DQPT critical times).
+
+Step 3: Compare these critical times with the known RH zeros:
+        γ₁ ≈ 14.135, γ₂ ≈ 21.022, γ₃ ≈ 25.011, γ₄ ≈ 30.425, γ₅ ≈ 32.935
+
+Step 4: Do they match? If not exactly, why not?
+        What is the relationship between this spin model and ζ(s)?
+
+Step 5: EPSTEIN TEST — would this same Hamiltonian produce 
+        the "wrong" zeros of an Epstein zeta function?
+        (Expected: if the Euler product is essential, this test should fail for Epstein)
+
+Give me actual Python code that runs and produces numerical output.
 ```
 
----
-
-## ══════════════════════════════════
-## PERPLEXITY 系列 PROMPT
-## ══════════════════════════════════
-
-### 🔶 P1：想法存在性查詢（最常用——在 Gemini 有想法後立刻問 Perplexity）
+### 🔷 B2 — Topological Protection (after B1 confirms mapping)
 
 ```
-黎曼猜想研究查詢：
+[Paste MANDATORY RULES above first]
 
-我有以下想法：[描述你的想法]
+CONTEXT: We have confirmed (from B1) that DQPT critical times map to RH zeros.
+The key physical question is: WHY can't these zeros escape the critical line?
 
-請搜索：
-1. 有沒有數學家已經研究過這個方向？
-2. 相關的最新 arXiv 論文（2020 年後）
-3. 這個方向的主要代表人物是誰？
-4. 有沒有已知的反例或障礙？
+In condensed matter physics, phase transitions can be "topologically protected" —
+meaning a topological invariant prevents them from moving continuously off a 
+special line or surface.
 
-給我論文標題 + arXiv 連結 + 一句話摘要。
-```
+EXPERIMENT B2: Is there a topological invariant that protects DQPT critical times?
 
----
+1. For the spin Hamiltonian from B1, compute the Berry phase / Chern number 
+   as a function of the system parameters. Is it non-trivial (Z₂ or Z)?
 
-### 🔶 P2：概念快查（需要快速了解某個數學概念時）
+2. Does time-reversal symmetry (or PT-symmetry) of H constrain where 
+   the Loschmidt zeros can be? Specifically:
+   - If H has time-reversal symmetry T: H = THT⁻¹
+   - Does this force G(t) zeros to lie on the real t-axis?
+   - Translating back to ζ-language: does this force Re(ρ) = 1/2?
 
-```
-請解釋「[數學概念名稱]」與黎曼猜想的關係：
+3. What symmetry would H need to BREAK in order for the DQPT zeros 
+   to move off the real axis?
+   Translate this back: what property of ζ(s) would be violated?
 
-1. 一句話定義
-2. 它和 RH 的具體聯繫是什麼？
-3. 這個方向目前的最新進展（附論文連結）
-4. 主要的研究者是誰？
-
-例如可填入：Selberg class / Li 準則 / Nyman-Beurling criterion / Berry-Keating conjecture
-```
-
----
-
-### 🔶 P3：最新進展定期查詢（每月問一次）
-
-```
-搜索最近 3 個月內關於黎曼猜想的 arXiv 新論文。
-
-我想知道：
-1. 有沒有聲稱「證明」或「重大進展」的論文？（不管對錯）
-2. 有沒有新的等價條件或新的數值結果？
-3. 有沒有意外的跨領域聯繫（如物理、資訊理論、AI）？
-
-給我一份清單：標題 + 作者 + arXiv ID + 兩句話摘要。
-```
-
----
-
-### 🔶 P4：「這個人說了什麼」查詢
-
-```
-數學家 [姓名] 對黎曼猜想做了什麼貢獻？
-
-請搜索：
-1. 他/她的主要結果（具體定理名稱）
-2. 相關論文（附連結）
-3. 這個結果目前的影響和後續發展
-4. 有沒有後來被推翻或改進的部分？
-
-例如可填入：Brian Conrey / Alain Connes / Peter Sarnak / Terence Tao
+4. EPSTEIN TEST: Does Epstein zeta's corresponding "Hamiltonian" 
+   break this symmetry? (This would beautifully explain why Epstein fails RH.)
 ```
 
 ---
 
-## ══════════════════════════════════
-## 工作流程總覽
-## ══════════════════════════════════
+## ══════════════════════════════════════
+## TRACK A: DE BRUIJN-NEWMAN Λ = 0 AS THERMODYNAMICS
+## 熱力學路線（最嚴格的等價形式）
+## ══════════════════════════════════════
+
+### 🔷 A0 — Literature Foundation (Perplexity first)
 
 ```
-每週流程
-─────────────────────────────────────
-週一
-  └── Gemini G4（繼續研究，設定本週目標）
-      └── Gemini 執行計算，給報告
+Search for papers connecting the de Bruijn-Newman constant Λ 
+to thermodynamics, KMS states, or Bost-Connes quantum statistical mechanics.
 
-中途有新想法
-  └── 先問 Perplexity P1（有沒有人做過？）
-      ├── 有人做過 → 讀那篇論文（讓 Gemini 幫你讀）
-      └── 沒人做過 → 問 Gemini G3（快速測試）
+Specifically:
+1. After Rodgers-Tao 2018 proved Λ ≥ 0, what are the best current 
+   bounds on Λ from above? (Platt-Trudgian 2021 gave some bound)
 
-週末
-  └── 看 Gemini 報告，做方向決定
-  └── 問 Perplexity P3（本月有什麼新論文？）
-─────────────────────────────────────
+2. Has anyone proposed a thermodynamic interpretation of Λ?
+   Does Λ correspond to a "temperature" in some physical system?
 
-決策點
-  你說「有趣」  → Gemini 繼續深挖
-  你說「沒意思」→ Gemini 換下一個攻擊線
-  你說「這是啥」→ Perplexity 快查 / Gemini 解釋
-  你有新想法   → Perplexity 查存在性 → Gemini 測試
+3. The Bost-Connes system has a phase transition at inverse temperature β = 1.
+   Is there any known connection between this phase transition and Λ = 0?
+
+4. Has anyone applied the heat equation / de Bruijn-Newman approach 
+   to Epstein zeta functions? What is Λ_Epstein?
+   (Expected: Λ_Epstein > 0, which would validate the approach)
+```
+
+### 🔷 A1 — First Computation Session (Gemini Pro)
+
+```
+[Paste MANDATORY RULES above first]
+
+CONTEXT: The Riemann Hypothesis is exactly equivalent to Λ = 0,
+where Λ is the de Bruijn-Newman constant defined by the heat equation:
+Ξ_t(z) = ∫ e^{tu²} Φ(u) e^{izu} du
+
+Rodgers-Tao (2018) proved Λ ≥ 0.
+RH ↔ Λ ≤ 0 (de Bruijn 1950).
+Therefore: RH ↔ Λ = 0 exactly.
+
+EXPERIMENT A1: Thermodynamic interpretation of the heat equation
+
+Step 1: Compute Φ(u) numerically (the Fourier kernel of Ξ).
+        Plot it. Confirm it is positive and even.
+
+Step 2: Compute Ξ_t(z) for several values of t = 0, 0.1, 0.5, 1.0.
+        How do the zeros evolve as t increases?
+        (Expected: zeros move onto the real axis as t → ∞)
+
+Step 3: What is the "phase transition" structure?
+        Is there a critical t* where the zero pattern changes qualitatively?
+        
+Step 4: Physical interpretation question (no calculation needed, just reasoning):
+        The Bost-Connes quantum system has partition function ζ(β).
+        It has a phase transition at β = 1 (the pole of ζ).
+        The KMS equilibrium states live at each temperature β.
+        QUESTION: Is the heat equation parameter t related to β in any way?
+        Could "Λ = 0" be equivalent to "the system is at quantum ground state β → ∞"?
+
+Step 5: EPSTEIN TEST — run the heat equation for an Epstein zeta function.
+        Does it have Λ_Epstein > 0? Show numerically.
+        This is our key validation: if Epstein has Λ > 0, 
+        then the heat equation distinguishes Euler product from non-Euler-product.
 ```
 
 ---
 
-## 快速啟動
+## ══════════════════════════════════════
+## TRACK C: S-MATRIX UNITARITY (Remmen 2021)
+## 散射矩陣么正性路線
+## ══════════════════════════════════════
 
-**今天就可以做的第一步：**
+### 🔷 C0 — Literature Foundation (Perplexity first)
 
-1. 打開 Gemini Pro
-2. 複製貼上 G1 開場啟動
-3. 等 Gemini 給你第一輪實驗結果
-4. 你只需要看結果，說「繼續線β」或「線α更有趣」
+```
+Search for: arXiv:2106.00034 (Grant Remmen, 2021)
+"Amplitudes and the Riemann Zeta Function"
 
-就這樣，開始了。
+I need:
+1. What is the precise physical construction?
+   What S-matrix / amplitude is built? Write out the formula.
+
+2. What physical axioms are used (unitarity? crossing symmetry? analyticity? positivity)?
+   Which ones are truly physical vs. which ones are mathematical assumptions?
+
+3. The result is "if this amplitude is physical, then RH is true."
+   What exactly does "physical" mean here?
+   Is there a known QFT where this amplitude arises naturally?
+
+4. Has anyone since 2021 found a physical reason why this amplitude must be valid?
+   Or found a physical system that realizes it?
+
+5. Epstein test: Does Remmen's construction fail for Epstein zeta?
+   (Expected: yes, because Epstein lacks the Euler product multiplicative structure
+   needed for particle scattering interpretation)
+```
+
+---
+
+## ══════════════════════════════════════
+## KEY BACKGROUND: ANTHROPIC'S RESULT (Aug 10, 2026)
+## 背景：Anthropic 的最新進展
+## ══════════════════════════════════════
+
+**What they did**: Improved the lower bound on fraction of zeros satisfying RH: 41.6% → **67.2%**
+
+**Method**: Weil quadratic form with positive/negative definite subspaces from zeros on/off the line.
+Built on: Aryan (2019), Baluyot-Goldston et al. (2023, 2025), Bombieri (2000).
+
+**Their explicit statement**: *"We don't expect that the techniques Claude used will lead to proving the Riemann hypothesis."*
+
+**Implication for us**: Their approach (analytic number theory + quadratic form optimization) 
+is well-established. Our physics approach is genuinely complementary:
+- Theirs: How many zeros are on the line? (quantitative, but limited)
+- Ours: Why must ALL zeros be on the line? (structural, seeking the deep reason)
+
+**Papers to read**: 
+- Claude's paper: https://www-cdn.anthropic.com/95c246936988e43127bc6b2ceb7077c1dad2d68e.pdf
+- Informal note: https://www-cdn.anthropic.com/23455459f8832d06bb175cc0f88d019aed962ef8.pdf
+- Lean formalization: https://github.com/anthropics/zeta-23-lean
+
+---
+
+## ══════════════════════════════════════
+## SESSION LOG (Track each research session)
+## ══════════════════════════════════════
+
+| Date | Track | Experiment | Key Result | Epstein Test | Next Step |
+|------|-------|-----------|------------|-------------|-----------|
+| 2026-08-18 | Setup | — | New physics-first direction established | — | B0 + A0 |
+
+---
+
+## Core Conviction (Director's North Star)
+
+> **"RH is not a human invention but a discovery in nature.**  
+> **Therefore, only by starting from nature can we approach the truth."**  
+>
+> The zeros of ζ(s) exist whether or not humans ever wrote down the zeta function.  
+> They appear in quantum chaos, phase transitions, scattering amplitudes, thermodynamics.  
+> The mathematical proof must reflect this physical reality — not fight against it.
