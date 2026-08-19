@@ -146,3 +146,49 @@ Their statement: "We don't expect these techniques to prove RH"
 | Baluyot et al. (arXiv:2306.04799, 2023): no-RH Montgomery | Unconditional long-range progress |
 | Odlyzko (1987): "Zeros of Epstein zeta functions" | Confirmed Epstein not GUE |
 | Bombieri-Garrett (arXiv:2002.07929, 2020): pseudo-Laplacian | Closest self-adjoint analog (needs Euler product) |
+
+---
+
+## ⚠️ Critical Update: Why GUE Cannot Prove RH Even In Principle
+
+*Added 2026-08-19 after research session A5*
+
+### The Structural Flaw
+
+GUE level repulsion statistics are defined for the sequence of zero heights {γ_n} where:
+$$\zeta\!\left(\tfrac{1}{2} + i\gamma_n\right) = 0$$
+
+This set is explicitly the zeros **on the critical line**. Off-line zeros at ρ = σ+iγ (σ ≠ 1/2) are zeros of ζ at a *different* real part and are **not included** in the Montgomery pair correlation counting.
+
+Therefore:
+- GUE level repulsion on {γ_n} → zeros on the critical line cannot cluster
+- Off-line zeros → live in a separate, unconstrained set
+- **GUE level repulsion does not prevent off-line zeros from existing**
+
+The earlier heuristic argument ("off-line zeros at σ+iγ and (1-σ)+iγ both have imaginary part γ → violates GUE") fails because these off-line zeros are NOT in the Montgomery counting. GUE statistics cannot "see" them.
+
+**Conclusion**: Even a complete unconditional proof of GUE level repulsion for ζ zeros would NOT prove RH.
+
+### The Technical Barrier (confirmed independently)
+
+Short-range GUE (|α| > 1, F(α) = 1) requires:
+- **Hardy-Littlewood prime k-tuple conjecture** (off-diagonal prime pairs in the explicit formula)
+- HL is widely considered **harder than RH** and is not proven even under RH
+
+Montgomery himself derived F(α) = 1 for |α| > 1 as a heuristic from HL, not a proof.
+Bogomolny-Keating (1996) is a semiclassical calculation, not a rigorous estimate.
+
+### Summary: GUE Approach Status
+
+| Claim | Status |
+|-------|--------|
+| GUE short-range repulsion provable from Euler product | ❌ Requires Hardy-Littlewood (harder than RH) |
+| GUE short-range repulsion provable without RH | ❌ Not in literature |
+| GUE repulsion (if proven) would prove RH | ❌ **Structural flaw: GUE ≠ critical line constraint** |
+| GUE distinguishes ζ from Epstein | ✅ Epstein → Poisson (no repulsion) |
+| GUE is the right physical picture | ✅ Empirically, mechanically correct |
+
+**The GUE approach correctly identifies the MECHANISM but cannot constitute a PROOF.**
+It remains the best physical intuition for WHY RH is true, but completing the logical chain
+requires mathematics that does not yet exist.
+
