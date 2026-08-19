@@ -64,7 +64,9 @@ riemann-hypothesis/
 │   ├── dead-ends-rigor-assessment-methodology.md (Methodology & Qualitative Analysis)
 │   ├── canonical-herglotz-roadmap.md             (Canonical Herglotz spectral measure roadmap)
 │   ├── convergence-gap.md                        (The de Branges continuum transference divergence)
-│   └── connes-final-step.md                      (The non-commutative adelic positivity gap)
+│   ├── connes-final-step.md                      (The non-commutative adelic positivity gap)
+│   ├── gue-level-repulsion-gap.md                (GUE level repulsion: physical mechanism & PCC gap)
+│   └── ccm-spectral-gap.md                       (CCM 2511.22755: μ_λ→0 as the precise frontier)
 │
 └── 06-literature-review/         ← Literature Surveys & Background Reference Documents
     └── connes-consani-2020-2024.md               (Connes-Consani trace formula survey)
@@ -117,6 +119,30 @@ While the longitudinal exploration conclusively demonstrated that one-dimensiona
   Automated Python/SymPy test suites for instant symbolic reproduction and an open Lean 4 formalization roadmap ([`BLUEPRINT.md`](03-verification/formal-lean4/BLUEPRINT.md)).
 
 > *(Note: These constructive results are strictly bounded within their respective toy-model formulations and do not constitute a proof of the Riemann Hypothesis.)*
+
+### 5. Physics-First Research Session: Systematic Frontier Mapping (2026-08-19)
+*(物理優先研究：前沿邊界的系統性標定)*
+
+A second research session applied a physics-first methodology to systematically test all major physics-based approaches to RH. Every approach was subjected to two mandatory filters before acceptance: the **Epstein Test** (does it require the Euler product essentially, or does it work equally for Epstein zeta?) and the **New Fact Test** (does it avoid circular reasoning?).
+
+**Six approaches were eliminated:**
+
+| Approach | Epstein Test | New Fact Test | Verdict |
+|----------|-------------|---------------|---------|
+| DQPT / arXiv:2511.11199 (Nature Comms 2026) | ❌ Fails | — | Dead end: pure encoding |
+| de Bruijn-Newman Φ(u) ↔ Bost-Connes β | ❌ Fails | — | Dead end: Φ(u) blind to Euler product |
+| CP maps / Dobner trace class | ❌ Fails | — | Dead end: divergence arithmetic-agnostic |
+| Weil Explicit Formula bridge | ✅ Passes | ❌ Circular | W(f\*f̃)≥0 IS RH |
+| GUE level repulsion (Montgomery-Odlyzko) | ✅ Passes | ✅ Not circular | PCC → ≈100%, not full RH |
+| **CCM spectral gap (arXiv:2511.22755)** | ✅ Passes | ✅ Not circular | **Current frontier** |
+
+**Key structural finding:** All physical axioms (unitarity, CP maps, thermodynamic positivity) are "spectrum-agnostic" — they cannot distinguish the Euler product from a lattice-based Epstein system. The only approaches that pass the Epstein test ultimately reduce to either Weil positivity (circular) or the CCM spectral gap.
+
+**GUE gap characterization** (`05-open-gaps/gue-level-repulsion-gap.md`):
+The Montgomery Pair Correlation Conjecture (without RH) implies asymptotically 100% of zeros are simple and on the critical line (Goldston-Lee-Schettler-Suriajaya, arXiv:2503.15449, 2025). But o(N(T)) off-line zeros are undetectable by PCC. Off-line pairs enter the diagonal count N⊛(T), not the GUE kernel. Full RH requires o(N(T)) = 0, which PCC alone cannot establish.
+
+**CCM frontier (arXiv:2511.22755)** (`05-open-gaps/ccm-spectral-gap.md`):
+Connes-Consani-Moscovici (Nov 2025) construct finite self-adjoint operators using the truncated Euler product (Λ(n) for n ≤ λ²). Every finite operator has all eigenvalues real (proven unconditionally). The sufficient condition for RH is μ_λ = inf spec(A_λ) → 0 as λ→∞ (Corollary 3.8). Numerically: ε_N ~ 10⁻³³⁴ for λ=10, N=250 (Groskin 2026). The missing step: construct explicit test functions f_λ with QW_λ(f_λ, f_λ) → 0 (non-coercivity of the arithmetic Weil form). The PSWF kernel is the natural candidate (CCM Section 8).
 
 ---
 
